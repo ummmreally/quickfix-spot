@@ -5,39 +5,26 @@ import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 import logo from "@/assets/logo.png";
-
 const Index = () => {
   const handleCall = () => {
     window.location.href = "tel:+1234567890";
   };
-
   const handleDirections = () => {
     window.open("https://maps.google.com", "_blank");
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <img 
-              src={logo} 
-              alt="iTech Medics logo"
-              className="h-12 w-auto"
-            />
+            <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
             
             <nav className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">
-                Services
-              </a>
+              <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">Home</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contact
               </a>
-              <Button 
-                onClick={handleCall}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
-              >
+              <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Phone className="mr-2 h-4 w-4" />
                 (123) 456-7890
               </Button>
@@ -62,20 +49,11 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                onClick={handleCall}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"
-              >
+              <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now
               </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                onClick={handleDirections}
-                className="border-2 text-lg px-8"
-              >
+              <Button size="lg" variant="outline" onClick={handleDirections} className="border-2 text-lg px-8">
                 <MapPin className="mr-2 h-5 w-5" />
                 Get Directions
               </Button>
@@ -95,18 +73,9 @@ const Index = () => {
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard 
-              title="iPhone Repair"
-              image={iphoneImage}
-            />
-            <ServiceCard 
-              title="MacBook Repair"
-              image={macbookImage}
-            />
-            <ServiceCard 
-              title="iPad Repair"
-              image={ipadImage}
-            />
+            <ServiceCard title="iPhone Repair" image={iphoneImage} />
+            <ServiceCard title="MacBook Repair" image={macbookImage} />
+            <ServiceCard title="iPad Repair" image={ipadImage} />
           </div>
         </div>
       </section>
@@ -135,20 +104,11 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg"
-                  onClick={handleCall}
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
+                <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now
                 </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  onClick={handleDirections}
-                  className="border-2"
-                >
+                <Button size="lg" variant="outline" onClick={handleDirections} className="border-2">
                   <MapPin className="mr-2 h-5 w-5" />
                   Get Directions
                 </Button>
@@ -156,16 +116,9 @@ const Index = () => {
             </div>
             
             <div className="bg-muted rounded-lg overflow-hidden h-96">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a8e0b2b%3A0x5c4c4b4b4b4b4b4b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890123"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Store location map"
-              />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a8e0b2b%3A0x5c4c4b4b4b4b4b4b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Store location map" />
             </div>
           </div>
         </div>
@@ -177,8 +130,6 @@ const Index = () => {
           <p>© 2024 iTech Medics. All rights reserved.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
