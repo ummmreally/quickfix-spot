@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone } from "lucide-react";
+import { MapPin, Phone, Menu } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
-import heroImage from "@/assets/hero-devices.jpg";
 import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
@@ -18,116 +17,164 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Logo Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 py-6 bg-background/80 backdrop-blur-md border-b border-border/50">
-        <div className="flex justify-center">
-          <img 
-            src={logo} 
-            alt="iTech Medics logo"
-            className="h-16 md:h-20 w-auto"
-          />
+      {/* Header */}
+      <header className="border-b border-border bg-background sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
+            <img 
+              src={logo} 
+              alt="iTech Medics logo"
+              className="h-12 w-auto"
+            />
+            
+            <nav className="hidden md:flex items-center gap-8">
+              <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">
+                Services
+              </a>
+              <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">
+                Contact
+              </a>
+              <Button 
+                onClick={handleCall}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              >
+                <Phone className="mr-2 h-4 w-4" />
+                (123) 456-7890
+              </Button>
+            </nav>
+
+            <Button variant="ghost" size="icon" className="md:hidden">
+              <Menu className="h-6 w-6" />
+            </Button>
+          </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-24">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={heroImage} 
-            alt="Professional device repair services"
-            className="w-full h-full object-cover opacity-90"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background" />
-        </div>
-        
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            Expert Device Repair
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-            Fast. Professional. Trusted.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300">
-            <Button 
-              size="lg"
-              onClick={handleCall}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--shadow-premium)] text-lg px-8 py-6 rounded-full"
-            >
-              <Phone className="mr-2 h-5 w-5" />
-              Call Now
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              onClick={handleDirections}
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 rounded-full"
-            >
-              <MapPin className="mr-2 h-5 w-5" />
-              Get Directions
-            </Button>
+      <section className="bg-secondary/30 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+              Professional Device Repair
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8">
+              Fast, reliable repairs for iPhone, MacBook & iPad
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg"
+                onClick={handleCall}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"
+              >
+                <Phone className="mr-2 h-5 w-5" />
+                Call Now
+              </Button>
+              <Button 
+                size="lg"
+                variant="outline"
+                onClick={handleDirections}
+                className="border-2 text-lg px-8"
+              >
+                <MapPin className="mr-2 h-5 w-5" />
+                Get Directions
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-24 px-4 max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
-          We Fix It All
-        </h2>
-        
-        <div className="grid md:grid-cols-3 gap-8">
-          <ServiceCard 
-            title="iPhone Repair"
-            image={iphoneImage}
-          />
-          <ServiceCard 
-            title="MacBook Repair"
-            image={macbookImage}
-          />
-          <ServiceCard 
-            title="iPad Repair"
-            image={ipadImage}
-          />
+      <section id="services" className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            Our Repair Services
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Expert technicians ready to fix your devices
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <ServiceCard 
+              title="iPhone Repair"
+              image={iphoneImage}
+            />
+            <ServiceCard 
+              title="MacBook Repair"
+              image={macbookImage}
+            />
+            <ServiceCard 
+              title="iPad Repair"
+              image={ipadImage}
+            />
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-background to-secondary/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
-            Ready to Fix Your Device?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-12">
-            Expert repairs, quick turnaround
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg"
-              onClick={handleCall}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--shadow-premium)] text-lg px-8 py-6 rounded-full"
-            >
-              <Phone className="mr-2 h-5 w-5" />
-              Call Now
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              onClick={handleDirections}
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 rounded-full"
-            >
-              <MapPin className="mr-2 h-5 w-5" />
-              Get Directions
-            </Button>
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 bg-secondary/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                Visit Us Today
+              </h2>
+              <div className="space-y-4 mb-8">
+                <div>
+                  <h3 className="font-semibold text-lg mb-1">Address</h3>
+                  <p className="text-muted-foreground">123 Main Street<br />Your City, ST 12345</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-1">Hours</h3>
+                  <p className="text-muted-foreground">Mon-Fri: 9am - 6pm<br />Sat: 10am - 4pm<br />Sun: Closed</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-1">Phone</h3>
+                  <p className="text-muted-foreground">(123) 456-7890</p>
+                </div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  size="lg"
+                  onClick={handleCall}
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                >
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now
+                </Button>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  onClick={handleDirections}
+                  className="border-2"
+                >
+                  <MapPin className="mr-2 h-5 w-5" />
+                  Get Directions
+                </Button>
+              </div>
+            </div>
+            
+            <div className="bg-muted rounded-lg overflow-hidden h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a8e0b2b%3A0x5c4c4b4b4b4b4b4b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890123"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Store location map"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 border-t border-border">
+      <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 Device Repair Experts. All rights reserved.</p>
+          <p>© 2024 iTech Medics. All rights reserved.</p>
         </div>
       </footer>
     </div>

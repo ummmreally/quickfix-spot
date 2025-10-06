@@ -7,15 +7,15 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, image }: ServiceCardProps) => {
   return (
-    <Card className="overflow-hidden border-border bg-gradient-to-b from-card to-secondary/30 hover:shadow-[var(--shadow-card)] transition-all duration-300 hover:scale-[1.02]">
-      <div className="aspect-square overflow-hidden">
+    <Card className="overflow-hidden border-border bg-card hover:shadow-[var(--shadow-card)] transition-all duration-300">
+      <div className="aspect-[4/3] overflow-hidden">
         <img 
           src={image} 
           alt={`${title} repair service`}
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          className="w-full h-full object-cover"
         />
       </div>
-      <div className="p-6">
+      <div className="p-6 text-center">
         <h3 className="text-2xl font-bold text-foreground">{title}</h3>
       </div>
     </Card>
