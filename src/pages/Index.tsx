@@ -41,12 +41,11 @@ const Index = () => {
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Professional Device Repair
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Fast, reliable repairs for iPhone, MacBook & iPad
-            </p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Apple Accessories &amp; More</h1>
+            <p className="text-xl text-muted-foreground mb-8">CONVENIENTLY LOCATED ON EISENHOWER. 30 MINUTES OR LESS.
+NO APPOINTMENT NEEDED
+
+          </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
@@ -66,9 +65,7 @@ const Index = () => {
       <section id="services" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 text-foreground">RANKED #1 IN MIDDLE GA</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
-            Expert technicians ready to fix your devices
-          </p>
+          <p className="text-center text-muted-foreground mb-12 text-lg">WE CARRY SCREEN PROTECTORS  CASES- SPEAKERS CHARGERS </p>
           
           <div className="grid md:grid-cols-3 gap-8">
             <ServiceCard title="iPhone Repair" image={iphoneImage} />
