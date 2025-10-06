@@ -7,7 +7,7 @@ import ipadImage from "@/assets/ipad-repair.jpg";
 import logo from "@/assets/logo.png";
 const Index = () => {
   const handleCall = () => {
-    window.location.href = "tel:+1234567890";
+    window.location.href = "tel:478-259-6371";
   };
   const handleDirections = () => {
     window.open("https://maps.google.com", "_blank");
@@ -26,7 +26,7 @@ const Index = () => {
               </a>
               <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Phone className="mr-2 h-4 w-4" />
-                (123) 456-7890
+                (478) 259-6371
               </Button>
             </nav>
 
@@ -91,15 +91,15 @@ const Index = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Address</h3>
-                  <p className="text-muted-foreground">123 Main Street<br />Your City, ST 12345</p>
+                  <p className="text-muted-foreground">3742 Bloomfield Village Drive<br />Macon, GA 31206</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Hours</h3>
-                  <p className="text-muted-foreground">Mon-Fri: 9am - 6pm<br />Sat: 10am - 4pm<br />Sun: Closed</p>
+                  <p className="text-muted-foreground">Mon-Fri: 10am - 6pm<br />Sat: 10am - 5pm<br />Sun: Closed</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                  <p className="text-muted-foreground">(123) 456-7890</p>
+                  <p className="text-muted-foreground">(478) 259-6371</p>
                 </div>
               </div>
               
