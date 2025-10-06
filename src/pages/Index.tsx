@@ -5,6 +5,7 @@ import heroImage from "@/assets/hero-devices.jpg";
 import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
+import logo from "@/assets/logo.png";
 
 const Index = () => {
   const handleCall = () => {
@@ -17,8 +18,19 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Logo Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 py-6 bg-background/80 backdrop-blur-md border-b border-border/50">
+        <div className="flex justify-center">
+          <img 
+            src={logo} 
+            alt="iTech Medics logo"
+            className="h-16 md:h-20 w-auto"
+          />
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-24">
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
