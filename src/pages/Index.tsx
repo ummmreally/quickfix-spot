@@ -20,7 +20,7 @@ const Index = () => {
             <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
             
             <nav className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">Home</a>
+              <a href="https://www.mytechmedics.com" className="text-foreground hover:text-primary transition-colors font-medium">Home</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contact
               </a>
