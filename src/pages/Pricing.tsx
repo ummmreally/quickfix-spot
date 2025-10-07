@@ -14,6 +14,8 @@ interface PricingData {
 }
 
 const seriesData = {
+  "iPhone 17 Series": ["iPhone 17", "iPhone 17 Plus", "iPhone 17 Pro", "iPhone 17 Pro Max"],
+  "iPhone 16 Series": ["iPhone 16", "iPhone 16 Plus", "iPhone 16 Pro", "iPhone 16 Pro Max"],
   "iPhone 15 Series": ["iPhone 15", "iPhone 15 Plus", "iPhone 15 Pro", "iPhone 15 Pro Max"],
   "iPhone 14 Series": ["iPhone 14", "iPhone 14 Plus", "iPhone 14 Pro", "iPhone 14 Pro Max"],
   "iPhone 13 Series": ["iPhone 13", "iPhone 13 Mini", "iPhone 13 Pro", "iPhone 13 Pro Max"],
@@ -46,7 +48,9 @@ const Pricing = () => {
   };
 
   const handleIssueSelect = (issue: string, basePrice: number) => {
-    const priceMultiplier = selection.series?.includes("15") ? 1.3 : 
+    const priceMultiplier = selection.series?.includes("17") ? 1.5 : 
+                           selection.series?.includes("16") ? 1.4 : 
+                           selection.series?.includes("15") ? 1.3 : 
                            selection.series?.includes("14") ? 1.2 : 
                            selection.series?.includes("13") ? 1.1 : 1;
     
