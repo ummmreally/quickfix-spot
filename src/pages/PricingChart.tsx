@@ -100,30 +100,30 @@ const PricingChart = () => {
           <Card className="overflow-hidden">
             <div className="overflow-x-auto">
               <Table>
-                <TableHeader>
+                <TableHeader className="sticky top-20 z-20">
                   <TableRow className="bg-muted/50">
                     <TableHead className="font-bold text-foreground min-w-[160px] sticky left-0 bg-muted/50 z-10">
                       Model
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
+                    <TableHead className="font-bold text-foreground min-w-[100px] text-center bg-muted/50">
                       LCD Screen
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
+                    <TableHead className="font-bold text-foreground min-w-[100px] text-center bg-muted/50">
                       OLED Screen
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
+                    <TableHead className="font-bold text-foreground min-w-[100px] text-center bg-muted/50">
                       Battery
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
+                    <TableHead className="font-bold text-foreground min-w-[100px] text-center bg-muted/50">
                       Camera
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[120px] text-center">
+                    <TableHead className="font-bold text-foreground min-w-[120px] text-center bg-muted/50">
                       Charging Port
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[120px] text-center">
+                    <TableHead className="font-bold text-foreground min-w-[120px] text-center bg-muted/50">
                       Water Damage
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[110px] text-center">
+                    <TableHead className="font-bold text-foreground min-w-[110px] text-center bg-muted/50">
                       Back Glass
                     </TableHead>
                   </TableRow>
