@@ -21,7 +21,7 @@ const Index = () => {
             
             <nav className="hidden md:flex items-center gap-8">
               <a href="https://www.mytechmedics.com" className="text-foreground hover:text-primary transition-colors font-medium">Home</a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">PRICING</a>
+              <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">Pricing</a>
               <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Phone className="mr-2 h-4 w-4" />
                 (478) 259-6371
