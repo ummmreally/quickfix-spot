@@ -66,9 +66,9 @@ NO APPOINTMENT NEEDED
           <p className="text-center text-muted-foreground mb-12 text-lg">WE CARRY SCREEN PROTECTORS  CASES- SPEAKERS CHARGERS </p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard title="iPhone Repair" image={iphoneImage} />
-            <ServiceCard title="MacBook Repair" image={macbookImage} />
-            <ServiceCard title="iPad Repair" image={ipadImage} />
+            <ServiceCard title="iPhone" image={iphoneImage} />
+            <ServiceCard title="MacBook" image={macbookImage} />
+            <ServiceCard title="iPad" image={ipadImage} />
           </div>
         </div>
       </section>
