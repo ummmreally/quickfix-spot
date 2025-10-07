@@ -120,7 +120,7 @@ NO APPOINTMENT NEEDED
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 iTech Medics. All rights reserved.</p>
+          <p>© 2024 Tech Medics. All rights reserved.</p>
         </div>
       </footer>
     </div>;
