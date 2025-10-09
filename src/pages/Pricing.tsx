@@ -14,22 +14,21 @@ interface PricingData {
 }
 
 const seriesData = {
-  "iPhone 17 Series": ["iPhone 17", "iPhone 17 Plus", "iPhone 17 Pro", "iPhone 17 Pro Max"],
   "iPhone 16 Series": ["iPhone 16", "iPhone 16 Plus", "iPhone 16 Pro", "iPhone 16 Pro Max"],
   "iPhone 15 Series": ["iPhone 15", "iPhone 15 Plus", "iPhone 15 Pro", "iPhone 15 Pro Max"],
   "iPhone 14 Series": ["iPhone 14", "iPhone 14 Plus", "iPhone 14 Pro", "iPhone 14 Pro Max"],
-  "iPhone 13 Series": ["iPhone 13", "iPhone 13 Mini", "iPhone 13 Pro", "iPhone 13 Pro Max"],
-  "iPhone 12 Series": ["iPhone 12", "iPhone 12 Mini", "iPhone 12 Pro", "iPhone 12 Pro Max"],
+  "iPhone 13 Series": ["iPhone 13 Mini", "iPhone 13 Pro", "iPhone 13 Pro Max"],
+  "iPhone 12 Series": ["iPhone 12", "iPhone 12 Pro", "iPhone 12 Pro Max"],
   "iPhone 11 Series": ["iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max"],
+  "iPhone X Series": ["iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR"],
+  "iPhone 8 & SE": ["iPhone 8", "iPhone SE / SE2"],
 };
 
 const issues = [
-  { name: "Screen Replacement", basePrice: 120 },
-  { name: "Battery Replacement", basePrice: 80 },
-  { name: "Camera Repair", basePrice: 100 },
-  { name: "Charging Port Repair", basePrice: 70 },
-  { name: "Water Damage", basePrice: 150 },
-  { name: "Back Glass Replacement", basePrice: 90 },
+  { name: "LCD Screen", basePrice: 120 },
+  { name: "Premium Screen", basePrice: 180 },
+  { name: "Apple Screen", basePrice: 400 },
+  { name: "Back Glass", basePrice: 220 },
 ];
 
 const Pricing = () => {
@@ -48,13 +47,51 @@ const Pricing = () => {
   };
 
   const handleIssueSelect = (issue: string, basePrice: number) => {
-    const priceMultiplier = selection.series?.includes("17") ? 1.5 : 
-                           selection.series?.includes("16") ? 1.4 : 
-                           selection.series?.includes("15") ? 1.3 : 
-                           selection.series?.includes("14") ? 1.2 : 
-                           selection.series?.includes("13") ? 1.1 : 1;
-    
-    const finalPrice = Math.round(basePrice * priceMultiplier);
+    // Map the actual pricing based on series and model
+    const pricingMap: Record<string, any> = {
+      "iPhone 16": { lcd: 199.99, premium: 279.99, apple: 399.99, backGlass: 229.99 },
+      "iPhone 16 Plus": { lcd: 209.99, premium: 299.99, apple: 469.99, backGlass: 239.99 },
+      "iPhone 16 Pro": { lcd: 259.99, premium: 389.99, apple: 479.99, backGlass: 249.99 },
+      "iPhone 16 Pro Max": { lcd: 299.99, premium: 399.99, apple: 499.99, backGlass: 259.99 },
+      "iPhone 15": { lcd: 159.99, premium: 189.99, apple: 389.99, backGlass: 209.99 },
+      "iPhone 15 Plus": { lcd: 179.99, premium: 239.99, apple: 439.99, backGlass: 229.99 },
+      "iPhone 15 Pro": { lcd: 199.99, premium: 249.99, apple: 459.99, backGlass: 239.99 },
+      "iPhone 15 Pro Max": { lcd: 199.99, premium: 249.99, apple: 489.99, backGlass: 259.99 },
+      "iPhone 14": { lcd: 129.99, premium: 199.99, apple: 399.99, backGlass: 219.99 },
+      "iPhone 14 Plus": { lcd: 139.99, premium: 199.99, apple: 439.99, backGlass: 229.99 },
+      "iPhone 14 Pro": { lcd: 169.99, premium: 229.99, apple: 449.99, backGlass: 239.99 },
+      "iPhone 14 Pro Max": { lcd: 179.99, premium: 239.99, apple: 459.99, backGlass: 249.99 },
+      "iPhone 13 Mini": { lcd: 139.99, premium: 159.99, apple: 399.99, backGlass: 239.99 },
+      "iPhone 13 Pro": { lcd: 149.99, premium: 169.99, apple: 429.99, backGlass: 249.99 },
+      "iPhone 13 Pro Max": { lcd: 159.99, premium: 179.99, apple: 459.99, backGlass: 229.99 },
+      "iPhone 12": { lcd: 89.99, premium: 139.99, apple: 359.99, backGlass: 209.99 },
+      "iPhone 12 Pro": { lcd: 99.99, premium: 139.99, apple: 399.99, backGlass: 239.99 },
+      "iPhone 12 Pro Max": { lcd: 139.99, premium: 159.99, apple: 439.99, backGlass: 259.99 },
+      "iPhone 11": { lcd: 79.99 },
+      "iPhone 11 Pro": { lcd: 89.99, premium: 159.99 },
+      "iPhone 11 Pro Max": { lcd: 129.99, premium: 139.99 },
+      "iPhone X": { lcd: 89.99 },
+      "iPhone XS": { lcd: 99.99 },
+      "iPhone XS Max": { lcd: 119.99 },
+      "iPhone XR": { lcd: 79.99 },
+      "iPhone SE / SE2": { lcd: 79.99 },
+      "iPhone 8": { lcd: 79.99 },
+    };
+
+    const modelPricing = pricingMap[selection.model || ""];
+    let finalPrice = basePrice;
+
+    if (modelPricing) {
+      if (issue === "LCD Screen" && modelPricing.lcd) {
+        finalPrice = modelPricing.lcd;
+      } else if (issue === "Premium Screen" && modelPricing.premium) {
+        finalPrice = modelPricing.premium;
+      } else if (issue === "Apple Screen" && modelPricing.apple) {
+        finalPrice = modelPricing.apple;
+      } else if (issue === "Back Glass" && modelPricing.backGlass) {
+        finalPrice = modelPricing.backGlass;
+      }
+    }
     
     setSelection((prev) => ({ ...prev, issue, price: finalPrice }));
     setTimeout(() => setStep("price"), 300);

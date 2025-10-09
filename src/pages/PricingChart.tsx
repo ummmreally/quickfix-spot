@@ -14,55 +14,54 @@ import { Card } from "@/components/ui/card";
 interface PriceData {
   model: string;
   lcd?: number;
-  oled?: number;
-  battery: number;
-  camera: number;
-  chargingPort: number;
-  waterDamage: number;
-  backGlass: number;
+  premium?: number;
+  apple?: number;
+  backGlass?: number;
 }
 
 const pricingData: PriceData[] = [
-  // iPhone 17 Series
-  { model: "iPhone 17", oled: 350, battery: 120, camera: 180, chargingPort: 105, waterDamage: 225, backGlass: 135 },
-  { model: "iPhone 17 Plus", oled: 380, battery: 130, camera: 190, chargingPort: 110, waterDamage: 240, backGlass: 145 },
-  { model: "iPhone 17 Pro", oled: 420, battery: 140, camera: 200, chargingPort: 115, waterDamage: 260, backGlass: 155 },
-  { model: "iPhone 17 Pro Max", oled: 450, battery: 150, camera: 210, chargingPort: 120, waterDamage: 280, backGlass: 165 },
-  
   // iPhone 16 Series
-  { model: "iPhone 16", oled: 320, battery: 112, camera: 168, chargingPort: 98, waterDamage: 210, backGlass: 126 },
-  { model: "iPhone 16 Plus", oled: 350, battery: 120, camera: 175, chargingPort: 102, waterDamage: 224, backGlass: 133 },
-  { model: "iPhone 16 Pro", oled: 380, battery: 128, camera: 182, chargingPort: 105, waterDamage: 238, backGlass: 140 },
-  { model: "iPhone 16 Pro Max", oled: 410, battery: 135, camera: 189, chargingPort: 108, waterDamage: 252, backGlass: 147 },
+  { model: "iPhone 16", lcd: 199.99, premium: 279.99, apple: 399.99, backGlass: 229.99 },
+  { model: "iPhone 16 Plus", lcd: 209.99, premium: 299.99, apple: 469.99, backGlass: 239.99 },
+  { model: "iPhone 16 Pro", lcd: 259.99, premium: 389.99, apple: 479.99, backGlass: 249.99 },
+  { model: "iPhone 16 Pro Max", lcd: 299.99, premium: 399.99, apple: 499.99, backGlass: 259.99 },
   
   // iPhone 15 Series
-  { model: "iPhone 15", oled: 280, battery: 104, camera: 156, chargingPort: 91, waterDamage: 195, backGlass: 117 },
-  { model: "iPhone 15 Plus", oled: 310, battery: 112, camera: 163, chargingPort: 95, waterDamage: 208, backGlass: 124 },
-  { model: "iPhone 15 Pro", oled: 340, battery: 120, camera: 170, chargingPort: 98, waterDamage: 221, backGlass: 131 },
-  { model: "iPhone 15 Pro Max", oled: 370, battery: 128, camera: 177, chargingPort: 101, waterDamage: 234, backGlass: 138 },
+  { model: "iPhone 15", lcd: 159.99, premium: 189.99, apple: 389.99, backGlass: 209.99 },
+  { model: "iPhone 15 Plus", lcd: 179.99, premium: 239.99, apple: 439.99, backGlass: 229.99 },
+  { model: "iPhone 15 Pro", lcd: 199.99, premium: 249.99, apple: 459.99, backGlass: 239.99 },
+  { model: "iPhone 15 Pro Max", lcd: 199.99, premium: 249.99, apple: 489.99, backGlass: 259.99 },
   
   // iPhone 14 Series
-  { model: "iPhone 14", lcd: 180, oled: 240, battery: 96, camera: 144, chargingPort: 84, waterDamage: 180, backGlass: 108 },
-  { model: "iPhone 14 Plus", lcd: 200, oled: 260, battery: 104, camera: 150, chargingPort: 88, waterDamage: 192, backGlass: 115 },
-  { model: "iPhone 14 Pro", oled: 280, battery: 112, camera: 156, chargingPort: 91, waterDamage: 204, backGlass: 122 },
-  { model: "iPhone 14 Pro Max", oled: 300, battery: 120, camera: 162, chargingPort: 94, waterDamage: 216, backGlass: 129 },
+  { model: "iPhone 14", lcd: 129.99, premium: 199.99, apple: 399.99, backGlass: 219.99 },
+  { model: "iPhone 14 Plus", lcd: 139.99, premium: 199.99, apple: 439.99, backGlass: 229.99 },
+  { model: "iPhone 14 Pro", lcd: 169.99, premium: 229.99, apple: 449.99, backGlass: 239.99 },
+  { model: "iPhone 14 Pro Max", lcd: 179.99, premium: 239.99, apple: 459.99, backGlass: 249.99 },
   
   // iPhone 13 Series
-  { model: "iPhone 13", lcd: 165, oled: 220, battery: 88, camera: 132, chargingPort: 77, waterDamage: 165, backGlass: 99 },
-  { model: "iPhone 13 Mini", lcd: 155, oled: 210, battery: 84, camera: 128, chargingPort: 74, waterDamage: 158, backGlass: 95 },
-  { model: "iPhone 13 Pro", oled: 240, battery: 96, camera: 138, chargingPort: 80, waterDamage: 177, backGlass: 106 },
-  { model: "iPhone 13 Pro Max", oled: 260, battery: 104, camera: 144, chargingPort: 84, waterDamage: 189, backGlass: 113 },
+  { model: "iPhone 13 Mini", lcd: 139.99, premium: 159.99, apple: 399.99, backGlass: 239.99 },
+  { model: "iPhone 13 Pro", lcd: 149.99, premium: 169.99, apple: 429.99, backGlass: 249.99 },
+  { model: "iPhone 13 Pro Max", lcd: 159.99, premium: 179.99, apple: 459.99, backGlass: 229.99 },
   
   // iPhone 12 Series
-  { model: "iPhone 12", lcd: 150, oled: 200, battery: 80, camera: 120, chargingPort: 70, waterDamage: 150, backGlass: 90 },
-  { model: "iPhone 12 Mini", lcd: 140, oled: 190, battery: 76, camera: 116, chargingPort: 67, waterDamage: 143, backGlass: 86 },
-  { model: "iPhone 12 Pro", lcd: 165, oled: 220, battery: 88, camera: 128, chargingPort: 77, waterDamage: 165, backGlass: 99 },
-  { model: "iPhone 12 Pro Max", lcd: 180, oled: 240, battery: 96, camera: 136, chargingPort: 84, waterDamage: 180, backGlass: 108 },
+  { model: "iPhone 12", lcd: 89.99, premium: 139.99, apple: 359.99, backGlass: 209.99 },
+  { model: "iPhone 12 Pro", lcd: 99.99, premium: 139.99, apple: 399.99, backGlass: 239.99 },
+  { model: "iPhone 12 Pro Max", lcd: 139.99, premium: 159.99, apple: 439.99, backGlass: 259.99 },
   
   // iPhone 11 Series
-  { model: "iPhone 11", lcd: 130, battery: 72, camera: 108, chargingPort: 63, waterDamage: 135, backGlass: 81 },
-  { model: "iPhone 11 Pro", oled: 180, battery: 80, camera: 116, chargingPort: 70, waterDamage: 150, backGlass: 90 },
-  { model: "iPhone 11 Pro Max", oled: 200, battery: 88, camera: 124, chargingPort: 77, waterDamage: 165, backGlass: 99 },
+  { model: "iPhone 11", lcd: 79.99 },
+  { model: "iPhone 11 Pro", lcd: 89.99, premium: 159.99 },
+  { model: "iPhone 11 Pro Max", lcd: 129.99, premium: 139.99 },
+  
+  // iPhone X Series
+  { model: "iPhone X", lcd: 89.99 },
+  { model: "iPhone XS", lcd: 99.99 },
+  { model: "iPhone XS Max", lcd: 119.99 },
+  { model: "iPhone XR", lcd: 79.99 },
+  
+  // iPhone 8 & SE
+  { model: "iPhone SE / SE2", lcd: 79.99 },
+  { model: "iPhone 8", lcd: 79.99 },
 ];
 
 const PricingChart = () => {
@@ -105,25 +104,16 @@ const PricingChart = () => {
                     <TableHead className="font-bold text-foreground min-w-[160px] sticky left-0 bg-muted/50 z-10">
                       Model
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
+                    <TableHead className="font-bold text-foreground min-w-[120px] text-center">
                       LCD Screen
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
-                      OLED Screen
+                    <TableHead className="font-bold text-foreground min-w-[140px] text-center">
+                      Premium Screen
                     </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
-                      Battery
-                    </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
-                      Camera
+                    <TableHead className="font-bold text-foreground min-w-[130px] text-center">
+                      Apple Screen
                     </TableHead>
                     <TableHead className="font-bold text-foreground min-w-[120px] text-center">
-                      Charging Port
-                    </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[120px] text-center">
-                      Water Damage
-                    </TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[110px] text-center">
                       Back Glass
                     </TableHead>
                   </TableRow>
@@ -141,13 +131,14 @@ const PricingChart = () => {
                         {item.lcd ? `$${item.lcd}` : "—"}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.oled ? `$${item.oled}` : "—"}
+                        {item.premium ? `$${item.premium}` : "—"}
                       </TableCell>
-                      <TableCell className="text-center">${item.battery}</TableCell>
-                      <TableCell className="text-center">${item.camera}</TableCell>
-                      <TableCell className="text-center">${item.chargingPort}</TableCell>
-                      <TableCell className="text-center">${item.waterDamage}</TableCell>
-                      <TableCell className="text-center">${item.backGlass}</TableCell>
+                      <TableCell className="text-center">
+                        {item.apple ? `$${item.apple}` : "—"}
+                      </TableCell>
+                      <TableCell className="text-center">
+                        {item.backGlass ? `$${item.backGlass}` : "—"}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
