@@ -60,7 +60,7 @@ const pricingData: PriceData[] = [
   { model: "iPhone 12 Pro Max", lcd: 180, oled: 240, battery: 96, camera: 136, chargingPort: 84, waterDamage: 180, backGlass: 108 },
   
   // iPhone 11 Series
-  { model: "iPhone 11", lcd: 130, battery: 72, camera: 108, chargingPort: 63, waterDamage: 135, backGlass: 81 },
+  { model: "iPhone 11", lcd: 79.99, battery: 79.99, camera: 89.99, chargingPort: 19.99*, waterDamage: 59.99*, backGlass: 139.99 },
   { model: "iPhone 11 Pro", oled: 180, battery: 80, camera: 116, chargingPort: 70, waterDamage: 150, backGlass: 90 },
   { model: "iPhone 11 Pro Max", oled: 200, battery: 88, camera: 124, chargingPort: 77, waterDamage: 165, backGlass: 99 },
 ];
