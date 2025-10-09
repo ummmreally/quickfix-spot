@@ -17,51 +17,52 @@ interface PriceData {
   premium?: number;
   apple?: number;
   backGlass?: number;
+  battery?: number;
 }
 
 const pricingData: PriceData[] = [
   // iPhone 16 Series
-  { model: "iPhone 16", lcd: 199.99, premium: 279.99, apple: 399.99, backGlass: 229.99 },
-  { model: "iPhone 16 Plus", lcd: 209.99, premium: 299.99, apple: 469.99, backGlass: 239.99 },
-  { model: "iPhone 16 Pro", lcd: 259.99, premium: 389.99, apple: 479.99, backGlass: 249.99 },
-  { model: "iPhone 16 Pro Max", lcd: 299.99, premium: 399.99, apple: 499.99, backGlass: 259.99 },
+  { model: "iPhone 16", lcd: 199.99, premium: 279.99, apple: 399.99, backGlass: 229.99, battery: 129.99 },
+  { model: "iPhone 16 Plus", lcd: 209.99, premium: 299.99, apple: 469.99, backGlass: 239.99, battery: 129.99 },
+  { model: "iPhone 16 Pro", lcd: 259.99, premium: 389.99, apple: 479.99, backGlass: 249.99, battery: 129.99 },
+  { model: "iPhone 16 Pro Max", lcd: 299.99, premium: 399.99, apple: 499.99, backGlass: 259.99, battery: 129.99 },
   
   // iPhone 15 Series
-  { model: "iPhone 15", lcd: 159.99, premium: 189.99, apple: 389.99, backGlass: 209.99 },
-  { model: "iPhone 15 Plus", lcd: 179.99, premium: 239.99, apple: 439.99, backGlass: 229.99 },
-  { model: "iPhone 15 Pro", lcd: 199.99, premium: 249.99, apple: 459.99, backGlass: 239.99 },
-  { model: "iPhone 15 Pro Max", lcd: 199.99, premium: 249.99, apple: 489.99, backGlass: 259.99 },
+  { model: "iPhone 15", lcd: 159.99, premium: 189.99, apple: 389.99, backGlass: 209.99, battery: 129.99 },
+  { model: "iPhone 15 Plus", lcd: 179.99, premium: 239.99, apple: 439.99, backGlass: 229.99, battery: 129.99 },
+  { model: "iPhone 15 Pro", lcd: 199.99, premium: 249.99, apple: 459.99, backGlass: 239.99, battery: 129.99 },
+  { model: "iPhone 15 Pro Max", lcd: 199.99, premium: 249.99, apple: 489.99, backGlass: 259.99, battery: 129.99 },
   
   // iPhone 14 Series
-  { model: "iPhone 14", lcd: 129.99, premium: 199.99, apple: 399.99, backGlass: 219.99 },
-  { model: "iPhone 14 Plus", lcd: 139.99, premium: 199.99, apple: 439.99, backGlass: 229.99 },
-  { model: "iPhone 14 Pro", lcd: 169.99, premium: 229.99, apple: 449.99, backGlass: 239.99 },
-  { model: "iPhone 14 Pro Max", lcd: 179.99, premium: 239.99, apple: 459.99, backGlass: 249.99 },
+  { model: "iPhone 14", lcd: 129.99, premium: 199.99, apple: 399.99, backGlass: 219.99, battery: 129.99 },
+  { model: "iPhone 14 Plus", lcd: 139.99, premium: 199.99, apple: 439.99, backGlass: 229.99, battery: 129.99 },
+  { model: "iPhone 14 Pro", lcd: 169.99, premium: 229.99, apple: 449.99, backGlass: 239.99, battery: 129.99 },
+  { model: "iPhone 14 Pro Max", lcd: 179.99, premium: 239.99, apple: 459.99, backGlass: 249.99, battery: 129.99 },
   
   // iPhone 13 Series
-  { model: "iPhone 13 Mini", lcd: 139.99, premium: 159.99, apple: 399.99, backGlass: 239.99 },
-  { model: "iPhone 13 Pro", lcd: 149.99, premium: 169.99, apple: 429.99, backGlass: 249.99 },
-  { model: "iPhone 13 Pro Max", lcd: 159.99, premium: 179.99, apple: 459.99, backGlass: 229.99 },
+  { model: "iPhone 13 Mini", lcd: 139.99, premium: 159.99, apple: 399.99, backGlass: 239.99, battery: 129.99 },
+  { model: "iPhone 13 Pro", lcd: 149.99, premium: 169.99, apple: 429.99, backGlass: 249.99, battery: 129.99 },
+  { model: "iPhone 13 Pro Max", lcd: 159.99, premium: 179.99, apple: 459.99, backGlass: 229.99, battery: 129.99 },
   
   // iPhone 12 Series
-  { model: "iPhone 12", lcd: 89.99, premium: 139.99, apple: 359.99, backGlass: 209.99 },
-  { model: "iPhone 12 Pro", lcd: 99.99, premium: 139.99, apple: 399.99, backGlass: 239.99 },
-  { model: "iPhone 12 Pro Max", lcd: 139.99, premium: 159.99, apple: 439.99, backGlass: 259.99 },
+  { model: "iPhone 12", lcd: 89.99, premium: 139.99, apple: 359.99, backGlass: 209.99, battery: 79.99 },
+  { model: "iPhone 12 Pro", lcd: 99.99, premium: 139.99, apple: 399.99, backGlass: 239.99, battery: 79.99 },
+  { model: "iPhone 12 Pro Max", lcd: 139.99, premium: 159.99, apple: 439.99, backGlass: 259.99, battery: 79.99 },
   
   // iPhone 11 Series
-  { model: "iPhone 11", lcd: 79.99 },
-  { model: "iPhone 11 Pro", lcd: 89.99, premium: 159.99 },
-  { model: "iPhone 11 Pro Max", lcd: 129.99, premium: 139.99 },
+  { model: "iPhone 11", lcd: 79.99, battery: 79.99 },
+  { model: "iPhone 11 Pro", lcd: 89.99, premium: 159.99, battery: 79.99 },
+  { model: "iPhone 11 Pro Max", lcd: 129.99, premium: 139.99, battery: 79.99 },
   
   // iPhone X Series
-  { model: "iPhone X", lcd: 89.99 },
-  { model: "iPhone XS", lcd: 99.99 },
-  { model: "iPhone XS Max", lcd: 119.99 },
-  { model: "iPhone XR", lcd: 79.99 },
+  { model: "iPhone X", lcd: 89.99, battery: 69.99 },
+  { model: "iPhone XS", lcd: 99.99, battery: 69.99 },
+  { model: "iPhone XS Max", lcd: 119.99, battery: 69.99 },
+  { model: "iPhone XR", lcd: 79.99, battery: 69.99 },
   
   // iPhone 8 & SE
-  { model: "iPhone SE / SE2", lcd: 79.99 },
-  { model: "iPhone 8", lcd: 79.99 },
+  { model: "iPhone SE / SE2", lcd: 79.99, battery: 69.99 },
+  { model: "iPhone 8", lcd: 79.99, battery: 69.99 },
 ];
 
 const PricingChart = () => {
@@ -116,6 +117,9 @@ const PricingChart = () => {
                     <TableHead className="font-bold text-foreground min-w-[120px] text-center">
                       Back Glass
                     </TableHead>
+                    <TableHead className="font-bold text-foreground min-w-[100px] text-center">
+                      Battery
+                    </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -138,6 +142,9 @@ const PricingChart = () => {
                       </TableCell>
                       <TableCell className="text-center">
                         {item.backGlass ? `$${item.backGlass}` : "—"}
+                      </TableCell>
+                      <TableCell className="text-center">
+                        {item.battery ? `$${item.battery}` : "—"}
                       </TableCell>
                     </TableRow>
                   ))}
