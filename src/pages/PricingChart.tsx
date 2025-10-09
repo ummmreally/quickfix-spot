@@ -97,10 +97,10 @@ const PricingChart = () => {
             </p>
           </div>
 
-          <Card>
-            <div className="overflow-x-auto">
+          <div className="border rounded-lg bg-card">
+            <div className="overflow-x-auto max-h-[600px] overflow-y-auto">
               <Table>
-                <TableHeader className="sticky top-[80px] z-30 backdrop-blur-sm border-b">
+                <TableHeader className="sticky top-0 z-30 bg-muted/95 backdrop-blur-sm shadow-sm">
                   <TableRow className="bg-muted/50">
                     <TableHead className="font-bold text-foreground min-w-[160px] sticky left-0 bg-muted/50 z-10">
                       Model
@@ -153,7 +153,7 @@ const PricingChart = () => {
                 </TableBody>
               </Table>
             </div>
-          </Card>
+          </div>
 
           <div className="mt-12 text-center space-y-4">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
