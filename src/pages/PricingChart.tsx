@@ -23,46 +23,46 @@ interface PriceData {
 }
 
 const pricingData: PriceData[] = [
-  // iPhone 17 Series
-  { model: "iPhone 17", oled: 350, battery: 120, camera: 180, chargingPort: 105, waterDamage: 225, backGlass: 135 },
-  { model: "iPhone 17 Plus", oled: 380, battery: 130, camera: 190, chargingPort: 110, waterDamage: 240, backGlass: 145 },
-  { model: "iPhone 17 Pro", oled: 420, battery: 140, camera: 200, chargingPort: 115, waterDamage: 260, backGlass: 155 },
-  { model: "iPhone 17 Pro Max", oled: 450, battery: 150, camera: 210, chargingPort: 120, waterDamage: 280, backGlass: 165 },
+  // iPhone 17 Series (iPhone 16 + $20)
+  { model: "iPhone 17", lcd: 219.99, oled: 299.99, battery: 89, camera: 110, chargingPort: 79, waterDamage: 180, backGlass: 249.99 },
+  { model: "iPhone 17 Plus", lcd: 229.99, oled: 319.99, battery: 95, camera: 115, chargingPort: 85, waterDamage: 190, backGlass: 259.99 },
+  { model: "iPhone 17 Pro", lcd: 279.99, oled: 409.99, battery: 105, camera: 125, chargingPort: 95, waterDamage: 210, backGlass: 269.99 },
+  { model: "iPhone 17 Pro Max", lcd: 319.99, oled: 419.99, battery: 115, camera: 135, chargingPort: 105, waterDamage: 230, backGlass: 279.99 },
   
   // iPhone 16 Series
-  { model: "iPhone 16", oled: 320, battery: 112, camera: 168, chargingPort: 98, waterDamage: 210, backGlass: 126 },
-  { model: "iPhone 16 Plus", oled: 350, battery: 120, camera: 175, chargingPort: 102, waterDamage: 224, backGlass: 133 },
-  { model: "iPhone 16 Pro", oled: 380, battery: 128, camera: 182, chargingPort: 105, waterDamage: 238, backGlass: 140 },
-  { model: "iPhone 16 Pro Max", oled: 410, battery: 135, camera: 189, chargingPort: 108, waterDamage: 252, backGlass: 147 },
+  { model: "iPhone 16", lcd: 199.99, oled: 279.99, battery: 69, camera: 90, chargingPort: 59, waterDamage: 160, backGlass: 229.99 },
+  { model: "iPhone 16 Plus", lcd: 209.99, oled: 299.99, battery: 75, camera: 95, chargingPort: 65, waterDamage: 170, backGlass: 239.99 },
+  { model: "iPhone 16 Pro", lcd: 259.99, oled: 389.99, battery: 85, camera: 105, chargingPort: 75, waterDamage: 190, backGlass: 249.99 },
+  { model: "iPhone 16 Pro Max", lcd: 299.99, oled: 399.99, battery: 95, camera: 115, chargingPort: 85, waterDamage: 210, backGlass: 259.99 },
   
   // iPhone 15 Series
-  { model: "iPhone 15", oled: 280, battery: 104, camera: 156, chargingPort: 91, waterDamage: 195, backGlass: 117 },
-  { model: "iPhone 15 Plus", oled: 310, battery: 112, camera: 163, chargingPort: 95, waterDamage: 208, backGlass: 124 },
-  { model: "iPhone 15 Pro", oled: 340, battery: 120, camera: 170, chargingPort: 98, waterDamage: 221, backGlass: 131 },
-  { model: "iPhone 15 Pro Max", oled: 370, battery: 128, camera: 177, chargingPort: 101, waterDamage: 234, backGlass: 138 },
+  { model: "iPhone 15", lcd: 159.99, oled: 189.99, battery: 59, camera: 80, chargingPort: 49, waterDamage: 140, backGlass: 209.99 },
+  { model: "iPhone 15 Plus", lcd: 179.99, oled: 239.99, battery: 65, camera: 85, chargingPort: 55, waterDamage: 150, backGlass: 229.99 },
+  { model: "iPhone 15 Pro", lcd: 199.99, oled: 249.99, battery: 75, camera: 95, chargingPort: 65, waterDamage: 170, backGlass: 239.99 },
+  { model: "iPhone 15 Pro Max", lcd: 199.99, oled: 249.99, battery: 85, camera: 105, chargingPort: 75, waterDamage: 190, backGlass: 259.99 },
   
   // iPhone 14 Series
-  { model: "iPhone 14", lcd: 180, oled: 240, battery: 96, camera: 144, chargingPort: 84, waterDamage: 180, backGlass: 108 },
-  { model: "iPhone 14 Plus", lcd: 200, oled: 260, battery: 104, camera: 150, chargingPort: 88, waterDamage: 192, backGlass: 115 },
-  { model: "iPhone 14 Pro", oled: 280, battery: 112, camera: 156, chargingPort: 91, waterDamage: 204, backGlass: 122 },
-  { model: "iPhone 14 Pro Max", oled: 300, battery: 120, camera: 162, chargingPort: 94, waterDamage: 216, backGlass: 129 },
+  { model: "iPhone 14", lcd: 129.99, oled: 199.99, battery: 55, camera: 75, chargingPort: 45, waterDamage: 130, backGlass: 219.99 },
+  { model: "iPhone 14 Plus", lcd: 139.99, oled: 199.99, battery: 59, camera: 79, chargingPort: 49, waterDamage: 135, backGlass: 229.99 },
+  { model: "iPhone 14 Pro", lcd: 169.99, oled: 229.99, battery: 65, camera: 85, chargingPort: 55, waterDamage: 145, backGlass: 239.99 },
+  { model: "iPhone 14 Pro Max", lcd: 179.99, oled: 239.99, battery: 69, camera: 89, chargingPort: 59, waterDamage: 150, backGlass: 249.99 },
   
   // iPhone 13 Series
-  { model: "iPhone 13", lcd: 165, oled: 220, battery: 88, camera: 132, chargingPort: 77, waterDamage: 165, backGlass: 99 },
-  { model: "iPhone 13 Mini", lcd: 155, oled: 210, battery: 84, camera: 128, chargingPort: 74, waterDamage: 158, backGlass: 95 },
-  { model: "iPhone 13 Pro", oled: 240, battery: 96, camera: 138, chargingPort: 80, waterDamage: 177, backGlass: 106 },
-  { model: "iPhone 13 Pro Max", oled: 260, battery: 104, camera: 144, chargingPort: 84, waterDamage: 189, backGlass: 113 },
+  { model: "iPhone 13", lcd: 139.99, oled: 159.99, battery: 49, camera: 69, chargingPort: 39, waterDamage: 120, backGlass: 239.99 },
+  { model: "iPhone 13 Mini", lcd: 139.99, oled: 159.99, battery: 45, camera: 65, chargingPort: 35, waterDamage: 115, backGlass: 239.99 },
+  { model: "iPhone 13 Pro", lcd: 149.99, oled: 169.99, battery: 55, camera: 75, chargingPort: 45, waterDamage: 130, backGlass: 249.99 },
+  { model: "iPhone 13 Pro Max", lcd: 159.99, oled: 179.99, battery: 59, camera: 79, chargingPort: 49, waterDamage: 135, backGlass: 229.99 },
   
   // iPhone 12 Series
-  { model: "iPhone 12", lcd: 150, oled: 200, battery: 80, camera: 120, chargingPort: 70, waterDamage: 150, backGlass: 90 },
-  { model: "iPhone 12 Mini", lcd: 140, oled: 190, battery: 76, camera: 116, chargingPort: 67, waterDamage: 143, backGlass: 86 },
-  { model: "iPhone 12 Pro", lcd: 165, oled: 220, battery: 88, camera: 128, chargingPort: 77, waterDamage: 165, backGlass: 99 },
-  { model: "iPhone 12 Pro Max", lcd: 180, oled: 240, battery: 96, camera: 136, chargingPort: 84, waterDamage: 180, backGlass: 108 },
+  { model: "iPhone 12", lcd: 89.99, oled: 139.99, battery: 45, camera: 65, chargingPort: 35, waterDamage: 110, backGlass: 209.99 },
+  { model: "iPhone 12 Mini", lcd: 89.99, oled: 139.99, battery: 40, camera: 60, chargingPort: 30, waterDamage: 105, backGlass: 209.99 },
+  { model: "iPhone 12 Pro", lcd: 99.99, oled: 139.99, battery: 49, camera: 69, chargingPort: 39, waterDamage: 115, backGlass: 239.99 },
+  { model: "iPhone 12 Pro Max", lcd: 139.99, oled: 159.99, battery: 55, camera: 75, chargingPort: 45, waterDamage: 125, backGlass: 259.99 },
   
   // iPhone 11 Series
-  { model: "iPhone 11", lcd: 130, battery: 72, camera: 108, chargingPort: 63, waterDamage: 135, backGlass: 81 },
-  { model: "iPhone 11 Pro", oled: 180, battery: 80, camera: 116, chargingPort: 70, waterDamage: 150, backGlass: 90 },
-  { model: "iPhone 11 Pro Max", oled: 200, battery: 88, camera: 124, chargingPort: 77, waterDamage: 165, backGlass: 99 },
+  { model: "iPhone 11", lcd: 79.99, battery: 39, camera: 59, chargingPort: 29, waterDamage: 100, backGlass: 149.99 },
+  { model: "iPhone 11 Pro", lcd: 89.99, oled: 159.99, battery: 45, camera: 65, chargingPort: 35, waterDamage: 110, backGlass: 169.99 },
+  { model: "iPhone 11 Pro Max", lcd: 129.99, oled: 139.99, battery: 49, camera: 69, chargingPort: 39, waterDamage: 120, backGlass: 189.99 },
 ];
 
 const PricingChart = () => {
