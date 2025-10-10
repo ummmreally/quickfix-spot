@@ -234,9 +234,7 @@ const PricingChart = () => {
                       LCD Screen
                     </TableHead>
                     <TableHead className="font-bold text-foreground min-w-[140px] text-center">Premium OLED Screen</TableHead>
-                    <TableHead className="font-bold text-foreground min-w-[130px] text-center">
-                      Apple Screen
-                    </TableHead>
+                    <TableHead className="font-bold text-foreground min-w-[130px] text-center">Apple Original Screen</TableHead>
                     <TableHead className="font-bold text-foreground min-w-[120px] text-center">
                       Back Glass
                     </TableHead>
