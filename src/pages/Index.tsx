@@ -10,7 +10,7 @@ const Index = () => {
     window.location.href = "tel:478-259-6371";
   };
   const handleDirections = () => {
-    window.open("https://maps.google.com", "_blank");
+    window.open("https://www.google.com/maps/dir/?api=1&destination=3742+Bloomfield+Village+Drive,+Macon,+GA+31206", "_blank");
   };
   return (
     <div className="min-h-screen bg-background">
@@ -140,7 +140,7 @@ const Index = () => {
 
             <div className="bg-muted rounded-lg overflow-hidden h-96">
               <iframe
-                src="https://www.google.com/maps/place/Tech+Medics+–+iPhone+Repair+Macon+GA/@32.8150232,-83.7041795,1865m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88f3fbd55c63a311:0xf023c20233e02758!8m2!3d32.8150232!4d-83.7016046!16s%2Fg%2F11whl6t0x_?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+                src="https://www.google.com/maps?q=3742+Bloomfield+Village+Drive,+Macon,+GA+31206&output=embed"
                 width="100%"
                 height="100%"
                 style={{
