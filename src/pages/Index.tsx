@@ -10,7 +10,7 @@ const Index = () => {
     window.location.href = "tel:478-259-6371";
   };
   const handleDirections = () => {
-    window.open("https://www.google.com/maps/dir/?api=1&destination=3742+Bloomfield+Village+Drive,+Macon,+GA+31206", "_blank");
+    window.open("https://maps.google.com", "_blank");
   };
   return (
     <div className="min-h-screen bg-background">
@@ -100,6 +100,12 @@ const Index = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Address</h3>
+
+                  <p className="text-muted-foreground">
+                    3742 Eisenhower Parkway
+                    <br />
+                    Macon, GA 31206
+                  </p>
                   <p className="text-muted-foreground">
                     3742 Bloomfield Village Drive
                     <br />
@@ -140,7 +146,7 @@ const Index = () => {
 
             <div className="bg-muted rounded-lg overflow-hidden h-96">
               <iframe
-                src="https://www.google.com/maps?q=3742+Bloomfield+Village+Drive,+Macon,+GA+31206&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a8e0b2b%3A0x5c4c4b4b4b4b4b4b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890123"
                 width="100%"
                 height="100%"
                 style={{
