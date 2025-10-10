@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Smartphone } from "lucide-react";
+import { ArrowLeft, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card } from "@/components/ui/card";
@@ -229,9 +229,10 @@ const PricingChart = () => {
             <p className="text-muted-foreground text-lg mb-4">
               All prices include parts and labor
             </p>
-            <p className="text-sm text-muted-foreground">
-              Call us at <a href="tel:478-259-6371" className="text-primary hover:underline font-semibold">(478) 259-6371</a> for any questions
-            </p>
+            <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+              <Phone className="h-4 w-4" />
+              <span>= Call us at <a href="tel:478-259-6371" className="text-primary hover:underline font-semibold">(478) 259-6371</a> for pricing</span>
+            </div>
           </div>
 
           <Card className="overflow-hidden">
@@ -261,19 +262,19 @@ const PricingChart = () => {
                         {item.model}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.lcd ? `$${item.lcd}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
+                        {item.lcd ? `$${item.lcd}` : <Phone className="h-4 w-4 mx-auto" />}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.premium ? `$${item.premium}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
+                        {item.premium ? `$${item.premium}` : <Phone className="h-4 w-4 mx-auto" />}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.apple ? `$${item.apple}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
+                        {item.apple ? `$${item.apple}` : <Phone className="h-4 w-4 mx-auto" />}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.backGlass ? `$${item.backGlass}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
+                        {item.backGlass ? `$${item.backGlass}` : <Phone className="h-4 w-4 mx-auto" />}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.battery ? `$${item.battery}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
+                        {item.battery ? `$${item.battery}` : <Phone className="h-4 w-4 mx-auto" />}
                       </TableCell>
                     </TableRow>)}
                 </TableBody>
