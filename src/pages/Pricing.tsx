@@ -25,11 +25,11 @@ const seriesData = {
 };
 
 const issues = [
-  { name: "LCD Screen", basePrice: 120 },
-  { name: "Premium Screen", basePrice: 180 },
-  { name: "Apple Screen", basePrice: 400 },
-  { name: "Back Glass", basePrice: 220 },
-  { name: "Battery", basePrice: 100 },
+  { name: "LCD Screen", basePrice: 79.99 },
+  { name: "Premium OLED Screen", basePrice: 119.99 },
+  { name: "Apple Original Screen", basePrice: 359.99 },
+  { name: "Back Glass", basePrice: 149.99 },
+  { name: "Battery", basePrice: 69.99 },
 ];
 
 const Pricing = () => {
@@ -87,9 +87,9 @@ const Pricing = () => {
     if (modelPricing) {
       if (issue === "LCD Screen" && modelPricing.lcd) {
         finalPrice = modelPricing.lcd;
-      } else if (issue === "Premium Screen" && modelPricing.premium) {
+      } else if (issue === "Premium OLED Screen" && modelPricing.premium) {
         finalPrice = modelPricing.premium;
-      } else if (issue === "Apple Screen" && modelPricing.apple) {
+      } else if (issue === "Apple Original Screen" && modelPricing.apple) {
         finalPrice = modelPricing.apple;
       } else if (issue === "Back Glass" && modelPricing.backGlass) {
         finalPrice = modelPricing.backGlass;
