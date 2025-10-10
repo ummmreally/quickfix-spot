@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Smartphone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card } from "@/components/ui/card";
@@ -171,16 +171,19 @@ const pricingData: PriceData[] = [
 {
   model: "iPhone X",
   lcd: 89.99,
+  premium: 119.99,
   backGlass: 149.99,
   battery: 69.99
 }, {
   model: "iPhone XS",
   lcd: 99.99,
+  premium: 119.99,
   backGlass: 149.99,
   battery: 69.99
 }, {
   model: "iPhone XS Max",
   lcd: 119.99,
+  premium: 129.99,
   backGlass: 159.99,
   battery: 69.99
 }, {
@@ -258,19 +261,19 @@ const PricingChart = () => {
                         {item.model}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.lcd ? `$${item.lcd}` : "—"}
+                        {item.lcd ? `$${item.lcd}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.premium ? `$${item.premium}` : "—"}
+                        {item.premium ? `$${item.premium}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.apple ? `$${item.apple}` : "—"}
+                        {item.apple ? `$${item.apple}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.backGlass ? `$${item.backGlass}` : "—"}
+                        {item.backGlass ? `$${item.backGlass}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
                       </TableCell>
                       <TableCell className="text-center">
-                        {item.battery ? `$${item.battery}` : "—"}
+                        {item.battery ? `$${item.battery}` : <Smartphone className="h-4 w-4 mx-auto opacity-30" />}
                       </TableCell>
                     </TableRow>)}
                 </TableBody>
