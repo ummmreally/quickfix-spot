@@ -100,12 +100,6 @@ const Index = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Address</h3>
-
-                  <p className="text-muted-foreground">
-                    3742 Eisenhower Parkway
-                    <br />
-                    Macon, GA 31206
-                  </p>
                   <p className="text-muted-foreground">
                     3742 Bloomfield Village Drive
                     <br />
@@ -146,7 +140,7 @@ const Index = () => {
 
             <div className="bg-muted rounded-lg overflow-hidden h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a8e0b2b%3A0x5c4c4b4b4b4b4b4b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890123"
+                src="https://www.google.com/maps/place/Tech+Medics+–+iPhone+Repair+Macon+GA/@32.8150232,-83.7041795,1865m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88f3fbd55c63a311:0xf023c20233e02758!8m2!3d32.8150232!4d-83.7016046!16s%2Fg%2F11whl6t0x_?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D"
                 width="100%"
                 height="100%"
                 style={{
