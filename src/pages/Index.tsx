@@ -10,7 +10,7 @@ const Index = () => {
     window.location.href = "tel:478-259-6371";
   };
   const handleDirections = () => {
-    window.open("https://maps.google.com", "_blank");
+    window.open("https://www.google.com/maps/dir/?api=1&destination=3742+Bloomfield+Village+Drive+Macon+GA+31206", "_blank");
   };
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -110,7 +110,7 @@ NO APPOINTMENT NEEDED
             </div>
             
             <div className="bg-muted rounded-lg overflow-hidden h-96">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a8e0b2b%3A0x5c4c4b4b4b4b4b4b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="100%" style={{
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.9842686487385!2d-83.7087!3d32.7738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f498c37c6b1b47%3A0x5a8c8e8e8e8e8e8e!2s3742%20Bloomfield%20Village%20Dr%2C%20Macon%2C%20GA%2031206!5e0!3m2!1sen!2sus!4v1647890123456" width="100%" height="100%" style={{
               border: 0
             }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Store location map" />
             </div>
