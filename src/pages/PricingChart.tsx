@@ -152,44 +152,53 @@ const pricingData: PriceData[] = [
 {
   model: "iPhone 11",
   lcd: 79.99,
+  backGlass: 149.99,
   battery: 79.99
 }, {
   model: "iPhone 11 Pro",
   lcd: 89.99,
   premium: 159.99,
+  backGlass: 149.99,
   battery: 79.99
 }, {
   model: "iPhone 11 Pro Max",
   lcd: 129.99,
   premium: 139.99,
+  backGlass: 159.99,
   battery: 79.99
 },
 // iPhone X Series
 {
   model: "iPhone X",
   lcd: 89.99,
+  backGlass: 149.99,
   battery: 69.99
 }, {
   model: "iPhone XS",
   lcd: 99.99,
+  backGlass: 149.99,
   battery: 69.99
 }, {
   model: "iPhone XS Max",
   lcd: 119.99,
+  backGlass: 159.99,
   battery: 69.99
 }, {
   model: "iPhone XR",
   lcd: 79.99,
+  backGlass: 149.99,
   battery: 69.99
 },
 // iPhone 8 & SE
 {
   model: "iPhone SE / SE2",
   lcd: 79.99,
+  backGlass: 149.99,
   battery: 69.99
 }, {
   model: "iPhone 8",
   lcd: 79.99,
+  backGlass: 149.99,
   battery: 69.99
 }];
 const PricingChart = () => {
