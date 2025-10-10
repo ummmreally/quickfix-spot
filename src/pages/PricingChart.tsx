@@ -227,7 +227,7 @@ const PricingChart = () => {
               Complete Pricing Guide
             </h1>
             <p className="text-muted-foreground text-lg mb-4">
-              All prices include parts and labor
+              All prices include parts and labor • Call for availability • No appointment needed
             </p>
             <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4" />
