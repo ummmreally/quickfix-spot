@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useState } from "react";
 import ServiceCard from "@/components/ServiceCard";
 import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 import logo from "@/assets/logo.png";
+
 const Index = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const handleCall = () => {
     window.location.href = "tel:478-259-6371";
   };
@@ -39,9 +43,42 @@ const Index = () => {
               </Button>
             </nav>
 
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-6 w-6" />
-            </Button>
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="md:hidden">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px]">
+                <nav className="flex flex-col gap-6 mt-8">
+                  <a
+                    href="https://www.mytechmedics.com"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="/pricing"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Quote
+                  </a>
+                  <a
+                    href="/pricing-chart"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Price List
+                  </a>
+                  <Button onClick={() => { handleCall(); setMobileMenuOpen(false); }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                    <Phone className="mr-2 h-4 w-4" />
+                    (478) 259-6371
+                  </Button>
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </header>
