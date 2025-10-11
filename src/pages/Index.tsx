@@ -72,7 +72,13 @@ const Index = () => {
                   >
                     Price List
                   </a>
-                  <Button onClick={() => { handleCall(); setMobileMenuOpen(false); }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                  <Button
+                    onClick={() => {
+                      handleCall();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
+                  >
                     <Phone className="mr-2 h-4 w-4" />
                     (478) 259-6371
                   </Button>
@@ -144,7 +150,7 @@ const Index = () => {
                     Macon, GA 31206
                   </p>
                   <p className="text-muted-foreground">
-                    3742 Bloomfield Village Drive
+                    3742 Eisenhower Parkway
                     <br />
                     Macon, GA 31206
                   </p>
