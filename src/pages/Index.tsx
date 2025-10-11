@@ -149,11 +149,6 @@ const Index = () => {
                     <br />
                     Macon, GA 31206
                   </p>
-                  <p className="text-muted-foreground">
-                    3742 Eisenhower Parkway
-                    <br />
-                    Macon, GA 31206
-                  </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Hours</h3>
