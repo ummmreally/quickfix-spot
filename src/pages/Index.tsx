@@ -11,9 +11,25 @@ import logo from "@/assets/logo.png";
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const handleCall = () => {
+    // Track phone call conversion
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({
+      event: 'phone_call',
+      event_category: 'engagement',
+      event_label: 'Phone Call Click',
+      value: '478-259-6371'
+    });
     window.location.href = "tel:478-259-6371";
   };
   const handleDirections = () => {
+    // Track directions conversion
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({
+      event: 'get_directions',
+      event_category: 'engagement',
+      event_label: 'Directions Click',
+      value: 'Google Maps'
+    });
     window.open("https://maps.google.com", "_blank");
   };
   return (
