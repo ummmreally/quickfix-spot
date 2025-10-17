@@ -305,6 +305,14 @@ const About = () => {
               </CardContent>
             </Card>
           </div>
+          
+          <div className="text-center mt-8">
+            <Button asChild variant="outline" size="lg">
+              <a href="https://www.google.com/search?client=safari&rls=en&q=tech+medics&ie=UTF-8&oe=UTF-8#" target="_blank" rel="noopener noreferrer">
+                Read More Reviews on Google
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
