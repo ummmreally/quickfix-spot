@@ -230,6 +230,9 @@ const PricingChart = () => {
             <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
 
             <nav className="hidden md:flex items-center gap-8">
+              <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
+                Home
+              </a>
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Macon
               </a>
@@ -259,6 +262,9 @@ const PricingChart = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
+                  <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Home
+                  </a>
                   <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Macon
                   </a>
