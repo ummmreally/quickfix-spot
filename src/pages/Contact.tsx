@@ -322,12 +322,10 @@ const Contact = () => {
                       3742 Eisenhower Parkway<br />
                       Macon, GA 31206
                     </p>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={() => window.open("https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206", "_blank")}
-                    >
-                      Get Directions
+                    <Button asChild variant="outline" size="sm">
+                      <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                        Get Directions
+                      </a>
                     </Button>
                   </div>
                 </div>

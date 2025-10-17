@@ -15,27 +15,6 @@ import RepairComparison from "@/components/RepairComparison";
 const Home = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleCall = () => {
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    (window as any).dataLayer.push({
-      event: 'phone_call',
-      event_category: 'engagement',
-      event_label: 'Phone Call Click',
-      value: '478-259-6371'
-    });
-    window.location.href = "tel:(478)259-6371";
-  };
-
-  const handleDirections = () => {
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    (window as any).dataLayer.push({
-      event: 'get_directions',
-      event_category: 'engagement',
-      event_label: 'Directions Click',
-      value: 'Google Maps'
-    });
-    window.open("https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206", "_blank");
-  };
 
   return (
     <>
@@ -147,9 +126,11 @@ const Home = () => {
                 <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium">
                   About
                 </a>
-                <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Phone className="mr-2 h-4 w-4" />
-                  (478) 259-6371
+                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <a href="tel:(478)259-6371">
+                    <Phone className="mr-2 h-4 w-4" />
+                    (478) 259-6371
+                  </a>
                 </Button>
               </nav>
 
@@ -179,9 +160,11 @@ const Home = () => {
                     <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                       About
                     </a>
-                    <Button onClick={() => { handleCall(); setMobileMenuOpen(false); }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                      <Phone className="mr-2 h-4 w-4" />
-                      (478) 259-6371
+                    <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                      <a href="tel:(478)259-6371">
+                        <Phone className="mr-2 h-4 w-4" />
+                        (478) 259-6371
+                      </a>
                     </Button>
                   </nav>
                 </SheetContent>
@@ -207,13 +190,17 @@ const Home = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call (478) 259-6371
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
+                  <a href="tel:(478)259-6371">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call (478) 259-6371
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline" onClick={handleDirections} className="border-2 text-lg px-8 py-6">
-                  <MapPin className="mr-2 h-5 w-5" />
-                  Get Directions
+                <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8 py-6">
+                  <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                    <MapPin className="mr-2 h-5 w-5" />
+                    Get Directions
+                  </a>
                 </Button>
               </div>
 
@@ -414,13 +401,17 @@ const Home = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call Now for iPhone Repair
+                  <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <a href="tel:(478)259-6371">
+                      <Phone className="mr-2 h-5 w-5" />
+                      Call Now for iPhone Repair
+                    </a>
                   </Button>
-                  <Button size="lg" variant="outline" onClick={handleDirections} className="border-2">
-                    <MapPin className="mr-2 h-5 w-5" />
-                    Get Directions
+                  <Button asChild size="lg" variant="outline" className="border-2">
+                    <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                      <MapPin className="mr-2 h-5 w-5" />
+                      Get Directions
+                    </a>
                   </Button>
                 </div>
               </div>

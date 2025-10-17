@@ -25,16 +25,7 @@ const iPad = () => {
     }
   }, []);
 
-  const handleCall = () => {
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    (window as any).dataLayer.push({
-      event: 'phone_call',
-      event_category: 'engagement',
-      event_label: 'Phone Call Click - iPad Page',
-      value: '478-259-6371'
-    });
-    window.location.href = "tel:(478)259-6371";
-  };
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -63,9 +54,11 @@ const iPad = () => {
               <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium">
                 About
               </a>
-              <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Phone className="mr-2 h-4 w-4" />
-                (478) 259-6371
+              <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <a href="tel:(478)259-6371">
+                  <Phone className="mr-2 h-4 w-4" />
+                  (478) 259-6371
+                </a>
               </Button>
             </nav>
 
@@ -95,9 +88,11 @@ const iPad = () => {
                   <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     About
                   </a>
-                  <Button onClick={() => { handleCall(); setMobileMenuOpen(false); }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                    <Phone className="mr-2 h-4 w-4" />
-                    (478) 259-6371
+                  <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                    <a href="tel:(478)259-6371">
+                      <Phone className="mr-2 h-4 w-4" />
+                      (478) 259-6371
+                    </a>
                   </Button>
                 </nav>
               </SheetContent>
@@ -116,9 +111,11 @@ const iPad = () => {
                 Expert iPad repair services including screen replacements, battery replacements, charging port repairs, and more. Fast, reliable service with no appointment needed - most repairs completed in 30 minutes or less.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now for Quote
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <a href="tel:(478)259-6371">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call Now for Quote
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-2">
                   <a href="/macon/pricing-chart">
@@ -284,13 +281,17 @@ const iPad = () => {
             Visit us at 3742 Eisenhower Parkway, Macon, GA 31206 or call for a free quote
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
-              <Phone className="mr-2 h-5 w-5" />
-              Call (478) 259-6371
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
+              <a href="tel:(478)259-6371">
+                <Phone className="mr-2 h-5 w-5" />
+                Call (478) 259-6371
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 text-lg px-8" onClick={() => window.open("https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206", "_blank")}>
-              <MapPin className="mr-2 h-5 w-5" />
-              Get Directions
+            <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8">
+              <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                <MapPin className="mr-2 h-5 w-5" />
+                Get Directions
+              </a>
             </Button>
           </div>
         </div>
