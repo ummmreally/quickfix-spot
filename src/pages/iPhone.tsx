@@ -47,8 +47,8 @@ const iPhone = () => {
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
-              <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
-                Quote
+              <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium">
+                Contact Us
               </a>
               <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
@@ -79,8 +79,8 @@ const iPhone = () => {
                   <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Home
                   </a>
-                  <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                    Quote
+                  <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Contact Us
                   </a>
                   <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Price List
@@ -120,7 +120,7 @@ const iPhone = () => {
                   Call Now for Quote
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-2">
-                  <a href="/macon/pricing">
+                  <a href="/macon/pricing-chart">
                     View Pricing
                   </a>
                 </Button>

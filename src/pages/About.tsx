@@ -69,8 +69,8 @@ const About = () => {
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
-              <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
-                Quote
+              <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium">
+                Contact Us
               </a>
               <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
@@ -101,8 +101,8 @@ const About = () => {
                   <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Home
                   </a>
-                  <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                    Quote
+                  <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Contact Us
                   </a>
                   <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Price List

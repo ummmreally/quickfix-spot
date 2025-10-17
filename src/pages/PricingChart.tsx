@@ -233,8 +233,8 @@ const PricingChart = () => {
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
-              <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
-                Quote
+              <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium">
+                Contact Us
               </a>
               <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
@@ -265,8 +265,8 @@ const PricingChart = () => {
                   <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Home
                   </a>
-                  <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                    Quote
+                  <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Contact Us
                   </a>
                   <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Price List
@@ -359,8 +359,8 @@ const PricingChart = () => {
               <Button size="lg" onClick={() => window.location.href = "tel:478-259-6371"}>
                 Call Now: (478) 259-6371
               </Button>
-              <Button size="lg" variant="outline" onClick={() => navigate("/pricing")}>
-                Get Interactive Quote
+              <Button size="lg" variant="outline" onClick={() => navigate("/macon/contact")}>
+                Contact Us for Quote
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
