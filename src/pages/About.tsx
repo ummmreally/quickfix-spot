@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Menu, Facebook, Instagram, Twitter, MapPin, Clock, Award, Users, Shield, Wrench, Star, CheckCircle } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import { Card, CardContent } from "@/components/ui/card";
 const About = () => {
@@ -461,7 +462,7 @@ const About = () => {
           <p className="mb-4 text-sm">
             Specializing in iPhone, iPad, and MacBook repair with 10+ years experience. Serving Macon, Bibb County, and Middle Georgia.
           </p>
-          <p className="text-sm">© 2025 Tech Medics. All rights reserved.</p>
+          <p className="text-sm">© 2025 Tech Medics. All rights reserved. | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
         </div>
       </footer>
     </div>;

@@ -7,6 +7,7 @@ import { Phone, Menu, Mail, MapPin, Clock } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const contactSchema = z.object({
@@ -362,7 +363,7 @@ const Contact = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 iTech Medics. All rights reserved.</p>
+          <p>© 2024 iTech Medics. All rights reserved. | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
         </div>
       </footer>
     </div>

@@ -3,6 +3,7 @@ import { MapPin, Phone, Menu, Clock, Shield, Wrench } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
@@ -568,7 +569,7 @@ const Home = () => {
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-            <p className="mb-2">© 2024 iTech Medics - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair</p>
+            <p className="mb-2">© 2024 iTech Medics - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
             <p className="text-sm">3742 Eisenhower Parkway, Macon, GA 31206 | (478) 259-6371</p>
           </div>
         </footer>

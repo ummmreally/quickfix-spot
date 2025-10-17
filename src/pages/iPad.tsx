@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import ipadImage from "@/assets/ipad-repair.jpg";
 import FAQSection from "@/components/FAQSection";
@@ -298,7 +299,7 @@ const iPad = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 MyTechMedics. All rights reserved.</p>
+          <p>© 2024 MyTechMedics. All rights reserved. | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
         </div>
       </footer>
     </div>
