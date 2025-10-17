@@ -53,6 +53,9 @@ const Index = () => {
               <a href="/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
               </a>
+              <a href="/about" className="text-foreground hover:text-primary transition-colors font-medium">
+                About
+              </a>
               <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Phone className="mr-2 h-4 w-4" />
                 (478) 259-6371
@@ -87,6 +90,13 @@ const Index = () => {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Price List
+                  </a>
+                  <a
+                    href="/about"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    About
                   </a>
                   <Button
                     onClick={() => {
