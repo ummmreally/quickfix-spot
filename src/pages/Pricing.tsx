@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Check } from "lucide-react";
+import { Check, Phone, Menu, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logo from "@/assets/logo.png";
 
 type Step = "series" | "model" | "issue" | "price";
 
@@ -36,6 +38,18 @@ const Pricing = () => {
   const navigate = useNavigate();
   const [step, setStep] = useState<Step>("series");
   const [selection, setSelection] = useState<Partial<PricingData>>({});
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleCall = () => {
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({
+      event: 'phone_call',
+      event_category: 'engagement',
+      event_label: 'Phone Call Click',
+      value: '478-259-6371'
+    });
+    window.location.href = "tel:478-259-6371";
+  };
 
   const handleSeriesSelect = (series: string) => {
     setSelection({ series });
@@ -126,10 +140,66 @@ const Pricing = () => {
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <Button variant="ghost" onClick={() => navigate("/")} className="gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
+            <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
+
+            <nav className="hidden md:flex items-center gap-8">
+              <a href="https://www.mytechmedics.com" className="text-foreground hover:text-primary transition-colors font-medium">
+                Home
+              </a>
+              <a href="/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
+                Quote
+              </a>
+              <a href="/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+                Price List
+              </a>
+              <a href="/business" className="text-foreground hover:text-primary transition-colors font-medium">
+                Business
+              </a>
+              <a href="/education" className="text-foreground hover:text-primary transition-colors font-medium">
+                Education
+              </a>
+              <a href="/about" className="text-foreground hover:text-primary transition-colors font-medium">
+                About
+              </a>
+              <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Phone className="mr-2 h-4 w-4" />
+                (478) 259-6371
+              </Button>
+            </nav>
+
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="md:hidden">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px]">
+                <nav className="flex flex-col gap-6 mt-8">
+                  <a href="https://www.mytechmedics.com" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Home
+                  </a>
+                  <a href="/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Quote
+                  </a>
+                  <a href="/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Price List
+                  </a>
+                  <a href="/business" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Business
+                  </a>
+                  <a href="/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    Education
+                  </a>
+                  <a href="/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    About
+                  </a>
+                  <Button onClick={() => { handleCall(); setMobileMenuOpen(false); }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                    <Phone className="mr-2 h-4 w-4" />
+                    (478) 259-6371
+                  </Button>
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </header>
