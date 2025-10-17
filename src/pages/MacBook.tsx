@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Menu, ArrowLeft } from "lucide-react";
+import { MapPin, Phone, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
 import macbookImage from "@/assets/macbook-repair.jpg";
+import FAQSection from "@/components/FAQSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import RepairComparison from "@/components/RepairComparison";
 
 const MacBook = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -203,6 +206,75 @@ const MacBook = () => {
         </div>
       </section>
 
+      {/* Comparison Section */}
+      <RepairComparison deviceType="MacBook" />
+
+      {/* FAQ Section */}
+      <FAQSection 
+        deviceType="MacBook"
+        faqs={[
+          {
+            question: "How long does MacBook screen repair take in Macon, GA?",
+            answer: "MacBook screen repairs typically take 2-4 hours depending on the model. MacBook Air repairs are usually faster than MacBook Pro Retina displays. We offer same-day service for most models at our Macon location."
+          },
+          {
+            question: "How much does MacBook screen repair cost?",
+            answer: "MacBook screen repair costs vary significantly by model and year. Prices range from $299 to $899 depending on whether it's a MacBook Air, Pro, or Retina display. Call (478) 259-6371 for a precise quote for your MacBook."
+          },
+          {
+            question: "Do you repair all MacBook models?",
+            answer: "Yes! We repair all MacBook models including MacBook Air (all years), MacBook Pro 13-inch, 15-inch, 16-inch, and MacBook Retina. From 2010 models to the latest M3 MacBooks, we have the expertise."
+          },
+          {
+            question: "Can you fix MacBook keyboard issues?",
+            answer: "Absolutely! We repair all MacBook keyboard issues including stuck keys, broken keys, liquid damage, and butterfly keyboard problems. We can replace individual keys or the entire keyboard assembly."
+          },
+          {
+            question: "My MacBook won't turn on. Can you fix it?",
+            answer: "Yes, we diagnose and repair MacBooks that won't power on. Common causes include battery issues, logic board problems, or power connection failures. Bring it to our Macon shop for free diagnosis."
+          },
+          {
+            question: "Do you offer MacBook battery replacement?",
+            answer: "Yes! MacBook battery replacement is one of our core services. If your MacBook battery won't hold a charge, drains quickly, or causes performance issues, we can install a new genuine battery."
+          },
+          {
+            question: "Can you upgrade my MacBook's RAM or storage?",
+            answer: "For older MacBook models with upgradeable RAM and storage, yes! However, newer MacBooks (2016+) have soldered components. We can advise on the best upgrade options for your specific MacBook model."
+          },
+          {
+            question: "How much does MacBook logic board repair cost?",
+            answer: "MacBook logic board repair costs vary widely based on the issue and model, typically ranging from $299 to $799. We diagnose the problem first and provide a detailed quote before any logic board work begins."
+          }
+        ]}
+      />
+
+      {/* Testimonials Section */}
+      <TestimonialSection 
+        testimonials={[
+          {
+            name: "Amanda S.",
+            rating: 5,
+            text: "My MacBook Pro screen was cracked and they replaced it same day. Looks perfect and works great. Best MacBook repair in Macon!",
+            date: "2024-03-20",
+            service: "MacBook Pro Screen Repair"
+          },
+          {
+            name: "Robert H.",
+            rating: 5,
+            text: "MacBook Air keyboard was acting up and they fixed it quickly. Very knowledgeable about the butterfly keyboard issues. Great service!",
+            date: "2024-03-14",
+            service: "MacBook Keyboard Repair"
+          },
+          {
+            name: "Lisa P.",
+            rating: 5,
+            text: "Thought my MacBook was dead but they diagnosed and fixed a logic board issue. Saved me from buying a new laptop. Highly recommend!",
+            date: "2024-03-09",
+            service: "MacBook Logic Board Repair"
+          }
+        ]}
+      />
+
       {/* CTA Section */}
       <section className="py-20 px-4 bg-secondary/30">
         <div className="max-w-4xl mx-auto text-center">
@@ -215,7 +287,7 @@ const MacBook = () => {
               <Phone className="mr-2 h-5 w-5" />
               Call (478) 259-6371
             </Button>
-            <Button size="lg" variant="outline" className="border-2 text-lg px-8" onClick={() => window.open("https://maps.google.com", "_blank")}>
+            <Button size="lg" variant="outline" className="border-2 text-lg px-8" onClick={() => window.open("https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206", "_blank")}>
               <MapPin className="mr-2 h-5 w-5" />
               Get Directions
             </Button>

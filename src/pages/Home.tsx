@@ -7,6 +7,9 @@ import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 import logo from "@/assets/logo.png";
+import FAQSection from "@/components/FAQSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import RepairComparison from "@/components/RepairComparison";
 
 const Home = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -421,18 +424,18 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="bg-muted rounded-lg overflow-hidden h-96 shadow-lg">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316a8e0b2b%3A0x5c4c4b4b4b4b4b4b!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890123"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="iTech Medics iPhone repair shop location in Macon GA"
-                />
-              </div>
+            <div className="bg-muted rounded-lg overflow-hidden h-96 shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8373937877726!2d-83.68656332397183!3d32.78909817359875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5d0d4e3c8c8c3%3A0x5e3c3c3c3c3c3c3c!2s3742%20Eisenhower%20Pkwy%2C%20Macon%2C%20GA%2031206!5e0!3m2!1sen!2sus!4v1234567890123"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="iTech Medics iPhone repair shop location - 3742 Eisenhower Parkway, Macon GA 31206"
+              />
+            </div>
             </div>
           </div>
         </section>
@@ -471,6 +474,96 @@ const Home = () => {
             </article>
           </div>
         </section>
+
+        {/* Comparison Section */}
+        <RepairComparison deviceType="iPhone, iPad & MacBook" />
+
+        {/* FAQ Section */}
+        <FAQSection 
+          deviceType="iPhone, iPad & MacBook"
+          faqs={[
+            {
+              question: "How long do repairs take at your Macon location?",
+              answer: "Most iPhone screen repairs take 30 minutes or less. iPad repairs typically take 1-2 hours, and MacBook repairs range from 2-4 hours depending on the service. We offer same-day service for most repairs at our Eisenhower Parkway location."
+            },
+            {
+              question: "Do you offer same-day Apple device repair in Macon?",
+              answer: "Yes! We specialize in same-day repairs for iPhone, iPad, and MacBook devices. Most iPhone repairs are completed while you wait. No appointment needed – just walk in during our business hours."
+            },
+            {
+              question: "What areas do you serve besides Macon, GA?",
+              answer: "We proudly serve Macon and surrounding areas including Warner Robins, Byron, Forsyth, Perry, and all of Bibb County. We're conveniently located at 3742 Eisenhower Parkway for easy access from anywhere in Central Georgia."
+            },
+            {
+              question: "Are your parts genuine Apple parts or third-party?",
+              answer: "We use high-quality replacement parts that meet or exceed OEM specifications. All parts come with a warranty and are tested before installation to ensure quality and performance."
+            },
+            {
+              question: "How much do repairs typically cost?",
+              answer: "Prices vary by device and repair type. iPhone screen repairs start around $79, iPad repairs from $99, and MacBook repairs from $299. Call (478) 259-6371 for an exact quote for your specific device and issue."
+            },
+            {
+              question: "Do you offer warranties on repairs?",
+              answer: "Yes! All our repairs are backed by a comprehensive warranty. We stand behind our workmanship and the quality of our parts to ensure your device repair lasts."
+            },
+            {
+              question: "Can you fix water-damaged devices?",
+              answer: "Yes, we specialize in water damage repair for iPhones, iPads, and MacBooks. Bring your device to us as soon as possible after water exposure for the best chance of recovery."
+            },
+            {
+              question: "Do I need an appointment or can I walk in?",
+              answer: "No appointment necessary! We welcome walk-ins Monday-Friday 10am-6pm and Saturday 10am-5pm. For faster service during busy times, you can call ahead at (478) 259-6371."
+            }
+          ]}
+        />
+
+        {/* Testimonials Section */}
+        <TestimonialSection 
+          testimonials={[
+            {
+              name: "Jessica M.",
+              rating: 5,
+              text: "Cracked my iPhone screen and they fixed it in 20 minutes! Best iPhone repair service in Macon. Professional, fast, and affordable.",
+              date: "2024-03-22",
+              service: "iPhone Screen Repair"
+            },
+            {
+              name: "Thomas R.",
+              rating: 5,
+              text: "My iPad Pro screen was shattered. They replaced it same day and it looks brand new. Highly recommend for iPad repair in Macon!",
+              date: "2024-03-19",
+              service: "iPad Screen Replacement"
+            },
+            {
+              name: "Karen W.",
+              rating: 5,
+              text: "MacBook Air keyboard wasn't working right. They diagnosed and fixed it quickly. Great MacBook repair shop, very knowledgeable staff.",
+              date: "2024-03-16",
+              service: "MacBook Keyboard Repair"
+            },
+            {
+              name: "Brandon C.",
+              rating: 5,
+              text: "My iPhone battery was draining so fast. They replaced it while I waited and now it lasts all day. Best repair experience in Macon!",
+              date: "2024-03-11",
+              service: "iPhone Battery Replacement"
+            },
+            {
+              name: "Michelle D.",
+              rating: 5,
+              text: "Dropped my iPad in water and thought it was done for. They recovered it and saved all my data! Amazing water damage repair service.",
+              date: "2024-03-07",
+              service: "iPad Water Damage Repair"
+            },
+            {
+              name: "Steven J.",
+              rating: 5,
+              text: "Professional MacBook screen repair. They kept me updated throughout the process and the work is flawless. Will definitely return!",
+              date: "2024-03-03",
+              service: "MacBook Screen Replacement"
+            }
+          ]}
+        />
 
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-border">

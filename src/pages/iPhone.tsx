@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Menu, ArrowLeft } from "lucide-react";
+import { MapPin, Phone, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
 import iphoneImage from "@/assets/iphone-repair.jpg";
+import FAQSection from "@/components/FAQSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import RepairComparison from "@/components/RepairComparison";
 
 const iPhone = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -203,6 +206,75 @@ const iPhone = () => {
         </div>
       </section>
 
+      {/* Comparison Section */}
+      <RepairComparison deviceType="iPhone" />
+
+      {/* FAQ Section */}
+      <FAQSection 
+        deviceType="iPhone"
+        faqs={[
+          {
+            question: "How long does iPhone screen repair take in Macon, GA?",
+            answer: "Most iPhone screen repairs are completed in 30 minutes or less. We offer same-day service with no appointment needed. Simply walk into our Eisenhower Parkway location and we'll get your iPhone fixed quickly."
+          },
+          {
+            question: "How much does iPhone screen repair cost in Macon?",
+            answer: "iPhone screen repair costs vary by model. Prices typically range from $79 to $329 depending on your iPhone model. Call us at (478) 259-6371 for an exact quote for your specific iPhone model."
+          },
+          {
+            question: "Do you repair all iPhone models?",
+            answer: "Yes! We repair all iPhone models including the latest iPhone 15, 14, 13, 12, 11, XS, XR, X, 8, 7, and older models. We stock parts for all major iPhone models for fast same-day repairs."
+          },
+          {
+            question: "Is there a warranty on iPhone screen repairs?",
+            answer: "Yes, all our iPhone screen repairs come with a warranty. We stand behind our work and use high-quality replacement parts to ensure your iPhone screen repair lasts."
+          },
+          {
+            question: "Can you fix my iPhone battery that drains quickly?",
+            answer: "Absolutely! iPhone battery replacement is one of our most popular services. If your iPhone battery drains fast or won't hold a charge, we can replace it with a new battery in about 30 minutes."
+          },
+          {
+            question: "Do I need an appointment for iPhone repair in Macon?",
+            answer: "No appointment necessary! We welcome walk-ins during our business hours Monday-Friday 10am-6pm and Saturday 10am-5pm. Just bring your iPhone to our Macon location at 3742 Eisenhower Parkway."
+          },
+          {
+            question: "Can you recover data from a broken iPhone?",
+            answer: "Yes, we offer data recovery services for iPhones with broken screens, water damage, or other issues. Our technicians can often retrieve your photos, contacts, and important data."
+          },
+          {
+            question: "Do you fix water damaged iPhones?",
+            answer: "Yes, we specialize in iPhone water damage repair. If you dropped your iPhone in water, bring it to us immediately. The sooner we can diagnose and repair water damage, the better chance of full recovery."
+          }
+        ]}
+      />
+
+      {/* Testimonials Section */}
+      <TestimonialSection 
+        testimonials={[
+          {
+            name: "Sarah M.",
+            rating: 5,
+            text: "Cracked my iPhone 14 screen and they fixed it in 25 minutes! Great service and fair pricing. Highly recommend for iPhone repair in Macon.",
+            date: "2024-03-15",
+            service: "iPhone Screen Repair"
+          },
+          {
+            name: "James T.",
+            rating: 5,
+            text: "My iPhone battery was dying so fast. They replaced it while I waited and now it lasts all day again. Fast and professional!",
+            date: "2024-03-10",
+            service: "iPhone Battery Replacement"
+          },
+          {
+            name: "Emily R.",
+            rating: 5,
+            text: "Dropped my iPhone in the pool. They saved all my photos and got it working again. Amazing service! Best repair shop in Macon.",
+            date: "2024-03-05",
+            service: "iPhone Water Damage Repair"
+          }
+        ]}
+      />
+
       {/* CTA Section */}
       <section className="py-20 px-4 bg-secondary/30">
         <div className="max-w-4xl mx-auto text-center">
@@ -215,7 +287,7 @@ const iPhone = () => {
               <Phone className="mr-2 h-5 w-5" />
               Call (478) 259-6371
             </Button>
-            <Button size="lg" variant="outline" className="border-2 text-lg px-8" onClick={() => window.open("https://maps.google.com", "_blank")}>
+            <Button size="lg" variant="outline" className="border-2 text-lg px-8" onClick={() => window.open("https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206", "_blank")}>
               <MapPin className="mr-2 h-5 w-5" />
               Get Directions
             </Button>

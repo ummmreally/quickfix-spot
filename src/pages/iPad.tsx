@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Menu, ArrowLeft } from "lucide-react";
+import { MapPin, Phone, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
 import ipadImage from "@/assets/ipad-repair.jpg";
+import FAQSection from "@/components/FAQSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import RepairComparison from "@/components/RepairComparison";
 
 const iPad = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -203,6 +206,75 @@ const iPad = () => {
         </div>
       </section>
 
+      {/* Comparison Section */}
+      <RepairComparison deviceType="iPad" />
+
+      {/* FAQ Section */}
+      <FAQSection 
+        deviceType="iPad"
+        faqs={[
+          {
+            question: "How long does iPad screen repair take in Macon, GA?",
+            answer: "Most iPad screen repairs are completed within 1-2 hours depending on the model. iPad Air and iPad Mini repairs are typically faster. We offer same-day service at our Macon location on Eisenhower Parkway."
+          },
+          {
+            question: "How much does iPad screen repair cost?",
+            answer: "iPad screen repair costs vary by model and generation. Prices typically range from $99 to $399. Call (478) 259-6371 for an exact quote based on your specific iPad model."
+          },
+          {
+            question: "Do you repair all iPad models?",
+            answer: "Yes! We repair all iPad models including iPad Pro, iPad Air, iPad Mini, and standard iPad generations. From the newest models to older iPads, we have the parts and expertise for quality repairs."
+          },
+          {
+            question: "Is iPad glass replacement different from screen replacement?",
+            answer: "Yes, some iPads have the glass digitizer separate from the LCD. We can replace just the glass if the LCD is intact, which may be more affordable. We'll diagnose your iPad and recommend the best repair option."
+          },
+          {
+            question: "Can you fix my iPad that won't charge?",
+            answer: "Absolutely! iPad charging issues are common and we can repair or replace charging ports. We also fix related issues like damaged lightning connectors and charging circuit problems."
+          },
+          {
+            question: "Do you offer iPad battery replacement in Macon?",
+            answer: "Yes, we replace iPad batteries for all models. If your iPad battery drains quickly, won't hold a charge, or causes the device to shut down unexpectedly, we can install a new battery."
+          },
+          {
+            question: "How do I know if my iPad needs screen replacement?",
+            answer: "Signs you need iPad screen repair include: cracked or shattered glass, display not responding to touch, black spots or lines on screen, or LCD damage. Bring it to our Macon shop for free diagnosis."
+          },
+          {
+            question: "Is there a warranty on iPad repairs?",
+            answer: "Yes, all our iPad repairs are backed by a warranty. We use quality replacement parts and stand behind our workmanship to ensure your iPad repair lasts."
+          }
+        ]}
+      />
+
+      {/* Testimonials Section */}
+      <TestimonialSection 
+        testimonials={[
+          {
+            name: "Michael B.",
+            rating: 5,
+            text: "Dropped my iPad Pro and the screen shattered. They had it fixed the same day and it looks brand new. Great iPad repair service in Macon!",
+            date: "2024-03-18",
+            service: "iPad Screen Repair"
+          },
+          {
+            name: "Jennifer L.",
+            rating: 5,
+            text: "My iPad wasn't charging and I thought I'd need a new one. They fixed the charging port quickly and saved me hundreds of dollars!",
+            date: "2024-03-12",
+            service: "iPad Charging Port Repair"
+          },
+          {
+            name: "David K.",
+            rating: 5,
+            text: "Fast, professional iPad repair. They explained everything clearly and had my iPad Air fixed in about an hour. Highly recommend!",
+            date: "2024-03-08",
+            service: "iPad Air Screen Replacement"
+          }
+        ]}
+      />
+
       {/* CTA Section */}
       <section className="py-20 px-4 bg-secondary/30">
         <div className="max-w-4xl mx-auto text-center">
@@ -215,7 +287,7 @@ const iPad = () => {
               <Phone className="mr-2 h-5 w-5" />
               Call (478) 259-6371
             </Button>
-            <Button size="lg" variant="outline" className="border-2 text-lg px-8" onClick={() => window.open("https://maps.google.com", "_blank")}>
+            <Button size="lg" variant="outline" className="border-2 text-lg px-8" onClick={() => window.open("https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206", "_blank")}>
               <MapPin className="mr-2 h-5 w-5" />
               Get Directions
             </Button>
