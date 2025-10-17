@@ -14,7 +14,7 @@ const About = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Tech Medics offers expert iPhone screen repair in Macon, GA with 10+ years experience. Same-day iPad, MacBook & Apple device repair. 90-day warranty. Call (478) 259-6371');
+      metaDescription.setAttribute('content', 'Tech Medics offers expert iPhone screen repair in Macon, GA with 10+ years experience. Same-day iPad, MacBook & Apple device repair. 30-day warranty. Call (478) 259-6371');
     }
     
     // Add structured data for local business
@@ -42,7 +42,7 @@ const About = () => {
       "image": "https://www.mytechmedics.com/logo.png",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
+        "ratingValue": "5.0",
         "reviewCount": "250"
       }
     });
@@ -176,13 +176,20 @@ const About = () => {
             </Card>
             <Card className="text-center border-primary/20">
               <CardContent className="pt-6">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">4.9★</div>
-                <p className="text-sm text-muted-foreground">Customer Rating</p>
+                <a 
+                  href="https://www.google.com/search?client=safari&rls=en&q=tech+medics&ie=UTF-8&oe=UTF-8#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block hover:opacity-80 transition-opacity"
+                >
+                  <div className="text-4xl md:text-5xl font-bold text-primary mb-2">5.0★</div>
+                  <p className="text-sm text-muted-foreground">Google Rating</p>
+                </a>
               </CardContent>
             </Card>
             <Card className="text-center border-primary/20">
               <CardContent className="pt-6">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">90</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">30</div>
                 <p className="text-sm text-muted-foreground">Day Warranty</p>
               </CardContent>
             </Card>
@@ -214,8 +221,8 @@ const About = () => {
                     <div className="flex items-start gap-3">
                       <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-foreground mb-1">Certified Technicians</h4>
-                        <p className="text-sm text-muted-foreground">Apple-trained experts with 10+ years experience</p>
+                        <h4 className="font-semibold text-foreground mb-1">Certified Experts</h4>
+                        <p className="text-sm text-muted-foreground">Certified technicians with 10+ years experience</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -228,7 +235,7 @@ const About = () => {
                     <div className="flex items-start gap-3">
                       <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-foreground mb-1">90-Day Warranty</h4>
+                        <h4 className="font-semibold text-foreground mb-1">30-Day Warranty</h4>
                         <p className="text-sm text-muted-foreground">Full warranty on all parts and labor</p>
                       </div>
                     </div>
@@ -262,9 +269,9 @@ const About = () => {
             <Card>
               <CardContent className="p-6 text-center">
                 <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-3 text-foreground">90-Day Warranty</h3>
+                <h3 className="text-xl font-bold mb-3 text-foreground">30-Day Warranty</h3>
                 <p className="text-muted-foreground">
-                  All iPhone screen repairs and Apple device services come with our comprehensive 90-day parts and labor warranty
+                  All iPhone screen repairs and Apple device services come with our comprehensive 30-day parts and labor warranty
                 </p>
               </CardContent>
             </Card>
