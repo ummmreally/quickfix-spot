@@ -52,7 +52,7 @@ const Business = () => {
 
             <nav className="hidden md:flex items-center gap-8">
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
-                Home
+                Macon
               </a>
               <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
@@ -81,7 +81,7 @@ const Business = () => {
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
                   <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                    Home
+                    Macon
                   </a>
                   <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Price List

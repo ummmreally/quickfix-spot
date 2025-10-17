@@ -45,7 +45,7 @@ const Index = () => {
                 href="/macon"
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
-                Home
+                Macon
               </a>
               <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
@@ -78,7 +78,7 @@ const Index = () => {
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Home
+                    Macon
                   </a>
                   <a
                     href="/macon/pricing-chart"
