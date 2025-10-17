@@ -128,17 +128,17 @@ const Home = () => {
                 <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
                   Home
                 </a>
-                <a href="/macon/iphone" className="text-foreground hover:text-primary transition-colors font-medium">
-                  iPhone Repair
-                </a>
-                <a href="/macon/ipad" className="text-foreground hover:text-primary transition-colors font-medium">
-                  iPad Repair
-                </a>
-                <a href="/macon/macbook" className="text-foreground hover:text-primary transition-colors font-medium">
-                  MacBook Repair
-                </a>
                 <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
-                  Pricing
+                  Quote
+                </a>
+                <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+                  Price List
+                </a>
+                <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
+                  Business
+                </a>
+                <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium">
+                  Education
                 </a>
                 <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium">
                   About
@@ -160,17 +160,17 @@ const Home = () => {
                     <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                       Home
                     </a>
-                    <a href="/macon/iphone" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      iPhone Repair
-                    </a>
-                    <a href="/macon/ipad" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      iPad Repair
-                    </a>
-                    <a href="/macon/macbook" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      MacBook Repair
-                    </a>
                     <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      Pricing
+                      Quote
+                    </a>
+                    <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                      Price List
+                    </a>
+                    <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                      Business
+                    </a>
+                    <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                      Education
                     </a>
                     <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                       About
