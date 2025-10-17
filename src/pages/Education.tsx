@@ -54,9 +54,6 @@ const Education = () => {
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
-              <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium">
-                Contact Us
-              </a>
               <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
               </a>
@@ -85,9 +82,6 @@ const Education = () => {
                 <nav className="flex flex-col gap-6 mt-8">
                   <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Home
-                  </a>
-                  <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                    Contact Us
                   </a>
                   <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Price List

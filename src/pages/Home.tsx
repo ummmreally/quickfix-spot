@@ -128,11 +128,8 @@ const Home = () => {
               <img src={logo} alt="iTech Medics - iPhone repair Macon GA" className="h-12 w-auto" />
 
               <nav className="hidden md:flex items-center gap-8">
-                <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
+                <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                   Home
-                </a>
-                <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium">
-                  Contact Us
                 </a>
                 <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                   Price List
@@ -160,11 +157,8 @@ const Home = () => {
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[300px]">
                   <nav className="flex flex-col gap-6 mt-8">
-                    <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                       Home
-                    </a>
-                    <a href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      Contact Us
                     </a>
                     <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                       Price List
