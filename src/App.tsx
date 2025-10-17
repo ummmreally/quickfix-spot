@@ -23,15 +23,15 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/pricing-chart" element={<PricingChart />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/business" element={<Business />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/iphone" element={<IPhonePage />} />
-          <Route path="/ipad" element={<IPadPage />} />
-          <Route path="/macbook" element={<MacBookPage />} />
+          <Route path="/macon" element={<Index />} />
+          <Route path="/macon/pricing" element={<Pricing />} />
+          <Route path="/macon/pricing-chart" element={<PricingChart />} />
+          <Route path="/macon/about" element={<About />} />
+          <Route path="/macon/business" element={<Business />} />
+          <Route path="/macon/education" element={<Education />} />
+          <Route path="/macon/iphone" element={<IPhonePage />} />
+          <Route path="/macon/ipad" element={<IPadPage />} />
+          <Route path="/macon/macbook" element={<MacBookPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

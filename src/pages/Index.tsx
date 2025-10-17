@@ -42,24 +42,24 @@ const Index = () => {
 
             <nav className="hidden md:flex items-center gap-8">
               <a
-                href="https://www.mytechmedics.com"
+                href="/macon"
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 Home
               </a>
-              <a href="/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
                 Quote
               </a>
-              <a href="/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
               </a>
-              <a href="/business" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
                 Business
               </a>
-              <a href="/education" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium">
                 Education
               </a>
-              <a href="/about" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium">
                 About
               </a>
               <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -77,42 +77,42 @@ const Index = () => {
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
                   <a
-                    href="https://www.mytechmedics.com"
+                    href="/macon"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Home
                   </a>
                   <a
-                    href="/pricing"
+                    href="/macon/pricing"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Quote
                   </a>
                   <a
-                    href="/pricing-chart"
+                    href="/macon/pricing-chart"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Price List
                   </a>
                   <a
-                    href="/business"
+                    href="/macon/business"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Business
                   </a>
                   <a
-                    href="/education"
+                    href="/macon/education"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Education
                   </a>
                   <a
-                    href="/about"
+                    href="/macon/about"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -173,9 +173,9 @@ const Index = () => {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard title="iPhone" image={iphoneImage} link="/iphone" />
-            <ServiceCard title="MacBook" image={macbookImage} link="/macbook" />
-            <ServiceCard title="iPad" image={ipadImage} link="/ipad" />
+            <ServiceCard title="iPhone" image={iphoneImage} link="/macon/iphone" />
+            <ServiceCard title="MacBook" image={macbookImage} link="/macon/macbook" />
+            <ServiceCard title="iPad" image={ipadImage} link="/macon/ipad" />
           </div>
         </div>
       </section>
