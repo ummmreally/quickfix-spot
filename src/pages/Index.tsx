@@ -53,6 +53,12 @@ const Index = () => {
               <a href="/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
                 Price List
               </a>
+              <a href="/business" className="text-foreground hover:text-primary transition-colors font-medium">
+                Business
+              </a>
+              <a href="/education" className="text-foreground hover:text-primary transition-colors font-medium">
+                Education
+              </a>
               <a href="/about" className="text-foreground hover:text-primary transition-colors font-medium">
                 About
               </a>
@@ -90,6 +96,20 @@ const Index = () => {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Price List
+                  </a>
+                  <a
+                    href="/business"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Business
+                  </a>
+                  <a
+                    href="/education"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Education
                   </a>
                   <a
                     href="/about"
