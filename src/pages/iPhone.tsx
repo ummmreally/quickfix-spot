@@ -33,7 +33,7 @@ const iPhone = () => {
       event_label: 'Phone Call Click - iPhone Page',
       value: '478-259-6371'
     });
-    window.location.href = "tel:478-259-6371";
+    window.location.href = "tel:(478)259-6371";
   };
 
   return (

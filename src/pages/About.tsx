@@ -57,7 +57,7 @@ const About = () => {
       event_label: 'Phone Call Click - About Page',
       value: '478-259-6371'
     });
-    window.location.href = "tel:478-259-6371";
+    window.location.href = "tel:(478)259-6371";
   };
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -373,7 +373,7 @@ const About = () => {
                     <Phone className="h-6 w-6 text-primary flex-shrink-0" />
                     <div>
                       <p className="text-sm text-muted-foreground">Call or Text</p>
-                      <a href="tel:478-259-6371" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
+                      <a href="tel:(478)259-6371" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
                         (478) 259-6371
                       </a>
                     </div>

@@ -48,7 +48,7 @@ const Pricing = () => {
       event_label: 'Phone Call Click',
       value: '478-259-6371'
     });
-    window.location.href = "tel:478-259-6371";
+    window.location.href = "tel:(478)259-6371";
   };
 
   const handleSeriesSelect = (series: string) => {
@@ -342,7 +342,7 @@ const Pricing = () => {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" onClick={() => window.location.href = "tel:478-259-6371"}>
+                  <Button size="lg" onClick={() => window.location.href = "tel:(478)259-6371"}>
                     Call to Book: (478) 259-6371
                   </Button>
                   <Button size="lg" variant="outline" onClick={handleReset}>

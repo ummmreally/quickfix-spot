@@ -219,7 +219,7 @@ const PricingChart = () => {
       event_label: 'Phone Call Click',
       value: '478-259-6371'
     });
-    window.location.href = "tel:478-259-6371";
+    window.location.href = "tel:(478)259-6371";
   };
 
   return <div className="min-h-screen bg-background">
@@ -303,7 +303,7 @@ const PricingChart = () => {
             </p>
             <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>= Call us at <a href="tel:478-259-6371" className="text-primary hover:underline font-semibold">(478) 259-6371</a> for pricing</span>
+              <span>= Call us at <a href="tel:(478)259-6371" className="text-primary hover:underline font-semibold">(478) 259-6371</a> for pricing</span>
             </div>
           </div>
 
@@ -356,7 +356,7 @@ const PricingChart = () => {
 
           <div className="mt-12 text-center space-y-4">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" onClick={() => window.location.href = "tel:478-259-6371"}>
+              <Button size="lg" onClick={() => window.location.href = "tel:(478)259-6371"}>
                 Call Now: (478) 259-6371
               </Button>
               <Button size="lg" variant="outline" onClick={() => navigate("/macon/contact")}>

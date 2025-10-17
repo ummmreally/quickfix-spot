@@ -23,7 +23,7 @@ const Home = () => {
       event_label: 'Phone Call Click',
       value: '478-259-6371'
     });
-    window.location.href = "tel:478-259-6371";
+    window.location.href = "tel:(478)259-6371";
   };
 
   const handleDirections = () => {

@@ -52,7 +52,7 @@ const Contact = () => {
       event_label: 'Phone Call Click',
       value: '478-259-6371'
     });
-    window.location.href = "tel:478-259-6371";
+    window.location.href = "tel:(478)259-6371";
   };
 
   const handleInputChange = (field: keyof ContactForm, value: string) => {
@@ -302,7 +302,7 @@ const Contact = () => {
                       Speak with our team directly
                     </p>
                     <a
-                      href="tel:478-259-6371"
+                      href="tel:(478)259-6371"
                       className="text-primary hover:underline font-medium"
                     >
                       (478) 259-6371

@@ -33,7 +33,7 @@ const MacBook = () => {
       event_label: 'Phone Call Click - MacBook Page',
       value: '478-259-6371'
     });
-    window.location.href = "tel:478-259-6371";
+    window.location.href = "tel:(478)259-6371";
   };
 
   return (
