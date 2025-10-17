@@ -398,11 +398,11 @@ const About = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-border">
                     <span className="font-medium text-foreground">Monday - Friday</span>
-                    <span className="text-muted-foreground">9:00 AM - 6:00 PM</span>
+                    <span className="text-muted-foreground">10:00 AM - 6:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border">
                     <span className="font-medium text-foreground">Saturday</span>
-                    <span className="text-muted-foreground">10:00 AM - 4:00 PM</span>
+                    <span className="text-muted-foreground">10:00 AM - 5:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-medium text-foreground">Sunday</span>
