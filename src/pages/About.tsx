@@ -4,19 +4,16 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
 import { Card, CardContent } from "@/components/ui/card";
-
 const About = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
   useEffect(() => {
     // SEO Meta Tags for Macon, GA iPhone Screen Repair
     document.title = "About Tech Medics - Macon GA iPhone Screen Repair Experts | 10+ Years Experience";
-    
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Tech Medics offers expert iPhone screen repair in Macon, GA with 10+ years experience. Same-day iPad, MacBook & Apple device repair. 30-day warranty. Call (478) 259-6371');
     }
-    
+
     // Add structured data for local business
     const script = document.createElement('script');
     script.type = 'application/ld+json';
@@ -47,12 +44,10 @@ const About = () => {
       }
     });
     document.head.appendChild(script);
-    
     return () => {
       document.head.removeChild(script);
     };
   }, []);
-  
   const handleCall = () => {
     (window as any).dataLayer = (window as any).dataLayer || [];
     (window as any).dataLayer.push({
@@ -63,9 +58,7 @@ const About = () => {
     });
     window.location.href = "tel:478-259-6371";
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -73,10 +66,7 @@ const About = () => {
             <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
 
             <nav className="hidden md:flex items-center gap-8">
-              <a
-                href="https://www.mytechmedics.com"
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
+              <a href="https://www.mytechmedics.com" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
               <a href="/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -102,41 +92,22 @@ const About = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
-                  <a
-                    href="https://www.mytechmedics.com"
-                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
+                  <a href="https://www.mytechmedics.com" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Home
                   </a>
-                  <a
-                    href="/pricing"
-                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
+                  <a href="/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Quote
                   </a>
-                  <a
-                    href="/pricing-chart"
-                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
+                  <a href="/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     Price List
                   </a>
-                  <a
-                    href="/about"
-                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
+                  <a href="/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                     About
                   </a>
-                  <Button
-                    onClick={() => {
-                      handleCall();
-                      setMobileMenuOpen(false);
-                    }}
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
-                  >
+                  <Button onClick={() => {
+                  handleCall();
+                  setMobileMenuOpen(false);
+                }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
                     <Phone className="mr-2 h-4 w-4" />
                     (478) 259-6371
                   </Button>
@@ -170,18 +141,13 @@ const About = () => {
             </Card>
             <Card className="text-center border-primary/20">
               <CardContent className="pt-6">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">5000+</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">1000+</div>
                 <p className="text-sm text-muted-foreground">Devices Repaired</p>
               </CardContent>
             </Card>
             <Card className="text-center border-primary/20">
               <CardContent className="pt-6">
-                <a 
-                  href="https://www.google.com/search?client=safari&rls=en&q=tech+medics&ie=UTF-8&oe=UTF-8#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block hover:opacity-80 transition-opacity"
-                >
+                <a href="https://www.google.com/search?client=safari&rls=en&q=tech+medics&ie=UTF-8&oe=UTF-8#" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
                   <div className="text-4xl md:text-5xl font-bold text-primary mb-2">5.0★</div>
                   <p className="text-sm text-muted-foreground">Google Rating</p>
                 </a>
@@ -305,9 +271,7 @@ const About = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-foreground mb-4 italic">
                   "Cracked my iPhone screen at work. Tech Medics had it fixed in under an hour! Best iPhone screen repair in Macon, hands down."
@@ -319,9 +283,7 @@ const About = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-foreground mb-4 italic">
                   "My MacBook wouldn't turn on. The techs diagnosed and fixed it same day. Professional and affordable Apple repair service."
@@ -333,9 +295,7 @@ const About = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-foreground mb-4 italic">
                   "My iPad screen was shattered. They replaced it while I waited and explained everything. Great service and fair pricing!"
@@ -408,10 +368,7 @@ const About = () => {
                     <Wrench className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <a 
-                        href="mailto:Support@MyTechMedics.com" 
-                        className="text-lg font-semibold text-foreground hover:text-primary transition-colors break-all"
-                      >
+                      <a href="mailto:Support@MyTechMedics.com" className="text-lg font-semibold text-foreground hover:text-primary transition-colors break-all">
                         Support@MyTechMedics.com
                       </a>
                     </div>
@@ -419,11 +376,7 @@ const About = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <Button
-                    size="lg"
-                    onClick={handleCall}
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                  >
+                  <Button size="lg" onClick={handleCall} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Phone className="mr-2 h-5 w-5" />
                     Call for iPhone Screen Repair
                   </Button>
@@ -462,31 +415,13 @@ const About = () => {
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-6 text-foreground">Connect With Us</h3>
             <div className="flex justify-center gap-6 mb-6">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors"
-                aria-label="Follow us on Facebook"
-              >
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="Follow us on Facebook">
                 <Facebook className="h-10 w-10" />
               </a>
-              <a
-                href="https://www.instagram.com/mytechmedics"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors"
-                aria-label="Follow us on Instagram"
-              >
+              <a href="https://www.instagram.com/mytechmedics" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="Follow us on Instagram">
                 <Instagram className="h-10 w-10" />
               </a>
-              <a
-                href="https://x.com/mytechmedics?s=21&t=1ID_Z1VyN_NdLngw5IqI-Q"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors"
-                aria-label="Follow us on Twitter"
-              >
+              <a href="https://x.com/mytechmedics?s=21&t=1ID_Z1VyN_NdLngw5IqI-Q" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="Follow us on Twitter">
                 <Twitter className="h-10 w-10" />
               </a>
             </div>
@@ -509,8 +444,6 @@ const About = () => {
           <p className="text-sm">© 2025 Tech Medics. All rights reserved.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
