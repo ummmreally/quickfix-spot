@@ -4,6 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card } from "@/components/ui/card";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import DiscountPanel from "@/components/DiscountPanel";
 import logo from "@/assets/logo.png";
 import { useState } from "react";
 interface PriceData {
@@ -437,6 +438,9 @@ const PricingChart = () => {
           </p>
         </div>
       </footer>
+
+      {/* Discount Panel */}
+      <DiscountPanel />
     </div>
   );
 };
