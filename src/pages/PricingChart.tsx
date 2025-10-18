@@ -432,6 +432,10 @@ const PricingChart = () => {
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
           <p>
             © 2024 MyTechMedics. All rights reserved. |{" "}
+            <Link to="/macon/about" className="hover:text-primary transition-colors">
+              About
+            </Link>
+            {" | "}
             <Link to="/privacy" className="hover:text-primary transition-colors">
               Privacy Policy
             </Link>

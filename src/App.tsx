@@ -14,6 +14,7 @@ import IPhonePage from "./pages/iPhone";
 import IPadPage from "./pages/iPad";
 import MacBookPage from "./pages/MacBook";
 import Privacy from "./pages/Privacy";
+import DIYRepair from "./pages/DIYRepair";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/macon/iphone" element={<IPhonePage />} />
           <Route path="/macon/ipad" element={<IPadPage />} />
           <Route path="/macon/macbook" element={<MacBookPage />} />
+          <Route path="/macon/diy-repair" element={<DIYRepair />} />
           <Route path="/privacy" element={<Privacy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
