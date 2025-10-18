@@ -70,8 +70,8 @@ const Education = () => {
               <a href="/macon/education" className="text-primary font-medium">
                 Education
               </a>
-              <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium">
-                About
+              <a href="/macon/diy-repair" className="text-foreground hover:text-primary transition-colors font-medium">
+                DIY Repair
               </a>
               <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Phone className="mr-2 h-4 w-4" />
@@ -123,11 +123,11 @@ const Education = () => {
                     Education
                   </a>
                   <a
-                    href="/macon/about"
+                    href="/macon/diy-repair"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    About
+                    DIY Repair
                   </a>
                   <Button
                     onClick={() => {
@@ -305,6 +305,10 @@ const Education = () => {
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
           <p>
             © 2025. All rights reserved. |{" "}
+            <Link to="/macon/about" className="hover:text-primary transition-colors">
+              About
+            </Link>
+            {" | "}
             <Link to="/privacy" className="hover:text-primary transition-colors">
               Privacy Policy
             </Link>

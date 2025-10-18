@@ -103,8 +103,8 @@ const About = () => {
               <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium">
                 Education
               </a>
-              <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium">
-                About
+              <a href="/macon/diy-repair" className="text-foreground hover:text-primary transition-colors font-medium">
+                DIY Repair
               </a>
               <Button onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Phone className="mr-2 h-4 w-4" />
@@ -156,11 +156,11 @@ const About = () => {
                     Education
                   </a>
                   <a
-                    href="/macon/about"
+                    href="/macon/diy-repair"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    About
+                    DIY Repair
                   </a>
                   <Button
                     onClick={() => {
