@@ -8,14 +8,14 @@ import logo from "@/assets/logo.png";
 
 const Business = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+
   const handleCall = () => {
     (window as any).dataLayer = (window as any).dataLayer || [];
     (window as any).dataLayer.push({
-      event: 'phone_call',
-      event_category: 'engagement',
-      event_label: 'Phone Call Click',
-      value: '478-259-6371'
+      event: "phone_call",
+      event_category: "engagement",
+      event_label: "Phone Call Click",
+      value: "478-259-6371",
     });
     window.location.href = "tel:(478)259-6371";
   };
@@ -24,23 +24,23 @@ const Business = () => {
     {
       icon: <Clock className="h-8 w-8 text-primary" />,
       title: "Same-Day Repairs",
-      description: "Minimize downtime with our rapid repair services. Most repairs completed within 30 minutes."
+      description: "Minimize downtime with our rapid repair services. Most repairs completed within 30 minutes.",
     },
     {
       icon: <Shield className="h-8 w-8 text-primary" />,
       title: "Quality Guaranteed",
-      description: "All business repairs come with our comprehensive warranty and highest quality parts."
+      description: "All business repairs come with our comprehensive warranty and highest quality parts.",
     },
     {
       icon: <Wrench className="h-8 w-8 text-primary" />,
       title: "On-Site Support",
-      description: "We offer on-site device assessment and pickup services for Macon-area businesses."
+      description: "We offer on-site device assessment and pickup services for Macon-area businesses.",
     },
     {
       icon: <CheckCircle2 className="h-8 w-8 text-primary" />,
       title: "Volume Discounts",
-      description: "Special pricing packages available for multiple devices and ongoing maintenance needs."
-    }
+      description: "Special pricing packages available for multiple devices and ongoing maintenance needs.",
+    },
   ];
 
   return (
@@ -49,7 +49,7 @@ const Business = () => {
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
+            <img src={logo} alt="Tech Medics logo" className="h-12 w-auto" />
 
             <nav className="hidden md:flex items-center gap-8">
               <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -58,7 +58,10 @@ const Business = () => {
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Macon
               </a>
-              <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a
+                href="/macon/pricing-chart"
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
                 Price List
               </a>
               <a href="/macon/business" className="text-primary font-medium">
@@ -84,25 +87,55 @@ const Business = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
-                  <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Home
                   </a>
-                  <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Macon
                   </a>
-                  <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/pricing-chart"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Price List
                   </a>
-                  <a href="/macon/business" className="text-primary font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/business"
+                    className="text-primary font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Business
                   </a>
-                  <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/education"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Education
                   </a>
-                  <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/about"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     About
                   </a>
-                  <Button onClick={() => { handleCall(); setMobileMenuOpen(false); }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                  <Button
+                    onClick={() => {
+                      handleCall();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
+                  >
                     <Phone className="mr-2 h-4 w-4" />
                     (478) 259-6371
                   </Button>
@@ -119,9 +152,14 @@ const Business = () => {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Business Device Solutions</h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Keep your business running smoothly with professional Apple device repair and support services in Macon, GA
+              Keep your business running smoothly with professional Apple device repair and support services in Macon,
+              GA
             </p>
-            <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
+            <Button
+              size="lg"
+              onClick={handleCall}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"
+            >
               <Phone className="mr-2 h-5 w-5" />
               Get a Business Quote
             </Button>
@@ -135,10 +173,15 @@ const Business = () => {
           <div className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Trusted by Macon Businesses</h2>
             <p className="text-lg text-foreground leading-relaxed mb-4">
-              At Tech Medics, we understand that your business depends on technology. When devices fail, productivity stops. That's why we provide fast, reliable repair services specifically designed for businesses in the Macon area. From retail stores to professional offices, we keep your Apple devices running at peak performance.
+              At Tech Medics, we understand that your business depends on technology. When devices fail, productivity
+              stops. That's why we provide fast, reliable repair services specifically designed for businesses in the
+              Macon area. From retail stores to professional offices, we keep your Apple devices running at peak
+              performance.
             </p>
             <p className="text-lg text-foreground leading-relaxed">
-              With over a decade of experience in Apple repairs, our certified technicians handle everything from iPhones and iPads to MacBooks and iMacs. We offer flexible service options including in-store repairs, on-site visits, and pickup/delivery services to fit your business schedule.
+              With over a decade of experience in Apple repairs, our certified technicians handle everything from
+              iPhones and iPads to MacBooks and iMacs. We offer flexible service options including in-store repairs,
+              on-site visits, and pickup/delivery services to fit your business schedule.
             </p>
           </div>
 
@@ -159,7 +202,9 @@ const Business = () => {
 
           {/* Services Section */}
           <div className="bg-secondary/30 rounded-lg p-8 md:p-12 mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground text-center">What We Fix for Businesses</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground text-center">
+              What We Fix for Businesses
+            </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Common Business Repairs</h3>
@@ -218,10 +263,15 @@ const Business = () => {
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Ready to Partner with Tech Medics?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us today to discuss custom solutions for your business. We'll create a repair and maintenance plan tailored to your needs.
+              Contact us today to discuss custom solutions for your business. We'll create a repair and maintenance plan
+              tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" onClick={handleCall} className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
+              <Button
+                size="lg"
+                onClick={handleCall}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"
+              >
                 <Phone className="mr-2 h-5 w-5" />
                 Call (478) 259-6371
               </Button>
@@ -236,7 +286,12 @@ const Business = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2025. All rights reserved. | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
+          <p>
+            © 2025. All rights reserved. |{" "}
+            <Link to="/privacy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
       </footer>
     </div>

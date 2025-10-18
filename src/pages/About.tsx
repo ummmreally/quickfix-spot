@@ -1,5 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, Facebook, Instagram, Twitter, MapPin, Clock, Award, Users, Shield, Wrench, Star, CheckCircle } from "lucide-react";
+import {
+  Phone,
+  Menu,
+  Facebook,
+  Instagram,
+  Twitter,
+  MapPin,
+  Clock,
+  Award,
+  Users,
+  Shield,
+  Wrench,
+  Star,
+  CheckCircle,
+} from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -12,37 +26,40 @@ const About = () => {
     document.title = "About Tech Medics - Macon GA iPhone Screen Repair Experts | 10+ Years Experience";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Tech Medics offers expert iPhone screen repair in Macon, GA with 10+ years experience. Same-day iPad, MacBook & Apple device repair. 30-day warranty. Call (478) 259-6371');
+      metaDescription.setAttribute(
+        "content",
+        "Tech Medics offers expert iPhone screen repair in Macon, GA with 10+ years experience. Same-day iPad, MacBook & Apple device repair. 30-day warranty. Call (478) 259-6371",
+      );
     }
 
     // Add structured data for local business
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Tech Medics",
-      "description": "Expert iPhone screen repair and Apple device repair in Macon, GA",
-      "url": "https://www.mytechmedics.com/about",
-      "telephone": "+14782596371",
-      "address": {
+      name: "Tech Medics",
+      description: "Expert iPhone screen repair and Apple device repair in Macon, GA",
+      url: "https://www.mytechmedics.com/about",
+      telephone: "+14782596371",
+      address: {
         "@type": "PostalAddress",
-        "addressLocality": "Macon",
-        "addressRegion": "GA",
-        "addressCountry": "US"
+        addressLocality: "Macon",
+        addressRegion: "GA",
+        addressCountry: "US",
       },
-      "geo": {
+      geo: {
         "@type": "GeoCoordinates",
-        "latitude": "32.8407",
-        "longitude": "-83.6324"
+        latitude: "32.8407",
+        longitude: "-83.6324",
       },
-      "priceRange": "$$",
-      "image": "https://www.mytechmedics.com/logo.png",
-      "aggregateRating": {
+      priceRange: "$$",
+      image: "https://www.mytechmedics.com/logo.png",
+      aggregateRating: {
         "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "250"
-      }
+        ratingValue: "5.0",
+        reviewCount: "250",
+      },
     });
     document.head.appendChild(script);
     return () => {
@@ -52,19 +69,20 @@ const About = () => {
   const handleCall = () => {
     (window as any).dataLayer = (window as any).dataLayer || [];
     (window as any).dataLayer.push({
-      event: 'phone_call',
-      event_category: 'engagement',
-      event_label: 'Phone Call Click - About Page',
-      value: '478-259-6371'
+      event: "phone_call",
+      event_category: "engagement",
+      event_label: "Phone Call Click - About Page",
+      value: "478-259-6371",
     });
     window.location.href = "tel:(478)259-6371";
   };
-  return <div className="min-h-screen bg-background">
+  return (
+    <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
+            <img src={logo} alt="Tech Medics logo" className="h-12 w-auto" />
 
             <nav className="hidden md:flex items-center gap-8">
               <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -73,7 +91,10 @@ const About = () => {
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Macon
               </a>
-              <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a
+                href="/macon/pricing-chart"
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
                 Price List
               </a>
               <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -99,28 +120,55 @@ const About = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
-                  <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Home
                   </a>
-                  <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Macon
                   </a>
-                  <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/pricing-chart"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Price List
                   </a>
-                  <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/business"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Business
                   </a>
-                  <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/education"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Education
                   </a>
-                  <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/about"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     About
                   </a>
-                  <Button onClick={() => {
-                  handleCall();
-                  setMobileMenuOpen(false);
-                }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                  <Button
+                    onClick={() => {
+                      handleCall();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
+                  >
                     <Phone className="mr-2 h-4 w-4" />
                     (478) 259-6371
                   </Button>
@@ -139,9 +187,7 @@ const About = () => {
             <p className="text-xl md:text-2xl text-muted-foreground mb-4">
               Macon's Premier iPhone Screen Repair & Apple Device Specialists
             </p>
-            <p className="text-lg text-muted-foreground">
-              We're new to the area, not repairs
-            </p>
+            <p className="text-lg text-muted-foreground">We're new to the area, not repairs</p>
           </div>
 
           {/* Stats Section */}
@@ -160,7 +206,12 @@ const About = () => {
             </Card>
             <Card className="text-center border-primary/20">
               <CardContent className="pt-6">
-                <a href="https://www.google.com/search?client=safari&rls=en&q=tech+medics&ie=UTF-8&oe=UTF-8#" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
+                <a
+                  href="https://www.google.com/search?client=safari&rls=en&q=tech+medics&ie=UTF-8&oe=UTF-8#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:opacity-80 transition-opacity"
+                >
                   <div className="text-4xl md:text-5xl font-bold text-primary mb-2">5.0★</div>
                   <p className="text-sm text-muted-foreground">Google Rating</p>
                 </a>
@@ -183,13 +234,19 @@ const About = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Our Story</h2>
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                With over a decade of experience in Apple repairs, Tech Medics brings expert iPhone screen repair services to Macon, GA. Our journey started with a simple mission: to provide the fastest, most reliable Apple device repairs in Middle Georgia.
+                With over a decade of experience in Apple repairs, Tech Medics brings expert iPhone screen repair
+                services to Macon, GA. Our journey started with a simple mission: to provide the fastest, most reliable
+                Apple device repairs in Middle Georgia.
               </p>
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                We pride ourselves on delivering exceptional service that exceeds our customers' expectations. Our skilled technicians are proficient in diagnosing and fixing a wide range of issues, from iPhone screen replacements to iPad battery enhancements, ensuring that your device functions like new again.
+                We pride ourselves on delivering exceptional service that exceeds our customers' expectations. Our
+                skilled technicians are proficient in diagnosing and fixing a wide range of issues, from iPhone screen
+                replacements to iPad battery enhancements, ensuring that your device functions like new again.
               </p>
               <p className="text-lg text-foreground leading-relaxed">
-                We understand the importance of your time and device, which is why we offer same-day service for most repairs without compromising quality. Our commitment to amazing customer service means that we go the extra mile to provide clear communication, personalized solutions, and support every step of the way.
+                We understand the importance of your time and device, which is why we offer same-day service for most
+                repairs without compromising quality. Our commitment to amazing customer service means that we go the
+                extra mile to provide clear communication, personalized solutions, and support every step of the way.
               </p>
             </div>
             <div>
@@ -208,7 +265,9 @@ const About = () => {
                       <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">Same-Day Service</h4>
-                        <p className="text-sm text-muted-foreground">Most iPhone screen repairs done in 30-60 minutes</p>
+                        <p className="text-sm text-muted-foreground">
+                          Most iPhone screen repairs done in 30-60 minutes
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -250,7 +309,8 @@ const About = () => {
                 <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3 text-foreground">30-Day Warranty</h3>
                 <p className="text-muted-foreground">
-                  All iPhone screen repairs and Apple device services come with our comprehensive 30-day parts and labor warranty
+                  All iPhone screen repairs and Apple device services come with our comprehensive 30-day parts and labor
+                  warranty
                 </p>
               </CardContent>
             </Card>
@@ -268,7 +328,8 @@ const About = () => {
                 <Award className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3 text-foreground">Price Match</h3>
                 <p className="text-muted-foreground">
-                  Find a lower price in Macon? We'll match it. Quality iPhone screen repair at the best prices guaranteed
+                  Find a lower price in Macon? We'll match it. Quality iPhone screen repair at the best prices
+                  guaranteed
                 </p>
               </CardContent>
             </Card>
@@ -279,15 +340,20 @@ const About = () => {
       {/* Testimonials */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">What Our Macon Customers Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            What Our Macon Customers Say
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card>
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-primary text-primary" />)}
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                  ))}
                 </div>
                 <p className="text-foreground mb-4 italic">
-                  "Cracked my iPhone screen at work. Tech Medics had it fixed in under an hour! Best iPhone screen repair in Macon, hands down."
+                  "Cracked my iPhone screen at work. Tech Medics had it fixed in under an hour! Best iPhone screen
+                  repair in Macon, hands down."
                 </p>
                 <p className="font-semibold text-foreground">Sarah M.</p>
                 <p className="text-sm text-muted-foreground">Macon, GA</p>
@@ -296,10 +362,13 @@ const About = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-primary text-primary" />)}
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                  ))}
                 </div>
                 <p className="text-foreground mb-4 italic">
-                  "My MacBook wouldn't turn on. The techs diagnosed and fixed it same day. Professional and affordable Apple repair service."
+                  "My MacBook wouldn't turn on. The techs diagnosed and fixed it same day. Professional and affordable
+                  Apple repair service."
                 </p>
                 <p className="font-semibold text-foreground">James T.</p>
                 <p className="text-sm text-muted-foreground">Macon, GA</p>
@@ -308,20 +377,27 @@ const About = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-primary text-primary" />)}
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                  ))}
                 </div>
                 <p className="text-foreground mb-4 italic">
-                  "My iPad screen was shattered. They replaced it while I waited and explained everything. Great service and fair pricing!"
+                  "My iPad screen was shattered. They replaced it while I waited and explained everything. Great service
+                  and fair pricing!"
                 </p>
                 <p className="font-semibold text-foreground">Emily R.</p>
                 <p className="text-sm text-muted-foreground">Macon, GA</p>
               </CardContent>
             </Card>
           </div>
-          
+
           <div className="text-center mt-8">
             <Button asChild variant="outline" size="lg">
-              <a href="https://www.google.com/search?client=safari&rls=en&q=tech+medics&ie=UTF-8&oe=UTF-8#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.google.com/search?client=safari&rls=en&q=tech+medics&ie=UTF-8&oe=UTF-8#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read More Reviews on Google
               </a>
             </Button>
@@ -334,7 +410,10 @@ const About = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Proud to Serve Macon, GA</h2>
           <p className="text-lg text-foreground leading-relaxed mb-8">
-            As a locally-focused business, we're committed to providing Macon and Middle Georgia with the best iPhone screen repair and Apple device services. We understand the needs of our community and are proud to be your trusted local tech repair experts. From Mercer University students to downtown businesses, we're here to keep Macon connected.
+            As a locally-focused business, we're committed to providing Macon and Middle Georgia with the best iPhone
+            screen repair and Apple device services. We understand the needs of our community and are proud to be your
+            trusted local tech repair experts. From Mercer University students to downtown businesses, we're here to
+            keep Macon connected.
           </p>
           <div className="grid md:grid-cols-2 gap-8 text-left">
             <Card>
@@ -351,7 +430,8 @@ const About = () => {
                 <Users className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-bold mb-2 text-foreground">Community Partners</h3>
                 <p className="text-muted-foreground">
-                  Supporting local businesses, schools, and organizations with reliable Apple device repair and bulk service discounts
+                  Supporting local businesses, schools, and organizations with reliable Apple device repair and bulk
+                  service discounts
                 </p>
               </CardContent>
             </Card>
@@ -362,8 +442,10 @@ const About = () => {
       {/* Contact & Hours */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Get iPhone Screen Repair in Macon Today</h2>
-          
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            Get iPhone Screen Repair in Macon Today
+          </h2>
+
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card>
               <CardContent className="p-8">
@@ -373,7 +455,10 @@ const About = () => {
                     <Phone className="h-6 w-6 text-primary flex-shrink-0" />
                     <div>
                       <p className="text-sm text-muted-foreground">Call or Text</p>
-                      <a href="tel:(478)259-6371" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
+                      <a
+                        href="tel:(478)259-6371"
+                        className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
+                      >
                         (478) 259-6371
                       </a>
                     </div>
@@ -389,15 +474,22 @@ const About = () => {
                     <Wrench className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <a href="mailto:Support@MyTechMedics.com" className="text-lg font-semibold text-foreground hover:text-primary transition-colors break-all">
+                      <a
+                        href="mailto:Support@MyTechMedics.com"
+                        className="text-lg font-semibold text-foreground hover:text-primary transition-colors break-all"
+                      >
                         Support@MyTechMedics.com
                       </a>
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-8">
-                  <Button size="lg" onClick={handleCall} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <Button
+                    size="lg"
+                    onClick={handleCall}
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  >
                     <Phone className="mr-2 h-5 w-5" />
                     Call for iPhone Screen Repair
                   </Button>
@@ -422,11 +514,12 @@ const About = () => {
                     <span className="text-muted-foreground">Closed</span>
                   </div>
                 </div>
-                
+
                 <div className="mt-8 p-4 bg-secondary/50 rounded-lg">
                   <p className="text-sm text-foreground font-semibold mb-2">Walk-ins Welcome!</p>
                   <p className="text-sm text-muted-foreground">
-                    Most iPhone screen repairs completed in 30-60 minutes. No appointment necessary, but scheduling ahead ensures fastest service.
+                    Most iPhone screen repairs completed in 30-60 minutes. No appointment necessary, but scheduling
+                    ahead ensures fastest service.
                   </p>
                 </div>
               </CardContent>
@@ -436,13 +529,31 @@ const About = () => {
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-6 text-foreground">Connect With Us</h3>
             <div className="flex justify-center gap-6 mb-6">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="Follow us on Facebook">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on Facebook"
+              >
                 <Facebook className="h-10 w-10" />
               </a>
-              <a href="https://www.instagram.com/mytechmedics" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="Follow us on Instagram">
+              <a
+                href="https://www.instagram.com/mytechmedics"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on Instagram"
+              >
                 <Instagram className="h-10 w-10" />
               </a>
-              <a href="https://x.com/mytechmedics?s=21&t=1ID_Z1VyN_NdLngw5IqI-Q" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors" aria-label="Follow us on Twitter">
+              <a
+                href="https://x.com/mytechmedics?s=21&t=1ID_Z1VyN_NdLngw5IqI-Q"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on Twitter"
+              >
                 <Twitter className="h-10 w-10" />
               </a>
             </div>
@@ -456,15 +567,20 @@ const About = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border bg-secondary/30">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p className="mb-2 font-medium text-foreground">
-            Tech Medics - Expert iPhone Screen Repair in Macon, GA
-          </p>
+          <p className="mb-2 font-medium text-foreground">Tech Medics - Expert iPhone Screen Repair in Macon, GA</p>
           <p className="mb-4 text-sm">
-            Specializing in iPhone, iPad, and MacBook repair with 10+ years experience. Serving Macon, Bibb County, and Middle Georgia.
+            Specializing in iPhone, iPad, and MacBook repair with 10+ years experience. Serving Macon, Bibb County, and
+            Middle Georgia.
           </p>
-          <p className="text-sm">© 2025 Tech Medics. All rights reserved. | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
+          <p className="text-sm">
+            © 2025 Tech Medics. All rights reserved. |{" "}
+            <Link to="/privacy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
 export default About;

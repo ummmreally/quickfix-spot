@@ -30,9 +30,9 @@ const RepairComparison = ({ deviceType }: RepairComparisonProps) => {
           Why Choose Us for {deviceType} Repair in Macon?
         </h2>
         <p className="text-center text-muted-foreground mb-12">
-          Compare your repair options and see the iTech Medics difference
+          Compare your repair options and see the Tech Medics difference
         </p>
-        
+
         <div className="overflow-x-auto">
           <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
             <thead>
@@ -40,7 +40,7 @@ const RepairComparison = ({ deviceType }: RepairComparisonProps) => {
                 <th className="text-left p-4 font-bold text-foreground">Feature</th>
                 <th className="text-center p-4 font-bold text-muted-foreground">DIY Repair</th>
                 <th className="text-center p-4 font-bold text-muted-foreground">Other Shops</th>
-                <th className="text-center p-4 font-bold text-primary bg-primary/5">iTech Medics</th>
+                <th className="text-center p-4 font-bold text-primary bg-primary/5">Tech Medics</th>
               </tr>
             </thead>
             <tbody>

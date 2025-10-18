@@ -11,23 +11,27 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const contactSchema = z.object({
-  name: z.string()
+  name: z
+    .string()
     .trim()
     .min(1, { message: "Name is required" })
     .max(100, { message: "Name must be less than 100 characters" }),
-  email: z.string()
+  email: z
+    .string()
     .trim()
     .email({ message: "Please enter a valid email address" })
     .max(255, { message: "Email must be less than 255 characters" }),
-  phone: z.string()
+  phone: z
+    .string()
     .trim()
     .min(10, { message: "Please enter a valid phone number" })
     .max(20, { message: "Phone number must be less than 20 characters" })
     .regex(/^[\d\s\-\(\)\+]+$/, { message: "Phone number can only contain digits, spaces, and ()+-" }),
-  message: z.string()
+  message: z
+    .string()
     .trim()
     .min(10, { message: "Message must be at least 10 characters" })
-    .max(1000, { message: "Message must be less than 1000 characters" })
+    .max(1000, { message: "Message must be less than 1000 characters" }),
 });
 
 type ContactForm = z.infer<typeof contactSchema>;
@@ -39,7 +43,7 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
   const [errors, setErrors] = useState<Partial<Record<keyof ContactForm, string>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -47,19 +51,19 @@ const Contact = () => {
   const handleCall = () => {
     (window as any).dataLayer = (window as any).dataLayer || [];
     (window as any).dataLayer.push({
-      event: 'phone_call',
-      event_category: 'engagement',
-      event_label: 'Phone Call Click',
-      value: '478-259-6371'
+      event: "phone_call",
+      event_category: "engagement",
+      event_label: "Phone Call Click",
+      value: "478-259-6371",
     });
     window.location.href = "tel:(478)259-6371";
   };
 
   const handleInputChange = (field: keyof ContactForm, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
     // Clear error when user starts typing
     if (errors[field]) {
-      setErrors(prev => ({ ...prev, [field]: undefined }));
+      setErrors((prev) => ({ ...prev, [field]: undefined }));
     }
   };
 
@@ -74,11 +78,11 @@ const Contact = () => {
 
       // Encode data for WhatsApp
       const message = encodeURIComponent(
-        `New Contact Form Submission:\n\nName: ${validatedData.name}\nEmail: ${validatedData.email}\nPhone: ${validatedData.phone}\n\nMessage:\n${validatedData.message}`
+        `New Contact Form Submission:\n\nName: ${validatedData.name}\nEmail: ${validatedData.email}\nPhone: ${validatedData.phone}\n\nMessage:\n${validatedData.message}`,
       );
 
       // Open WhatsApp with the message (replace with your WhatsApp number)
-      window.open(`https://wa.me/14782596371?text=${message}`, '_blank');
+      window.open(`https://wa.me/14782596371?text=${message}`, "_blank");
 
       toast({
         title: "Message Sent!",
@@ -90,18 +94,18 @@ const Contact = () => {
         name: "",
         email: "",
         phone: "",
-        message: ""
+        message: "",
       });
     } catch (error) {
       if (error instanceof z.ZodError) {
         const fieldErrors: Partial<Record<keyof ContactForm, string>> = {};
-        error.errors.forEach(err => {
+        error.errors.forEach((err) => {
           if (err.path[0]) {
             fieldErrors[err.path[0] as keyof ContactForm] = err.message;
           }
         });
         setErrors(fieldErrors);
-        
+
         toast({
           title: "Validation Error",
           description: "Please check the form and try again.",
@@ -119,7 +123,7 @@ const Contact = () => {
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
+            <img src={logo} alt="Tech Medics logo" className="h-12 w-auto" />
 
             <nav className="hidden md:flex items-center gap-8">
               <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -128,7 +132,10 @@ const Contact = () => {
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Macon
               </a>
-              <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a
+                href="/macon/pricing-chart"
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
                 Price List
               </a>
               <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -154,25 +161,55 @@ const Contact = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
-                  <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Home
                   </a>
-                  <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Macon
                   </a>
-                  <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/pricing-chart"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Price List
                   </a>
-                  <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/business"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Business
                   </a>
-                  <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/education"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Education
                   </a>
-                  <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/about"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     About
                   </a>
-                  <Button onClick={() => { handleCall(); setMobileMenuOpen(false); }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                  <Button
+                    onClick={() => {
+                      handleCall();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
+                  >
                     <Phone className="mr-2 h-4 w-4" />
                     (478) 259-6371
                   </Button>
@@ -187,9 +224,7 @@ const Contact = () => {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-              Contact Us
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Contact Us</h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Have questions about our repair services? Get in touch with us and we'll respond as soon as possible.
             </p>
@@ -213,9 +248,7 @@ const Contact = () => {
                     maxLength={100}
                     className={errors.name ? "border-destructive" : ""}
                   />
-                  {errors.name && (
-                    <p className="text-sm text-destructive mt-1">{errors.name}</p>
-                  )}
+                  {errors.name && <p className="text-sm text-destructive mt-1">{errors.name}</p>}
                 </div>
 
                 <div>
@@ -231,9 +264,7 @@ const Contact = () => {
                     maxLength={255}
                     className={errors.email ? "border-destructive" : ""}
                   />
-                  {errors.email && (
-                    <p className="text-sm text-destructive mt-1">{errors.email}</p>
-                  )}
+                  {errors.email && <p className="text-sm text-destructive mt-1">{errors.email}</p>}
                 </div>
 
                 <div>
@@ -249,9 +280,7 @@ const Contact = () => {
                     maxLength={20}
                     className={errors.phone ? "border-destructive" : ""}
                   />
-                  {errors.phone && (
-                    <p className="text-sm text-destructive mt-1">{errors.phone}</p>
-                  )}
+                  {errors.phone && <p className="text-sm text-destructive mt-1">{errors.phone}</p>}
                 </div>
 
                 <div>
@@ -271,19 +300,12 @@ const Contact = () => {
                     {errors.message ? (
                       <p className="text-sm text-destructive">{errors.message}</p>
                     ) : (
-                      <p className="text-sm text-muted-foreground">
-                        {formData.message.length}/1000 characters
-                      </p>
+                      <p className="text-sm text-muted-foreground">{formData.message.length}/1000 characters</p>
                     )}
                   </div>
                 </div>
 
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full"
-                  disabled={isSubmitting}
-                >
+                <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
@@ -298,13 +320,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Call Us</h3>
-                    <p className="text-muted-foreground mb-2">
-                      Speak with our team directly
-                    </p>
-                    <a
-                      href="tel:(478)259-6371"
-                      className="text-primary hover:underline font-medium"
-                    >
+                    <p className="text-muted-foreground mb-2">Speak with our team directly</p>
+                    <a href="tel:(478)259-6371" className="text-primary hover:underline font-medium">
                       (478) 259-6371
                     </a>
                   </div>
@@ -319,11 +336,16 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Visit Us</h3>
                     <p className="text-muted-foreground mb-2">
-                      3742 Eisenhower Parkway<br />
+                      3742 Eisenhower Parkway
+                      <br />
                       Macon, GA 31206
                     </p>
                     <Button asChild variant="outline" size="sm">
-                      <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Get Directions
                       </a>
                     </Button>
@@ -361,7 +383,12 @@ const Contact = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 iTech Medics. All rights reserved. | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
+          <p>
+            © 2024 Tech Medics. All rights reserved. |{" "}
+            <Link to="/privacy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
       </footer>
     </div>

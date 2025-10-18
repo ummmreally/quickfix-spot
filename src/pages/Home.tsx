@@ -15,87 +15,96 @@ import RepairComparison from "@/components/RepairComparison";
 const Home = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-
   return (
     <>
       <Helmet>
         <title>iPhone Screen Repair Macon GA | iPad & MacBook Repair | Same Day Service</title>
-        <meta name="description" content="Expert iPhone screen repair, iPad repair & MacBook repair in Macon GA. Fast 30-minute service. Battery replacements, charging port fixes. Walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371" />
-        <meta name="keywords" content="iPhone screen repair Macon GA, iPad repair Macon, MacBook repair Macon GA, iPhone battery replacement Macon, screen repair Macon Georgia, Apple repair Macon" />
+        <meta
+          name="description"
+          content="Expert iPhone screen repair, iPad repair & MacBook repair in Macon GA. Fast 30-minute service. Battery replacements, charging port fixes. Walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371"
+        />
+        <meta
+          name="keywords"
+          content="iPhone screen repair Macon GA, iPad repair Macon, MacBook repair Macon GA, iPhone battery replacement Macon, screen repair Macon Georgia, Apple repair Macon"
+        />
         <link rel="canonical" href="https://yourdomain.com/" />
         <meta property="og:title" content="iPhone Screen Repair Macon GA | Same Day iPad & MacBook Repair" />
-        <meta property="og:description" content="Macon's #1 iPhone screen repair experts. Fast iPad & MacBook repairs. 30-minute service, walk-ins welcome. 3742 Eisenhower Parkway." />
+        <meta
+          property="og:description"
+          content="Macon's #1 iPhone screen repair experts. Fast iPad & MacBook repairs. 30-minute service, walk-ins welcome. 3742 Eisenhower Parkway."
+        />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "iTech Medics",
-            "image": "https://yourdomain.com/logo.png",
-            "description": "Professional iPhone screen repair, iPad repair, and MacBook repair services in Macon, GA. Fast same-day service with warranty.",
-            "address": {
+            name: "Tech Medics",
+            image: "https://yourdomain.com/logo.png",
+            description:
+              "Professional iPhone screen repair, iPad repair, and MacBook repair services in Macon, GA. Fast same-day service with warranty.",
+            address: {
               "@type": "PostalAddress",
-              "streetAddress": "3742 Eisenhower Parkway",
-              "addressLocality": "Macon",
-              "addressRegion": "GA",
-              "postalCode": "31206",
-              "addressCountry": "US"
+              streetAddress: "3742 Eisenhower Parkway",
+              addressLocality: "Macon",
+              addressRegion: "GA",
+              postalCode: "31206",
+              addressCountry: "US",
             },
-            "geo": {
+            geo: {
               "@type": "GeoCoordinates",
-              "latitude": "32.8407",
-              "longitude": "-83.6324"
+              latitude: "32.8407",
+              longitude: "-83.6324",
             },
-            "telephone": "+14782596371",
-            "priceRange": "$$",
-            "openingHoursSpecification": [
+            telephone: "+14782596371",
+            priceRange: "$$",
+            openingHoursSpecification: [
               {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "10:00",
-                "closes": "18:00"
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "10:00",
+                closes: "18:00",
               },
               {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "10:00",
-                "closes": "17:00"
-              }
+                dayOfWeek: "Saturday",
+                opens: "10:00",
+                closes: "17:00",
+              },
             ],
-            "areaServed": {
+            areaServed: {
               "@type": "City",
-              "name": "Macon",
-              "containedIn": {
+              name: "Macon",
+              containedIn: {
                 "@type": "State",
-                "name": "Georgia"
-              }
+                name: "Georgia",
+              },
             },
-            "hasOfferCatalog": {
+            hasOfferCatalog: {
               "@type": "OfferCatalog",
-              "name": "Repair Services",
-              "itemListElement": [
+              name: "Repair Services",
+              itemListElement: [
                 {
                   "@type": "Offer",
-                  "itemOffered": {
+                  itemOffered: {
                     "@type": "Service",
-                    "name": "iPhone Screen Repair Macon GA"
-                  }
+                    name: "iPhone Screen Repair Macon GA",
+                  },
                 },
                 {
                   "@type": "Offer",
-                  "itemOffered": {
+                  itemOffered: {
                     "@type": "Service",
-                    "name": "iPad Repair Macon GA"
-                  }
+                    name: "iPad Repair Macon GA",
+                  },
                 },
                 {
                   "@type": "Offer",
-                  "itemOffered": {
+                  itemOffered: {
                     "@type": "Service",
-                    "name": "MacBook Repair Macon GA"
-                  }
-                }
-              ]
-            }
+                    name: "MacBook Repair Macon GA",
+                  },
+                },
+              ],
+            },
           })}
         </script>
       </Helmet>
@@ -105,7 +114,7 @@ const Home = () => {
         <header className="border-b border-border bg-background sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center justify-between h-20">
-              <img src={logo} alt="iTech Medics - iPhone repair Macon GA" className="h-12 w-auto" />
+              <img src={logo} alt="Tech Medics - iPhone repair Macon GA" className="h-12 w-auto" />
 
               <nav className="hidden md:flex items-center gap-8">
                 <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -114,7 +123,10 @@ const Home = () => {
                 <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                   Macon
                 </a>
-                <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+                <a
+                  href="/macon/pricing-chart"
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
                   Price List
                 </a>
                 <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -142,22 +154,46 @@ const Home = () => {
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[300px]">
                   <nav className="flex flex-col gap-6 mt-8">
-                    <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    <a
+                      href="/"
+                      className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Home
                     </a>
-                    <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    <a
+                      href="/macon"
+                      className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Macon
                     </a>
-                    <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    <a
+                      href="/macon/pricing-chart"
+                      className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Price List
                     </a>
-                    <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    <a
+                      href="/macon/business"
+                      className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Business
                     </a>
-                    <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    <a
+                      href="/macon/education"
+                      className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Education
                     </a>
-                    <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                    <a
+                      href="/macon/about"
+                      className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       About
                     </a>
                     <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
@@ -184,20 +220,30 @@ const Home = () => {
                 Expert iPhone, iPad & MacBook Repair in Macon Georgia
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                🚀 Most iPhone screen repairs done in 30 minutes or less<br />
-                📍 Conveniently located at 3742 Eisenhower Parkway, Macon GA 31206<br />
+                🚀 Most iPhone screen repairs done in 30 minutes or less
+                <br />
+                📍 Conveniently located at 3742 Eisenhower Parkway, Macon GA 31206
+                <br />
                 🛠️ Walk-ins welcome – No appointment needed
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6"
+                >
                   <a href="tel:(478)259-6371">
                     <Phone className="mr-2 h-5 w-5" />
                     Call (478) 259-6371
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8 py-6">
-                  <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <MapPin className="mr-2 h-5 w-5" />
                     Get Directions
                   </a>
@@ -230,7 +276,8 @@ const Home = () => {
                 Professional Apple Device Repair Services in Macon, GA
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                From iPhone screen repair to iPad glass replacement and MacBook logic board fixes – we handle all Apple device repairs in Macon with precision and care
+                From iPhone screen repair to iPad glass replacement and MacBook logic board fixes – we handle all Apple
+                device repairs in Macon with precision and care
               </p>
             </div>
 
@@ -239,7 +286,7 @@ const Home = () => {
               <a href="/macon/iphone" className="group">
                 <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img 
+                    <img
                       src={iphoneImage}
                       alt="iPhone screen repair Macon GA - cracked screen fix"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -266,7 +313,7 @@ const Home = () => {
               <a href="/macon/ipad" className="group">
                 <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img 
+                    <img
                       src={ipadImage}
                       alt="iPad repair Macon GA - screen and glass repair"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -293,7 +340,7 @@ const Home = () => {
               <a href="/macon/macbook" className="group">
                 <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img 
+                    <img
                       src={macbookImage}
                       alt="MacBook repair Macon GA - screen and logic board repair"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -331,14 +378,18 @@ const Home = () => {
                   <Clock className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-bold text-xl mb-2">Lightning Fast Service</h3>
-                <p className="text-muted-foreground">Most iPhone screen repairs completed in 30 minutes or less while you wait</p>
+                <p className="text-muted-foreground">
+                  Most iPhone screen repairs completed in 30 minutes or less while you wait
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-bold text-xl mb-2">Warranty Protected</h3>
-                <p className="text-muted-foreground">All repairs backed by our comprehensive warranty for peace of mind</p>
+                <p className="text-muted-foreground">
+                  All repairs backed by our comprehensive warranty for peace of mind
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -408,7 +459,11 @@ const Home = () => {
                     </a>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-2">
-                    <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <MapPin className="mr-2 h-5 w-5" />
                       Get Directions
                     </a>
@@ -416,18 +471,18 @@ const Home = () => {
                 </div>
               </div>
 
-            <div className="bg-muted rounded-lg overflow-hidden h-96 shadow-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8373937877726!2d-83.68656332397183!3d32.78909817359875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5d0d4e3c8c8c3%3A0x5e3c3c3c3c3c3c3c!2s3742%20Eisenhower%20Pkwy%2C%20Macon%2C%20GA%2031206!5e0!3m2!1sen!2sus!4v1234567890123"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="iTech Medics iPhone repair shop location - 3742 Eisenhower Parkway, Macon GA 31206"
-              />
-            </div>
+              <div className="bg-muted rounded-lg overflow-hidden h-96 shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8373937877726!2d-83.68656332397183!3d32.78909817359875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5d0d4e3c8c8c3%3A0x5e3c3c3c3c3c3c3c!2s3742%20Eisenhower%20Pkwy%2C%20Macon%2C%20GA%2031206!5e0!3m2!1sen!2sus!4v1234567890123"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Tech Medics iPhone repair shop location - 3742 Eisenhower Parkway, Macon GA 31206"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -440,28 +495,39 @@ const Home = () => {
                 Macon's Premier iPhone Screen Repair & Apple Device Service Center
               </h2>
               <p className="text-muted-foreground mb-4">
-                When you need fast, reliable <strong>iPhone screen repair in Macon, GA</strong>, iTech Medics is your trusted local solution. Located conveniently at 3742 Eisenhower Parkway in Macon, Georgia, we specialize in same-day Apple device repairs including iPhone screen replacement, iPad repair, and MacBook service.
+                When you need fast, reliable <strong>iPhone screen repair in Macon, GA</strong>, Tech Medics is your
+                trusted local solution. Located conveniently at 3742 Eisenhower Parkway in Macon, Georgia, we specialize
+                in same-day Apple device repairs including iPhone screen replacement, iPad repair, and MacBook service.
               </p>
-              <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">
-                Expert iPhone Repair Services in Macon
-              </h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">Expert iPhone Repair Services in Macon</h3>
               <p className="text-muted-foreground mb-4">
-                Our certified technicians handle all types of <strong>iPhone repairs in Macon</strong>, from cracked screen replacements to battery issues, charging port problems, and water damage recovery. We service all iPhone models including the latest iPhone 15, iPhone 14, iPhone 13, and older generations. Most <strong>iPhone screen repairs in Macon GA</strong> are completed in 30 minutes or less.
+                Our certified technicians handle all types of <strong>iPhone repairs in Macon</strong>, from cracked
+                screen replacements to battery issues, charging port problems, and water damage recovery. We service all
+                iPhone models including the latest iPhone 15, iPhone 14, iPhone 13, and older generations. Most{" "}
+                <strong>iPhone screen repairs in Macon GA</strong> are completed in 30 minutes or less.
               </p>
               <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">
                 Complete iPad & MacBook Repair in Macon, Georgia
               </h3>
               <p className="text-muted-foreground mb-4">
-                Beyond iPhone repair, we're your full-service Apple repair shop in Macon. Our <strong>iPad repair services in Macon</strong> include screen replacement, glass repair, and battery service. For <strong>MacBook repair in Macon GA</strong>, we handle everything from screen replacement and keyboard repairs to logic board diagnostics and battery replacement.
+                Beyond iPhone repair, we're your full-service Apple repair shop in Macon. Our{" "}
+                <strong>iPad repair services in Macon</strong> include screen replacement, glass repair, and battery
+                service. For <strong>MacBook repair in Macon GA</strong>, we handle everything from screen replacement
+                and keyboard repairs to logic board diagnostics and battery replacement.
               </p>
               <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">
-                Why Choose iTech Medics for iPhone Screen Repair in Macon?
+                Why Choose Tech Medics for iPhone Screen Repair in Macon?
               </h3>
               <p className="text-muted-foreground mb-4">
-                As Macon's most trusted Apple repair center, we combine fast turnaround times with quality workmanship. Walk-ins are always welcome – no appointment necessary. Every repair is backed by our warranty, and we use high-quality replacement parts. Whether you need a quick <strong>iPhone screen replacement in Macon</strong> or complex MacBook logic board repair, our experienced team delivers reliable results.
+                As Macon's most trusted Apple repair center, we combine fast turnaround times with quality workmanship.
+                Walk-ins are always welcome – no appointment necessary. Every repair is backed by our warranty, and we
+                use high-quality replacement parts. Whether you need a quick{" "}
+                <strong>iPhone screen replacement in Macon</strong> or complex MacBook logic board repair, our
+                experienced team delivers reliable results.
               </p>
               <p className="text-muted-foreground">
-                <strong>Serving Macon, GA and surrounding areas</strong> including Warner Robins, Byron, Forsyth, and all of Bibb County with professional Apple device repair services since 2010.
+                <strong>Serving Macon, GA and surrounding areas</strong> including Warner Robins, Byron, Forsyth, and
+                all of Bibb County with professional Apple device repair services since 2010.
               </p>
             </article>
           </div>
@@ -471,96 +537,109 @@ const Home = () => {
         <RepairComparison deviceType="iPhone, iPad & MacBook" />
 
         {/* FAQ Section */}
-        <FAQSection 
+        <FAQSection
           deviceType="iPhone, iPad & MacBook"
           faqs={[
             {
               question: "How long do repairs take at your Macon location?",
-              answer: "Most iPhone screen repairs take 30 minutes or less. iPad repairs typically take 1-2 hours, and MacBook repairs range from 2-4 hours depending on the service. We offer same-day service for most repairs at our Eisenhower Parkway location."
+              answer:
+                "Most iPhone screen repairs take 30 minutes or less. iPad repairs typically take 1-2 hours, and MacBook repairs range from 2-4 hours depending on the service. We offer same-day service for most repairs at our Eisenhower Parkway location.",
             },
             {
               question: "Do you offer same-day Apple device repair in Macon?",
-              answer: "Yes! We specialize in same-day repairs for iPhone, iPad, and MacBook devices. Most iPhone repairs are completed while you wait. No appointment needed – just walk in during our business hours."
+              answer:
+                "Yes! We specialize in same-day repairs for iPhone, iPad, and MacBook devices. Most iPhone repairs are completed while you wait. No appointment needed – just walk in during our business hours.",
             },
             {
               question: "What areas do you serve besides Macon, GA?",
-              answer: "We proudly serve Macon and surrounding areas including Warner Robins, Byron, Forsyth, Perry, and all of Bibb County. We're conveniently located at 3742 Eisenhower Parkway for easy access from anywhere in Central Georgia."
+              answer:
+                "We proudly serve Macon and surrounding areas including Warner Robins, Byron, Forsyth, Perry, and all of Bibb County. We're conveniently located at 3742 Eisenhower Parkway for easy access from anywhere in Central Georgia.",
             },
             {
               question: "Are your parts genuine Apple parts or third-party?",
-              answer: "We use high-quality replacement parts that meet or exceed OEM specifications. All parts come with a warranty and are tested before installation to ensure quality and performance."
+              answer:
+                "We use high-quality replacement parts that meet or exceed OEM specifications. All parts come with a warranty and are tested before installation to ensure quality and performance.",
             },
             {
               question: "How much do repairs typically cost?",
-              answer: "Prices vary by device and repair type. iPhone screen repairs start around $79, iPad repairs from $99, and MacBook repairs from $299. Call (478) 259-6371 for an exact quote for your specific device and issue."
+              answer:
+                "Prices vary by device and repair type. iPhone screen repairs start around $79, iPad repairs from $99, and MacBook repairs from $299. Call (478) 259-6371 for an exact quote for your specific device and issue.",
             },
             {
               question: "Do you offer warranties on repairs?",
-              answer: "Yes! All our repairs are backed by a comprehensive warranty. We stand behind our workmanship and the quality of our parts to ensure your device repair lasts."
+              answer:
+                "Yes! All our repairs are backed by a comprehensive warranty. We stand behind our workmanship and the quality of our parts to ensure your device repair lasts.",
             },
             {
               question: "Can you fix water-damaged devices?",
-              answer: "Yes, we specialize in water damage repair for iPhones, iPads, and MacBooks. Bring your device to us as soon as possible after water exposure for the best chance of recovery."
+              answer:
+                "Yes, we specialize in water damage repair for iPhones, iPads, and MacBooks. Bring your device to us as soon as possible after water exposure for the best chance of recovery.",
             },
             {
               question: "Do I need an appointment or can I walk in?",
-              answer: "No appointment necessary! We welcome walk-ins Monday-Friday 10am-6pm and Saturday 10am-5pm. For faster service during busy times, you can call ahead at (478) 259-6371."
-            }
+              answer:
+                "No appointment necessary! We welcome walk-ins Monday-Friday 10am-6pm and Saturday 10am-5pm. For faster service during busy times, you can call ahead at (478) 259-6371.",
+            },
           ]}
         />
 
         {/* Testimonials Section */}
-        <TestimonialSection 
+        <TestimonialSection
           testimonials={[
             {
               name: "Jessica M.",
               rating: 5,
               text: "Cracked my iPhone screen and they fixed it in 20 minutes! Best iPhone repair service in Macon. Professional, fast, and affordable.",
               date: "2024-03-22",
-              service: "iPhone Screen Repair"
+              service: "iPhone Screen Repair",
             },
             {
               name: "Thomas R.",
               rating: 5,
               text: "My iPad Pro screen was shattered. They replaced it same day and it looks brand new. Highly recommend for iPad repair in Macon!",
               date: "2024-03-19",
-              service: "iPad Screen Replacement"
+              service: "iPad Screen Replacement",
             },
             {
               name: "Karen W.",
               rating: 5,
               text: "MacBook Air keyboard wasn't working right. They diagnosed and fixed it quickly. Great MacBook repair shop, very knowledgeable staff.",
               date: "2024-03-16",
-              service: "MacBook Keyboard Repair"
+              service: "MacBook Keyboard Repair",
             },
             {
               name: "Brandon C.",
               rating: 5,
               text: "My iPhone battery was draining so fast. They replaced it while I waited and now it lasts all day. Best repair experience in Macon!",
               date: "2024-03-11",
-              service: "iPhone Battery Replacement"
+              service: "iPhone Battery Replacement",
             },
             {
               name: "Michelle D.",
               rating: 5,
               text: "Dropped my iPad in water and thought it was done for. They recovered it and saved all my data! Amazing water damage repair service.",
               date: "2024-03-07",
-              service: "iPad Water Damage Repair"
+              service: "iPad Water Damage Repair",
             },
             {
               name: "Steven J.",
               rating: 5,
               text: "Professional MacBook screen repair. They kept me updated throughout the process and the work is flawless. Will definitely return!",
               date: "2024-03-03",
-              service: "MacBook Screen Replacement"
-            }
+              service: "MacBook Screen Replacement",
+            },
           ]}
         />
 
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-            <p className="mb-2">© 2024 iTech Medics - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
+            <p className="mb-2">
+              © 2024 Tech Medics - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair |{" "}
+              <Link to="/privacy" className="hover:text-primary transition-colors">
+                Privacy Policy
+              </Link>
+            </p>
             <p className="text-sm">3742 Eisenhower Parkway, Macon, GA 31206 | (478) 259-6371</p>
           </div>
         </footer>

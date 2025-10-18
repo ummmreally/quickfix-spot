@@ -16,16 +16,18 @@ const iPhone = () => {
     document.title = "iPhone Screen Repair & Battery Replacement | Macon GA | MyTechMedics";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Professional iPhone screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. 30 minutes or less. Located on Eisenhower Parkway.");
+      metaDescription.setAttribute(
+        "content",
+        "Professional iPhone screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. 30 minutes or less. Located on Eisenhower Parkway.",
+      );
     } else {
-      const meta = document.createElement('meta');
+      const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Professional iPhone screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. 30 minutes or less. Located on Eisenhower Parkway.";
+      meta.content =
+        "Professional iPhone screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. 30 minutes or less. Located on Eisenhower Parkway.";
       document.head.appendChild(meta);
     }
   }, []);
-
-
 
   return (
     <div className="min-h-screen bg-background">
@@ -33,7 +35,7 @@ const iPhone = () => {
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
+            <img src={logo} alt="Tech Medics logo" className="h-12 w-auto" />
 
             <nav className="hidden md:flex items-center gap-8">
               <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -42,7 +44,10 @@ const iPhone = () => {
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Macon
               </a>
-              <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a
+                href="/macon/pricing-chart"
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
                 Price List
               </a>
               <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -70,22 +75,46 @@ const iPhone = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
-                  <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Home
                   </a>
-                  <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Macon
                   </a>
-                  <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/pricing-chart"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Price List
                   </a>
-                  <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/business"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Business
                   </a>
-                  <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/education"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Education
                   </a>
-                  <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/about"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     About
                   </a>
                   <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
@@ -106,9 +135,13 @@ const iPhone = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">iPhone Screen Repair & Battery Replacement in Macon, GA</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+                iPhone Screen Repair & Battery Replacement in Macon, GA
+              </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Expert iPhone repair services including screen replacements, battery replacements, charging port repairs, and more. Fast, reliable service with no appointment needed - most repairs completed in 30 minutes or less.
+                Expert iPhone repair services including screen replacements, battery replacements, charging port
+                repairs, and more. Fast, reliable service with no appointment needed - most repairs completed in 30
+                minutes or less.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -118,14 +151,16 @@ const iPhone = () => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-2">
-                  <a href="/macon/pricing-chart">
-                    View Pricing
-                  </a>
+                  <a href="/macon/pricing-chart">View Pricing</a>
                 </Button>
               </div>
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
-              <img src={iphoneImage} alt="iPhone screen repair and battery replacement service in Macon GA" className="w-full h-auto" />
+              <img
+                src={iphoneImage}
+                alt="iPhone screen repair and battery replacement service in Macon GA"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>
@@ -134,27 +169,32 @@ const iPhone = () => {
       {/* Services Section */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">iPhone Repair Services in Macon, GA</h2>
-          
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            iPhone Repair Services in Macon, GA
+          </h2>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <article className="bg-card border border-border rounded-lg p-6">
               <h3 className="text-xl font-bold mb-3 text-foreground">Screen Repair</h3>
               <p className="text-muted-foreground">
-                Cracked or broken iPhone screen? We replace screens for all iPhone models quickly and affordably. High-quality parts with warranty included.
+                Cracked or broken iPhone screen? We replace screens for all iPhone models quickly and affordably.
+                High-quality parts with warranty included.
               </p>
             </article>
 
             <article className="bg-card border border-border rounded-lg p-6">
               <h3 className="text-xl font-bold mb-3 text-foreground">Battery Replacement</h3>
               <p className="text-muted-foreground">
-                Is your iPhone battery draining fast? We replace iPhone batteries with premium quality parts to restore your phone's performance.
+                Is your iPhone battery draining fast? We replace iPhone batteries with premium quality parts to restore
+                your phone's performance.
               </p>
             </article>
 
             <article className="bg-card border border-border rounded-lg p-6">
               <h3 className="text-xl font-bold mb-3 text-foreground">Charging Port Repair</h3>
               <p className="text-muted-foreground">
-                iPhone not charging properly? We fix charging port issues, replace damaged ports, and ensure reliable charging.
+                iPhone not charging properly? We fix charging port issues, replace damaged ports, and ensure reliable
+                charging.
               </p>
             </article>
 
@@ -208,68 +248,76 @@ const iPhone = () => {
       <RepairComparison deviceType="iPhone" />
 
       {/* FAQ Section */}
-      <FAQSection 
+      <FAQSection
         deviceType="iPhone"
         faqs={[
           {
             question: "How long does iPhone screen repair take in Macon, GA?",
-            answer: "Most iPhone screen repairs are completed in 30 minutes or less. We offer same-day service with no appointment needed. Simply walk into our Eisenhower Parkway location and we'll get your iPhone fixed quickly."
+            answer:
+              "Most iPhone screen repairs are completed in 30 minutes or less. We offer same-day service with no appointment needed. Simply walk into our Eisenhower Parkway location and we'll get your iPhone fixed quickly.",
           },
           {
             question: "How much does iPhone screen repair cost in Macon?",
-            answer: "iPhone screen repair costs vary by model. Prices typically range from $79 to $329 depending on your iPhone model. Call us at (478) 259-6371 for an exact quote for your specific iPhone model."
+            answer:
+              "iPhone screen repair costs vary by model. Prices typically range from $79 to $329 depending on your iPhone model. Call us at (478) 259-6371 for an exact quote for your specific iPhone model.",
           },
           {
             question: "Do you repair all iPhone models?",
-            answer: "Yes! We repair all iPhone models including the latest iPhone 15, 14, 13, 12, 11, XS, XR, X, 8, 7, and older models. We stock parts for all major iPhone models for fast same-day repairs."
+            answer:
+              "Yes! We repair all iPhone models including the latest iPhone 15, 14, 13, 12, 11, XS, XR, X, 8, 7, and older models. We stock parts for all major iPhone models for fast same-day repairs.",
           },
           {
             question: "Is there a warranty on iPhone screen repairs?",
-            answer: "Yes, all our iPhone screen repairs come with a warranty. We stand behind our work and use high-quality replacement parts to ensure your iPhone screen repair lasts."
+            answer:
+              "Yes, all our iPhone screen repairs come with a warranty. We stand behind our work and use high-quality replacement parts to ensure your iPhone screen repair lasts.",
           },
           {
             question: "Can you fix my iPhone battery that drains quickly?",
-            answer: "Absolutely! iPhone battery replacement is one of our most popular services. If your iPhone battery drains fast or won't hold a charge, we can replace it with a new battery in about 30 minutes."
+            answer:
+              "Absolutely! iPhone battery replacement is one of our most popular services. If your iPhone battery drains fast or won't hold a charge, we can replace it with a new battery in about 30 minutes.",
           },
           {
             question: "Do I need an appointment for iPhone repair in Macon?",
-            answer: "No appointment necessary! We welcome walk-ins during our business hours Monday-Friday 10am-6pm and Saturday 10am-5pm. Just bring your iPhone to our Macon location at 3742 Eisenhower Parkway."
+            answer:
+              "No appointment necessary! We welcome walk-ins during our business hours Monday-Friday 10am-6pm and Saturday 10am-5pm. Just bring your iPhone to our Macon location at 3742 Eisenhower Parkway.",
           },
           {
             question: "Can you recover data from a broken iPhone?",
-            answer: "Yes, we offer data recovery services for iPhones with broken screens, water damage, or other issues. Our technicians can often retrieve your photos, contacts, and important data."
+            answer:
+              "Yes, we offer data recovery services for iPhones with broken screens, water damage, or other issues. Our technicians can often retrieve your photos, contacts, and important data.",
           },
           {
             question: "Do you fix water damaged iPhones?",
-            answer: "Yes, we specialize in iPhone water damage repair. If you dropped your iPhone in water, bring it to us immediately. The sooner we can diagnose and repair water damage, the better chance of full recovery."
-          }
+            answer:
+              "Yes, we specialize in iPhone water damage repair. If you dropped your iPhone in water, bring it to us immediately. The sooner we can diagnose and repair water damage, the better chance of full recovery.",
+          },
         ]}
       />
 
       {/* Testimonials Section */}
-      <TestimonialSection 
+      <TestimonialSection
         testimonials={[
           {
             name: "Sarah M.",
             rating: 5,
             text: "Cracked my iPhone 14 screen and they fixed it in 25 minutes! Great service and fair pricing. Highly recommend for iPhone repair in Macon.",
             date: "2024-03-15",
-            service: "iPhone Screen Repair"
+            service: "iPhone Screen Repair",
           },
           {
             name: "James T.",
             rating: 5,
             text: "My iPhone battery was dying so fast. They replaced it while I waited and now it lasts all day again. Fast and professional!",
             date: "2024-03-10",
-            service: "iPhone Battery Replacement"
+            service: "iPhone Battery Replacement",
           },
           {
             name: "Emily R.",
             rating: 5,
             text: "Dropped my iPhone in the pool. They saved all my photos and got it working again. Amazing service! Best repair shop in Macon.",
             date: "2024-03-05",
-            service: "iPhone Water Damage Repair"
-          }
+            service: "iPhone Water Damage Repair",
+          },
         ]}
       />
 
@@ -288,7 +336,11 @@ const iPhone = () => {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8">
-              <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <MapPin className="mr-2 h-5 w-5" />
                 Get Directions
               </a>
@@ -300,7 +352,12 @@ const iPhone = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 MyTechMedics. All rights reserved. | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
+          <p>
+            © 2024 MyTechMedics. All rights reserved. |{" "}
+            <Link to="/privacy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
       </footer>
     </div>

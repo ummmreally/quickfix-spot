@@ -18,45 +18,39 @@ const TestimonialSection = ({ testimonials }: TestimonialSectionProps) => {
   const reviewSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "iTech Medics",
-    "aggregateRating": {
+    name: "Tech Medics",
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": testimonials.length.toString()
+      ratingValue: "4.9",
+      reviewCount: testimonials.length.toString(),
     },
-    "review": testimonials.map(testimonial => ({
+    review: testimonials.map((testimonial) => ({
       "@type": "Review",
-      "author": {
+      author: {
         "@type": "Person",
-        "name": testimonial.name
+        name: testimonial.name,
       },
-      "datePublished": testimonial.date,
-      "reviewRating": {
+      datePublished: testimonial.date,
+      reviewRating: {
         "@type": "Rating",
-        "ratingValue": testimonial.rating.toString(),
-        "bestRating": "5"
+        ratingValue: testimonial.rating.toString(),
+        bestRating: "5",
       },
-      "reviewBody": testimonial.text
-    }))
+      reviewBody: testimonial.text,
+    })),
   };
 
   return (
     <>
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(reviewSchema)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(reviewSchema)}</script>
       </Helmet>
-      
+
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
-            What Our Customers Say
-          </h2>
-          <p className="text-center text-muted-foreground mb-12">
-            Real reviews from satisfied customers in Macon, GA
-          </p>
-          
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">What Our Customers Say</h2>
+          <p className="text-center text-muted-foreground mb-12">Real reviews from satisfied customers in Macon, GA</p>
+
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="p-6 border-border hover:shadow-lg transition-shadow">

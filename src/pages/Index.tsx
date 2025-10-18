@@ -17,22 +17,19 @@ const Index = () => {
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
+            <img src={logo} alt="Tech Medics logo" className="h-12 w-auto" />
 
             <nav className="hidden md:flex items-center gap-8">
-              <a
-                href="/"
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
+              <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
               </a>
-              <a
-                href="/macon"
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
+              <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
                 Macon
               </a>
-              <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a
+                href="/macon/pricing-chart"
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
                 Price List
               </a>
               <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -125,18 +122,18 @@ const Index = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                asChild
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"
-              >
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
                 <a href="tel:(478)259-6371">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8">
-                <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <MapPin className="mr-2 h-5 w-5" />
                   Get Directions
                 </a>
@@ -197,18 +194,18 @@ const Index = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   <a href="tel:(478)259-6371">
                     <Phone className="mr-2 h-5 w-5" />
                     Call Now
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-2">
-                  <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <MapPin className="mr-2 h-5 w-5" />
                     Get Directions
                   </a>
@@ -237,7 +234,12 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 MyTechMedics. All rights reserved. | <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
+          <p>
+            © 2024 MyTechMedics. All rights reserved. |{" "}
+            <Link to="/privacy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
       </footer>
     </div>

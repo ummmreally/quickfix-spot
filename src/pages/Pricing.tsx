@@ -43,10 +43,10 @@ const Pricing = () => {
   const handleCall = () => {
     (window as any).dataLayer = (window as any).dataLayer || [];
     (window as any).dataLayer.push({
-      event: 'phone_call',
-      event_category: 'engagement',
-      event_label: 'Phone Call Click',
-      value: '478-259-6371'
+      event: "phone_call",
+      event_category: "engagement",
+      event_label: "Phone Call Click",
+      value: "478-259-6371",
     });
     window.location.href = "tel:(478)259-6371";
   };
@@ -111,7 +111,7 @@ const Pricing = () => {
         finalPrice = modelPricing.battery;
       }
     }
-    
+
     setSelection((prev) => ({ ...prev, issue, price: finalPrice }));
     setTimeout(() => setStep("price"), 300);
   };
@@ -140,7 +140,7 @@ const Pricing = () => {
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <img src={logo} alt="iTech Medics logo" className="h-12 w-auto" />
+            <img src={logo} alt="Tech Medics logo" className="h-12 w-auto" />
 
             <nav className="hidden md:flex items-center gap-8">
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -149,7 +149,10 @@ const Pricing = () => {
               <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium">
                 Quote
               </a>
-              <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a
+                href="/macon/pricing-chart"
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
                 Price List
               </a>
               <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
@@ -175,25 +178,55 @@ const Pricing = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px]">
                 <nav className="flex flex-col gap-6 mt-8">
-                  <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Home
                   </a>
-                  <a href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/pricing"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Quote
                   </a>
-                  <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/pricing-chart"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Price List
                   </a>
-                  <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/business"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Business
                   </a>
-                  <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/education"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     Education
                   </a>
-                  <a href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  <a
+                    href="/macon/about"
+                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     About
                   </a>
-                  <Button onClick={() => { handleCall(); setMobileMenuOpen(false); }} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                  <Button
+                    onClick={() => {
+                      handleCall();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
+                  >
                     <Phone className="mr-2 h-4 w-4" />
                     (478) 259-6371
                   </Button>
@@ -208,12 +241,8 @@ const Pricing = () => {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-              Get Your iPhone Repair Quote
-            </h1>
-            <p className="text-muted-foreground text-lg">
-              Select your device and issue to see instant pricing
-            </p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Get Your iPhone Repair Quote</h1>
+            <p className="text-muted-foreground text-lg">Select your device and issue to see instant pricing</p>
           </div>
 
           {/* Progress Indicator */}
@@ -222,9 +251,7 @@ const Pricing = () => {
               <div
                 key={s}
                 className={`h-2 rounded-full transition-all duration-500 ${
-                  ["series", "model", "issue", "price"].indexOf(step) >= idx
-                    ? "bg-primary w-16"
-                    : "bg-muted w-8"
+                  ["series", "model", "issue", "price"].indexOf(step) >= idx ? "bg-primary w-16" : "bg-muted w-8"
                 }`}
               />
             ))}
@@ -233,9 +260,7 @@ const Pricing = () => {
           {/* Step 1: Series Selection */}
           {step === "series" && (
             <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-              <h2 className="text-2xl font-semibold mb-6 text-center">
-                Select iPhone Series
-              </h2>
+              <h2 className="text-2xl font-semibold mb-6 text-center">Select iPhone Series</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {Object.keys(seriesData).map((series) => (
                   <Card
@@ -306,9 +331,7 @@ const Pricing = () => {
                     onClick={() => handleIssueSelect(issue.name, issue.basePrice)}
                   >
                     <h3 className="text-lg font-semibold mb-2">{issue.name}</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Starting at ${issue.basePrice}
-                    </p>
+                    <p className="text-sm text-muted-foreground">Starting at ${issue.basePrice}</p>
                   </Card>
                 ))}
               </div>
@@ -340,9 +363,9 @@ const Pricing = () => {
                 <div className="text-6xl font-bold text-primary mb-8 animate-in zoom-in duration-1000">
                   ${selection.price}
                 </div>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" onClick={() => window.location.href = "tel:(478)259-6371"}>
+                  <Button size="lg" onClick={() => (window.location.href = "tel:(478)259-6371")}>
                     Call to Book: (478) 259-6371
                   </Button>
                   <Button size="lg" variant="outline" onClick={handleReset}>
