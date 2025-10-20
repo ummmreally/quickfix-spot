@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, Play, Pause, Volume2 } from "lucide-react";
+import { Phone, Menu, Play, Pause, Volume2, Wrench, Battery, Smartphone, Hammer } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
@@ -217,6 +218,224 @@ const DIYRepair = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </section>
+
+        {/* iPhone Repair Guides */}
+        <section className="py-20 px-4 bg-secondary/10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">iPhone Repair Guides</h2>
+              <p className="text-xl text-muted-foreground">
+                Step-by-step instructions for common iPhone repairs
+              </p>
+            </div>
+
+            <Tabs defaultValue="screen" className="w-full">
+              <TabsList className="grid w-full grid-cols-3 mb-8">
+                <TabsTrigger value="screen">Screen Replacement</TabsTrigger>
+                <TabsTrigger value="battery">Battery Replacement</TabsTrigger>
+                <TabsTrigger value="charging">Charging Port</TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="screen" className="space-y-6">
+                <Card>
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <Smartphone className="h-8 w-8 text-primary" />
+                      <CardTitle className="text-2xl">Screen Replacement Guide</CardTitle>
+                    </div>
+                    <CardDescription>Replace a cracked or damaged iPhone screen</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div>
+                      <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                        <Hammer className="h-5 w-5 text-primary" />
+                        Tools Needed:
+                      </h3>
+                      <ul className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Pentalobe screwdriver (0.8mm)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Phillips #000 screwdriver</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Suction cup tool</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Plastic opening tools</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Spudger tool</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Replacement screen assembly</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-secondary/30 p-6 rounded-lg">
+                      <h3 className="font-semibold text-lg mb-3">Step-by-Step Instructions:</h3>
+                      <ol className="list-decimal list-inside space-y-3 text-muted-foreground">
+                        <li><strong className="text-foreground">Power off your iPhone</strong> - Completely shut down the device before starting</li>
+                        <li><strong className="text-foreground">Remove pentalobe screws</strong> - Take out the two screws at the bottom near the charging port</li>
+                        <li><strong className="text-foreground">Apply suction cup</strong> - Place near home button and gently pull up while inserting opening tool</li>
+                        <li><strong className="text-foreground">Disconnect battery</strong> - Remove battery connector first for safety</li>
+                        <li><strong className="text-foreground">Disconnect display cables</strong> - Carefully remove the screen digitizer and LCD connectors</li>
+                        <li><strong className="text-foreground">Transfer components</strong> - Move home button, camera, and earpiece to new screen</li>
+                        <li><strong className="text-foreground">Connect new screen</strong> - Attach all cables and test before final assembly</li>
+                        <li><strong className="text-foreground">Reassemble</strong> - Replace all screws and close the device</li>
+                      </ol>
+                    </div>
+
+                    <div className="bg-red-500/10 border border-red-500/30 p-4 rounded-lg">
+                      <p className="text-sm text-red-700 dark:text-red-400">
+                        <strong>Warning:</strong> Screen replacement requires precision and patience. Damage to internal cables can cause permanent issues. Consider professional repair if you're unsure.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="battery" className="space-y-6">
+                <Card>
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <Battery className="h-8 w-8 text-primary" />
+                      <CardTitle className="text-2xl">Battery Replacement Guide</CardTitle>
+                    </div>
+                    <CardDescription>Replace a worn-out iPhone battery</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div>
+                      <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                        <Hammer className="h-5 w-5 text-primary" />
+                        Tools Needed:
+                      </h3>
+                      <ul className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Pentalobe screwdriver (0.8mm)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Phillips #000 screwdriver</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Suction cup tool</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Plastic opening tools</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Adhesive remover or hair dryer</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Replacement battery with adhesive</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-secondary/30 p-6 rounded-lg">
+                      <h3 className="font-semibold text-lg mb-3">Step-by-Step Instructions:</h3>
+                      <ol className="list-decimal list-inside space-y-3 text-muted-foreground">
+                        <li><strong className="text-foreground">Discharge battery below 25%</strong> - Reduces fire risk if punctured</li>
+                        <li><strong className="text-foreground">Remove screen</strong> - Follow screen removal steps (see Screen tab)</li>
+                        <li><strong className="text-foreground">Disconnect battery</strong> - Remove battery connector bracket and disconnect cable</li>
+                        <li><strong className="text-foreground">Remove adhesive strips</strong> - Gently pull the white adhesive tabs at an angle</li>
+                        <li><strong className="text-foreground">Remove old battery</strong> - If adhesive breaks, use heat to soften and pry carefully</li>
+                        <li><strong className="text-foreground">Clean surface</strong> - Remove any remaining adhesive from the phone</li>
+                        <li><strong className="text-foreground">Install new battery</strong> - Apply new adhesive strips and press battery firmly</li>
+                        <li><strong className="text-foreground">Reconnect and test</strong> - Connect battery, test power on, then close device</li>
+                      </ol>
+                    </div>
+
+                    <div className="bg-red-500/10 border border-red-500/30 p-4 rounded-lg">
+                      <p className="text-sm text-red-700 dark:text-red-400">
+                        <strong>Safety Warning:</strong> Lithium-ion batteries are dangerous if punctured or bent. Never force removal. If battery is swollen, seek professional help immediately.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="charging" className="space-y-6">
+                <Card>
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <Wrench className="h-8 w-8 text-primary" />
+                      <CardTitle className="text-2xl">Charging Port Cleaning Guide</CardTitle>
+                    </div>
+                    <CardDescription>Clean lint and debris from your charging port</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div>
+                      <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                        <Hammer className="h-5 w-5 text-primary" />
+                        Tools Needed:
+                      </h3>
+                      <ul className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Wooden or plastic toothpick</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Soft brush (anti-static)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Compressed air (optional)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Flashlight or good lighting</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Cotton swab (for stubborn debris)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>Isopropyl alcohol 90%+ (optional)</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-secondary/30 p-6 rounded-lg">
+                      <h3 className="font-semibold text-lg mb-3">Step-by-Step Instructions:</h3>
+                      <ol className="list-decimal list-inside space-y-3 text-muted-foreground">
+                        <li><strong className="text-foreground">Power off iPhone</strong> - Turn off completely for safety</li>
+                        <li><strong className="text-foreground">Inspect with flashlight</strong> - Look inside the port for visible debris</li>
+                        <li><strong className="text-foreground">Use compressed air</strong> - Blow out loose debris with short bursts</li>
+                        <li><strong className="text-foreground">Gently scrape with toothpick</strong> - Carefully remove packed lint from the back of the port</li>
+                        <li><strong className="text-foreground">Brush away debris</strong> - Use soft brush to remove loosened material</li>
+                        <li><strong className="text-foreground">For corrosion</strong> - Dip cotton swab in alcohol and gently clean contacts</li>
+                        <li><strong className="text-foreground">Let dry completely</strong> - Wait 5-10 minutes if using alcohol</li>
+                        <li><strong className="text-foreground">Test charging cable</strong> - Try connecting cable to verify proper fit</li>
+                      </ol>
+                    </div>
+
+                    <div className="bg-amber-500/10 border border-amber-500/30 p-4 rounded-lg">
+                      <p className="text-sm text-amber-700 dark:text-amber-400">
+                        <strong>Caution:</strong> Never use metal objects like paperclips or needles - they can damage the delicate pins inside. If cleaning doesn't resolve charging issues, the port may need replacement.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+            </Tabs>
           </div>
         </section>
 
