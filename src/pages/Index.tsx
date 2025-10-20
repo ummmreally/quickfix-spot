@@ -4,7 +4,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
-import DiscountPanel from "@/components/DiscountPanel";
 import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
@@ -247,9 +246,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-
-      {/* Discount Panel */}
-      <DiscountPanel />
     </div>
   );
 };
