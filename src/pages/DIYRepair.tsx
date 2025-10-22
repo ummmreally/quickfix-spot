@@ -232,10 +232,9 @@ const DIYRepair = () => {
             </div>
 
             <Tabs defaultValue="screen" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsList className="grid w-full grid-cols-2 mb-8">
                 <TabsTrigger value="screen">Screen Replacement</TabsTrigger>
                 <TabsTrigger value="battery">Battery Replacement</TabsTrigger>
-                <TabsTrigger value="charging">Charging Port</TabsTrigger>
               </TabsList>
 
               <TabsContent value="screen" className="space-y-6">
@@ -370,71 +369,6 @@ const DIYRepair = () => {
                 </Card>
               </TabsContent>
 
-              <TabsContent value="charging" className="space-y-6">
-                <Card>
-                  <CardHeader>
-                    <div className="flex items-center gap-3 mb-2">
-                      <Wrench className="h-8 w-8 text-primary" />
-                      <CardTitle className="text-2xl">Charging Port Cleaning Guide</CardTitle>
-                    </div>
-                    <CardDescription>Clean lint and debris from your charging port</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div>
-                      <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                        <Hammer className="h-5 w-5 text-primary" />
-                        Tools Needed:
-                      </h3>
-                      <ul className="grid md:grid-cols-2 gap-2 text-muted-foreground">
-                        <li className="flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span>Wooden or plastic toothpick</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span>Soft brush (anti-static)</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span>Compressed air (optional)</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span>Flashlight or good lighting</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span>Cotton swab (for stubborn debris)</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span>Isopropyl alcohol 90%+ (optional)</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="bg-secondary/30 p-6 rounded-lg">
-                      <h3 className="font-semibold text-lg mb-3">Step-by-Step Instructions:</h3>
-                      <ol className="list-decimal list-inside space-y-3 text-muted-foreground">
-                        <li><strong className="text-foreground">Power off iPhone</strong> - Turn off completely for safety</li>
-                        <li><strong className="text-foreground">Inspect with flashlight</strong> - Look inside the port for visible debris</li>
-                        <li><strong className="text-foreground">Use compressed air</strong> - Blow out loose debris with short bursts</li>
-                        <li><strong className="text-foreground">Gently scrape with toothpick</strong> - Carefully remove packed lint from the back of the port</li>
-                        <li><strong className="text-foreground">Brush away debris</strong> - Use soft brush to remove loosened material</li>
-                        <li><strong className="text-foreground">For corrosion</strong> - Dip cotton swab in alcohol and gently clean contacts</li>
-                        <li><strong className="text-foreground">Let dry completely</strong> - Wait 5-10 minutes if using alcohol</li>
-                        <li><strong className="text-foreground">Test charging cable</strong> - Try connecting cable to verify proper fit</li>
-                      </ol>
-                    </div>
-
-                    <div className="bg-amber-500/10 border border-amber-500/30 p-4 rounded-lg">
-                      <p className="text-sm text-amber-700 dark:text-amber-400">
-                        <strong>Caution:</strong> Never use metal objects like paperclips or needles - they can damage the delicate pins inside. If cleaning doesn't resolve charging issues, the port may need replacement.
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
             </Tabs>
           </div>
         </section>
