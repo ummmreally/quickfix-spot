@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Menu, CheckCircle2, Clock } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useState, useEffect } from "react";
+import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Navigation from "@/components/Navigation";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import ServiceCard from "@/components/ServiceCard";
@@ -13,11 +13,8 @@ import TestimonialSection from "@/components/TestimonialSection";
 import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
-import logo from "@/assets/logo.png";
 
 const EastMacon = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   useEffect(() => {
     document.title = "iPhone, iPad & MacBook Repair East Macon GA | NEAR SHOPPES AT RIVER CROSSING | MyTechMedics | Fast Service in East Macon | (478) 259-6371";
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -94,47 +91,7 @@ const EastMacon = () => {
       <BreadcrumbNav items={breadcrumbItems} />
 
       <div className="min-h-screen bg-background">
-        {/* Header */}
-        <header className="border-b border-border bg-background sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex items-center justify-between h-20">
-              <img src={logo} alt="MyTechMedics East Macon repair logo" className="h-12 w-auto" />
-              <nav className="hidden md:flex items-center gap-8">
-                <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">Home</a>
-                <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">Macon</a>
-                <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">Price List</a>
-                <a href="/macon/diy-repair" className="text-foreground hover:text-primary transition-colors font-medium">DIY Repair</a>
-                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <a href="tel:(478)259-6371">
-                    <Phone className="mr-2 h-4 w-4" />
-                    (478) 259-6371
-                  </a>
-                </Button>
-              </nav>
-              <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon" className="md:hidden">
-                    <Menu className="h-6 w-6" />
-                  </Button>
-                </SheetTrigger>
-                <SheetContent side="right" className="w-[300px] bg-background">
-                  <nav className="flex flex-col gap-6 mt-8">
-                    <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Home</a>
-                    <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Macon</a>
-                    <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Price List</a>
-                    <a href="/macon/diy-repair" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>DIY Repair</a>
-                    <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                      <a href="tel:(478)259-6371">
-                        <Phone className="mr-2 h-4 w-4" />
-                        (478) 259-6371
-                      </a>
-                    </Button>
-                  </nav>
-                </SheetContent>
-              </Sheet>
-            </div>
-          </div>
-        </header>
+        <Navigation />
 
         {/* Hero Section */}
         <section className="bg-secondary/30 py-16 md:py-24">
