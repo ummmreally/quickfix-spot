@@ -8,29 +8,37 @@ import ipadImage from "@/assets/ipad-repair.jpg";
 import FAQSection from "@/components/FAQSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 const iPad = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    document.title = "iPad Screen Repair & Battery Replacement | Macon GA | MyTechMedics";
+    document.title = "iPad Repair Macon GA | BEST Service | iPad Screen Repair Near Me | NO APPOINTMENT Needed | Vineville, Ingleside, North Macon, East Macon | iPad Battery Replacement | (478) 259-6371";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Professional iPad screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. 30 minutes or less. Located on Eisenhower Parkway.",
+        "Looking for iPad repair near me in Macon? BEST iPad screen repair & battery replacement. NO appointment needed, FAST service. All iPad models including iPad Pro, Air & Mini. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.",
       );
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
       meta.content =
-        "Professional iPad screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. 30 minutes or less. Located on Eisenhower Parkway.";
+        "Looking for iPad repair near me in Macon? BEST iPad screen repair & battery replacement. NO appointment needed, FAST service. All iPad models including iPad Pro, Air & Mini. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.";
       document.head.appendChild(meta);
     }
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <LocalBusinessSchema 
+        pageName="iPad Repair Macon GA"
+        pageDescription="Expert iPad screen repair and battery replacement in Macon, GA. Fast service for all iPad models with no appointment needed."
+        serviceType="iPad Repair"
+      />
+      
       {/* Header */}
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -130,16 +138,21 @@ const iPad = () => {
         </div>
       </header>
 
+      <BreadcrumbNav items={[
+        { label: "Macon", href: "/macon" },
+        { label: "iPad Repair" }
+      ]} />
+
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                iPad Screen Repair & Battery Replacement in Macon, GA
+                iPad Screen Repair Near Me in Macon, GA
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Expert iPad repair services including screen replacements, battery replacements, charging port repairs,
+                Looking for iPad repair near me? We're located at 3742 Eisenhower Parkway in Macon, GA. Expert iPad repair services including screen replacements, battery replacements, charging port repairs,
                 and more. Fast, reliable service with no appointment needed - most repairs completed in 30 minutes or
                 less.
               </p>
@@ -291,6 +304,11 @@ const iPad = () => {
             answer:
               "Yes, all our iPad repairs are backed by a warranty. We use quality replacement parts and stand behind our workmanship to ensure your iPad repair lasts.",
           },
+          {
+            question: "Where can I find iPad repair near me in Macon, GA?",
+            answer:
+              "MyTechMedics is located at 3742 Eisenhower Parkway in Macon, GA 31206. We're easily accessible from Vineville, Ingleside, North Macon, and East Macon. Search 'iPad repair near me' to find directions!",
+          },
         ]}
       />
 
@@ -345,6 +363,25 @@ const iPad = () => {
                 Get Directions
               </a>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+            Other Apple Device Repair Services
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <Link to="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair in Macon</h3>
+              <p className="text-muted-foreground">Fast iPhone screen & battery repair - 30 minutes or less</p>
+            </Link>
+            <Link to="/macon/macbook" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2 text-foreground">MacBook Repair in Macon</h3>
+              <p className="text-muted-foreground">Expert MacBook repairs for all models including Pro, Air & Retina</p>
+            </Link>
           </div>
         </div>
       </section>

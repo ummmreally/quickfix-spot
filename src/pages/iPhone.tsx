@@ -8,29 +8,37 @@ import iphoneImage from "@/assets/iphone-repair.jpg";
 import FAQSection from "@/components/FAQSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 const iPhone = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    document.title = "iPhone Screen Repair & Battery Replacement | Macon GA | MyTechMedics";
+    document.title = "iPhone Screen Repair Macon GA | BEST Prices | 30 MIN or LESS | iPhone Battery Replacement Near Me | Vineville, Ingleside, North Macon, East Macon | NO APPOINTMENT Needed | (478) 259-6371";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Professional iPhone screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. 30 minutes or less. Located on Eisenhower Parkway.",
+        "Looking for iPhone repair near me in Macon? BEST iPhone screen repair & battery replacement. 30 minutes or LESS, NO appointment needed. All iPhone models. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.",
       );
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
       meta.content =
-        "Professional iPhone screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. 30 minutes or less. Located on Eisenhower Parkway.";
+        "Looking for iPhone repair near me in Macon? BEST iPhone screen repair & battery replacement. 30 minutes or LESS, NO appointment needed. All iPhone models. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.";
       document.head.appendChild(meta);
     }
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <LocalBusinessSchema 
+        pageName="iPhone Repair Macon GA"
+        pageDescription="Expert iPhone screen repair and battery replacement in Macon, GA. Fast 30-minute repairs with no appointment needed."
+        serviceType="iPhone Repair"
+      />
+      
       {/* Header */}
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -130,16 +138,21 @@ const iPhone = () => {
         </div>
       </header>
 
+      <BreadcrumbNav items={[
+        { label: "Macon", href: "/macon" },
+        { label: "iPhone Repair" }
+      ]} />
+
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                iPhone Screen Repair & Battery Replacement in Macon, GA
+                iPhone Screen Repair Near Me in Macon, GA
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Expert iPhone repair services including screen replacements, battery replacements, charging port
+                Looking for iPhone repair near me? We're located at 3742 Eisenhower Parkway in Macon, GA. Expert iPhone repair services including screen replacements, battery replacements, charging port
                 repairs, and more. Fast, reliable service with no appointment needed - most repairs completed in 30
                 minutes or less.
               </p>
@@ -282,6 +295,11 @@ const iPhone = () => {
               "No appointment necessary! We welcome walk-ins during our business hours Monday-Friday 10am-6pm and Saturday 10am-5pm. Just bring your iPhone to our Macon location at 3742 Eisenhower Parkway.",
           },
           {
+            question: "Where can I find iPhone repair near me in Macon, GA?",
+            answer:
+              "MyTechMedics is conveniently located at 3742 Eisenhower Parkway in Macon, GA 31206. We serve all of Macon including Vineville, Ingleside, North Macon, and East Macon. Just search 'iPhone repair near me' and you'll find us!",
+          },
+          {
             question: "Can you recover data from a broken iPhone?",
             answer:
               "Yes, we offer data recovery services for iPhones with broken screens, water damage, or other issues. Our technicians can often retrieve your photos, contacts, and important data.",
@@ -345,6 +363,25 @@ const iPhone = () => {
                 Get Directions
               </a>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+            Other Apple Device Repair Services
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <Link to="/macon/ipad" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2 text-foreground">iPad Repair in Macon</h3>
+              <p className="text-muted-foreground">Screen repair, battery replacement & more for all iPad models</p>
+            </Link>
+            <Link to="/macon/macbook" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2 text-foreground">MacBook Repair in Macon</h3>
+              <p className="text-muted-foreground">Expert MacBook repairs for all models including Pro, Air & Retina</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -8,29 +8,37 @@ import macbookImage from "@/assets/macbook-repair.jpg";
 import FAQSection from "@/components/FAQSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 const MacBook = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    document.title = "MacBook Screen Repair & Battery Replacement | Macon GA | MyTechMedics";
+    document.title = "MacBook Repair Macon GA | EXPERT Technicians | MacBook Screen Repair Near Me | SAME DAY Service | Vineville, Ingleside, North Macon, East Macon | MacBook Pro, Air, Retina | (478) 259-6371";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Professional MacBook screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. Expert repairs for all MacBook models. Located on Eisenhower Parkway.",
+        "Looking for MacBook repair near me in Macon? EXPERT MacBook screen repair, battery replacement & keyboard repair. SAME DAY service for all MacBook models including Pro, Air & Retina. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.",
       );
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
       meta.content =
-        "Professional MacBook screen repair and battery replacement in Macon, GA. Fast, affordable service with no appointment needed. Expert repairs for all MacBook models. Located on Eisenhower Parkway.";
+        "Looking for MacBook repair near me in Macon? EXPERT MacBook screen repair, battery replacement & keyboard repair. SAME DAY service for all MacBook models including Pro, Air & Retina. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.";
       document.head.appendChild(meta);
     }
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <LocalBusinessSchema 
+        pageName="MacBook Repair Macon GA"
+        pageDescription="Expert MacBook screen repair, battery replacement, and keyboard repair in Macon, GA. Same-day service for all MacBook models."
+        serviceType="MacBook Repair"
+      />
+      
       {/* Header */}
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -130,16 +138,21 @@ const MacBook = () => {
         </div>
       </header>
 
+      <BreadcrumbNav items={[
+        { label: "Macon", href: "/macon" },
+        { label: "MacBook Repair" }
+      ]} />
+
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                MacBook Screen Repair & Battery Replacement in Macon, GA
+                MacBook Screen Repair Near Me in Macon, GA
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Expert MacBook repair services including screen replacements, battery replacements, keyboard repairs,
+                Looking for MacBook repair near me? We're located at 3742 Eisenhower Parkway in Macon, GA. Expert MacBook repair services including screen replacements, battery replacements, keyboard repairs,
                 and more. Professional service for all MacBook models including MacBook Air, MacBook Pro, and MacBook
                 Retina.
               </p>
@@ -292,6 +305,11 @@ const MacBook = () => {
             answer:
               "MacBook logic board repair costs vary widely based on the issue and model, typically ranging from $299 to $799. We diagnose the problem first and provide a detailed quote before any logic board work begins.",
           },
+          {
+            question: "Where can I find MacBook repair near me in Macon, GA?",
+            answer:
+              "MyTechMedics is conveniently located at 3742 Eisenhower Parkway in Macon, GA 31206. We serve Vineville, Ingleside, North Macon, East Macon, and all surrounding areas. Search 'MacBook repair near me' to get directions!",
+          },
         ]}
       />
 
@@ -346,6 +364,25 @@ const MacBook = () => {
                 Get Directions
               </a>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+            Other Apple Device Repair Services
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <Link to="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair in Macon</h3>
+              <p className="text-muted-foreground">Fast iPhone screen & battery repair - 30 minutes or less</p>
+            </Link>
+            <Link to="/macon/ipad" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2 text-foreground">iPad Repair in Macon</h3>
+              <p className="text-muted-foreground">Screen repair, battery replacement & more for all iPad models</p>
+            </Link>
           </div>
         </div>
       </section>
