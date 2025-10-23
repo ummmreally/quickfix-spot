@@ -211,8 +211,6 @@ const NorthMacon = () => {
 
         {/* FAQ Section */}
         <FAQSection faqs={localFAQs} deviceType="Apple Device" />
-          </div>
-        </section>
 
         {/* CTA Section */}
         <section className="py-16 px-4 bg-secondary/30">
