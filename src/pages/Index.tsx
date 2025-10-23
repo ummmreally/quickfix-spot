@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Menu } from "lucide-react";
+import { MapPin, Phone, Menu, ChevronDown } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+} from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
@@ -32,12 +39,42 @@ const Index = () => {
               >
                 Price List
               </a>
-              <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
-                Business
-              </a>
-              <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium">
-                Education
-              </a>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-primary transition-colors font-medium">
+                  Services
+                  <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-background border-border z-50">
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/business" className="cursor-pointer">Business</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/education" className="cursor-pointer">Education</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/vineville" className="cursor-pointer">Vineville</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/ingleside" className="cursor-pointer">Ingleside</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/north-macon" className="cursor-pointer">North Macon</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/downtown" className="cursor-pointer">Downtown</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/east-macon" className="cursor-pointer">East Macon</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/south-macon" className="cursor-pointer">South Macon</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/macon/rutland" className="cursor-pointer">Rutland</a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
               <a href="/macon/diy-repair" className="text-foreground hover:text-primary transition-colors font-medium">
                 DIY Repair
               </a>
@@ -78,20 +115,73 @@ const Index = () => {
                   >
                     Price List
                   </a>
-                  <a
-                    href="/macon/business"
-                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Business
-                  </a>
-                  <a
-                    href="/macon/education"
-                    className="text-foreground hover:text-primary transition-colors font-medium text-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Education
-                  </a>
+                  <div className="border-t border-border pt-2">
+                    <p className="text-sm font-semibold text-muted-foreground mb-2">Services</p>
+                    <a
+                      href="/macon/business"
+                      className="text-foreground hover:text-primary transition-colors font-medium text-lg block mb-3"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Business
+                    </a>
+                    <a
+                      href="/macon/education"
+                      className="text-foreground hover:text-primary transition-colors font-medium text-lg block mb-3"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Education
+                    </a>
+                    <p className="text-sm font-semibold text-muted-foreground mb-2 mt-4">Neighborhoods</p>
+                    <a
+                      href="/macon/vineville"
+                      className="text-foreground hover:text-primary transition-colors font-medium block mb-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Vineville
+                    </a>
+                    <a
+                      href="/macon/ingleside"
+                      className="text-foreground hover:text-primary transition-colors font-medium block mb-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Ingleside
+                    </a>
+                    <a
+                      href="/macon/north-macon"
+                      className="text-foreground hover:text-primary transition-colors font-medium block mb-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      North Macon
+                    </a>
+                    <a
+                      href="/macon/downtown"
+                      className="text-foreground hover:text-primary transition-colors font-medium block mb-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Downtown
+                    </a>
+                    <a
+                      href="/macon/east-macon"
+                      className="text-foreground hover:text-primary transition-colors font-medium block mb-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      East Macon
+                    </a>
+                    <a
+                      href="/macon/south-macon"
+                      className="text-foreground hover:text-primary transition-colors font-medium block mb-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      South Macon
+                    </a>
+                    <a
+                      href="/macon/rutland"
+                      className="text-foreground hover:text-primary transition-colors font-medium block mb-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Rutland
+                    </a>
+                  </div>
                   <a
                     href="/macon/diy-repair"
                     className="text-foreground hover:text-primary transition-colors font-medium text-lg"
