@@ -1,15 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, Play, Pause, Volume2, Wrench, Battery, Smartphone, Hammer } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Phone, Play, Pause, Volume2, Wrench, Battery, Smartphone, Hammer } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
 import { Helmet } from "react-helmet";
+import Navigation from "@/components/Navigation";
 
 const DIYRepair = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioContextRef = useRef<AudioContext | null>(null);
   const oscillatorRef = useRef<OscillatorNode | null>(null);
@@ -76,79 +74,7 @@ const DIYRepair = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background">
-        {/* Header */}
-        <header className="border-b border-border bg-background sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex items-center justify-between h-20">
-              <Link to="/macon">
-                <img src={logo} alt="Tech Medics logo" className="h-12 w-auto" />
-              </Link>
-
-              <nav className="hidden md:flex items-center gap-8">
-                <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
-                  Home
-                </a>
-                <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
-                  Macon
-                </a>
-                <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
-                  Price List
-                </a>
-                <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium">
-                  Business
-                </a>
-                <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium">
-                  Education
-                </a>
-                <a href="/macon/diy-repair" className="text-primary font-medium">
-                  DIY Repair
-                </a>
-                <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <a href="tel:(478)259-6371">
-                    <Phone className="mr-2 h-4 w-4" />
-                    (478) 259-6371
-                  </a>
-                </Button>
-              </nav>
-
-              <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon" className="md:hidden">
-                    <Menu className="h-6 w-6" />
-                  </Button>
-                </SheetTrigger>
-                <SheetContent side="right" className="w-[300px]">
-                  <nav className="flex flex-col gap-6 mt-8">
-                    <a href="/" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      Home
-                    </a>
-                    <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      Macon
-                    </a>
-                    <a href="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      Price List
-                    </a>
-                    <a href="/macon/business" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      Business
-                    </a>
-                    <a href="/macon/education" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      Education
-                    </a>
-                    <a href="/macon/diy-repair" className="text-primary font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                      DIY Repair
-                    </a>
-                    <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                      <a href="tel:(478)259-6371">
-                        <Phone className="mr-2 h-4 w-4" />
-                        (478) 259-6371
-                      </a>
-                    </Button>
-                  </nav>
-                </SheetContent>
-              </Sheet>
-            </div>
-          </div>
-        </header>
+        <Navigation />
 
         {/* Hero Section */}
         <section className="bg-secondary/30 py-16 md:py-24">
