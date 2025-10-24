@@ -1,24 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
-import Navigation from "@/components/Navigation";
-import ServiceCard from "@/components/ServiceCard";
-import iphoneImage from "@/assets/iphone-repair.jpg";
-import macbookImage from "@/assets/macbook-repair.jpg";
-import ipadImage from "@/assets/ipad-repair.jpg";
+import logo from "@/assets/logo.png";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      {/* Logo Header */}
+      <header className="py-8 px-4">
+        <div className="max-w-7xl mx-auto flex justify-center">
+          <img src={logo} alt="MyTechMedics" className="h-20 md:h-24" />
+        </div>
+      </header>
 
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Apple Accessories &amp; More</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Tech Accessories & More</h1>
             <p className="text-xl text-muted-foreground mb-8">
-              CONVENIENTLY LOCATED ON EISENHOWER. WE CARRY MARJOR BRANDS ACCESSORIES. COME IN TODAY!
+              CONVENIENTLY LOCATED ON EISENHOWER. WE CARRY MAJOR BRAND ACCESSORIES. COME IN TODAY!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -43,21 +43,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 text-foreground">
-            WE CARRY SCREEN PROTECTORS  CASES SPEAKERS CHARGERS 
+      {/* Accessories Section */}
+      <section id="accessories" className="py-20 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
+            Quality Accessories For All Your Devices
           </h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
-            WE CARRY SCREEN PROTECTORS  CASES SPEAKERS CHARGERS 
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            We carry screen protectors, cases, speakers, chargers, and more from major brands. Visit our store to see our full selection.
           </p>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard title="iPhone" image={iphoneImage} link="/macon/iphone" />
-            <ServiceCard title="MacBook" image={macbookImage} link="/macon/macbook" />
-            <ServiceCard title="iPad" image={ipadImage} link="/macon/ipad" />
-          </div>
         </div>
       </section>
 
@@ -132,16 +126,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>
-            © 2024 MyTechMedics. All rights reserved. |{" "}
-            <Link to="/macon/about" className="hover:text-primary transition-colors">
-              About
-            </Link>
-            {" | "}
-            <Link to="/privacy" className="hover:text-primary transition-colors">
-              Privacy Policy
-            </Link>
-          </p>
+          <p>© 2024 MyTechMedics. All rights reserved.</p>
         </div>
       </footer>
     </div>
