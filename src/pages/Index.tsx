@@ -6,19 +6,17 @@ import ServiceCard from "@/components/ServiceCard";
 import iphoneImage from "@/assets/iphone-repair.jpg";
 import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
 
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Apple Accessories &amp; More</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Phone Accessories & More</h1>
             <p className="text-xl text-muted-foreground mb-8">
-              CONVENIENTLY LOCATED ON EISENHOWER. WE CARRY MARJOR BRANDS ACCESSORIES. COME IN TODAY!
+              CONVENIENTLY LOCATED ON EISENHOWER. 30 MINUTES OR LESS. NO APPOINTMENT NEEDED
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -29,11 +27,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8">
-                <a
-                  href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
                   <MapPin className="mr-2 h-5 w-5" />
                   Get Directions
                 </a>
@@ -54,9 +48,9 @@ const Index = () => {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard title="iPhone" image={iphoneImage} link="/macon/iphone" />
-            <ServiceCard title="MacBook" image={macbookImage} link="/macon/macbook" />
-            <ServiceCard title="iPad" image={ipadImage} link="/macon/ipad" />
+            <ServiceCard title="iPhone" image={iphoneImage} link="/macon/iphone" hideTitle />
+            <ServiceCard title="MacBook" image={macbookImage} link="/macon/macbook" hideTitle />
+            <ServiceCard title="iPad" image={ipadImage} link="/macon/ipad" hideTitle />
           </div>
         </div>
       </section>
@@ -101,11 +95,7 @@ const Index = () => {
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-2">
-                  <a
-                    href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
                     <MapPin className="mr-2 h-5 w-5" />
                     Get Directions
                   </a>
@@ -114,16 +104,9 @@ const Index = () => {
             </div>
 
             <div className="bg-muted rounded-lg overflow-hidden h-96 shadow-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8373937877726!2d-83.68656332397183!3d32.78909817359875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5d0d4e3c8c8c3%3A0x5e3c3c3c3c3c3c3c!2s3742%20Eisenhower%20Pkwy%2C%20Macon%2C%20GA%2031206!5e0!3m2!1sen!2sus!4v1234567890123"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Tech Medics location - 3742 Eisenhower Parkway, Macon GA 31206"
-              />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8373937877726!2d-83.68656332397183!3d32.78909817359875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5d0d4e3c8c8c3%3A0x5e3c3c3c3c3c3c3c!2s3742%20Eisenhower%20Pkwy%2C%20Macon%2C%20GA%2031206!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Tech Medics location - 3742 Eisenhower Parkway, Macon GA 31206" />
             </div>
           </div>
         </div>
@@ -144,7 +127,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
 export default Index;
