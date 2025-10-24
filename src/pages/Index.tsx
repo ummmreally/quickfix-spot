@@ -48,9 +48,9 @@ const Index = () => {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard title="iPhone" image={iphoneImage} link="/macon/iphone" />
-            <ServiceCard title="MacBook" image={macbookImage} link="/macon/macbook" />
-            <ServiceCard title="iPad" image={ipadImage} link="/macon/ipad" />
+            <ServiceCard title="iPhone" image={iphoneImage} link="/macon/iphone" hideTitle />
+            <ServiceCard title="MacBook" image={macbookImage} link="/macon/macbook" hideTitle />
+            <ServiceCard title="iPad" image={ipadImage} link="/macon/ipad" hideTitle />
           </div>
         </div>
       </section>
