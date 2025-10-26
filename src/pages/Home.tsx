@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, Shield, Wrench } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import iphoneImage from "@/assets/iphone-screen-repair-macon.jpg";
-import macbookImage from "@/assets/macbook-repair-macon.jpg";
-import ipadImage from "@/assets/ipad-screen-repair-macon.jpg";
+import iphoneImage from "@/assets/optimized/iphone-screen-repair-macon.webp";
+import macbookImage from "@/assets/optimized/macbook-repair-macon.webp";
+import ipadImage from "@/assets/optimized/ipad-screen-repair-macon.webp";
 import FAQSection from "@/components/FAQSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
@@ -24,7 +24,7 @@ const Home = () => {
           name="keywords"
           content="iPhone screen repair Macon GA, iPad repair Macon, MacBook repair Macon GA, iPhone battery replacement Macon, screen repair Macon Georgia, Apple repair Macon"
         />
-        <link rel="canonical" href="https://yourdomain.com/" />
+        <link rel="canonical" href="https://techmedicsmacon.com/" />
         <meta property="og:title" content="iPhone Screen Repair Macon GA | Same Day iPad & MacBook Repair" />
         <meta
           property="og:description"
@@ -35,7 +35,7 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "Tech Medics",
-            image: "https://yourdomain.com/logo.png",
+            image: "https://techmedicsmacon.com/logo.png",
             description:
               "Professional iPhone screen repair, iPad repair, and MacBook repair services in Macon, GA. Fast same-day service with warranty.",
             address: {
@@ -108,6 +108,7 @@ const Home = () => {
 
       <div className="min-h-screen bg-background">
         <Navigation />
+        <main>
 
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary/5 via-background to-secondary/5 py-16 md:py-24">
@@ -536,6 +537,7 @@ const Home = () => {
             },
           ]}
         />
+        </main>
 
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-border">

@@ -1,44 +1,46 @@
+import { Suspense, lazy } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Index from "./pages/Index";
-import Contact from "./pages/Contact";
-import PricingChart from "./pages/PricingChart";
-import About from "./pages/About";
-import Business from "./pages/Business";
-import Education from "./pages/Education";
-import IPhonePage from "./pages/iPhone";
-import IPadPage from "./pages/iPad";
-import MacBookPage from "./pages/MacBook";
-import Privacy from "./pages/Privacy";
-import DIYRepair from "./pages/DIYRepair";
-import NotFound from "./pages/NotFound";
-import Vineville from "./pages/neighborhoods/Vineville";
-import Ingleside from "./pages/neighborhoods/Ingleside";
-import NorthMacon from "./pages/neighborhoods/NorthMacon";
-import Downtown from "./pages/neighborhoods/Downtown";
-import EastMacon from "./pages/neighborhoods/EastMacon";
-import SouthMacon from "./pages/neighborhoods/SouthMacon";
-import Rutland from "./pages/neighborhoods/Rutland";
-import Blog from "./pages/blog/Index";
-import IPhoneScreenRepair from "./pages/blog/IPhoneScreenRepair";
-import IPhoneBatteryReplacement from "./pages/blog/IPhoneBatteryReplacement";
-import TechMedicsVsAppleStore from "./pages/blog/TechMedicsVsAppleStore";
-import MacBookRepairMacon from "./pages/blog/MacBookRepairMacon";
-import IPadScreenRepair from "./pages/blog/IPadScreenRepair";
-import OEMvsAftermarket from "./pages/blog/OEMvsAftermarket";
-import IPhoneNotTurningOn from "./pages/blog/IPhoneNotTurningOn";
-import ChoosePhoneRepairShop from "./pages/blog/ChoosePhoneRepairShop";
-import WaterDamagedIPhone from "./pages/blog/WaterDamagedIPhone";
-import CrackedScreenCost from "./pages/blog/CrackedScreenCost";
-import IPhoneRepairNearMe from "./pages/blog/IPhoneRepairNearMe";
-import FastIPhoneRepair from "./pages/blog/FastIPhoneRepair";
-import HolidayIPhoneRepairChecklist from "./pages/blog/HolidayIPhoneRepairChecklist";
-import RepairShareDriveMacon from "./pages/blog/RepairShareDriveMacon";
-import WinterDevicePrepMacon from "./pages/blog/WinterDevicePrepMacon";
+
+const Home = lazy(() => import("./pages/Home"));
+const Index = lazy(() => import("./pages/Index"));
+const Contact = lazy(() => import("./pages/Contact"));
+const PricingChart = lazy(() => import("./pages/PricingChart"));
+const About = lazy(() => import("./pages/About"));
+const Business = lazy(() => import("./pages/Business"));
+const Education = lazy(() => import("./pages/Education"));
+const IPhonePage = lazy(() => import("./pages/iPhone"));
+const IPadPage = lazy(() => import("./pages/iPad"));
+const MacBookPage = lazy(() => import("./pages/MacBook"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const DIYRepair = lazy(() => import("./pages/DIYRepair"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const Vineville = lazy(() => import("./pages/neighborhoods/Vineville"));
+const Ingleside = lazy(() => import("./pages/neighborhoods/Ingleside"));
+const NorthMacon = lazy(() => import("./pages/neighborhoods/NorthMacon"));
+const Downtown = lazy(() => import("./pages/neighborhoods/Downtown"));
+const EastMacon = lazy(() => import("./pages/neighborhoods/EastMacon"));
+const SouthMacon = lazy(() => import("./pages/neighborhoods/SouthMacon"));
+const Rutland = lazy(() => import("./pages/neighborhoods/Rutland"));
+const Blog = lazy(() => import("./pages/blog/Index"));
+const IPhoneScreenRepair = lazy(() => import("./pages/blog/IPhoneScreenRepair"));
+const IPhoneBatteryReplacement = lazy(() => import("./pages/blog/IPhoneBatteryReplacement"));
+const TechMedicsVsAppleStore = lazy(() => import("./pages/blog/TechMedicsVsAppleStore"));
+const MacBookRepairMacon = lazy(() => import("./pages/blog/MacBookRepairMacon"));
+const IPadScreenRepair = lazy(() => import("./pages/blog/IPadScreenRepair"));
+const OEMvsAftermarket = lazy(() => import("./pages/blog/OEMvsAftermarket"));
+const IPhoneNotTurningOn = lazy(() => import("./pages/blog/IPhoneNotTurningOn"));
+const ChoosePhoneRepairShop = lazy(() => import("./pages/blog/ChoosePhoneRepairShop"));
+const WaterDamagedIPhone = lazy(() => import("./pages/blog/WaterDamagedIPhone"));
+const CrackedScreenCost = lazy(() => import("./pages/blog/CrackedScreenCost"));
+const IPhoneRepairNearMe = lazy(() => import("./pages/blog/IPhoneRepairNearMe"));
+const FastIPhoneRepair = lazy(() => import("./pages/blog/FastIPhoneRepair"));
+const HolidayIPhoneRepairChecklist = lazy(() => import("./pages/blog/HolidayIPhoneRepairChecklist"));
+const RepairShareDriveMacon = lazy(() => import("./pages/blog/RepairShareDriveMacon"));
+const WinterDevicePrepMacon = lazy(() => import("./pages/blog/WinterDevicePrepMacon"));
 
 const queryClient = new QueryClient();
 
@@ -48,7 +50,14 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
+        <Suspense
+          fallback={
+            <div className="flex h-screen items-center justify-center bg-background text-muted-foreground">
+              Loading…
+            </div>
+          }
+        >
+          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/macon" element={<Index />} />
           <Route path="/macon/contact" element={<Contact />} />
@@ -87,6 +96,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

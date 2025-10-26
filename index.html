@@ -10,24 +10,30 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11028235321"></script>
+    <!-- Google tag (gtag.js) - Deferred for performance -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-11028235321');
+      // Defer GTM loading until after page load
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11028235321';
+        document.head.appendChild(script);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-11028235321');
+      });
     </script>
     <title>MyTechMedics - BEST iPhone, iPad & MacBook Repair Macon GA | FAST Service 30 MIN | Vineville, Ingleside, North Macon, East Macon | (478) 259-6371</title>
     <meta name="description" content="Expert iPhone, iPad & MacBook repair near me in Macon GA. FAST 30-minute repairs, NO appointment needed. Screen, battery, charging port repairs. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon." />
     <meta name="author" content="MyTechMedics" />
-    <link rel="canonical" href="https://mytechmedics.com/" />
+    <link rel="canonical" href="https://techmedicsmacon.com/" />
 
-    <meta property="og:title" content="MyTechMedics - BEST iPhone, iPad & MacBook Repair Macon GA | FAST 30 MIN Service" />
-    <meta property="og:description" content="Expert Apple device repair near me in Macon GA. FAST 30-minute repairs with NO appointment needed. Screen, battery & charging port repairs for iPhone, iPad & MacBook." />
+    <meta property="og:title" content="Tech Medics Macon - iPhone, iPad & MacBook Repair | FAST 30 MIN Service" />
+    <meta property="og:description" content="Expert Apple device repair in Macon GA. FAST 30-minute repairs with NO appointment needed. Screen, battery & charging port repairs for iPhone, iPad & MacBook." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mytechmedics.com/" />
+    <meta property="og:url" content="https://techmedicsmacon.com/" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     <meta property="og:locale" content="en_US" />
 
