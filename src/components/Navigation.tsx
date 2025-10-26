@@ -19,7 +19,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <a href="/">
-            <img src={logo} alt="MyTechMedics logo" className="h-12 w-auto" />
+            <img src={logo} alt="Tech Medics Macon GA - iPhone iPad MacBook repair service logo" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

@@ -6,7 +6,7 @@ const Index = () => {
       {/* Logo Header */}
       <header className="py-8 px-4">
         <div className="max-w-7xl mx-auto flex justify-center">
-          <img src={logo} alt="MyTechMedics" className="h-20 md:h-24" />
+          <img src={logo} alt="Tech Medics Macon GA - Phone accessories and device repair services" className="h-20 md:h-24" />
         </div>
       </header>
 

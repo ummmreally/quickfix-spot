@@ -15,7 +15,7 @@ const Privacy = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/src/assets/logo.png" alt="MyTechMedics Logo" className="h-8" />
+              <img src="/src/assets/logo.png" alt="Tech Medics Macon GA - iPhone iPad MacBook repair logo" className="h-8" />
               <span className="text-xl font-bold">MyTechMedics</span>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
