@@ -40,7 +40,7 @@ const RepairComparison = ({ deviceType }: RepairComparisonProps) => {
                 <th className="text-left p-4 font-bold text-foreground">Feature</th>
                 <th className="text-center p-4 font-bold text-muted-foreground">DIY Repair</th>
                 <th className="text-center p-4 font-bold text-muted-foreground">Other Shops</th>
-                <th className="text-center p-4 font-bold text-primary bg-primary/5">Tech Medics</th>
+                <th className="text-center p-4 font-bold text-primary-foreground bg-primary">Tech Medics</th>
               </tr>
             </thead>
             <tbody>
