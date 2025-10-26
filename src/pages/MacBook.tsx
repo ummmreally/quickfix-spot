@@ -3,7 +3,7 @@ import { MapPin, Phone } from "lucide-react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import macbookImage from "@/assets/macbook-repair.jpg";
+import macbookImage from "@/assets/macbook-repair-macon.jpg";
 import FAQSection from "@/components/FAQSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
@@ -72,6 +72,8 @@ const MacBook = () => {
               <img
                 src={macbookImage}
                 alt="MacBook screen repair and battery replacement service in Macon GA"
+                width="800"
+                height="800"
                 className="w-full h-auto"
               />
             </div>

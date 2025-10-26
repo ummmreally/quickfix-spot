@@ -140,7 +140,13 @@ const Pricing = () => {
       <header className="border-b border-border bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <img src={logo} alt="Tech Medics Macon GA - Device repair pricing and services logo" className="h-12 w-auto" />
+            <img 
+              src={logo} 
+              alt="Tech Medics Macon GA - Device repair pricing and services logo" 
+              width="947"
+              height="349"
+              className="h-12 w-auto" 
+            />
 
             <nav className="hidden md:flex items-center gap-8">
               <a href="/macon" className="text-foreground hover:text-primary transition-colors font-medium">

@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, Shield, Wrench } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import iphoneImage from "@/assets/iphone-repair.jpg";
-import macbookImage from "@/assets/macbook-repair.jpg";
-import ipadImage from "@/assets/ipad-repair.jpg";
+import iphoneImage from "@/assets/iphone-screen-repair-macon.jpg";
+import macbookImage from "@/assets/macbook-repair-macon.jpg";
+import ipadImage from "@/assets/ipad-screen-repair-macon.jpg";
 import FAQSection from "@/components/FAQSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
@@ -189,6 +189,8 @@ const Home = () => {
                     <img
                       src={iphoneImage}
                       alt="iPhone screen repair Macon GA - cracked screen fix"
+                      width="800"
+                      height="600"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
@@ -216,6 +218,8 @@ const Home = () => {
                     <img
                       src={ipadImage}
                       alt="iPad repair Macon GA - screen and glass repair"
+                      width="800"
+                      height="600"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
@@ -243,6 +247,8 @@ const Home = () => {
                     <img
                       src={macbookImage}
                       alt="MacBook repair Macon GA - screen and logic board repair"
+                      width="800"
+                      height="800"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
