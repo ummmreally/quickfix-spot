@@ -27,6 +27,15 @@ import Blog from "./pages/blog/Index";
 import IPhoneScreenRepair from "./pages/blog/IPhoneScreenRepair";
 import IPhoneBatteryReplacement from "./pages/blog/IPhoneBatteryReplacement";
 import TechMedicsVsAppleStore from "./pages/blog/TechMedicsVsAppleStore";
+import MacBookRepairMacon from "./pages/blog/MacBookRepairMacon";
+import IPadScreenRepair from "./pages/blog/IPadScreenRepair";
+import OEMvsAftermarket from "./pages/blog/OEMvsAftermarket";
+import IPhoneNotTurningOn from "./pages/blog/IPhoneNotTurningOn";
+import ChoosePhoneRepairShop from "./pages/blog/ChoosePhoneRepairShop";
+import WaterDamagedIPhone from "./pages/blog/WaterDamagedIPhone";
+import CrackedScreenCost from "./pages/blog/CrackedScreenCost";
+import IPhoneRepairNearMe from "./pages/blog/IPhoneRepairNearMe";
+import FastIPhoneRepair from "./pages/blog/FastIPhoneRepair";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +69,15 @@ const App = () => (
           <Route path="/blog/iphone-screen-repair-macon-ga" element={<IPhoneScreenRepair />} />
           <Route path="/blog/iphone-battery-replacement-macon" element={<IPhoneBatteryReplacement />} />
           <Route path="/blog/tech-medics-vs-apple-store-repair" element={<TechMedicsVsAppleStore />} />
+          <Route path="/blog/macbook-repair-macon-ga" element={<MacBookRepairMacon />} />
+          <Route path="/blog/ipad-screen-repair-macon" element={<IPadScreenRepair />} />
+          <Route path="/blog/oem-vs-aftermarket-iphone-screens" element={<OEMvsAftermarket />} />
+          <Route path="/blog/iphone-not-turning-on-fix" element={<IPhoneNotTurningOn />} />
+          <Route path="/blog/choose-phone-repair-shop-macon" element={<ChoosePhoneRepairShop />} />
+          <Route path="/blog/water-damaged-iphone-repair" element={<WaterDamagedIPhone />} />
+          <Route path="/blog/iphone-screen-repair-cost-macon" element={<CrackedScreenCost />} />
+          <Route path="/blog/iphone-repair-near-me-macon" element={<IPhoneRepairNearMe />} />
+          <Route path="/blog/same-day-iphone-repair-macon" element={<FastIPhoneRepair />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

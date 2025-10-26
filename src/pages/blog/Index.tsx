@@ -14,6 +14,38 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    title: "Same-Day iPhone Repair in Macon GA | Fast, Professional Service",
+    description: "Need fast iPhone repair? Tech Medics offers same-day screen repair, battery replacement, and more. Most repairs done in 30-60 minutes.",
+    slug: "same-day-iphone-repair-macon",
+    category: "iPhone Repair",
+    date: "2025-01-22",
+    keywords: ["same-day iPhone repair", "fast iPhone repair Macon", "quick phone repair"]
+  },
+  {
+    title: "How Much Does iPhone Screen Repair Cost in Macon GA? 2025 Prices",
+    description: "Complete iPhone screen repair pricing guide for Macon GA. Compare costs, quality options, and save money on cracked screen repair.",
+    slug: "iphone-screen-repair-cost-macon",
+    category: "iPhone Repair",
+    date: "2025-01-20",
+    keywords: ["iPhone screen repair cost", "cracked iPhone screen price", "iPhone 15 screen cost"]
+  },
+  {
+    title: "iPhone Repair Near Me in Macon GA: Your Local Expert",
+    description: "Searching 'iPhone repair near me'? Tech Medics in Macon offers same-day screen repair, battery replacement, and charging port fixes.",
+    slug: "iphone-repair-near-me-macon",
+    category: "iPhone Repair",
+    date: "2025-01-18",
+    keywords: ["iPhone repair near me", "phone repair near me", "iPhone repair Macon GA"]
+  },
+  {
+    title: "Water Damaged iPhone? Here's What to Do Immediately",
+    description: "iPhone got wet? Learn emergency steps, rice myths, and professional water damage repair in Macon GA. Fast action saves your device.",
+    slug: "water-damaged-iphone-repair",
+    category: "Troubleshooting",
+    date: "2025-01-16",
+    keywords: ["water damaged iPhone", "iPhone got wet", "liquid damage repair"]
+  },
+  {
     title: "Best iPhone Screen Repair in Macon GA: Complete Guide 2025",
     description: "Everything you need to know about iPhone screen repair in Macon GA, including costs, same-day service, and how to choose the best repair shop.",
     slug: "iphone-screen-repair-macon-ga",
