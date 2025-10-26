@@ -36,6 +36,9 @@ import WaterDamagedIPhone from "./pages/blog/WaterDamagedIPhone";
 import CrackedScreenCost from "./pages/blog/CrackedScreenCost";
 import IPhoneRepairNearMe from "./pages/blog/IPhoneRepairNearMe";
 import FastIPhoneRepair from "./pages/blog/FastIPhoneRepair";
+import HolidayIPhoneRepairChecklist from "./pages/blog/HolidayIPhoneRepairChecklist";
+import RepairShareDriveMacon from "./pages/blog/RepairShareDriveMacon";
+import WinterDevicePrepMacon from "./pages/blog/WinterDevicePrepMacon";
 
 const queryClient = new QueryClient();
 
@@ -78,6 +81,9 @@ const App = () => (
           <Route path="/blog/iphone-screen-repair-cost-macon" element={<CrackedScreenCost />} />
           <Route path="/blog/iphone-repair-near-me-macon" element={<IPhoneRepairNearMe />} />
           <Route path="/blog/same-day-iphone-repair-macon" element={<FastIPhoneRepair />} />
+          <Route path="/blog/holiday-iphone-repair-checklist-macon-2025" element={<HolidayIPhoneRepairChecklist />} />
+          <Route path="/blog/repair-share-drive-macon" element={<RepairShareDriveMacon />} />
+          <Route path="/blog/winter-device-prep-macon-2026" element={<WinterDevicePrepMacon />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

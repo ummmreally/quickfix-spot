@@ -14,6 +14,30 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    title: "Winter Device Prep Guide for Macon GA (January 2026)",
+    description: "Keep your iPhone, iPad, and MacBook performing through winter in Macon GA. Learn cold-weather battery care, moisture protection, and maintenance tips for January 2026.",
+    slug: "winter-device-prep-macon-2026",
+    category: "Seasonal Tips",
+    date: "2026-01-05",
+    keywords: ["winter iPhone tips", "cold weather battery", "Macon GA devices"]
+  },
+  {
+    title: "Repair & Share Drive in Macon GA: Tech Medics Joins the Cause",
+    description: "Join Tech Medics Macon at the Repair & Share Drive with QuackedScreens.com. Donate broken devices, get discounted repairs, and support families in need.",
+    slug: "repair-share-drive-macon",
+    category: "Community",
+    date: "2025-11-25",
+    keywords: ["repair and share drive", "device donation", "QuackedScreens"]
+  },
+  {
+    title: "Holiday iPhone Repair Checklist for Macon GA (2025)",
+    description: "Prepare your iPhone for the holidays in Macon GA. Learn proactive maintenance tips, emergency repair advice, and how to avoid device downtime.",
+    slug: "holiday-iphone-repair-checklist-macon-2025",
+    category: "Seasonal Tips",
+    date: "2025-11-20",
+    keywords: ["holiday iPhone repair", "travel phone prep", "Tech Medics Macon"]
+  },
+  {
     title: "Same-Day iPhone Repair in Macon GA | Fast, Professional Service",
     description: "Need fast iPhone repair? Tech Medics offers same-day screen repair, battery replacement, and more. Most repairs done in 30-60 minutes.",
     slug: "same-day-iphone-repair-macon",
