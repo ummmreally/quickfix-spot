@@ -1,0 +1,194 @@
+import { Helmet } from "react-helmet";
+import Navigation from "@/components/Navigation";
+import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
+
+interface BlogPost {
+  title: string;
+  description: string;
+  slug: string;
+  category: string;
+  date: string;
+  keywords: string[];
+}
+
+const blogPosts: BlogPost[] = [
+  {
+    title: "Best iPhone Screen Repair in Macon GA: Complete Guide 2025",
+    description: "Everything you need to know about iPhone screen repair in Macon GA, including costs, same-day service, and how to choose the best repair shop.",
+    slug: "iphone-screen-repair-macon-ga",
+    category: "iPhone Repair",
+    date: "2025-01-15",
+    keywords: ["iPhone screen repair Macon GA", "cracked iPhone screen", "same-day repair"]
+  },
+  {
+    title: "iPhone Battery Replacement in Macon: Cost, Time & What to Expect",
+    description: "Complete guide to iPhone battery replacement in Macon GA. Learn about costs, warning signs, and same-day service options.",
+    slug: "iphone-battery-replacement-macon",
+    category: "Battery & Performance",
+    date: "2025-01-12",
+    keywords: ["iPhone battery replacement", "swollen battery", "battery health"]
+  },
+  {
+    title: "MacBook Repair in Macon GA: Screen, Keyboard & More",
+    description: "Expert MacBook repair services in Macon GA. We fix screens, keyboards, liquid damage, and boot issues. Same-day service available.",
+    slug: "macbook-repair-macon-ga",
+    category: "MacBook Repair",
+    date: "2025-01-10",
+    keywords: ["MacBook screen repair", "MacBook won't turn on", "liquid damage repair"]
+  },
+  {
+    title: "iPad Screen Replacement & Repair Services in Macon GA",
+    description: "Professional iPad screen repair and charging port fixes in Macon. Same-day service, warranty included, all iPad models supported.",
+    slug: "ipad-screen-repair-macon",
+    category: "iPad Repair",
+    date: "2025-01-08",
+    keywords: ["iPad screen replacement", "iPad won't charge", "iPad repair cost"]
+  },
+  {
+    title: "OEM vs Aftermarket iPhone Screens: What's the Difference?",
+    description: "Learn the key differences between OEM and aftermarket iPhone screens, including quality, cost, and which option is right for you.",
+    slug: "oem-vs-aftermarket-iphone-screens",
+    category: "Educational",
+    date: "2025-01-05",
+    keywords: ["OEM screens", "aftermarket screens", "iPhone screen quality"]
+  },
+  {
+    title: "Tech Medics vs Apple Store: Which iPhone Repair is Better?",
+    description: "Comparing Tech Medics and Apple Store repairs: costs, warranty, turnaround time, and why local repair shops are often the better choice.",
+    slug: "tech-medics-vs-apple-store-repair",
+    category: "Brand Authority",
+    date: "2025-01-03",
+    keywords: ["Apple Store alternative", "third-party repair", "affordable iPhone repair"]
+  },
+  {
+    title: "iPhone Not Turning On? Here's What to Do (Macon GA)",
+    description: "Troubleshooting guide for iPhones that won't turn on. Learn common causes, DIY fixes, and when to visit our Macon repair shop.",
+    slug: "iphone-not-turning-on-fix",
+    category: "Troubleshooting",
+    date: "2025-01-01",
+    keywords: ["iPhone black screen", "iPhone won't power on", "dead iPhone"]
+  },
+  {
+    title: "How to Choose a Reliable Phone Repair Shop in Macon GA",
+    description: "Expert tips for selecting the best phone repair shop in Macon. Learn what to look for in reviews, warranties, and technician qualifications.",
+    slug: "choose-phone-repair-shop-macon",
+    category: "Educational",
+    date: "2024-12-28",
+    keywords: ["reliable repair shop", "phone repair reviews", "certified technicians"]
+  }
+];
+
+const Blog = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Phone Repair Blog | Tech Medics Macon GA - iPhone, iPad, MacBook Tips</title>
+        <meta name="description" content="Expert advice on iPhone, iPad, and MacBook repair in Macon GA. Learn about screen replacement, battery issues, repair costs, and choosing the right repair service." />
+        <meta name="keywords" content="iPhone repair blog, MacBook repair tips, iPad repair guide, phone repair Macon GA, device repair advice" />
+        <link rel="canonical" href="https://techmedicsmacon.com/blog" />
+        
+        <meta property="og:title" content="Phone Repair Blog | Tech Medics Macon GA" />
+        <meta property="og:description" content="Expert advice on iPhone, iPad, and MacBook repair in Macon GA." />
+        <meta property="og:url" content="https://techmedicsmacon.com/blog" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
+      <Navigation />
+
+      <main className="min-h-screen bg-background">
+        <section className="py-20 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+                Tech Repair Tips & Guides
+              </h1>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Expert advice on iPhone, iPad, and MacBook repair in Macon GA. Learn about costs, 
+                troubleshooting, and how to keep your devices running smoothly.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {blogPosts.map((post) => (
+                <Link key={post.slug} to={`/blog/${post.slug}`}>
+                  <Card className="h-full p-6 hover:shadow-lg transition-all duration-300 cursor-pointer border-border">
+                    <div className="mb-4">
+                      <span className="text-sm font-semibold text-primary">
+                        {post.category}
+                      </span>
+                      <span className="text-sm text-muted-foreground ml-4">
+                        {new Date(post.date).toLocaleDateString('en-US', { 
+                          month: 'long', 
+                          day: 'numeric', 
+                          year: 'numeric' 
+                        })}
+                      </span>
+                    </div>
+                    
+                    <h2 className="text-2xl font-bold mb-3 text-foreground hover:text-primary transition-colors">
+                      {post.title}
+                    </h2>
+                    
+                    <p className="text-muted-foreground mb-4">
+                      {post.description}
+                    </p>
+                    
+                    <div className="flex flex-wrap gap-2">
+                      {post.keywords.slice(0, 3).map((keyword, idx) => (
+                        <span 
+                          key={idx}
+                          className="text-xs px-2 py-1 bg-secondary/50 text-secondary-foreground rounded"
+                        >
+                          {keyword}
+                        </span>
+                      ))}
+                    </div>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 px-4 bg-secondary/20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">
+              Need Device Repair in Macon GA?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Same-day iPhone, iPad, and MacBook repair services. Visit our shop or call for a free quote.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="tel:+14782596371"
+                className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
+              >
+                Call (478) 259-6371
+              </a>
+              <Link 
+                to="/macon/contact"
+                className="px-8 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                Get a Quote
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="bg-secondary/20 py-8 px-4">
+        <div className="max-w-7xl mx-auto text-center text-muted-foreground">
+          <p>&copy; 2025 Tech Medics Macon. All rights reserved.</p>
+          <div className="mt-4 space-x-4">
+            <Link to="/macon/about" className="hover:text-primary">About</Link>
+            <Link to="/privacy" className="hover:text-primary">Privacy Policy</Link>
+            <Link to="/macon/contact" className="hover:text-primary">Contact</Link>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Blog;

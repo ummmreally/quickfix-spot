@@ -23,6 +23,10 @@ import Downtown from "./pages/neighborhoods/Downtown";
 import EastMacon from "./pages/neighborhoods/EastMacon";
 import SouthMacon from "./pages/neighborhoods/SouthMacon";
 import Rutland from "./pages/neighborhoods/Rutland";
+import Blog from "./pages/blog/Index";
+import IPhoneScreenRepair from "./pages/blog/IPhoneScreenRepair";
+import IPhoneBatteryReplacement from "./pages/blog/IPhoneBatteryReplacement";
+import TechMedicsVsAppleStore from "./pages/blog/TechMedicsVsAppleStore";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +56,10 @@ const App = () => (
           <Route path="/macon/east-macon" element={<EastMacon />} />
           <Route path="/macon/south-macon" element={<SouthMacon />} />
           <Route path="/macon/rutland" element={<Rutland />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/iphone-screen-repair-macon-ga" element={<IPhoneScreenRepair />} />
+          <Route path="/blog/iphone-battery-replacement-macon" element={<IPhoneBatteryReplacement />} />
+          <Route path="/blog/tech-medics-vs-apple-store-repair" element={<TechMedicsVsAppleStore />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

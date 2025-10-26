@@ -72,6 +72,9 @@ const Navigation = () => {
             <a href="/macon/diy-repair" className="text-foreground hover:text-primary transition-colors font-medium">
               DIY Repair
             </a>
+            <a href="/blog" className="text-foreground hover:text-primary transition-colors font-medium">
+              Blog
+            </a>
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <a href="tel:(478)259-6371">
                 <Phone className="mr-2 h-4 w-4" />
@@ -131,6 +134,9 @@ const Navigation = () => {
                 </div>
                 <a href="/macon/diy-repair" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                   DIY Repair
+                </a>
+                <a href="/blog" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
+                  Blog
                 </a>
                 <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
                   <a href="tel:(478)259-6371">
