@@ -7,30 +7,30 @@ const WinterDevicePrepMacon = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Winter Device Prep Guide for Macon GA (January 2026)",
-    "description": "Keep your iPhone, iPad, and MacBook performing through winter in Macon GA. Learn cold-weather battery care, moisture protection, and maintenance tips for January 2026.",
+    "headline": "Winter Device Prep Guide for Macon GA (January 2025)",
+    "description": "Keep your iPhone, iPad, and MacBook performing through winter in Macon GA. Learn cold-weather battery care, moisture protection, and maintenance tips for January 2025.",
     "author": { "@type": "Organization", "name": "Tech Medics Macon" },
     "publisher": {
       "@type": "Organization",
       "name": "Tech Medics Macon",
       "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" }
     },
-    "datePublished": "2026-01-05",
-    "dateModified": "2026-01-05"
+    "datePublished": "2025-01-05",
+    "dateModified": "2025-01-05"
   };
 
   return (
     <>
       <Helmet>
-        <title>Winter Device Prep Guide 2026 | Tech Medics Macon GA</title>
-        <meta name="description" content="Winter tech maintenance tips for Macon GA. Protect your iPhone, iPad, and MacBook from cold weather, condensation, and battery drain in January 2026." />
+        <title>Winter Device Prep Guide 2025 | Tech Medics Macon GA</title>
+        <meta name="description" content="Winter tech maintenance tips for Macon GA. Protect your iPhone, iPad, and MacBook from cold weather, condensation, and battery drain in January 2025." />
         <meta name="keywords" content="winter iPhone tips, cold weather battery Macon, moisture protection iPad, MacBook maintenance winter" />
-        <link rel="canonical" href="https://techmedicsmacon.com/blog/winter-device-prep-macon-2026" />
+        <link rel="canonical" href="https://techmedicsmacon.com/blog/winter-device-prep-macon-2025" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       </Helmet>
 
       <LocalBusinessSchema
-        pageName="Winter Device Prep Guide 2026"
+        pageName="Winter Device Prep Guide 2025"
         pageDescription="Protect your devices from cold-weather issues in Macon GA with Tech Medics maintenance tips"
         serviceType="Winter Device Maintenance"
       />
@@ -41,9 +41,9 @@ const WinterDevicePrepMacon = () => {
         <header className="py-16 px-4 bg-secondary/20">
           <div className="max-w-4xl mx-auto">
             <Link to="/blog" className="text-primary hover:underline mb-4 inline-block">← Back to Blog</Link>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Winter Device Prep Guide for Macon GA (January 2026)</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Winter Device Prep Guide for Macon GA (January 2025)</h1>
             <p className="text-xl text-muted-foreground">Practical advice to keep your iPhone, iPad, and MacBook running strong when temperatures drop.</p>
-            <div className="mt-4 text-sm text-muted-foreground">Published January 5, 2026 | 7 min read</div>
+            <div className="mt-4 text-sm text-muted-foreground">Published January 5, 2025 | 7 min read</div>
           </div>
         </header>
 
@@ -74,7 +74,7 @@ const WinterDevicePrepMacon = () => {
             </ul>
 
             <h2 className="text-3xl font-bold text-foreground mt-12">4. Schedule a New Year Diagnostics Session</h2>
-            <p className="text-muted-foreground">Start 2026 with a clean, fast device. Tech Medics offers a Winter Tune-Up package through January 31.</p>
+            <p className="text-muted-foreground">Start 2025 with a clean, fast device. Tech Medics offers a Winter Tune-Up package through January 31.</p>
             <ul className="list-disc pl-6 text-muted-foreground space-y-2">
               <li>Battery health test with detailed report</li>
               <li>Charging port cleaning and contact check</li>
@@ -92,7 +92,7 @@ const WinterDevicePrepMacon = () => {
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-12 rounded">
               <h3 className="text-2xl font-bold text-foreground mb-3">Winter Tune-Up Special</h3>
-              <p className="text-muted-foreground mb-4">Mention this guide through January 31, 2026 and receive $15 off diagnostics or battery replacement at Tech Medics Macon.</p>
+              <p className="text-muted-foreground mb-4">Mention this guide through January 31, 2025 and receive $15 off diagnostics or battery replacement at Tech Medics Macon.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="tel:+14782596371" className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity text-center">Call (478) 259-6371</a>
                 <Link to="/macon/iphone" className="px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors text-center">Book Winter Tune-Up</Link>
@@ -104,7 +104,7 @@ const WinterDevicePrepMacon = () => {
 
       <footer className="bg-secondary/20 py-8 px-4">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>&copy; 2026 Tech Medics Macon. All rights reserved.</p>
+          <p>&copy; 2025 Tech Medics Macon. All rights reserved.</p>
           <div className="mt-4 space-x-4">
             <Link to="/macon/about" className="hover:text-primary">About</Link>
             <Link to="/privacy" className="hover:text-primary">Privacy Policy</Link>

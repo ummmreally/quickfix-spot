@@ -15,8 +15,8 @@ const RepairShareDriveMacon = () => {
       "name": "Tech Medics Macon",
       "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" }
     },
-    "datePublished": "2025-11-25",
-    "dateModified": "2025-11-25"
+    "datePublished": "2025-10-22",
+    "dateModified": "2025-10-22"
   };
 
   return (
@@ -43,7 +43,7 @@ const RepairShareDriveMacon = () => {
             <Link to="/blog" className="text-primary hover:underline mb-4 inline-block">← Back to Blog</Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Repair & Share Drive in Macon GA: Tech Medics Joins the Cause</h1>
             <p className="text-xl text-muted-foreground">Give your unused tech a second life and support families across Bibb County this holiday season.</p>
-            <div className="mt-4 text-sm text-muted-foreground">Published November 25, 2025 | 8 min read</div>
+            <div className="mt-4 text-sm text-muted-foreground">Published October 22, 2025 | 8 min read</div>
           </div>
         </header>
 
@@ -53,7 +53,7 @@ const RepairShareDriveMacon = () => {
 
             <h2 className="text-3xl font-bold text-foreground">Event Details</h2>
             <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-              <li><strong>Drop-off dates:</strong> November 25 – December 15, 2025</li>
+              <li><strong>Drop-off dates:</strong> October 22 – November 16, 2025</li>
               <li><strong>Primary location:</strong> QuackedScreens Community Hub, 112 Riverside Dr, Macon, GA</li>
               <li><strong>Tech Medics satellite drop-off:</strong> 3742 Eisenhower Parkway (our service counter)</li>
               <li><strong>Accepted devices:</strong> iPhones, Android phones, iPads, Chromebooks, laptops (2015+), Apple Watches, AirPods</li>
@@ -69,7 +69,7 @@ const RepairShareDriveMacon = () => {
             </ul>
 
             <h2 className="text-3xl font-bold text-foreground mt-12">Why "Repair & Share" Matters</h2>
-            <p className="text-muted-foreground">Bibb County still faces a digital divide—many families rely on a single smartphone for schoolwork, telehealth, and job applications. Last year the event placed 187 refurbished devices into households across Macon. With more partners involved this year, the goal is to surpass 250 devices.</p>
+            <p className="text-muted-foreground">Bibb County still faces a digital divide—many families rely on a single smartphone for schoolwork, telehealth, and job applications. Last year the event placed 187 refurbished devices into households across Macon. With more partners involved this fall, the goal is to surpass 250 devices before the winter break.</p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-12 rounded">
               <h3 className="text-2xl font-bold text-foreground mb-3">How to Participate</h3>
@@ -83,7 +83,7 @@ const RepairShareDriveMacon = () => {
             </div>
 
             <h2 className="text-3xl font-bold text-foreground">Exclusive Repair Incentives</h2>
-            <p className="text-muted-foreground">Bring in a donation and unlock limited-time Tech Medics perks (valid through December 20, 2025):</p>
+            <p className="text-muted-foreground">Bring in a donation and unlock limited-time Tech Medics perks (valid through November 30, 2025):</p>
             <ul className="list-disc pl-6 text-muted-foreground space-y-2">
               <li>20% off any iPhone or iPad screen repair</li>
               <li>Free tempered-glass screen protector with battery replacement</li>

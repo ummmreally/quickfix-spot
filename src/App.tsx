@@ -83,7 +83,7 @@ const App = () => (
           <Route path="/blog/same-day-iphone-repair-macon" element={<FastIPhoneRepair />} />
           <Route path="/blog/holiday-iphone-repair-checklist-macon-2025" element={<HolidayIPhoneRepairChecklist />} />
           <Route path="/blog/repair-share-drive-macon" element={<RepairShareDriveMacon />} />
-          <Route path="/blog/winter-device-prep-macon-2026" element={<WinterDevicePrepMacon />} />
+          <Route path="/blog/winter-device-prep-macon-2025" element={<WinterDevicePrepMacon />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

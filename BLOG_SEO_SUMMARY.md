@@ -1,7 +1,7 @@
 # Blog SEO Expansion - Complete Summary
 
 ## Overview
-Created 12 comprehensive, SEO-optimized blog posts to help Tech Medics rank #1 for "iPhone repair near me" and "iPhone screen repair" in Macon GA, including three fresh holiday and community-focused articles for late 2025 and early 2026.
+Created 12 comprehensive, SEO-optimized blog posts to help Tech Medics rank #1 for "iPhone repair near me" and "iPhone screen repair" in Macon GA, including three fresh holiday and community-focused articles for early and late 2025.
 
 ## Target Keywords & Strategy
 **Primary Keywords:**
@@ -91,8 +91,8 @@ Created 12 comprehensive, SEO-optimized blog posts to help Tech Medics rank #1 f
 - **Word Count:** ~1,700 words
 - **Key Features:** Event details, donation steps, Tech Medics incentives, volunteer info
 
-### 12. **Winter Device Prep Guide 2026** (`winter-device-prep-macon-2026`)
-- **Focus:** Cold-weather device care for January 2026
+### 12. **Winter Device Prep Guide 2025** (`winter-device-prep-macon-2025`)
+- **Focus:** Cold-weather device care for January 2025
 - **Keywords:** winter iPhone tips, cold weather battery, Macon GA devices
 - **Word Count:** ~1,400 words
 - **Key Features:** Battery preservation tips, condensation prevention, winter tune-up promo

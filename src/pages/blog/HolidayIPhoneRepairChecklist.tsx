@@ -15,8 +15,8 @@ const HolidayIPhoneRepairChecklist = () => {
       "name": "Tech Medics Macon",
       "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" }
     },
-    "datePublished": "2025-11-20",
-    "dateModified": "2025-11-20"
+    "datePublished": "2025-10-20",
+    "dateModified": "2025-10-20"
   };
 
   return (
@@ -43,7 +43,7 @@ const HolidayIPhoneRepairChecklist = () => {
             <Link to="/blog" className="text-primary hover:underline mb-4 inline-block">← Back to Blog</Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Holiday iPhone Repair Checklist for Macon GA (2025)</h1>
             <p className="text-xl text-muted-foreground">Stay powered, connected, and stress-free during holiday travel and family gatherings.</p>
-            <div className="mt-4 text-sm text-muted-foreground">Published November 20, 2025 | 9 min read</div>
+            <div className="mt-4 text-sm text-muted-foreground">Published October 20, 2025 | 9 min read</div>
           </div>
         </header>
 
