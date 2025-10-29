@@ -11,7 +11,7 @@ const Index = () => {
             alt="Tech Medics Macon GA - Phone accessories and device repair services" 
             width="947"
             height="349"
-            className="h-20 md:h-24" 
+            className="h-12 w-auto"
           />
         </div>
       </header>
