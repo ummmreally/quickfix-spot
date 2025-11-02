@@ -12,18 +12,18 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 const iPad = () => {
   useEffect(() => {
-    document.title = "iPad Repair Macon GA | BEST Service | iPad Screen Repair Near Me | NO APPOINTMENT Needed | Vineville, Ingleside, North Macon, East Macon | iPad Battery Replacement | (478) 259-6371";
+    document.title = "iPad Repair Macon GA | Same-Day Screen & Battery Replacement";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Looking for iPad repair near me in Macon? BEST iPad screen repair & battery replacement. NO appointment needed, FAST service. All iPad models including iPad Pro, Air & Mini. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.",
+        "Same-day iPad screen repair & battery replacement in Macon GA. All iPad models: Pro, Air, Mini. No appointment needed. 3742 Eisenhower Pkwy. (478) 259-6371.",
       );
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
       meta.content =
-        "Looking for iPad repair near me in Macon? BEST iPad screen repair & battery replacement. NO appointment needed, FAST service. All iPad models including iPad Pro, Air & Mini. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.";
+        "Same-day iPad screen repair & battery replacement in Macon GA. All iPad models: Pro, Air, Mini. No appointment needed. 3742 Eisenhower Pkwy. (478) 259-6371.";
       document.head.appendChild(meta);
     }
   }, []);

@@ -41,6 +41,11 @@ const FastIPhoneRepair = lazy(() => import("./pages/blog/FastIPhoneRepair"));
 const HolidayIPhoneRepairChecklist = lazy(() => import("./pages/blog/HolidayIPhoneRepairChecklist"));
 const RepairShareDriveMacon = lazy(() => import("./pages/blog/RepairShareDriveMacon"));
 const WinterDevicePrepMacon = lazy(() => import("./pages/blog/WinterDevicePrepMacon"));
+const IPhoneBatteryReplacement2025 = lazy(() => import("./pages/blog/IPhoneBatteryReplacement2025"));
+const IPhoneDyingFast = lazy(() => import("./pages/blog/IPhoneDyingFast"));
+const MercerUniversityIPhoneRepair = lazy(() => import("./pages/blog/MercerUniversityIPhoneRepair"));
+const SwollenIPhoneBattery = lazy(() => import("./pages/blog/SwollenIPhoneBattery"));
+const MacBookScreenCostMacon = lazy(() => import("./pages/blog/MacBookScreenCostMacon"));
 
 const queryClient = new QueryClient();
 
@@ -93,6 +98,11 @@ const App = () => (
           <Route path="/blog/holiday-iphone-repair-checklist-macon-2025" element={<HolidayIPhoneRepairChecklist />} />
           <Route path="/blog/repair-share-drive-macon" element={<RepairShareDriveMacon />} />
           <Route path="/blog/winter-device-prep-macon-2025" element={<WinterDevicePrepMacon />} />
+          <Route path="/blog/iphone-battery-replacement-signs-2025" element={<IPhoneBatteryReplacement2025 />} />
+          <Route path="/blog/iphone-dying-fast-after-charging" element={<IPhoneDyingFast />} />
+          <Route path="/blog/iphone-repair-mercer-university-student-discount" element={<MercerUniversityIPhoneRepair />} />
+          <Route path="/blog/swollen-iphone-battery-replacement-macon" element={<SwollenIPhoneBattery />} />
+          <Route path="/blog/macbook-screen-repair-cost-macon" element={<MacBookScreenCostMacon />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

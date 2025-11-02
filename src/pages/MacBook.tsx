@@ -12,18 +12,18 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 const MacBook = () => {
   useEffect(() => {
-    document.title = "MacBook Repair Macon GA | EXPERT Technicians | MacBook Screen Repair Near Me | SAME DAY Service | Vineville, Ingleside, North Macon, East Macon | MacBook Pro, Air, Retina | (478) 259-6371";
+    document.title = "MacBook Repair Macon GA | Screen, Battery & Keyboard Repair";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Looking for MacBook repair near me in Macon? EXPERT MacBook screen repair, battery replacement & keyboard repair. SAME DAY service for all MacBook models including Pro, Air & Retina. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.",
+        "MacBook repair in Macon GA: screen, battery & keyboard. Same-day service for Pro, Air & Retina. Expert technicians at 3742 Eisenhower Pkwy. (478) 259-6371.",
       );
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
       meta.content =
-        "Looking for MacBook repair near me in Macon? EXPERT MacBook screen repair, battery replacement & keyboard repair. SAME DAY service for all MacBook models including Pro, Air & Retina. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.";
+        "MacBook repair in Macon GA: screen, battery & keyboard. Same-day service for Pro, Air & Retina. Expert technicians at 3742 Eisenhower Pkwy. (478) 259-6371.";
       document.head.appendChild(meta);
     }
   }, []);

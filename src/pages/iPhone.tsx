@@ -12,18 +12,18 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 const iPhone = () => {
   useEffect(() => {
-    document.title = "iPhone Screen Repair Macon GA | BEST Prices | 30 MIN or LESS | iPhone Battery Replacement Near Me | Vineville, Ingleside, North Macon, East Macon | NO APPOINTMENT Needed | (478) 259-6371";
+    document.title = "iPhone Repair Macon GA | Same-Day Screen & Battery Repair";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Looking for iPhone repair near me in Macon? BEST iPhone screen repair & battery replacement. 30 minutes or LESS, NO appointment needed. All iPhone models. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.",
+        "Same-day iPhone screen repair & battery replacement in Macon GA. 30-min repairs, no appointment. Walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
       );
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
       meta.content =
-        "Looking for iPhone repair near me in Macon? BEST iPhone screen repair & battery replacement. 30 minutes or LESS, NO appointment needed. All iPhone models. Located on Eisenhower Parkway serving Vineville, Ingleside, North & East Macon.";
+        "Same-day iPhone screen repair & battery replacement in Macon GA. 30-min repairs, no appointment. Walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371.";
       document.head.appendChild(meta);
     }
   }, []);
