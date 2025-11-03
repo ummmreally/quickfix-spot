@@ -14,6 +14,46 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    title: "7 Signs Your iPhone Battery Needs Replacement in 2025",
+    description: "Is your iPhone battery dying fast? Learn the 7 warning signs you need a battery replacement, costs in Macon GA, and what to expect during repair.",
+    slug: "iphone-battery-replacement-2025",
+    category: "Battery & Performance",
+    date: "2025-11-03",
+    keywords: ["iPhone battery replacement", "battery health", "Macon GA battery repair"]
+  },
+  {
+    title: "Why Is My iPhone Dying So Fast? 11 Proven Fixes for 2025",
+    description: "iPhone battery draining fast? Learn 11 expert solutions to fix rapid battery drain, when to replace your battery, and how to maximize battery life.",
+    slug: "iphone-dying-fast",
+    category: "Battery & Performance",
+    date: "2025-11-03",
+    keywords: ["iPhone dying fast", "battery drain", "iPhone battery tips"]
+  },
+  {
+    title: "iPhone Repair Near Mercer University | Student Discounts Available",
+    description: "Fast, affordable iPhone repair for Mercer University students in Macon GA. 10% student discount, same-day screen & battery repair. Walk-ins welcome.",
+    slug: "mercer-university-iphone-repair",
+    category: "iPhone Repair",
+    date: "2025-11-03",
+    keywords: ["Mercer University iPhone repair", "student discount repair", "Macon student phone repair"]
+  },
+  {
+    title: "Swollen iPhone Battery? Emergency Replacement in Macon GA",
+    description: "Swollen iPhone battery is dangerous. Learn warning signs, what NOT to do, and get same-day emergency battery replacement in Macon GA.",
+    slug: "swollen-iphone-battery",
+    category: "Battery & Performance",
+    date: "2025-11-03",
+    keywords: ["swollen iPhone battery", "emergency battery replacement", "dangerous battery"]
+  },
+  {
+    title: "MacBook Screen Repair Cost Macon GA: Complete 2025 Price Guide",
+    description: "Complete MacBook screen repair pricing in Macon GA. Compare Tech Medics vs Apple Store costs for Air, Pro, M-Series. Save $100-300.",
+    slug: "macbook-screen-cost-macon",
+    category: "MacBook Repair",
+    date: "2025-11-03",
+    keywords: ["MacBook screen repair cost", "MacBook Pro screen price", "Macon MacBook repair"]
+  },
+  {
     title: "Winter Device Prep Guide for Macon GA (January 2025)",
     description: "Keep your iPhone, iPad, and MacBook performing through winter in Macon GA. Learn cold-weather battery care, moisture protection, and maintenance tips for January 2025.",
     slug: "winter-device-prep-macon-2025",

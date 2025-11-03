@@ -25,6 +25,22 @@ const Home = () => {
           content="iPhone screen repair Macon GA, iPad repair Macon, MacBook repair Macon GA, iPhone battery replacement Macon, screen repair Macon Georgia, Apple repair Macon"
         />
         <link rel="canonical" href="https://techmedicsmacon.com/" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://techmedicsmacon.com/"
+              }
+            ]
+          })}
+        </script>
+        
         <meta property="og:title" content="iPhone Screen Repair Macon GA | Same Day iPad & MacBook Repair" />
         <meta
           property="og:description"

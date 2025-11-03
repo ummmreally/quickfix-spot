@@ -9,27 +9,136 @@ import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import { Helmet } from "react-helmet";
 
 const iPhone = () => {
-  useEffect(() => {
-    document.title = "iPhone Repair Macon GA | Same-Day Screen & Battery Repair";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Same-day iPhone screen repair & battery replacement in Macon GA. 30-min repairs, no appointment. Walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
-      );
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content =
-        "Same-day iPhone screen repair & battery replacement in Macon GA. 30-min repairs, no appointment. Walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371.";
-      document.head.appendChild(meta);
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>iPhone Repair Macon GA | Same-Day Screen & Battery Fix</title>
+        <meta
+          name="description"
+          content="Expert iPhone repair in Macon GA. Screen replacement $79+, battery $59+. Most repairs in 30 min. Walk-ins welcome at 3742 Eisenhower Pkwy."
+        />
+        <meta name="keywords" content="iPhone repair Macon GA, iPhone screen repair, iPhone battery replacement, cracked iPhone screen Macon" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/iphone" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "iPhone Repair",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Tech Medics Macon",
+              "telephone": "(478) 259-6371",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3742 Eisenhower Parkway",
+                "addressLocality": "Macon",
+                "addressRegion": "GA",
+                "postalCode": "31206"
+              }
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Macon",
+              "containedIn": {
+                "@type": "State",
+                "name": "Georgia"
+              }
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "iPhone Repair Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "iPhone Screen Repair",
+                    "description": "Professional iPhone screen replacement for cracked or damaged displays"
+                  },
+                  "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "minPrice": "79.00",
+                    "priceCurrency": "USD"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "iPhone Battery Replacement",
+                    "description": "Quick iPhone battery replacement for improved performance"
+                  },
+                  "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "minPrice": "59.00",
+                    "priceCurrency": "USD"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "iPhone Charging Port Repair"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "iPhone Water Damage Repair"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does iPhone screen repair cost in Macon GA?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "iPhone screen repair costs start at $79 for older models. iPhone 12-15 screen repairs range from $119-$249 depending on the model. We offer same-day service with warranty included."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does iPhone repair take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most iPhone screen and battery repairs are completed in 30-45 minutes while you wait. More complex repairs like water damage or logic board issues may take 1-2 days."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you use genuine iPhone parts?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We use high-quality OEM-equivalent parts that meet or exceed Apple's standards. All repairs include a warranty for your peace of mind."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is iPhone repair cheaper than Apple Store?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Our iPhone repairs cost 30-50% less than Apple Store prices. For example, iPhone 13 screen repair is $149 at Tech Medics vs $279 at Apple."
+                }
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+      
       <LocalBusinessSchema 
         pageName="iPhone Repair Macon GA"
         pageDescription="Expert iPhone screen repair and battery replacement in Macon, GA. Fast 30-minute repairs with no appointment needed."

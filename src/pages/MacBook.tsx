@@ -9,27 +9,118 @@ import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import { Helmet } from "react-helmet";
 
 const MacBook = () => {
-  useEffect(() => {
-    document.title = "MacBook Repair Macon GA | Screen, Battery & Keyboard Repair";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "MacBook repair in Macon GA: screen, battery & keyboard. Same-day service for Pro, Air & Retina. Expert technicians at 3742 Eisenhower Pkwy. (478) 259-6371.",
-      );
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content =
-        "MacBook repair in Macon GA: screen, battery & keyboard. Same-day service for Pro, Air & Retina. Expert technicians at 3742 Eisenhower Pkwy. (478) 259-6371.";
-      document.head.appendChild(meta);
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>MacBook Repair Macon GA | Screen, Keyboard, Battery Fix</title>
+        <meta
+          name="description"
+          content="Expert MacBook repair in Macon GA. Screen replacement, keyboard, battery, logic board repair. MacBook Air & Pro. Same-day service available. (478) 259-6371"
+        />
+        <meta name="keywords" content="MacBook repair Macon GA, MacBook screen replacement, MacBook keyboard repair, MacBook battery" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/macbook" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "MacBook Repair",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Tech Medics Macon",
+              "telephone": "(478) 259-6371",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3742 Eisenhower Parkway",
+                "addressLocality": "Macon",
+                "addressRegion": "GA",
+                "postalCode": "31206"
+              }
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Macon",
+              "containedIn": {
+                "@type": "State",
+                "name": "Georgia"
+              }
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "MacBook Repair Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "MacBook Screen Replacement",
+                    "description": "Professional MacBook screen repair for cracked or damaged displays"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "MacBook Keyboard Repair",
+                    "description": "MacBook keyboard replacement and repair service"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "MacBook Battery Replacement"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "MacBook Logic Board Repair"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does MacBook screen repair cost in Macon?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "MacBook screen repair costs range from $349-$799 depending on the model. MacBook Air repairs typically cost $349-$449, while MacBook Pro repairs range from $449-$799. This is 30-50% less than Apple Store prices."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you repair M1/M2 MacBooks?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we repair all MacBook models including M1, M2, and M3 chip MacBooks. We have specialized tools and training for Apple Silicon MacBook repairs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does MacBook repair take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Simple repairs like battery replacement take 1-2 hours. Screen replacements typically take 2-4 hours. Complex repairs like logic board issues may require 2-5 business days depending on parts availability."
+                }
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+      
       <LocalBusinessSchema 
         pageName="MacBook Repair Macon GA"
         pageDescription="Expert MacBook screen repair, battery replacement, and keyboard repair in Macon, GA. Same-day service for all MacBook models."

@@ -9,27 +9,111 @@ import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import { Helmet } from "react-helmet";
 
 const iPad = () => {
-  useEffect(() => {
-    document.title = "iPad Repair Macon GA | Same-Day Screen & Battery Replacement";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Same-day iPad screen repair & battery replacement in Macon GA. All iPad models: Pro, Air, Mini. No appointment needed. 3742 Eisenhower Pkwy. (478) 259-6371.",
-      );
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content =
-        "Same-day iPad screen repair & battery replacement in Macon GA. All iPad models: Pro, Air, Mini. No appointment needed. 3742 Eisenhower Pkwy. (478) 259-6371.";
-      document.head.appendChild(meta);
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>iPad Repair Macon GA | Screen & Battery Replacement</title>
+        <meta
+          name="description"
+          content="Professional iPad repair in Macon GA. Screen replacement, battery service, charging port repair. Same-day service. All iPad models. Call (478) 259-6371"
+        />
+        <meta name="keywords" content="iPad repair Macon GA, iPad screen replacement, iPad battery, iPad charging port repair" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/ipad" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "iPad Repair",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Tech Medics Macon",
+              "telephone": "(478) 259-6371",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3742 Eisenhower Parkway",
+                "addressLocality": "Macon",
+                "addressRegion": "GA",
+                "postalCode": "31206"
+              }
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Macon",
+              "containedIn": {
+                "@type": "State",
+                "name": "Georgia"
+              }
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "iPad Repair Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "iPad Screen Replacement",
+                    "description": "Expert iPad screen and glass repair for all models"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "iPad Battery Replacement",
+                    "description": "Professional iPad battery replacement service"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "iPad Charging Port Repair"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does iPad screen repair cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "iPad screen repair costs vary by model. iPad Air and standard iPad repairs typically range from $149-$249, while iPad Pro repairs range from $299-$499 depending on size and model year."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you repair iPad Pro screens?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we repair all iPad Pro models including 11-inch and 12.9-inch versions. We handle both cracked glass and LCD display issues with high-quality replacement parts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does iPad repair take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most iPad screen repairs take 1-2 hours. Battery replacements and charging port repairs are typically completed the same day. More complex repairs may require 1-2 business days."
+                }
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+      
       <LocalBusinessSchema 
         pageName="iPad Repair Macon GA"
         pageDescription="Expert iPad screen repair and battery replacement in Macon, GA. Fast service for all iPad models with no appointment needed."
