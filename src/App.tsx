@@ -98,6 +98,9 @@ const App = () => (
           <Route path="/blog/holiday-iphone-repair-checklist-macon-2025" element={<HolidayIPhoneRepairChecklist />} />
           <Route path="/blog/repair-share-drive-macon" element={<RepairShareDriveMacon />} />
           <Route path="/blog/winter-device-prep-macon-2025" element={<WinterDevicePrepMacon />} />
+          <Route path="/blog/water-damaged-iphone-repair" element={<WaterDamagedIPhone />} />
+          <Route path="/blog/iphone-not-turning-on-fix" element={<IPhoneNotTurningOn />} />
+          <Route path="/blog/oem-vs-aftermarket-iphone-screens" element={<OEMvsAftermarket />} />
           <Route path="/blog/iphone-battery-replacement-signs-2025" element={<IPhoneBatteryReplacement2025 />} />
           <Route path="/blog/iphone-dying-fast-after-charging" element={<IPhoneDyingFast />} />
           <Route path="/blog/iphone-repair-mercer-university-student-discount" element={<MercerUniversityIPhoneRepair />} />
