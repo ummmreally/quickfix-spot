@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
@@ -15,14 +14,6 @@ import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 
 const Downtown = () => {
-  useEffect(() => {
-    document.title = "iPhone, iPad & MacBook Repair Downtown Macon GA | NEAR CHERRY STREET | MyTechMedics | Fast Service Downtown | (478) 259-6371";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", "BEST iPhone, iPad & MacBook repair in Downtown Macon GA near Cherry Street. Serving Downtown businesses and residents. 30 minutes or less. Call (478) 259-6371");
-    }
-  }, []);
-
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Macon", href: "/macon" },
@@ -47,13 +38,32 @@ const Downtown = () => {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": localFAQs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <Helmet>
+        <title>iPhone, iPad & MacBook Repair Downtown Macon GA | Near Cherry Street</title>
+        <meta name="description" content="Expert iPhone, iPad & MacBook repair in Downtown Macon near Cherry Street. Same-day service for businesses and residents. Call (478) 259-6371." />
+        <meta name="keywords" content="iPhone repair downtown macon, iPad repair cherry street, MacBook repair downtown macon ga, apple repair downtown" />
         <link rel="canonical" href="https://mytechmedics.com/macon/downtown" />
         <meta property="og:title" content="iPhone iPad MacBook Repair Downtown Macon GA | Near Cherry Street" />
         <meta property="og:description" content="Expert Apple repair Downtown Macon near Cherry Street. Fast service for Downtown businesses." />
         <meta property="og:url" content="https://mytechmedics.com/macon/downtown" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
       <LocalBusinessSchema 
         pageName="Downtown Macon iPhone iPad MacBook Repair"

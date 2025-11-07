@@ -2,9 +2,29 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, CheckCircle2, Clock, Shield, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 
 const Business = () => {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Business Device Repair Services",
+    "description": "Professional Apple device repair and support services for Macon businesses including same-day repairs, on-site support, and volume discounts",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Tech Medics Macon"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Macon",
+      "containedIn": {
+        "@type": "State",
+        "name": "Georgia"
+      }
+    },
+    "serviceType": "Business Device Repair"
+  };
 
   const handleCall = () => {
     (window as any).dataLayer = (window as any).dataLayer || [];
@@ -41,8 +61,19 @@ const Business = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <>
+      <Helmet>
+        <title>Business iPhone & MacBook Repair Macon GA | Tech Medics for Companies</title>
+        <meta name="description" content="Professional business device repair in Macon GA. Same-day iPhone, iPad & MacBook service. Volume discounts, on-site support. Call (478) 259-6371." />
+        <meta name="keywords" content="business phone repair macon, corporate device repair, bulk iPhone repair, business MacBook repair, enterprise IT support macon" />
+        <link rel="canonical" href="https://mytechmedics.com/macon/business" />
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen bg-background">
+        <Navigation />
 
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
@@ -196,7 +227,8 @@ const Business = () => {
           </p>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
@@ -15,14 +14,6 @@ import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 
 const Vineville = () => {
-  useEffect(() => {
-    document.title = "iPhone, iPad & MacBook Repair Vineville Macon GA | NEAR MERCER UNIVERSITY | MyTechMedics | Fast Service in Vineville, College Hill, Shirley Hills | (478) 259-6371";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", "BEST iPhone, iPad & MacBook repair in Vineville, Macon GA near Mercer University. Serving College Hill, Shirley Hills & Vineville neighborhoods. 30 minutes or less. Call (478) 259-6371");
-    }
-  }, []);
-
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Macon", href: "/macon" },
@@ -47,13 +38,32 @@ const Vineville = () => {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": localFAQs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <Helmet>
+        <title>iPhone, iPad & MacBook Repair Vineville Macon GA | Near Mercer University</title>
+        <meta name="description" content="Expert iPhone, iPad & MacBook repair in Vineville near Mercer University. Student discounts available. Serving College Hill & Shirley Hills. Call (478) 259-6371." />
+        <meta name="keywords" content="iPhone repair vineville, mercer university phone repair, iPad repair college hill, MacBook repair shirley hills, student discount iphone repair" />
         <link rel="canonical" href="https://mytechmedics.com/macon/vineville" />
         <meta property="og:title" content="iPhone iPad MacBook Repair Vineville Macon GA | Near Mercer" />
         <meta property="og:description" content="Expert Apple repair in Vineville near Mercer University. Fast service for College Hill & Shirley Hills." />
         <meta property="og:url" content="https://mytechmedics.com/macon/vineville" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
       <LocalBusinessSchema 
         pageName="Vineville iPhone iPad MacBook Repair"

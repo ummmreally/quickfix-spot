@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
@@ -15,14 +14,6 @@ import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 
 const Ingleside = () => {
-  useEffect(() => {
-    document.title = "iPhone, iPad & MacBook Repair Ingleside Macon GA | NEAR WESLEYAN COLLEGE | MyTechMedics | Fast Service in Ingleside Village | (478) 259-6371";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", "BEST iPhone, iPad & MacBook repair in Ingleside, Macon GA near Wesleyan College. Serving Ingleside Village neighborhoods. 30 minutes or less. Call (478) 259-6371");
-    }
-  }, []);
-
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Macon", href: "/macon" },
@@ -47,13 +38,32 @@ const Ingleside = () => {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": localFAQs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <Helmet>
+        <title>iPhone, iPad & MacBook Repair Ingleside Macon GA | Near Wesleyan College</title>
+        <meta name="description" content="Expert iPhone, iPad & MacBook repair in Ingleside near Wesleyan College. Student discounts available. Serving Ingleside Village. Call (478) 259-6371." />
+        <meta name="keywords" content="iPhone repair ingleside, wesleyan college phone repair, iPad repair ingleside village, MacBook repair rivoli drive, student discount iphone repair" />
         <link rel="canonical" href="https://mytechmedics.com/macon/ingleside" />
         <meta property="og:title" content="iPhone iPad MacBook Repair Ingleside Macon GA | Near Wesleyan" />
         <meta property="og:description" content="Expert Apple repair in Ingleside near Wesleyan College. Fast service for Ingleside Village." />
         <meta property="og:url" content="https://mytechmedics.com/macon/ingleside" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
       <LocalBusinessSchema 
         pageName="Ingleside iPhone iPad MacBook Repair"

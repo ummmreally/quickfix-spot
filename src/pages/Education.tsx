@@ -2,9 +2,29 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, GraduationCap, Users, DollarSign, Laptop } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 
 const Education = () => {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Education Technology Support",
+    "description": "Professional Apple device repair services for schools, teachers, and students in Macon with educational pricing and bulk repair programs",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Tech Medics Macon"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Macon",
+      "containedIn": {
+        "@type": "State",
+        "name": "Georgia"
+      }
+    },
+    "serviceType": "Educational Device Repair"
+  };
 
   const handleCall = () => {
     (window as any).dataLayer = (window as any).dataLayer || [];
@@ -41,8 +61,19 @@ const Education = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <>
+      <Helmet>
+        <title>School & Student Device Repair Macon GA | Educational Discounts | Tech Medics</title>
+        <meta name="description" content="iPad & MacBook repair for schools in Macon GA. Student discounts, bulk repairs, educational pricing. Serving K-12 & colleges. Call (478) 259-6371." />
+        <meta name="keywords" content="school iPad repair macon, student device repair, educational technology support, Mercer University repair, school MacBook repair macon" />
+        <link rel="canonical" href="https://mytechmedics.com/macon/education" />
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen bg-background">
+        <Navigation />
 
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
@@ -213,7 +244,8 @@ const Education = () => {
           </p>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 };
 

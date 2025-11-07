@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import RelatedArticles from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 
 const FastIPhoneRepair = () => {
@@ -100,6 +101,27 @@ const FastIPhoneRepair = () => {
                 <Link to="/macon/contact" className="px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors text-center">Get Directions</Link>
               </div>
             </div>
+
+            <RelatedArticles articles={[
+              {
+                title: "Best iPhone Screen Repair Macon GA",
+                description: "Everything you need to know about iPhone screen repair including costs and quality options.",
+                link: "/blog/iphone-screen-repair-macon-ga",
+                readTime: "8 min read"
+              },
+              {
+                title: "iPhone Repair Near Mercer University",
+                description: "Fast iPhone repair services convenient to Mercer students and faculty.",
+                link: "/blog/mercer-university-iphone-repair",
+                readTime: "5 min read"
+              },
+              {
+                title: "How to Choose a Phone Repair Shop",
+                description: "Key factors to consider when selecting an iPhone repair shop in Macon.",
+                link: "/blog/choose-phone-repair-shop-macon",
+                readTime: "6 min read"
+              }
+            ]} />
           </section>
         </div>
       </article>

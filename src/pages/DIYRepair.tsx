@@ -8,6 +8,38 @@ import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 
 const DIYRepair = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I eject water from my iPhone speaker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use our water ejection sound tool by turning your iPhone volume to maximum, placing it speaker-down, and playing the 165Hz frequency sound for 15-30 seconds to vibrate water out of the speakers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I replace my iPhone screen myself?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, with the right tools and careful attention to detail. However, DIY screen replacement requires precision. Damage to internal cables can cause permanent issues, so consider professional repair if unsure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is DIY iPhone battery replacement safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It can be done safely if you follow proper procedures: discharge battery below 25%, use heat to soften adhesive, never force removal, and be careful not to puncture the battery. Swollen batteries require immediate professional help."
+        }
+      }
+    ]
+  };
+  
+
   const [isPlaying, setIsPlaying] = useState(false);
   const audioContextRef = useRef<AudioContext | null>(null);
   const oscillatorRef = useRef<OscillatorNode | null>(null);
@@ -68,9 +100,13 @@ const DIYRepair = () => {
   return (
     <>
       <Helmet>
-        <title>DIY iPhone Repair Guide | Fix Water Damage | Tech Medics Macon</title>
-        <meta name="description" content="Free DIY repair tools and guides for iPhone water damage. Use our water ejection sound to help remove water from iPhone speakers in Macon, GA." />
-        <meta name="keywords" content="iPhone water damage, DIY iPhone repair, water ejection, speaker repair, Macon GA" />
+        <title>DIY iPhone Repair Tools & Guides | Water Ejection | Tech Medics Macon</title>
+        <meta name="description" content="Free DIY iPhone repair tools including water ejection sound, screen replacement guide, and battery replacement tutorial. When to seek professional help in Macon, GA." />
+        <meta name="keywords" content="iPhone water damage, DIY iPhone repair, water ejection sound, iPhone screen replacement guide, battery replacement tutorial" />
+        <link rel="canonical" href="https://mytechmedics.com/macon/diy-repair" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

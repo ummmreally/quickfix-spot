@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
@@ -15,14 +14,6 @@ import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 
 const EastMacon = () => {
-  useEffect(() => {
-    document.title = "iPhone, iPad & MacBook Repair East Macon GA | NEAR SHOPPES AT RIVER CROSSING | MyTechMedics | Fast Service in East Macon | (478) 259-6371";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", "BEST iPhone, iPad & MacBook repair in East Macon GA near Shoppes at River Crossing. Serving East Macon neighborhoods. 30 minutes or less. Call (478) 259-6371");
-    }
-  }, []);
-
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Macon", href: "/macon" },
@@ -75,13 +66,32 @@ const EastMacon = () => {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <Helmet>
+        <title>iPhone, iPad & MacBook Repair East Macon GA | Near Shoppes at River Crossing</title>
+        <meta name="description" content="Expert iPhone, iPad & MacBook repair in East Macon near Shoppes at River Crossing. Same-day service on Riverside Drive and Gray Highway. Call (478) 259-6371." />
+        <meta name="keywords" content="iPhone repair east macon, river crossing phone repair, iPad repair bloomfield, MacBook repair gray highway, apple repair east macon ga" />
         <link rel="canonical" href="https://mytechmedics.com/macon/east-macon" />
         <meta property="og:title" content="iPhone iPad MacBook Repair East Macon GA | Near River Crossing" />
         <meta property="og:description" content="Expert Apple repair in East Macon near Shoppes at River Crossing. Fast service." />
         <meta property="og:url" content="https://mytechmedics.com/macon/east-macon" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
       <LocalBusinessSchema 
         pageName="East Macon iPhone iPad MacBook Repair"

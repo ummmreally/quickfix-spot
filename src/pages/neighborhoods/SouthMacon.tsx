@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
@@ -15,14 +14,6 @@ import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 
 const SouthMacon = () => {
-  useEffect(() => {
-    document.title = "iPhone, iPad & MacBook Repair South Macon GA | NEAR MACON MALL | MyTechMedics | Fast Service in South Macon | (478) 259-6371";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", "BEST iPhone, iPad & MacBook repair in South Macon GA near Macon Mall. Serving South Macon neighborhoods. 30 minutes or less. Call (478) 259-6371");
-    }
-  }, []);
-
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Macon", href: "/macon" },
@@ -75,13 +66,32 @@ const SouthMacon = () => {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <Helmet>
+        <title>iPhone, iPad & MacBook Repair South Macon GA | Near Macon Mall</title>
+        <meta name="description" content="Expert iPhone, iPad & MacBook repair in South Macon near Macon Mall. Same-day service on Zebulon Road and Pio Nono. Lifetime warranty. Call (478) 259-6371." />
+        <meta name="keywords" content="iPhone repair south macon, macon mall phone repair, iPad repair zebulon road, MacBook repair pio nono, apple repair south macon ga" />
         <link rel="canonical" href="https://mytechmedics.com/macon/south-macon" />
         <meta property="og:title" content="iPhone iPad MacBook Repair South Macon GA | Near Macon Mall" />
         <meta property="og:description" content="Expert Apple repair in South Macon near Macon Mall. Fast service." />
         <meta property="og:url" content="https://mytechmedics.com/macon/south-macon" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
       <LocalBusinessSchema 
         pageName="South Macon iPhone iPad MacBook Repair"

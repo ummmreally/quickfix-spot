@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import RelatedArticles from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 
 const IPhoneScreenRepair = () => {
@@ -205,6 +206,27 @@ const IPhoneScreenRepair = () => {
                 </Link>
               </div>
             </div>
+
+            <RelatedArticles articles={[
+              {
+                title: "Same-Day iPhone Repair in Macon GA",
+                description: "Learn how fast we can fix your iPhone with same-day service and walk-in availability.",
+                link: "/blog/same-day-iphone-repair-macon",
+                readTime: "6 min read"
+              },
+              {
+                title: "OEM vs Aftermarket iPhone Parts",
+                description: "Understand the difference between original and aftermarket iPhone parts for your repair.",
+                link: "/blog/oem-vs-aftermarket-iphone-parts",
+                readTime: "7 min read"
+              },
+              {
+                title: "iPhone Repair Cost Guide Macon",
+                description: "Complete pricing guide for all iPhone repair services in Macon, GA.",
+                link: "/blog/iphone-screen-repair-cost-macon",
+                readTime: "8 min read"
+              }
+            ]} />
           </section>
         </div>
       </article>

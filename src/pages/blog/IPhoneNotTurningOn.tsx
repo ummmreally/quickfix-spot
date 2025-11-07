@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import RelatedArticles from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 
 const IPhoneNotTurningOn = () => {
@@ -175,6 +176,27 @@ const IPhoneNotTurningOn = () => {
                 </Link>
               </div>
             </div>
+
+            <RelatedArticles articles={[
+              {
+                title: "Water Damaged iPhone? Fix It Fast",
+                description: "Complete guide to fixing water damaged iPhones in Macon. What to do immediately and repair options.",
+                link: "/blog/water-damaged-iphone-repair-macon",
+                readTime: "9 min read"
+              },
+              {
+                title: "iPhone Battery Dying Fast? 8 Fixes",
+                description: "Troubleshoot rapid battery drain on your iPhone with these proven solutions.",
+                link: "/blog/iphone-battery-dying-fast",
+                readTime: "7 min read"
+              },
+              {
+                title: "iPhone Battery Replacement Guide 2025",
+                description: "7 warning signs your iPhone battery needs replacement and what to expect.",
+                link: "/blog/iphone-battery-replacement-signs-2025",
+                readTime: "8 min read"
+              }
+            ]} />
           </section>
 
           <footer className="border-t pt-8 text-center text-muted-foreground">

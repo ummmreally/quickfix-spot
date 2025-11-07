@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
@@ -15,14 +14,6 @@ import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 
 const NorthMacon = () => {
-  useEffect(() => {
-    document.title = "iPhone, iPad & MacBook Repair North Macon GA | NEAR CROSSING AT MACON | MyTechMedics | Fast Service in North Macon | (478) 259-6371";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", "BEST iPhone, iPad & MacBook repair in North Macon GA near The Crossing at Macon. Serving North Macon neighborhoods. 30 minutes or less. Call (478) 259-6371");
-    }
-  }, []);
-
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Macon", href: "/macon" },
@@ -47,13 +38,32 @@ const NorthMacon = () => {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": localFAQs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <Helmet>
+        <title>iPhone, iPad & MacBook Repair North Macon GA | Near The Crossing at Macon</title>
+        <meta name="description" content="Expert iPhone, iPad & MacBook repair in North Macon near The Crossing. Same-day service on Hartley Bridge Road area. Call (478) 259-6371." />
+        <meta name="keywords" content="iPhone repair north macon, the crossing phone repair, iPad repair hartley bridge, MacBook repair zebulon road, apple repair north macon ga" />
         <link rel="canonical" href="https://mytechmedics.com/macon/north-macon" />
         <meta property="og:title" content="iPhone iPad MacBook Repair North Macon GA | Near The Crossing" />
         <meta property="og:description" content="Expert Apple repair in North Macon near The Crossing. Fast service for all North Macon." />
         <meta property="og:url" content="https://mytechmedics.com/macon/north-macon" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
       <LocalBusinessSchema 
         pageName="North Macon iPhone iPad MacBook Repair"

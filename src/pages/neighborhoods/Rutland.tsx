@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
@@ -15,14 +14,6 @@ import macbookImage from "@/assets/macbook-repair.jpg";
 import ipadImage from "@/assets/ipad-repair.jpg";
 
 const Rutland = () => {
-  useEffect(() => {
-    document.title = "iPhone, iPad & MacBook Repair Rutland Macon GA | NEAR BASS ROAD | MyTechMedics | Fast Service in Rutland | (478) 259-6371";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", "BEST iPhone, iPad & MacBook repair in Rutland Macon GA near Bass Road. Serving Rutland neighborhoods. 30 minutes or less. Call (478) 259-6371");
-    }
-  }, []);
-
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Macon", href: "/macon" },
@@ -75,13 +66,32 @@ const Rutland = () => {
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <Helmet>
+        <title>iPhone, iPad & MacBook Repair Rutland Macon GA | Near Bass Road</title>
+        <meta name="description" content="Expert iPhone, iPad & MacBook repair in Rutland near Bass Road. Student discounts for Rutland High School. Serving Southwest Macon. Call (478) 259-6371." />
+        <meta name="keywords" content="iPhone repair rutland, bass road phone repair, iPad repair houston road, MacBook repair southwest macon, rutland high school discount" />
         <link rel="canonical" href="https://mytechmedics.com/macon/rutland" />
         <meta property="og:title" content="iPhone iPad MacBook Repair Rutland Macon GA | Near Bass Road" />
         <meta property="og:description" content="Expert Apple repair in Rutland near Bass Road. Fast service for Rutland residents." />
         <meta property="og:url" content="https://mytechmedics.com/macon/rutland" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
       <LocalBusinessSchema 
         pageName="Rutland iPhone iPad MacBook Repair"
