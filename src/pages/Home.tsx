@@ -9,11 +9,13 @@ import FAQSection from "@/components/FAQSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
 import Navigation from "@/components/Navigation";
+import ReviewSchema from "@/components/ReviewSchema";
 
 const Home = () => {
 
   return (
     <>
+      <ReviewSchema />
       <Helmet>
         <title>iPhone Screen Repair Macon GA | iPad & MacBook Repair | Same Day Service</title>
         <meta

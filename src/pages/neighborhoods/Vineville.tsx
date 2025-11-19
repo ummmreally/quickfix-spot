@@ -4,7 +4,7 @@ import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import NeighborhoodBusinessSchema from "@/components/NeighborhoodBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
@@ -65,10 +65,11 @@ const Vineville = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      <LocalBusinessSchema 
-        pageName="Vineville iPhone iPad MacBook Repair"
-        pageDescription="Professional Apple device repair serving Vineville neighborhoods near Mercer University"
-        serviceType="iPhone, iPad & MacBook Repair"
+      <NeighborhoodBusinessSchema 
+        neighborhoodName="Vineville"
+        pageDescription="Professional iPhone, iPad, and MacBook repair serving Vineville, Mercer University, College Hill, and Shirley Hills areas of Macon GA"
+        landmarks={landmarks}
+        areaServed={["Vineville", "College Hill", "Shirley Hills", "Mercer University area"]}
       />
       <BreadcrumbNav items={breadcrumbItems} />
 

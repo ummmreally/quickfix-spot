@@ -4,7 +4,7 @@ import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import NeighborhoodBusinessSchema from "@/components/NeighborhoodBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
@@ -93,10 +93,11 @@ const EastMacon = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      <LocalBusinessSchema 
-        pageName="East Macon iPhone iPad MacBook Repair"
-        pageDescription="Professional Apple device repair serving East Macon neighborhoods near Shoppes at River Crossing"
-        serviceType="iPhone, iPad & MacBook Repair"
+      <NeighborhoodBusinessSchema 
+        neighborhoodName="East Macon"
+        pageDescription="Professional iPhone, iPad, and MacBook repair serving East Macon, Shoppes at River Crossing, Riverside Drive, Bloomfield, and Gray Highway areas"
+        landmarks={landmarks}
+        areaServed={["East Macon", "Shoppes at River Crossing", "Riverside Drive", "Bloomfield", "Gray Highway corridor"]}
       />
       <BreadcrumbNav items={breadcrumbItems} />
 

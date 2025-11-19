@@ -4,7 +4,7 @@ import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import NeighborhoodBusinessSchema from "@/components/NeighborhoodBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
@@ -93,10 +93,11 @@ const Rutland = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      <LocalBusinessSchema 
-        pageName="Rutland iPhone iPad MacBook Repair"
-        pageDescription="Professional Apple device repair serving Rutland neighborhoods near Bass Road"
-        serviceType="iPhone, iPad & MacBook Repair"
+      <NeighborhoodBusinessSchema 
+        neighborhoodName="Rutland"
+        pageDescription="Professional iPhone, iPad, and MacBook repair serving Rutland, Bass Road, Rutland High School, Southwest Macon, and Houston Road areas"
+        landmarks={landmarks}
+        areaServed={["Rutland", "Bass Road", "Rutland High School area", "Southwest Macon", "Houston Road"]}
       />
       <BreadcrumbNav items={breadcrumbItems} />
 
