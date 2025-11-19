@@ -4,7 +4,7 @@ import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import NeighborhoodBusinessSchema from "@/components/NeighborhoodBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
@@ -65,10 +65,11 @@ const Ingleside = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      <LocalBusinessSchema 
-        pageName="Ingleside iPhone iPad MacBook Repair"
-        pageDescription="Professional Apple device repair serving Ingleside neighborhoods near Wesleyan College"
-        serviceType="iPhone, iPad & MacBook Repair"
+      <NeighborhoodBusinessSchema 
+        neighborhoodName="Ingleside"
+        pageDescription="Professional iPhone, iPad, and MacBook repair serving Ingleside, Wesleyan College, and Ingleside Village areas of Macon GA"
+        landmarks={landmarks}
+        areaServed={["Ingleside", "Ingleside Village", "Rivoli Drive", "Wesleyan College area"]}
       />
       <BreadcrumbNav items={breadcrumbItems} />
 

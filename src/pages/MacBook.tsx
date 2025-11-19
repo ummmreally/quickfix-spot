@@ -10,10 +10,12 @@ import RepairComparison from "@/components/RepairComparison";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { Helmet } from "react-helmet";
+import ReviewSchema from "@/components/ReviewSchema";
 
 const MacBook = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ReviewSchema />
       <Helmet>
         <title>MacBook Repair Macon GA | Screen, Keyboard, Battery Fix</title>
         <meta

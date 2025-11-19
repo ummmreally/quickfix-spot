@@ -4,7 +4,7 @@ import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import NeighborhoodBusinessSchema from "@/components/NeighborhoodBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
@@ -65,10 +65,11 @@ const Downtown = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      <LocalBusinessSchema 
-        pageName="Downtown Macon iPhone iPad MacBook Repair"
-        pageDescription="Professional Apple device repair serving Downtown Macon near Cherry Street"
-        serviceType="iPhone, iPad & MacBook Repair"
+      <NeighborhoodBusinessSchema 
+        neighborhoodName="Downtown"
+        pageDescription="Professional iPhone, iPad, and MacBook repair serving Downtown Macon, Cherry Street Historic District, Capitol Theatre, and business district"
+        landmarks={landmarks}
+        areaServed={["Downtown Macon", "Cherry Street Historic District", "Capitol Theatre area", "Tubman Museum area"]}
       />
       <BreadcrumbNav items={breadcrumbItems} />
 

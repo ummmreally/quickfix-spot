@@ -4,7 +4,7 @@ import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import NeighborhoodBusinessSchema from "@/components/NeighborhoodBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
@@ -93,10 +93,11 @@ const SouthMacon = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      <LocalBusinessSchema 
-        pageName="South Macon iPhone iPad MacBook Repair"
-        pageDescription="Professional Apple device repair serving South Macon neighborhoods near Macon Mall"
-        serviceType="iPhone, iPad & MacBook Repair"
+      <NeighborhoodBusinessSchema 
+        neighborhoodName="South Macon"
+        pageDescription="Professional iPhone, iPad, and MacBook repair serving South Macon, Macon Mall, Zebulon Road, South Bibb County, and Pio Nono Avenue areas"
+        landmarks={landmarks}
+        areaServed={["South Macon", "Macon Mall", "Zebulon Road", "South Bibb County", "Pio Nono Avenue"]}
       />
       <BreadcrumbNav items={breadcrumbItems} />
 

@@ -10,10 +10,12 @@ import RepairComparison from "@/components/RepairComparison";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { Helmet } from "react-helmet";
+import ReviewSchema from "@/components/ReviewSchema";
 
 const iPhone = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ReviewSchema />
       <Helmet>
         <title>iPhone Repair Macon GA | Same-Day Screen & Battery Fix</title>
         <meta

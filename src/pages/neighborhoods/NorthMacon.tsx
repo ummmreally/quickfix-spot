@@ -4,7 +4,7 @@ import { MapPin, Phone, CheckCircle2, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import NeighborhoodBusinessSchema from "@/components/NeighborhoodBusinessSchema";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
@@ -65,10 +65,11 @@ const NorthMacon = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      <LocalBusinessSchema 
-        pageName="North Macon iPhone iPad MacBook Repair"
-        pageDescription="Professional Apple device repair serving North Macon neighborhoods near The Crossing"
-        serviceType="iPhone, iPad & MacBook Repair"
+      <NeighborhoodBusinessSchema 
+        neighborhoodName="North Macon"
+        pageDescription="Professional iPhone, iPad, and MacBook repair serving North Macon, The Crossing, Hartley Bridge Road, and Zebulon Road areas"
+        landmarks={landmarks}
+        areaServed={["North Macon", "The Crossing at Macon", "Hartley Bridge Road", "Zebulon Road corridor"]}
       />
       <BreadcrumbNav items={breadcrumbItems} />
 
