@@ -14,6 +14,22 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    title: "Spring iPhone Maintenance Tips for Macon GA 2025",
+    description: "Essential spring maintenance tips for iPhone, iPad, and MacBook in Macon GA. Combat humidity, pollen, and temperature changes with expert advice from Tech Medics.",
+    slug: "spring-maintenance-macon-2025",
+    category: "Seasonal Tips",
+    date: "2025-03-01",
+    keywords: ["spring iPhone maintenance", "device care Macon GA", "humidity protection"]
+  },
+  {
+    title: "iPhone vs Android Repair Costs: Complete Macon GA Guide 2025",
+    description: "Comprehensive cost comparison of iPhone vs Android repairs in Macon GA. Compare screen, battery, and charging port repair pricing to make informed decisions.",
+    slug: "iphone-vs-android-repair-costs-macon",
+    category: "Comparison Guide",
+    date: "2025-03-15",
+    keywords: ["iPhone vs Android repair", "repair cost comparison", "Macon phone repair"]
+  },
+  {
     title: "7 Signs Your iPhone Battery Needs Replacement in 2025",
     description: "Is your iPhone battery dying fast? Learn the 7 warning signs you need a battery replacement, costs in Macon GA, and what to expect during repair.",
     slug: "iphone-battery-replacement-2025",
