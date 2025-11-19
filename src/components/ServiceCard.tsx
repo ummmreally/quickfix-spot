@@ -16,6 +16,8 @@ const ServiceCard = ({ title, image, link, hideTitle = false }: ServiceCardProps
             src={image} 
             alt={`${title} repair service`}
             className="w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         {!hideTitle && (

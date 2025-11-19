@@ -3,7 +3,7 @@ import { MapPin, Phone } from "lucide-react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import iphoneImage from "@/assets/iphone-screen-repair-macon.jpg";
+import iphoneImage from "@/assets/optimized/iphone-screen-repair-macon.webp";
 import FAQSection from "@/components/FAQSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
@@ -184,6 +184,8 @@ const iPhone = () => {
                 width="800"
                 height="600"
                 className="w-full h-auto"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
           </div>
