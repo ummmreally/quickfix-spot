@@ -210,6 +210,7 @@ const Home = () => {
                       height="600"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="p-6">
@@ -239,6 +240,7 @@ const Home = () => {
                       height="600"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="p-6">
@@ -268,6 +270,7 @@ const Home = () => {
                       height="800"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="p-6">
