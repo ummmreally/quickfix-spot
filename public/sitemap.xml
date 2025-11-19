@@ -110,9 +110,21 @@
   </url>
   <url>
     <loc>https://techmedicsmacon.com/blog</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2025-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techmedicsmacon.com/blog/spring-maintenance-macon-2025</loc>
+    <lastmod>2025-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://techmedicsmacon.com/blog/iphone-vs-android-repair-costs-macon</loc>
+    <lastmod>2025-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://techmedicsmacon.com/blog/iphone-screen-repair-macon-ga</loc>

@@ -46,6 +46,8 @@ const IPhoneDyingFast = lazy(() => import("./pages/blog/IPhoneDyingFast"));
 const MercerUniversityIPhoneRepair = lazy(() => import("./pages/blog/MercerUniversityIPhoneRepair"));
 const SwollenIPhoneBattery = lazy(() => import("./pages/blog/SwollenIPhoneBattery"));
 const MacBookScreenCostMacon = lazy(() => import("./pages/blog/MacBookScreenCostMacon"));
+const SpringMaintenanceMacon = lazy(() => import("./pages/blog/SpringMaintenanceMacon"));
+const IPhoneVsAndroidRepairCosts = lazy(() => import("./pages/blog/iPhoneVsAndroidRepairCosts"));
 
 const queryClient = new QueryClient();
 
@@ -106,6 +108,8 @@ const App = () => (
           <Route path="/blog/iphone-repair-mercer-university-student-discount" element={<MercerUniversityIPhoneRepair />} />
           <Route path="/blog/swollen-iphone-battery-replacement-macon" element={<SwollenIPhoneBattery />} />
           <Route path="/blog/macbook-screen-repair-cost-macon" element={<MacBookScreenCostMacon />} />
+          <Route path="/blog/spring-maintenance-macon-2025" element={<SpringMaintenanceMacon />} />
+          <Route path="/blog/iphone-vs-android-repair-costs-macon" element={<IPhoneVsAndroidRepairCosts />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
