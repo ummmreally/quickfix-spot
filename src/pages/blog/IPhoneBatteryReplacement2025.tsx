@@ -161,7 +161,7 @@ const IPhoneBatteryReplacement2025 = () => {
             <p className="text-muted-foreground mb-6">A new iPhone battery should last 2-3 years (500+ charge cycles) before dropping below 80% health. With proper care (avoiding extreme temperatures, not fully depleting), batteries can last even longer.</p>
 
             <h3 className="text-2xl font-bold mt-8 mb-3 text-foreground">Can I just replace my iPhone instead?</h3>
-            <p className="text-muted-foreground mb-6">Battery replacement costs $49-$99 vs $800+ for a new iPhone. If your iPhone works fine except for battery issues, replacement is the smart financial choice and gives you 2-3 more years of life.</p>
+            <p className="text-muted-foreground mb-6">Battery replacement costs $79-$129 vs $800+ for a new iPhone. If your iPhone works fine except for battery issues, replacement is the smart financial choice and gives you 2-3 more years of life.</p>
           </section>
         </div>
       </article>
