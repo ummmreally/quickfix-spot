@@ -1,11 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone } from "lucide-react";
+import { MapPin, Phone, Home } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Logo Header */}
       <header className="py-8 px-4">
-        <div className="max-w-7xl mx-auto flex justify-center">
+        <div className="max-w-7xl mx-auto flex justify-center relative">
+          <Link 
+            to="/" 
+            className="absolute left-0 top-0 p-2 hover:bg-secondary/50 rounded-full transition-colors"
+            aria-label="Go to home page"
+          >
+            <Home className="h-6 w-6 text-primary" />
+          </Link>
           <img 
             src={logo} 
             alt="Tech Medics Macon GA - Phone accessories and device repair services" 
