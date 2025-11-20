@@ -57,10 +57,10 @@ const NorthMacon = () => {
         <title>iPhone, iPad & MacBook Repair North Macon GA | Near The Crossing at Macon</title>
         <meta name="description" content="Expert iPhone, iPad & MacBook repair in North Macon near The Crossing. Same-day service on Hartley Bridge Road area. Call (478) 259-6371." />
         <meta name="keywords" content="iPhone repair north macon, the crossing phone repair, iPad repair hartley bridge, MacBook repair zebulon road, apple repair north macon ga" />
-        <link rel="canonical" href="https://mytechmedics.com/macon/north-macon" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/north-macon" />
         <meta property="og:title" content="iPhone iPad MacBook Repair North Macon GA | Near The Crossing" />
         <meta property="og:description" content="Expert Apple repair in North Macon near The Crossing. Fast service for all North Macon." />
-        <meta property="og:url" content="https://mytechmedics.com/macon/north-macon" />
+        <meta property="og:url" content="https://techmedicsmacon.com/macon/north-macon" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

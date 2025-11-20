@@ -85,10 +85,10 @@ const EastMacon = () => {
         <title>iPhone, iPad & MacBook Repair East Macon GA | Near Shoppes at River Crossing</title>
         <meta name="description" content="Expert iPhone, iPad & MacBook repair in East Macon near Shoppes at River Crossing. Same-day service on Riverside Drive and Gray Highway. Call (478) 259-6371." />
         <meta name="keywords" content="iPhone repair east macon, river crossing phone repair, iPad repair bloomfield, MacBook repair gray highway, apple repair east macon ga" />
-        <link rel="canonical" href="https://mytechmedics.com/macon/east-macon" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/east-macon" />
         <meta property="og:title" content="iPhone iPad MacBook Repair East Macon GA | Near River Crossing" />
         <meta property="og:description" content="Expert Apple repair in East Macon near Shoppes at River Crossing. Fast service." />
-        <meta property="og:url" content="https://mytechmedics.com/macon/east-macon" />
+        <meta property="og:url" content="https://techmedicsmacon.com/macon/east-macon" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

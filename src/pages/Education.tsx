@@ -66,7 +66,7 @@ const Education = () => {
         <title>School & Student Device Repair Macon GA | Educational Discounts | Tech Medics</title>
         <meta name="description" content="iPad & MacBook repair for schools in Macon GA. Student discounts, bulk repairs, educational pricing. Serving K-12 & colleges. Call (478) 259-6371." />
         <meta name="keywords" content="school iPad repair macon, student device repair, educational technology support, Mercer University repair, school MacBook repair macon" />
-        <link rel="canonical" href="https://mytechmedics.com/macon/education" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/education" />
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
         </script>

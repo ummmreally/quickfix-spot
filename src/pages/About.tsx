@@ -38,7 +38,7 @@ const About = () => {
       "@type": "LocalBusiness",
       name: "Tech Medics",
       description: "Expert iPhone screen repair and Apple device repair in Macon, GA",
-      url: "https://www.mytechmedics.com/about",
+      url: "https://techmedicsmacon.com/macon/about",
       telephone: "+14782596371",
       address: {
         "@type": "PostalAddress",
@@ -52,7 +52,7 @@ const About = () => {
         longitude: "-83.6324",
       },
       priceRange: "$$",
-      image: "https://www.mytechmedics.com/logo.png",
+      image: "https://techmedicsmacon.com/logo.png",
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "5.0",
