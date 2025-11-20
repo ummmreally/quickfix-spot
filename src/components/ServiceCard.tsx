@@ -16,6 +16,8 @@ const ServiceCard = ({ title, image, link, hideTitle = false }: ServiceCardProps
             src={image} 
             alt={`${title} repair service`}
             className="w-full h-full object-cover"
+            width="800"
+            height="600"
             loading="lazy"
             decoding="async"
           />

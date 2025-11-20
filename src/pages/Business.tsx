@@ -66,7 +66,7 @@ const Business = () => {
         <title>Business iPhone & MacBook Repair Macon GA | Tech Medics for Companies</title>
         <meta name="description" content="Professional business device repair in Macon GA. Same-day iPhone, iPad & MacBook service. Volume discounts, on-site support. Call (478) 259-6371." />
         <meta name="keywords" content="business phone repair macon, corporate device repair, bulk iPhone repair, business MacBook repair, enterprise IT support macon" />
-        <link rel="canonical" href="https://mytechmedics.com/macon/business" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/business" />
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
         </script>

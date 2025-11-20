@@ -103,7 +103,7 @@ const DIYRepair = () => {
         <title>DIY iPhone Repair Tools & Guides | Water Ejection | Tech Medics Macon</title>
         <meta name="description" content="Free DIY iPhone repair tools including water ejection sound, screen replacement guide, and battery replacement tutorial. When to seek professional help in Macon, GA." />
         <meta name="keywords" content="iPhone water damage, DIY iPhone repair, water ejection sound, iPhone screen replacement guide, battery replacement tutorial" />
-        <link rel="canonical" href="https://mytechmedics.com/macon/diy-repair" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/diy-repair" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

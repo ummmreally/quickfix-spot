@@ -57,10 +57,10 @@ const Vineville = () => {
         <title>iPhone, iPad & MacBook Repair Vineville Macon GA | Near Mercer University</title>
         <meta name="description" content="Expert iPhone, iPad & MacBook repair in Vineville near Mercer University. Student discounts available. Serving College Hill & Shirley Hills. Call (478) 259-6371." />
         <meta name="keywords" content="iPhone repair vineville, mercer university phone repair, iPad repair college hill, MacBook repair shirley hills, student discount iphone repair" />
-        <link rel="canonical" href="https://mytechmedics.com/macon/vineville" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/vineville" />
         <meta property="og:title" content="iPhone iPad MacBook Repair Vineville Macon GA | Near Mercer" />
         <meta property="og:description" content="Expert Apple repair in Vineville near Mercer University. Fast service for College Hill & Shirley Hills." />
-        <meta property="og:url" content="https://mytechmedics.com/macon/vineville" />
+        <meta property="og:url" content="https://techmedicsmacon.com/macon/vineville" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

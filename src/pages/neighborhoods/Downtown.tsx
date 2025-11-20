@@ -57,10 +57,10 @@ const Downtown = () => {
         <title>iPhone, iPad & MacBook Repair Downtown Macon GA | Near Cherry Street</title>
         <meta name="description" content="Expert iPhone, iPad & MacBook repair in Downtown Macon near Cherry Street. Same-day service for businesses and residents. Call (478) 259-6371." />
         <meta name="keywords" content="iPhone repair downtown macon, iPad repair cherry street, MacBook repair downtown macon ga, apple repair downtown" />
-        <link rel="canonical" href="https://mytechmedics.com/macon/downtown" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/downtown" />
         <meta property="og:title" content="iPhone iPad MacBook Repair Downtown Macon GA | Near Cherry Street" />
         <meta property="og:description" content="Expert Apple repair Downtown Macon near Cherry Street. Fast service for Downtown businesses." />
-        <meta property="og:url" content="https://mytechmedics.com/macon/downtown" />
+        <meta property="og:url" content="https://techmedicsmacon.com/macon/downtown" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

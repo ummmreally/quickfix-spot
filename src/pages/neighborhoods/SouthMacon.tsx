@@ -85,10 +85,10 @@ const SouthMacon = () => {
         <title>iPhone, iPad & MacBook Repair South Macon GA | Near Macon Mall</title>
         <meta name="description" content="Expert iPhone, iPad & MacBook repair in South Macon near Macon Mall. Same-day service on Zebulon Road and Pio Nono. Lifetime warranty. Call (478) 259-6371." />
         <meta name="keywords" content="iPhone repair south macon, macon mall phone repair, iPad repair zebulon road, MacBook repair pio nono, apple repair south macon ga" />
-        <link rel="canonical" href="https://mytechmedics.com/macon/south-macon" />
+        <link rel="canonical" href="https://techmedicsmacon.com/macon/south-macon" />
         <meta property="og:title" content="iPhone iPad MacBook Repair South Macon GA | Near Macon Mall" />
         <meta property="og:description" content="Expert Apple repair in South Macon near Macon Mall. Fast service." />
-        <meta property="og:url" content="https://mytechmedics.com/macon/south-macon" />
+        <meta property="og:url" content="https://techmedicsmacon.com/macon/south-macon" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
