@@ -16,11 +16,11 @@ const NeighborhoodBusinessSchema = ({
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `Tech Medics - ${neighborhoodName} iPhone iPad MacBook Repair`,
+    "name": `MyTechMedics - ${neighborhoodName} iPhone iPad MacBook Repair`,
     "image": "https://techmedicsmacon.com/logo.png",
     "description": pageDescription,
     "url": `https://techmedicsmacon.com/macon/${neighborhoodName.toLowerCase().replace(/\s+/g, '-')}`,
-    "telephone": "+14782596371",
+    "telephone": "(478) 259-6371",
     "email": "info@techmedicsmacon.com",
     "priceRange": "$$",
     "address": {
