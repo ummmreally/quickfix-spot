@@ -10,7 +10,7 @@ const LocalBusinessSchema = ({ pageName, pageDescription, serviceType }: LocalBu
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Tech Medics Macon",
+    "name": "MyTechMedics",
     "image": "https://techmedicsmacon.com/logo.png",
     "@id": "https://techmedicsmacon.com",
     "url": "https://techmedicsmacon.com",
