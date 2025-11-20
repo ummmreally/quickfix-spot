@@ -29,7 +29,7 @@ const IPhoneBatteryReplacement = () => {
     <>
       <Helmet>
         <title>iPhone Battery Replacement Macon GA | Same-Day Service Without AppleCare</title>
-        <meta name="description" content="iPhone battery replacement in Macon GA from $49. Same-day service, all models supported. Learn warning signs of bad battery and how long replacement takes." />
+        <meta name="description" content="iPhone battery replacement in Macon GA from $79. Same-day service, all models supported. Learn warning signs of bad battery and how long replacement takes." />
         <meta name="keywords" content="iPhone battery replacement Macon GA, swollen iPhone battery repair, apple battery replacement without AppleCare, iPhone dying fast, battery health check" />
         <link rel="canonical" href="https://techmedicsmacon.com/blog/iphone-battery-replacement-macon" />
         

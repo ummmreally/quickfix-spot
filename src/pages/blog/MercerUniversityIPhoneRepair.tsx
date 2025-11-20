@@ -63,9 +63,9 @@ const MercerUniversityIPhoneRepair = () => {
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded">
               <p className="text-foreground font-semibold mb-2">Example Student Pricing:</p>
               <ul className="text-muted-foreground space-y-1">
-                <li>iPhone 13 screen: <span className="line-through">$179</span> → <strong>$152</strong> with student ID</li>
-                <li>iPhone 12 battery: <span className="line-through">$69</span> → <strong>$59</strong> with student ID</li>
-                <li>iPhone 11 screen: <span className="line-through">$129</span> → <strong>$110</strong> with student ID</li>
+                <li>iPhone 13 screen: <span className="line-through">$139.99</span> → <strong>$119</strong> with student ID</li>
+                <li>iPhone 12 battery: <span className="line-through">$79.99</span> → <strong>$68</strong> with student ID</li>
+                <li>iPhone 11 screen: <span className="line-through">$79.99</span> → <strong>$68</strong> with student ID</li>
               </ul>
             </div>
 
@@ -98,10 +98,10 @@ const MercerUniversityIPhoneRepair = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td className="border border-border p-3">iPhone 14 screen</td><td className="border border-border p-3">$329</td><td className="border border-border p-3">$161</td></tr>
-                  <tr className="bg-secondary/10"><td className="border border-border p-3">iPhone 13 screen</td><td className="border border-border p-3">$279</td><td className="border border-border p-3">$152</td></tr>
-                  <tr><td className="border border-border p-3">iPhone 12 battery</td><td className="border border-border p-3">$89</td><td className="border border-border p-3">$59</td></tr>
-                  <tr className="bg-secondary/10"><td className="border border-border p-3">iPhone 11 screen</td><td className="border border-border p-3">$199</td><td className="border border-border p-3">$110</td></tr>
+                  <tr><td className="border border-border p-3">iPhone 14 screen</td><td className="border border-border p-3">$329</td><td className="border border-border p-3">$110</td></tr>
+                  <tr className="bg-secondary/10"><td className="border border-border p-3">iPhone 13 screen</td><td className="border border-border p-3">$279</td><td className="border border-border p-3">$119</td></tr>
+                  <tr><td className="border border-border p-3">iPhone 12 battery</td><td className="border border-border p-3">$89</td><td className="border border-border p-3">$68</td></tr>
+                  <tr className="bg-secondary/10"><td className="border border-border p-3">iPhone 11 screen</td><td className="border border-border p-3">$199</td><td className="border border-border p-3">$68</td></tr>
                 </tbody>
               </table>
             </div>

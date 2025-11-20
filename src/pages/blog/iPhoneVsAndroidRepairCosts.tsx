@@ -24,7 +24,7 @@ const iPhoneVsAndroidRepairCosts = () => {
     },
     {
       question: "Which has better battery replacement value: iPhone or Android?",
-      answer: "iPhone battery replacements ($59-89 at Tech Medics) offer excellent value due to longer device lifespan and higher resale. Android battery replacements ($49-79) cost less upfront but devices may need replacement sooner due to shorter software support."
+      answer: "iPhone battery replacements ($79-129 at Tech Medics) offer excellent value due to longer device lifespan and higher resale. Android battery replacements ($49-79) cost less upfront but devices may need replacement sooner due to shorter software support."
     }
   ];
 
