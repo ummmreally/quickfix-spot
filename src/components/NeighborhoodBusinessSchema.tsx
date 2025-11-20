@@ -16,7 +16,7 @@ const NeighborhoodBusinessSchema = ({
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `MyTechMedics - ${neighborhoodName} iPhone iPad MacBook Repair`,
+    "name": `Tech Medics Macon - ${neighborhoodName} iPhone iPad MacBook Repair`,
     "image": "https://techmedicsmacon.com/logo.png",
     "description": pageDescription,
     "url": `https://techmedicsmacon.com/macon/${neighborhoodName.toLowerCase().replace(/\s+/g, '-')}`,

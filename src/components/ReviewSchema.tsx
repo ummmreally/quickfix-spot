@@ -14,7 +14,7 @@ const ReviewSchema = ({
   const aggregateRatingSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "MyTechMedics",
+    "name": "Tech Medics Macon",
     "image": "https://techmedicsmacon.com/logo.png",
     "telephone": "(478) 259-6371",
     "address": {
