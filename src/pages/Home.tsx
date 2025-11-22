@@ -10,7 +10,6 @@ import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
 import Navigation from "@/components/Navigation";
 import ReviewSchema from "@/components/ReviewSchema";
-import StudentDiscountBanner from "@/components/StudentDiscountBanner";
 import TrustBadges from "@/components/TrustBadges";
 import CompactReviewDisplay from "@/components/CompactReviewDisplay";
 import HoursDisplay from "@/components/HoursDisplay";
@@ -130,7 +129,6 @@ const Home = () => {
 
       <div className="min-h-screen bg-background">
         <Navigation />
-        <StudentDiscountBanner />
         <main>
 
         {/* Hero Section */}

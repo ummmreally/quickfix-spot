@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-import StudentDiscountBanner from "@/components/StudentDiscountBanner";
 import TrustBadges from "@/components/TrustBadges";
 import CompactReviewDisplay from "@/components/CompactReviewDisplay";
 import HoursDisplay from "@/components/HoursDisplay";
@@ -27,8 +26,6 @@ const Index = () => {
           />
         </div>
       </header>
-
-      <StudentDiscountBanner />
 
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
