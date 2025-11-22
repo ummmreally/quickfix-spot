@@ -10,6 +10,10 @@ import TestimonialSection from "@/components/TestimonialSection";
 import RepairComparison from "@/components/RepairComparison";
 import Navigation from "@/components/Navigation";
 import ReviewSchema from "@/components/ReviewSchema";
+import StudentDiscountBanner from "@/components/StudentDiscountBanner";
+import TrustBadges from "@/components/TrustBadges";
+import CompactReviewDisplay from "@/components/CompactReviewDisplay";
+import HoursDisplay from "@/components/HoursDisplay";
 
 const Home = () => {
 
@@ -126,6 +130,7 @@ const Home = () => {
 
       <div className="min-h-screen bg-background">
         <Navigation />
+        <StudentDiscountBanner />
         <main>
 
         {/* Hero Section */}
@@ -186,6 +191,12 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        {/* Trust Badges */}
+        <TrustBadges />
+
+        {/* Review Display */}
+        <CompactReviewDisplay />
 
         {/* Services Section */}
         <section className="py-20 px-4">
@@ -357,19 +368,7 @@ const Home = () => {
                       Macon, GA 31206
                     </p>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-1 flex items-center gap-2">
-                      <Clock className="h-5 w-5 text-primary" />
-                      Hours
-                    </h3>
-                    <p className="text-muted-foreground ml-7">
-                      Monday - Friday: 10:00 AM - 6:00 PM
-                      <br />
-                      Saturday: 10:00 AM - 5:00 PM
-                      <br />
-                      Sunday: Closed
-                    </p>
-                  </div>
+                  <HoursDisplay />
                   <div>
                     <h3 className="font-semibold text-lg mb-1 flex items-center gap-2">
                       <Phone className="h-5 w-5 text-primary" />
@@ -561,19 +560,48 @@ const Home = () => {
         </main>
 
         {/* Footer */}
-        <footer className="py-8 px-4 border-t border-border">
-          <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-            <p className="mb-2">
-              © 2024 Tech Medics - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair |{" "}
-              <Link to="/macon/about" className="hover:text-primary transition-colors">
-                About
-              </Link>
-              {" | "}
-              <Link to="/privacy" className="hover:text-primary transition-colors">
-                Privacy Policy
-              </Link>
-            </p>
-            <p className="text-sm">3742 Eisenhower Parkway, Macon, GA 31206 | (478) 259-6371</p>
+        <footer className="py-12 px-4 border-t border-border bg-secondary/20">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <h3 className="font-bold text-lg mb-4 text-foreground">Contact</h3>
+                <p className="text-muted-foreground mb-2">3742 Eisenhower Parkway</p>
+                <p className="text-muted-foreground mb-4">Macon, GA 31206</p>
+                <Button asChild size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <a href="tel:(478)259-6371">
+                    <Phone className="mr-2 h-4 w-4" />
+                    (478) 259-6371
+                  </a>
+                </Button>
+              </div>
+              
+              <div>
+                <h3 className="font-bold text-lg mb-4 text-foreground">Hours</h3>
+                <HoursDisplay />
+              </div>
+              
+              <div>
+                <h3 className="font-bold text-lg mb-4 text-foreground">Quick Links</h3>
+                <div className="space-y-2">
+                  <Link to="/macon/about" className="block text-muted-foreground hover:text-primary transition-colors">
+                    About
+                  </Link>
+                  <Link to="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">
+                    Privacy Policy
+                  </Link>
+                  <Link to="/blog" className="block text-muted-foreground hover:text-primary transition-colors">
+                    Blog
+                  </Link>
+                  <a href="tel:(478)259-6371" className="block text-muted-foreground hover:text-primary transition-colors">
+                    Call for Quote
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center text-muted-foreground border-t border-border pt-6">
+              <p>© 2024 Tech Medics - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair</p>
+            </div>
           </div>
         </footer>
       </div>

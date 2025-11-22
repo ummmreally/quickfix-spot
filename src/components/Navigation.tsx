@@ -10,12 +10,25 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 import logo from "@/assets/optimized/logo.webp";
+import HoursDisplay from "@/components/HoursDisplay";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="border-b border-border bg-background sticky top-0 z-50">
+    <>
+      {/* Top info bar */}
+      <div className="bg-secondary/30 border-b border-border py-2 px-4 hidden md:block">
+        <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
+          <HoursDisplay compact />
+          <a href="tel:(478)259-6371" className="text-primary hover:text-primary/80 transition-colors font-medium flex items-center gap-2">
+            <Phone className="h-4 w-4" />
+            Call Now: (478) 259-6371
+          </a>
+        </div>
+      </div>
+      
+      <header className="border-b border-border bg-background sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <a href="/">
@@ -156,6 +169,7 @@ const Navigation = () => {
         </div>
       </div>
     </header>
+    </>
   );
 };
 

@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+import StudentDiscountBanner from "@/components/StudentDiscountBanner";
+import TrustBadges from "@/components/TrustBadges";
+import CompactReviewDisplay from "@/components/CompactReviewDisplay";
+import HoursDisplay from "@/components/HoursDisplay";
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Logo Header */}
@@ -23,6 +27,8 @@ const Index = () => {
           />
         </div>
       </header>
+
+      <StudentDiscountBanner />
 
       {/* Hero Section */}
       <section className="bg-secondary/30 py-16 md:py-24">
@@ -50,6 +56,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <TrustBadges />
+      <CompactReviewDisplay />
 
       {/* Accessories Section */}
       <section id="accessories" className="py-20 px-4">
@@ -80,14 +89,7 @@ const Index = () => {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Hours</h3>
-                  <p className="text-muted-foreground">
-                    Mon-Fri: 10am - 6pm
-                    <br />
-                    Sat: 10am - 5pm
-                    <br />
-                    Sun: Closed
-                  </p>
+                  <HoursDisplay />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Phone</h3>
@@ -121,9 +123,45 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-border">
-        <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 MyTechMedics. All rights reserved.</p>
+      <footer className="py-12 px-4 border-t border-border bg-secondary/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-foreground">Contact</h3>
+              <p className="text-muted-foreground mb-2">3742 Eisenhower Parkway</p>
+              <p className="text-muted-foreground mb-4">Macon, GA 31206</p>
+              <Button asChild size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <a href="tel:(478)259-6371">
+                  <Phone className="mr-2 h-4 w-4" />
+                  (478) 259-6371
+                </a>
+              </Button>
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-foreground">Hours</h3>
+              <HoursDisplay />
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-foreground">Quick Links</h3>
+              <div className="space-y-2">
+                <Link to="/" className="block text-muted-foreground hover:text-primary transition-colors">
+                  Home
+                </Link>
+                <Link to="/blog" className="block text-muted-foreground hover:text-primary transition-colors">
+                  Blog
+                </Link>
+                <a href="tel:(478)259-6371" className="block text-muted-foreground hover:text-primary transition-colors">
+                  Call for Quote
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center text-muted-foreground border-t border-border pt-6">
+            <p>© 2024 MyTechMedics. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>;
