@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-import TrustBadges from "@/components/TrustBadges";
-import CompactReviewDisplay from "@/components/CompactReviewDisplay";
 import HoursDisplay from "@/components/HoursDisplay";
 const Index = () => {
   return <div className="min-h-screen bg-background">
@@ -54,8 +52,6 @@ const Index = () => {
         </div>
       </section>
 
-      <TrustBadges />
-      <CompactReviewDisplay />
 
       {/* Accessories Section */}
       <section id="accessories" className="py-20 px-4">
