@@ -24,10 +24,12 @@ const CompactReviewDisplay = ({ ratingValue = "4.9", reviewCount = "55" }: Compa
       </div>
       <Button asChild variant="outline" size="sm" className="border-primary/30 hover:bg-primary/5">
         <a
-          href="https://www.google.com/maps/place/Tech+Medics/@32.8407,-83.6324"
+          href="https://www.google.com/maps/place/Tech+Medics/@32.8407,-83.6324,17z"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2"
+          data-track="reviews-cta"
+          data-location="compact-review-display"
         >
           Read Reviews
           <ExternalLink className="h-3 w-3" />
