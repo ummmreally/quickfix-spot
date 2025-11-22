@@ -3,6 +3,7 @@ import { MapPin, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import HoursDisplay from "@/components/HoursDisplay";
+import CompactReviewDisplay from "@/components/CompactReviewDisplay";
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Logo Header */}
@@ -49,6 +50,13 @@ const Index = () => {
               </Button>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="border-b border-border">
+        <div className="max-w-7xl mx-auto">
+          <CompactReviewDisplay />
         </div>
       </section>
 
