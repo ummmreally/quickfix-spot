@@ -32,7 +32,7 @@ const blogPosts: BlogPost[] = [
   {
     title: "7 Signs Your iPhone Battery Needs Replacement in 2025",
     description: "Is your iPhone battery dying fast? Learn the 7 warning signs you need a battery replacement, costs in Macon GA, and what to expect during repair.",
-    slug: "iphone-battery-replacement-2025",
+    slug: "iphone-battery-replacement-signs-2025",
     category: "Battery & Performance",
     date: "2025-11-03",
     keywords: ["iPhone battery replacement", "battery health", "Macon GA battery repair"]
@@ -40,7 +40,7 @@ const blogPosts: BlogPost[] = [
   {
     title: "Why Is My iPhone Dying So Fast? 11 Proven Fixes for 2025",
     description: "iPhone battery draining fast? Learn 11 expert solutions to fix rapid battery drain, when to replace your battery, and how to maximize battery life.",
-    slug: "iphone-dying-fast",
+    slug: "iphone-dying-fast-after-charging",
     category: "Battery & Performance",
     date: "2025-11-03",
     keywords: ["iPhone dying fast", "battery drain", "iPhone battery tips"]
@@ -48,7 +48,7 @@ const blogPosts: BlogPost[] = [
   {
     title: "iPhone Repair Near Mercer University | Student Discounts Available",
     description: "Fast, affordable iPhone repair for Mercer University students in Macon GA. 10% student discount, same-day screen & battery repair. Walk-ins welcome.",
-    slug: "mercer-university-iphone-repair",
+    slug: "iphone-repair-mercer-university-student-discount",
     category: "iPhone Repair",
     date: "2025-11-03",
     keywords: ["Mercer University iPhone repair", "student discount repair", "Macon student phone repair"]
@@ -56,7 +56,7 @@ const blogPosts: BlogPost[] = [
   {
     title: "Swollen iPhone Battery? Emergency Replacement in Macon GA",
     description: "Swollen iPhone battery is dangerous. Learn warning signs, what NOT to do, and get same-day emergency battery replacement in Macon GA.",
-    slug: "swollen-iphone-battery",
+    slug: "swollen-iphone-battery-replacement-macon",
     category: "Battery & Performance",
     date: "2025-11-03",
     keywords: ["swollen iPhone battery", "emergency battery replacement", "dangerous battery"]
@@ -64,7 +64,7 @@ const blogPosts: BlogPost[] = [
   {
     title: "MacBook Screen Repair Cost Macon GA: Complete 2025 Price Guide",
     description: "Complete MacBook screen repair pricing in Macon GA. Compare Tech Medics vs Apple Store costs for Air, Pro, M-Series. Save $100-300.",
-    slug: "macbook-screen-cost-macon",
+    slug: "macbook-screen-repair-cost-macon",
     category: "MacBook Repair",
     date: "2025-11-03",
     keywords: ["MacBook screen repair cost", "MacBook Pro screen price", "Macon MacBook repair"]
