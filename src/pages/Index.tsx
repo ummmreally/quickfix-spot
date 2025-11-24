@@ -37,13 +37,23 @@ const Index = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
-                <a href="tel:(478)259-6371">
+                <a 
+                  href="tel:(478)259-6371"
+                  data-track="phone-cta"
+                  data-location="macon-hero"
+                >
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8">
-                <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  data-track="directions-cta"
+                  data-location="macon-hero"
+                >
                   <MapPin className="mr-2 h-5 w-5" />
                   Get Directions
                 </a>
@@ -100,13 +110,23 @@ const Index = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <a href="tel:(478)259-6371">
+                  <a 
+                    href="tel:(478)259-6371"
+                    data-track="phone-cta"
+                    data-location="macon-contact"
+                  >
                     <Phone className="mr-2 h-5 w-5" />
                     Call Now
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-2">
-                  <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    data-track="directions-cta"
+                    data-location="macon-contact"
+                  >
                     <MapPin className="mr-2 h-5 w-5" />
                     Get Directions
                   </a>
@@ -132,7 +152,11 @@ const Index = () => {
               <p className="text-muted-foreground mb-2">3742 Eisenhower Parkway</p>
               <p className="text-muted-foreground mb-4">Macon, GA 31206</p>
               <Button asChild size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <a href="tel:(478)259-6371">
+                <a 
+                  href="tel:(478)259-6371"
+                  data-track="phone-cta"
+                  data-location="macon-footer"
+                >
                   <Phone className="mr-2 h-4 w-4" />
                   (478) 259-6371
                 </a>
@@ -153,7 +177,12 @@ const Index = () => {
                 <Link to="/blog" className="block text-muted-foreground hover:text-primary transition-colors">
                   Blog
                 </Link>
-                <a href="tel:(478)259-6371" className="block text-muted-foreground hover:text-primary transition-colors">
+                <a 
+                  href="tel:(478)259-6371" 
+                  className="block text-muted-foreground hover:text-primary transition-colors"
+                  data-track="phone-cta"
+                  data-location="macon-footer-links"
+                >
                   Call for Quote
                 </a>
               </div>
