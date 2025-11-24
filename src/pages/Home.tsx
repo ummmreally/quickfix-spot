@@ -155,7 +155,11 @@ const Home = () => {
                   size="lg"
                   className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6"
                 >
-                  <a href="tel:(478)259-6371">
+                  <a 
+                    href="tel:(478)259-6371"
+                    data-track="phone-cta"
+                    data-location="home-hero"
+                  >
                     <Phone className="mr-2 h-5 w-5" />
                     Call (478) 259-6371
                   </a>
@@ -165,6 +169,8 @@ const Home = () => {
                     href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-track="directions-cta"
+                    data-location="home-hero"
                   >
                     <MapPin className="mr-2 h-5 w-5" />
                     Get Directions
@@ -378,7 +384,11 @@ const Home = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                    <a href="tel:(478)259-6371">
+                    <a 
+                      href="tel:(478)259-6371"
+                      data-track="phone-cta"
+                      data-location="home-location"
+                    >
                       <Phone className="mr-2 h-5 w-5" />
                       Call Now for iPhone Repair
                     </a>
@@ -388,6 +398,8 @@ const Home = () => {
                       href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206"
                       target="_blank"
                       rel="noopener noreferrer"
+                      data-track="directions-cta"
+                      data-location="home-location"
                     >
                       <MapPin className="mr-2 h-5 w-5" />
                       Get Directions

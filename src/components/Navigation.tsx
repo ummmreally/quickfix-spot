@@ -21,7 +21,12 @@ const Navigation = () => {
       <div className="bg-secondary/30 border-b border-border py-2 px-4 hidden md:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <HoursDisplay compact />
-          <a href="tel:(478)259-6371" className="text-primary hover:text-primary/80 transition-colors font-medium flex items-center gap-2">
+          <a 
+            href="tel:(478)259-6371" 
+            className="text-primary hover:text-primary/80 transition-colors font-medium flex items-center gap-2"
+            data-track="phone-cta"
+            data-location="nav-top-bar"
+          >
             <Phone className="h-4 w-4" />
             Call Now: (478) 259-6371
           </a>
@@ -95,7 +100,11 @@ const Navigation = () => {
               Blog
             </a>
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <a href="tel:(478)259-6371">
+              <a 
+                href="tel:(478)259-6371"
+                data-track="phone-cta"
+                data-location="nav-desktop"
+              >
                 <Phone className="mr-2 h-4 w-4" />
                 (478) 259-6371
               </a>
@@ -158,7 +167,11 @@ const Navigation = () => {
                   Blog
                 </a>
                 <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                  <a href="tel:(478)259-6371">
+                  <a 
+                    href="tel:(478)259-6371"
+                    data-track="phone-cta"
+                    data-location="nav-mobile"
+                  >
                     <Phone className="mr-2 h-4 w-4" />
                     (478) 259-6371
                   </a>

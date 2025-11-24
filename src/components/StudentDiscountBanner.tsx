@@ -23,7 +23,11 @@ const StudentDiscountBanner = () => {
           size="sm"
           className="bg-primary hover:bg-primary/90 text-primary-foreground whitespace-nowrap"
         >
-          <a href="tel:(478)259-6371">
+          <a 
+            href="tel:(478)259-6371"
+            data-track="phone-cta"
+            data-location="student-discount-banner"
+          >
             Call to Claim Discount
           </a>
         </Button>
