@@ -5,6 +5,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Card } from "@/components/ui/card";
 import DiscountPanel from "@/components/DiscountPanel";
 import Navigation from "@/components/Navigation";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { useState } from "react";
 interface PriceData {
   model: string;
   lcd?: number;
@@ -226,8 +228,43 @@ const pricingData: PriceData[] = [
     battery: 69.99,
   },
 ];
+
+const ipadPricingData: PriceData[] = [
+  {
+    model: "iPad Pro 12.9\" (6th Gen)",
+    lcd: 399.99,
+    battery: 149.99,
+  },
+  {
+    model: "iPad Pro 11\" (4th Gen)",
+    lcd: 349.99,
+    battery: 149.99,
+  },
+  {
+    model: "iPad Air (5th Gen)",
+    lcd: 299.99,
+    battery: 129.99,
+  },
+  {
+    model: "iPad (10th Gen)",
+    lcd: 249.99,
+    battery: 119.99,
+  },
+  {
+    model: "iPad (9th Gen)",
+    lcd: 199.99,
+    battery: 109.99,
+  },
+  {
+    model: "iPad Mini (6th Gen)",
+    lcd: 249.99,
+    battery: 119.99,
+  },
+];
+
 const PricingChart = () => {
   const navigate = useNavigate();
+  const [deviceType, setDeviceType] = useState<string>("iphone");
 
   const handleCall = () => {
     (window as any).dataLayer = (window as any).dataLayer || [];
@@ -262,6 +299,29 @@ const PricingChart = () => {
                 for pricing
               </span>
             </div>
+
+            {/* Device Type Toggle */}
+            <div className="mt-8 flex justify-center">
+              <ToggleGroup 
+                type="single" 
+                value={deviceType} 
+                onValueChange={(value) => value && setDeviceType(value)}
+                className="border border-border rounded-lg p-1 bg-muted/30"
+              >
+                <ToggleGroupItem 
+                  value="iphone" 
+                  className="px-8 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
+                >
+                  iPhone
+                </ToggleGroupItem>
+                <ToggleGroupItem 
+                  value="ipad" 
+                  className="px-8 py-2 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
+                >
+                  iPad
+                </ToggleGroupItem>
+              </ToggleGroup>
+            </div>
           </div>
 
           <Card className="overflow-hidden">
@@ -284,7 +344,7 @@ const PricingChart = () => {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {pricingData.map((item, index) => (
+                  {(deviceType === "iphone" ? pricingData : ipadPricingData).map((item, index) => (
                     <TableRow key={item.model} className={index % 2 === 0 ? "bg-background" : "bg-muted/20"}>
                       <TableCell className="font-semibold sticky left-0 bg-inherit z-10">{item.model}</TableCell>
                       <TableCell className="text-center">
