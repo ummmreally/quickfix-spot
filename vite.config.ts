@@ -27,7 +27,6 @@ export default defineConfig(({ mode }) => ({
     },
     // CSS optimizations
     cssCodeSplit: true,
-    cssMinify: "lightningcss",
     // Optimize chunk splitting
     rollupOptions: {
       output: {
@@ -56,18 +55,6 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false,
     // Target modern browsers for smaller output
     target: "esnext",
-  },
-  css: {
-    // Use Lightning CSS for faster CSS processing and better minification
-    transformer: "lightningcss",
-    lightningcss: {
-      // Target modern browsers
-      targets: {
-        chrome: 100,
-        firefox: 100,
-        safari: 15,
-      },
-    },
   },
   // Optimize dependency pre-bundling
   optimizeDeps: {
