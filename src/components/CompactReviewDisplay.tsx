@@ -6,7 +6,7 @@ interface CompactReviewDisplayProps {
   reviewCount?: string;
 }
 
-const CompactReviewDisplay = ({ ratingValue = "4.9", reviewCount = "55" }: CompactReviewDisplayProps) => {
+const CompactReviewDisplay = ({ ratingValue = "4.9", reviewCount = "60" }: CompactReviewDisplayProps) => {
   return (
     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-6 px-4">
       <div className="flex items-center gap-2">
