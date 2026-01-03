@@ -4,50 +4,58 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PageLoader from "@/components/PageLoader";
 
-const Home = lazy(() => import("./pages/Home"));
-const Index = lazy(() => import("./pages/Index"));
-const Contact = lazy(() => import("./pages/Contact"));
-const PricingChart = lazy(() => import("./pages/PricingChart"));
-const About = lazy(() => import("./pages/About"));
-const Business = lazy(() => import("./pages/Business"));
-const Education = lazy(() => import("./pages/Education"));
-const IPhonePage = lazy(() => import("./pages/iPhone"));
-const IPadPage = lazy(() => import("./pages/iPad"));
-const MacBookPage = lazy(() => import("./pages/MacBook"));
-const Privacy = lazy(() => import("./pages/Privacy"));
-const DIYRepair = lazy(() => import("./pages/DIYRepair"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-const Vineville = lazy(() => import("./pages/neighborhoods/Vineville"));
-const Ingleside = lazy(() => import("./pages/neighborhoods/Ingleside"));
-const NorthMacon = lazy(() => import("./pages/neighborhoods/NorthMacon"));
-const Downtown = lazy(() => import("./pages/neighborhoods/Downtown"));
-const EastMacon = lazy(() => import("./pages/neighborhoods/EastMacon"));
-const SouthMacon = lazy(() => import("./pages/neighborhoods/SouthMacon"));
-const Rutland = lazy(() => import("./pages/neighborhoods/Rutland"));
-const Blog = lazy(() => import("./pages/blog/Index"));
-const IPhoneScreenRepair = lazy(() => import("./pages/blog/IPhoneScreenRepair"));
-const IPhoneBatteryReplacement = lazy(() => import("./pages/blog/IPhoneBatteryReplacement"));
-const TechMedicsVsAppleStore = lazy(() => import("./pages/blog/TechMedicsVsAppleStore"));
-const MacBookRepairMacon = lazy(() => import("./pages/blog/MacBookRepairMacon"));
-const IPadScreenRepair = lazy(() => import("./pages/blog/IPadScreenRepair"));
-const OEMvsAftermarket = lazy(() => import("./pages/blog/OEMvsAftermarket"));
-const IPhoneNotTurningOn = lazy(() => import("./pages/blog/IPhoneNotTurningOn"));
-const ChoosePhoneRepairShop = lazy(() => import("./pages/blog/ChoosePhoneRepairShop"));
-const WaterDamagedIPhone = lazy(() => import("./pages/blog/WaterDamagedIPhone"));
-const CrackedScreenCost = lazy(() => import("./pages/blog/CrackedScreenCost"));
-const IPhoneRepairNearMe = lazy(() => import("./pages/blog/IPhoneRepairNearMe"));
-const FastIPhoneRepair = lazy(() => import("./pages/blog/FastIPhoneRepair"));
-const HolidayIPhoneRepairChecklist = lazy(() => import("./pages/blog/HolidayIPhoneRepairChecklist"));
-const RepairShareDriveMacon = lazy(() => import("./pages/blog/RepairShareDriveMacon"));
-const WinterDevicePrepMacon = lazy(() => import("./pages/blog/WinterDevicePrepMacon"));
-const IPhoneBatteryReplacement2025 = lazy(() => import("./pages/blog/IPhoneBatteryReplacement2025"));
-const IPhoneDyingFast = lazy(() => import("./pages/blog/IPhoneDyingFast"));
-const MercerUniversityIPhoneRepair = lazy(() => import("./pages/blog/MercerUniversityIPhoneRepair"));
-const SwollenIPhoneBattery = lazy(() => import("./pages/blog/SwollenIPhoneBattery"));
-const MacBookScreenCostMacon = lazy(() => import("./pages/blog/MacBookScreenCostMacon"));
-const SpringMaintenanceMacon = lazy(() => import("./pages/blog/SpringMaintenanceMacon"));
-const IPhoneVsAndroidRepairCosts = lazy(() => import("./pages/blog/iPhoneVsAndroidRepairCosts"));
+// Core pages - named chunks for better caching
+const Home = lazy(() => import(/* webpackChunkName: "home" */ "./pages/Home"));
+const Index = lazy(() => import(/* webpackChunkName: "index" */ "./pages/Index"));
+const Contact = lazy(() => import(/* webpackChunkName: "contact" */ "./pages/Contact"));
+const PricingChart = lazy(() => import(/* webpackChunkName: "pricing" */ "./pages/PricingChart"));
+const About = lazy(() => import(/* webpackChunkName: "about" */ "./pages/About"));
+const Business = lazy(() => import(/* webpackChunkName: "business" */ "./pages/Business"));
+const Education = lazy(() => import(/* webpackChunkName: "education" */ "./pages/Education"));
+const Privacy = lazy(() => import(/* webpackChunkName: "privacy" */ "./pages/Privacy"));
+const DIYRepair = lazy(() => import(/* webpackChunkName: "diy" */ "./pages/DIYRepair"));
+const NotFound = lazy(() => import(/* webpackChunkName: "notfound" */ "./pages/NotFound"));
+
+// Device pages - grouped chunk
+const IPhonePage = lazy(() => import(/* webpackChunkName: "devices" */ "./pages/iPhone"));
+const IPadPage = lazy(() => import(/* webpackChunkName: "devices" */ "./pages/iPad"));
+const MacBookPage = lazy(() => import(/* webpackChunkName: "devices" */ "./pages/MacBook"));
+
+// Neighborhood pages - grouped chunk
+const Vineville = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/Vineville"));
+const Ingleside = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/Ingleside"));
+const NorthMacon = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/NorthMacon"));
+const Downtown = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/Downtown"));
+const EastMacon = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/EastMacon"));
+const SouthMacon = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/SouthMacon"));
+const Rutland = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/Rutland"));
+
+// Blog pages - grouped chunk
+const Blog = lazy(() => import(/* webpackChunkName: "blog" */ "./pages/blog/Index"));
+const IPhoneScreenRepair = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/IPhoneScreenRepair"));
+const IPhoneBatteryReplacement = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/IPhoneBatteryReplacement"));
+const TechMedicsVsAppleStore = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/TechMedicsVsAppleStore"));
+const MacBookRepairMacon = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/MacBookRepairMacon"));
+const IPadScreenRepair = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/IPadScreenRepair"));
+const OEMvsAftermarket = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/OEMvsAftermarket"));
+const IPhoneNotTurningOn = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/IPhoneNotTurningOn"));
+const ChoosePhoneRepairShop = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/ChoosePhoneRepairShop"));
+const WaterDamagedIPhone = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/WaterDamagedIPhone"));
+const CrackedScreenCost = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/CrackedScreenCost"));
+const IPhoneRepairNearMe = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/IPhoneRepairNearMe"));
+const FastIPhoneRepair = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/FastIPhoneRepair"));
+const HolidayIPhoneRepairChecklist = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/HolidayIPhoneRepairChecklist"));
+const RepairShareDriveMacon = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/RepairShareDriveMacon"));
+const WinterDevicePrepMacon = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/WinterDevicePrepMacon"));
+const IPhoneBatteryReplacement2025 = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/IPhoneBatteryReplacement2025"));
+const IPhoneDyingFast = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/IPhoneDyingFast"));
+const MercerUniversityIPhoneRepair = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/MercerUniversityIPhoneRepair"));
+const SwollenIPhoneBattery = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/SwollenIPhoneBattery"));
+const MacBookScreenCostMacon = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/MacBookScreenCostMacon"));
+const SpringMaintenanceMacon = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/SpringMaintenanceMacon"));
+const IPhoneVsAndroidRepairCosts = lazy(() => import(/* webpackChunkName: "blog-posts" */ "./pages/blog/iPhoneVsAndroidRepairCosts"));
 
 const queryClient = new QueryClient();
 
@@ -57,13 +65,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Suspense
-          fallback={
-            <div className="flex h-screen items-center justify-center bg-background text-muted-foreground">
-              Loading…
-            </div>
-          }
-        >
+        <Suspense fallback={<PageLoader />}>
           <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/macon" element={<Index />} />
