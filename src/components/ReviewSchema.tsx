@@ -6,7 +6,7 @@ interface ReviewSchemaProps {
   bestRating?: string;
 }
 
-const ReviewSchema = ({ ratingValue = "4.9", reviewCount = "55", bestRating = "5" }: ReviewSchemaProps) => {
+const ReviewSchema = ({ ratingValue = "4.9", reviewCount = "60", bestRating = "5" }: ReviewSchemaProps) => {
   const aggregateRatingSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
