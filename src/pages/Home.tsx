@@ -572,7 +572,7 @@ const Home = () => {
         <section className="py-16 px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
-              iPhone Repair Guides & Resources
+              Repair Guides & Resources
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
               Expert advice on device repair, maintenance tips, and cost guides for Macon GA residents
@@ -580,20 +580,32 @@ const Home = () => {
             
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Link to="/blog/iphone-screen-repair-macon-ga" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Screen Repair Guide 2026</h3>
+                <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Screen Repair Guide</h3>
                 <p className="text-muted-foreground text-sm">Complete guide to screen repair costs, quality options, and what to expect.</p>
               </Link>
+              <Link to="/blog/ipad-screen-repair-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">iPad Screen Repair Tips</h3>
+                <p className="text-muted-foreground text-sm">All iPad models supported - Pro, Air, Mini. Pricing and repair times.</p>
+              </Link>
               <Link to="/blog/iphone-battery-replacement-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Battery Replacement</h3>
+                <h3 className="text-lg font-bold mb-2 text-foreground">When to Replace Your Battery</h3>
                 <p className="text-muted-foreground text-sm">Signs your battery needs replacing, costs, and same-day service info.</p>
+              </Link>
+              <Link to="/blog/holiday-iphone-repair-checklist-macon-2025" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">2026 Repair Checklist</h3>
+                <p className="text-muted-foreground text-sm">Prepare your iPhone for travel and holidays with this essential checklist.</p>
+              </Link>
+              <Link to="/blog/iphone-dying-fast-after-charging" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">Fixing Fast Battery Drain</h3>
+                <p className="text-muted-foreground text-sm">11 proven fixes for iPhone battery draining too fast.</p>
+              </Link>
+              <Link to="/blog/iphone-battery-replacement-signs-2025" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">Battery Health Guide 2026</h3>
+                <p className="text-muted-foreground text-sm">7 warning signs you need a battery replacement this year.</p>
               </Link>
               <Link to="/blog/same-day-iphone-repair-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">Same-Day iPhone Repair</h3>
                 <p className="text-muted-foreground text-sm">Fast repair options and what can be fixed while you wait.</p>
-              </Link>
-              <Link to="/blog/ipad-screen-repair-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold mb-2 text-foreground">iPad Screen Repair Services</h3>
-                <p className="text-muted-foreground text-sm">All iPad models supported - Pro, Air, Mini. Pricing and repair times.</p>
               </Link>
               <Link to="/blog/macbook-repair-macon-ga" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">MacBook Repair in Macon</h3>
