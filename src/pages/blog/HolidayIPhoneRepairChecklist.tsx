@@ -7,16 +7,19 @@ const HolidayIPhoneRepairChecklist = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Holiday iPhone Repair Checklist for Macon GA (2025)",
+    "headline": "Holiday iPhone Repair Checklist for Macon GA (2026)",
     "description": "Prepare your iPhone for the holidays in Macon GA. Learn proactive maintenance tips, emergency repair advice, and how to avoid device downtime.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
+    "image": "https://techmedicsmacon.com/logo.png",
+    "author": { "@type": "Organization", "name": "Tech Medics Macon", "url": "https://techmedicsmacon.com" },
     "publisher": {
       "@type": "Organization",
       "name": "Tech Medics Macon",
+      "url": "https://techmedicsmacon.com",
       "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" }
     },
-    "datePublished": "2025-10-20",
-    "dateModified": "2025-10-20"
+    "datePublished": "2026-01-03",
+    "dateModified": "2026-01-26",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://techmedicsmacon.com/blog/holiday-iphone-repair-checklist-macon-2025" }
   };
 
   return (

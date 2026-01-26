@@ -7,16 +7,19 @@ const IPhoneDyingFast = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Why Is My iPhone Dying Fast Even After Charging? [2025 Fix]",
+    "headline": "Why Is My iPhone Dying Fast Even After Charging? [2026 Fix]",
     "description": "iPhone battery dying fast after charging? Learn the real causes and fixes. Expert solutions from Macon's top iPhone repair shop.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
+    "image": "https://techmedicsmacon.com/logo.png",
+    "author": { "@type": "Organization", "name": "Tech Medics Macon", "url": "https://techmedicsmacon.com" },
     "publisher": { 
       "@type": "Organization", 
-      "name": "Tech Medics Macon", 
+      "name": "Tech Medics Macon",
+      "url": "https://techmedicsmacon.com",
       "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" } 
     },
-    "datePublished": "2025-01-16",
-    "dateModified": "2025-01-16"
+    "datePublished": "2026-01-14",
+    "dateModified": "2026-01-26",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://techmedicsmacon.com/blog/iphone-dying-fast-after-charging" }
   };
 
   return (
