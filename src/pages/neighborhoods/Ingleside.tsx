@@ -34,7 +34,15 @@ const Ingleside = () => {
     },
     {
       question: "Where can I find iPhone repair near me in Ingleside Macon GA?",
-      answer: "MyTechMedics is located at 3742 Eisenhower Parkway, just a short drive from Ingleside Village. We serve all Ingleside neighborhoods. Call (478) 259-6371 for directions."
+      answer: "Tech Medics Macon is located at 3742 Eisenhower Parkway, just a short drive from Ingleside Village. We serve all Ingleside neighborhoods. Call (478) 259-6371 for directions."
+    },
+    {
+      question: "Do Wesleyan College students get repair discounts?",
+      answer: "Absolutely! Wesleyan College students receive 10% off all iPhone, iPad, and MacBook repairs with a valid student ID. We're proud to support our local college community."
+    },
+    {
+      question: "What makes Tech Medics different from other repair shops near Ingleside?",
+      answer: "We offer same-day service, lifetime warranty on screen repairs, certified technicians, and transparent pricing. No hidden fees, no upselling - just honest, quality repairs for Ingleside residents."
     }
   ];
 
@@ -210,7 +218,7 @@ const Ingleside = () => {
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
             <p>
-              © 2024 MyTechMedics. All rights reserved. |{" "}
+              © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>

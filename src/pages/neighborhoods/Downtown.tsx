@@ -34,7 +34,15 @@ const Downtown = () => {
     },
     {
       question: "Where can I find iPhone repair near me in Downtown Macon GA?",
-      answer: "MyTechMedics is located at 3742 Eisenhower Parkway, just a short drive from Downtown. We serve all Downtown businesses and residents. Call (478) 259-6371 for directions."
+      answer: "Tech Medics Macon is located at 3742 Eisenhower Parkway, just a short drive from Downtown. We serve all Downtown businesses and residents. Call (478) 259-6371 for directions."
+    },
+    {
+      question: "What are your hours for Downtown Macon customers?",
+      answer: "We're open Monday-Saturday, with business-friendly hours. We understand Downtown professionals need quick repairs during lunch breaks or after work. Walk-ins always welcome!"
+    },
+    {
+      question: "Do you offer corporate device repair programs for Downtown businesses?",
+      answer: "Yes! We offer volume discounts and priority service for Downtown Macon businesses. Contact us to set up a corporate repair account for your company's iPhones, iPads, and MacBooks."
     }
   ];
 
@@ -210,7 +218,7 @@ const Downtown = () => {
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
             <p>
-              © 2024 MyTechMedics. All rights reserved. |{" "}
+              © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>

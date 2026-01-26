@@ -58,11 +58,15 @@ const SouthMacon = () => {
     },
     {
       question: "Where can I find iPhone repair near me in South Macon GA?",
-      answer: "MyTechMedics is located at 3742 Eisenhower Parkway, easily accessible from Zebulon Road and Pio Nono Avenue. We serve all South Macon neighborhoods. Call (478) 259-6371 for directions."
+      answer: "Tech Medics Macon is located at 3742 Eisenhower Parkway, easily accessible from Zebulon Road and Pio Nono Avenue. We serve all South Macon neighborhoods. Call (478) 259-6371 for directions."
     },
     {
       question: "What types of repairs do you do in South Macon?",
       answer: "We repair all Apple devices including iPhone screen replacement, battery replacement, charging port repair, iPad screen and battery service, and MacBook repairs. Most repairs are completed same-day."
+    },
+    {
+      question: "How much does iPhone screen repair cost in South Macon?",
+      answer: "iPhone screen repair starts at $89 for older models and varies by model. iPhone 15/16 series screens range from $199-349. We offer competitive pricing - often 30-40% less than Apple Store. Call for exact pricing on your model."
     }
   ];
 
@@ -241,7 +245,7 @@ const SouthMacon = () => {
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
             <p>
-              © 2024 MyTechMedics. All rights reserved. |{" "}
+              © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>

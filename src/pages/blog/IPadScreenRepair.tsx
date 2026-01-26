@@ -7,7 +7,7 @@ const IPadScreenRepair = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "iPad Screen Replacement & Repair Services in Macon GA",
+    "headline": "iPad Screen Replacement & Repair Services in Macon GA (2026)",
     "description": "Professional iPad screen repair and charging port fixes in Macon. Same-day service, warranty included, all iPad models supported.",
     "author": {
       "@type": "Organization",
@@ -21,8 +21,8 @@ const IPadScreenRepair = () => {
         "url": "https://techmedicsmacon.com/logo.png"
       }
     },
-    "datePublished": "2025-01-08",
-    "dateModified": "2025-01-08"
+    "datePublished": "2026-01-23",
+    "dateModified": "2026-01-23"
   };
 
   return (
@@ -53,13 +53,13 @@ const IPadScreenRepair = () => {
               ← Back to Blog
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              iPad Screen Replacement & Repair Services in Macon GA
+              iPad Screen Replacement & Repair Services in Macon GA (2026)
             </h1>
             <p className="text-xl text-muted-foreground">
               Professional iPad screen repair, charging port fixes, and battery replacement in Macon GA
             </p>
             <div className="mt-4 text-sm text-muted-foreground">
-              Published January 8, 2025 | 8 min read
+              Updated January 23, 2026 | 8 min read
             </div>
           </div>
         </header>

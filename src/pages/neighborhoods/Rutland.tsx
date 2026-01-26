@@ -58,11 +58,15 @@ const Rutland = () => {
     },
     {
       question: "Where can I find iPhone repair near me in Rutland Macon GA?",
-      answer: "MyTechMedics is located at 3742 Eisenhower Parkway, easily accessible from Bass Road and Houston Road. We serve all Rutland and Southwest Macon neighborhoods. Call (478) 259-6371 for directions."
+      answer: "Tech Medics Macon is located at 3742 Eisenhower Parkway, easily accessible from Bass Road and Houston Road. We serve all Rutland and Southwest Macon neighborhoods. Call (478) 259-6371 for directions."
     },
     {
       question: "Do you offer student discounts for Rutland High School students?",
       answer: "Yes! We offer special discounts for students. Bring your student ID to receive a discount on iPhone, iPad, or MacBook repairs. We're proud to serve the Rutland High School community."
+    },
+    {
+      question: "What's the warranty on repairs for Rutland customers?",
+      answer: "All screen repairs come with a lifetime warranty against defects. Battery replacements include a 1-year warranty. We stand behind our work for all Rutland and Southwest Macon customers."
     }
   ];
 
@@ -241,7 +245,7 @@ const Rutland = () => {
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
             <p>
-              © 2024 MyTechMedics. All rights reserved. |{" "}
+              © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>

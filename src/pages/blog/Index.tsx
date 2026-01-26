@@ -14,35 +14,35 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
-    title: "Spring iPhone Maintenance Tips for Macon GA 2025",
-    description: "Essential spring maintenance tips for iPhone, iPad, and MacBook in Macon GA. Combat humidity, pollen, and temperature changes with expert advice from Tech Medics.",
+    title: "Spring iPhone Maintenance Tips for Macon GA 2026",
+    description: "Essential spring maintenance tips for iPhone, iPad, and MacBook in Macon GA. Combat humidity, pollen, and temperature changes with expert advice from Tech Medics Macon.",
     slug: "spring-maintenance-macon-2025",
     category: "Seasonal Tips",
-    date: "2025-03-01",
+    date: "2026-01-20",
     keywords: ["spring iPhone maintenance", "device care Macon GA", "humidity protection"]
   },
   {
-    title: "iPhone vs Android Repair Costs: Complete Macon GA Guide 2025",
+    title: "iPhone vs Android Repair Costs: Complete Macon GA Guide 2026",
     description: "Comprehensive cost comparison of iPhone vs Android repairs in Macon GA. Compare screen, battery, and charging port repair pricing to make informed decisions.",
     slug: "iphone-vs-android-repair-costs-macon",
     category: "Comparison Guide",
-    date: "2025-03-15",
+    date: "2026-01-18",
     keywords: ["iPhone vs Android repair", "repair cost comparison", "Macon phone repair"]
   },
   {
-    title: "7 Signs Your iPhone Battery Needs Replacement in 2025",
+    title: "7 Signs Your iPhone Battery Needs Replacement in 2026",
     description: "Is your iPhone battery dying fast? Learn the 7 warning signs you need a battery replacement, costs in Macon GA, and what to expect during repair.",
     slug: "iphone-battery-replacement-signs-2025",
     category: "Battery & Performance",
-    date: "2025-11-03",
+    date: "2026-01-15",
     keywords: ["iPhone battery replacement", "battery health", "Macon GA battery repair"]
   },
   {
-    title: "Why Is My iPhone Dying So Fast? 11 Proven Fixes for 2025",
+    title: "Why Is My iPhone Dying So Fast? 11 Proven Fixes for 2026",
     description: "iPhone battery draining fast? Learn 11 expert solutions to fix rapid battery drain, when to replace your battery, and how to maximize battery life.",
     slug: "iphone-dying-fast-after-charging",
     category: "Battery & Performance",
-    date: "2025-11-03",
+    date: "2026-01-14",
     keywords: ["iPhone dying fast", "battery drain", "iPhone battery tips"]
   },
   {
@@ -50,7 +50,7 @@ const blogPosts: BlogPost[] = [
     description: "Fast, affordable iPhone repair for Mercer University students in Macon GA. 10% student discount, same-day screen & battery repair. Walk-ins welcome.",
     slug: "iphone-repair-mercer-university-student-discount",
     category: "iPhone Repair",
-    date: "2025-11-03",
+    date: "2026-01-12",
     keywords: ["Mercer University iPhone repair", "student discount repair", "Macon student phone repair"]
   },
   {
@@ -58,23 +58,23 @@ const blogPosts: BlogPost[] = [
     description: "Swollen iPhone battery is dangerous. Learn warning signs, what NOT to do, and get same-day emergency battery replacement in Macon GA.",
     slug: "swollen-iphone-battery-replacement-macon",
     category: "Battery & Performance",
-    date: "2025-11-03",
+    date: "2026-01-10",
     keywords: ["swollen iPhone battery", "emergency battery replacement", "dangerous battery"]
   },
   {
-    title: "MacBook Screen Repair Cost Macon GA: Complete 2025 Price Guide",
+    title: "MacBook Screen Repair Cost Macon GA: Complete 2026 Price Guide",
     description: "Complete MacBook screen repair pricing in Macon GA. Compare Tech Medics vs Apple Store costs for Air, Pro, M-Series. Save $100-300.",
     slug: "macbook-screen-repair-cost-macon",
     category: "MacBook Repair",
-    date: "2025-11-03",
+    date: "2026-01-08",
     keywords: ["MacBook screen repair cost", "MacBook Pro screen price", "Macon MacBook repair"]
   },
   {
-    title: "Winter Device Prep Guide for Macon GA (January 2025)",
-    description: "Keep your iPhone, iPad, and MacBook performing through winter in Macon GA. Learn cold-weather battery care, moisture protection, and maintenance tips for January 2025.",
+    title: "Winter Device Prep Guide for Macon GA (January 2026)",
+    description: "Keep your iPhone, iPad, and MacBook performing through winter in Macon GA. Learn cold-weather battery care, moisture protection, and maintenance tips.",
     slug: "winter-device-prep-macon-2025",
     category: "Seasonal Tips",
-    date: "2025-01-05",
+    date: "2026-01-05",
     keywords: ["winter iPhone tips", "cold weather battery", "Macon GA devices"]
   },
   {
@@ -82,15 +82,15 @@ const blogPosts: BlogPost[] = [
     description: "Join Tech Medics Macon at the Repair & Share Drive with QuackedScreens.com. Donate broken devices, get discounted repairs, and support families in need.",
     slug: "repair-share-drive-macon",
     category: "Community",
-    date: "2025-10-22",
+    date: "2026-01-04",
     keywords: ["repair and share drive", "device donation", "QuackedScreens"]
   },
   {
-    title: "Holiday iPhone Repair Checklist for Macon GA (2025)",
+    title: "Holiday iPhone Repair Checklist for Macon GA (2026)",
     description: "Prepare your iPhone for the holidays in Macon GA. Learn proactive maintenance tips, emergency repair advice, and how to avoid device downtime.",
     slug: "holiday-iphone-repair-checklist-macon-2025",
     category: "Seasonal Tips",
-    date: "2025-10-20",
+    date: "2026-01-03",
     keywords: ["holiday iPhone repair", "travel phone prep", "Tech Medics Macon"]
   },
   {
@@ -98,23 +98,23 @@ const blogPosts: BlogPost[] = [
     description: "Need fast iPhone repair? Tech Medics offers same-day screen repair, battery replacement, and more. Most repairs done in 30-60 minutes.",
     slug: "same-day-iphone-repair-macon",
     category: "iPhone Repair",
-    date: "2025-01-22",
+    date: "2026-01-22",
     keywords: ["same-day iPhone repair", "fast iPhone repair Macon", "quick phone repair"]
   },
   {
-    title: "How Much Does iPhone Screen Repair Cost in Macon GA? 2025 Prices",
+    title: "How Much Does iPhone Screen Repair Cost in Macon GA? 2026 Prices",
     description: "Complete iPhone screen repair pricing guide for Macon GA. Compare costs, quality options, and save money on cracked screen repair.",
     slug: "iphone-screen-repair-cost-macon",
     category: "iPhone Repair",
-    date: "2025-01-20",
-    keywords: ["iPhone screen repair cost", "cracked iPhone screen price", "iPhone 15 screen cost"]
+    date: "2026-01-21",
+    keywords: ["iPhone screen repair cost", "cracked iPhone screen price", "iPhone 16 screen cost"]
   },
   {
     title: "iPhone Repair Near Me in Macon GA: Your Local Expert",
     description: "Searching 'iPhone repair near me'? Tech Medics in Macon offers same-day screen repair, battery replacement, and charging port fixes.",
     slug: "iphone-repair-near-me-macon",
     category: "iPhone Repair",
-    date: "2025-01-18",
+    date: "2026-01-19",
     keywords: ["iPhone repair near me", "phone repair near me", "iPhone repair Macon GA"]
   },
   {
@@ -122,15 +122,15 @@ const blogPosts: BlogPost[] = [
     description: "iPhone got wet? Learn emergency steps, rice myths, and professional water damage repair in Macon GA. Fast action saves your device.",
     slug: "water-damaged-iphone-repair",
     category: "Troubleshooting",
-    date: "2025-01-16",
+    date: "2026-01-17",
     keywords: ["water damaged iPhone", "iPhone got wet", "liquid damage repair"]
   },
   {
-    title: "Best iPhone Screen Repair in Macon GA: Complete Guide 2025",
+    title: "Best iPhone Screen Repair in Macon GA: Complete Guide 2026",
     description: "Everything you need to know about iPhone screen repair in Macon GA, including costs, same-day service, and how to choose the best repair shop.",
     slug: "iphone-screen-repair-macon-ga",
     category: "iPhone Repair",
-    date: "2025-01-15",
+    date: "2026-01-25",
     keywords: ["iPhone screen repair Macon GA", "cracked iPhone screen", "same-day repair"]
   },
   {
@@ -138,7 +138,7 @@ const blogPosts: BlogPost[] = [
     description: "Complete guide to iPhone battery replacement in Macon GA. Learn about costs, warning signs, and same-day service options.",
     slug: "iphone-battery-replacement-macon",
     category: "Battery & Performance",
-    date: "2025-01-12",
+    date: "2026-01-24",
     keywords: ["iPhone battery replacement", "swollen battery", "battery health"]
   },
   {
@@ -146,7 +146,7 @@ const blogPosts: BlogPost[] = [
     description: "Expert MacBook repair services in Macon GA. We fix screens, keyboards, liquid damage, and boot issues. Same-day service available.",
     slug: "macbook-repair-macon-ga",
     category: "MacBook Repair",
-    date: "2025-01-10",
+    date: "2026-01-16",
     keywords: ["MacBook screen repair", "MacBook won't turn on", "liquid damage repair"]
   },
   {
@@ -154,7 +154,7 @@ const blogPosts: BlogPost[] = [
     description: "Professional iPad screen repair and charging port fixes in Macon. Same-day service, warranty included, all iPad models supported.",
     slug: "ipad-screen-repair-macon",
     category: "iPad Repair",
-    date: "2025-01-08",
+    date: "2026-01-23",
     keywords: ["iPad screen replacement", "iPad won't charge", "iPad repair cost"]
   },
   {
@@ -162,7 +162,7 @@ const blogPosts: BlogPost[] = [
     description: "Learn the key differences between OEM and aftermarket iPhone screens, including quality, cost, and which option is right for you.",
     slug: "oem-vs-aftermarket-iphone-screens",
     category: "Educational",
-    date: "2025-01-05",
+    date: "2026-01-11",
     keywords: ["OEM screens", "aftermarket screens", "iPhone screen quality"]
   },
   {
@@ -170,7 +170,7 @@ const blogPosts: BlogPost[] = [
     description: "Comparing Tech Medics and Apple Store repairs: costs, warranty, turnaround time, and why local repair shops are often the better choice.",
     slug: "tech-medics-vs-apple-store-repair",
     category: "Brand Authority",
-    date: "2025-01-03",
+    date: "2026-01-09",
     keywords: ["Apple Store alternative", "third-party repair", "affordable iPhone repair"]
   },
   {
@@ -178,7 +178,7 @@ const blogPosts: BlogPost[] = [
     description: "Troubleshooting guide for iPhones that won't turn on. Learn common causes, DIY fixes, and when to visit our Macon repair shop.",
     slug: "iphone-not-turning-on-fix",
     category: "Troubleshooting",
-    date: "2025-01-01",
+    date: "2026-01-07",
     keywords: ["iPhone black screen", "iPhone won't power on", "dead iPhone"]
   },
   {
@@ -186,7 +186,7 @@ const blogPosts: BlogPost[] = [
     description: "Expert tips for selecting the best phone repair shop in Macon. Learn what to look for in reviews, warranties, and technician qualifications.",
     slug: "choose-phone-repair-shop-macon",
     category: "Educational",
-    date: "2024-12-28",
+    date: "2026-01-06",
     keywords: ["reliable repair shop", "phone repair reviews", "certified technicians"]
   }
 ];
@@ -291,7 +291,7 @@ const Blog = () => {
 
       <footer className="bg-secondary/20 py-8 px-4">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>&copy; 2025 Tech Medics Macon. All rights reserved.</p>
+          <p>&copy; 2026 Tech Medics Macon. All rights reserved.</p>
           <div className="mt-4 space-x-4">
             <Link to="/macon/about" className="hover:text-primary">About</Link>
             <Link to="/privacy" className="hover:text-primary">Privacy Policy</Link>
