@@ -51,78 +51,19 @@ const Home = () => {
           property="og:description"
           content="Macon's #1 iPhone screen repair experts. Fast iPad & MacBook repairs. 30-minute service, walk-ins welcome. 3742 Eisenhower Parkway."
         />
+        {/* Breadcrumb schema only - main LocalBusiness schema is in index.html */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Tech Medics",
-            image: "https://techmedicsmacon.com/logo.png",
-            description:
-              "Professional iPhone screen repair, iPad repair, and MacBook repair services in Macon, GA. Fast same-day service with warranty.",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "3742 Eisenhower Parkway",
-              addressLocality: "Macon",
-              addressRegion: "GA",
-              postalCode: "31206",
-              addressCountry: "US",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: "32.8407",
-              longitude: "-83.6324",
-            },
-            telephone: "+14782596371",
-            priceRange: "$$",
-            openingHoursSpecification: [
+            "@type": "BreadcrumbList",
+            "itemListElement": [
               {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                opens: "10:00",
-                closes: "18:00",
-              },
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: "Saturday",
-                opens: "10:00",
-                closes: "17:00",
-              },
-            ],
-            areaServed: {
-              "@type": "City",
-              name: "Macon",
-              containedIn: {
-                "@type": "State",
-                name: "Georgia",
-              },
-            },
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Repair Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "iPhone Screen Repair Macon GA",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "iPad Repair Macon GA",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "MacBook Repair Macon GA",
-                  },
-                },
-              ],
-            },
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://techmedicsmacon.com/"
+              }
+            ]
           })}
         </script>
       </Helmet>

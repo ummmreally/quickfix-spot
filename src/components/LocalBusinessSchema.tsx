@@ -6,78 +6,43 @@ interface LocalBusinessSchemaProps {
   serviceType?: string;
 }
 
+/**
+ * LocalBusinessSchema - Adds service-specific schema that references the main business
+ * The primary LocalBusiness schema is defined in index.html as the single source of truth
+ * This component only adds service-specific data to avoid duplication
+ */
 const LocalBusinessSchema = ({ pageName, pageDescription, serviceType }: LocalBusinessSchemaProps) => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Tech Medics Macon",
-    "image": "https://techmedicsmacon.com/logo.png",
-    "@id": "https://techmedicsmacon.com",
-    "url": "https://techmedicsmacon.com",
-    "telephone": "(478) 259-6371",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "3742 Eisenhower Parkway",
-      "addressLocality": "Macon",
-      "addressRegion": "GA",
-      "postalCode": "31206",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 32.789098,
-      "longitude": -83.686563
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "10:00",
-        "closes": "18:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "10:00",
-        "closes": "17:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.facebook.com/mytechmedics",
-      "https://www.google.com/maps/place/3742+Eisenhower+Pkwy,+Macon,+GA+31206"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "47"
-    }
-  };
-
-  if (serviceType) {
-    schema["service"] = {
-      "@type": "Service",
-      "name": serviceType,
-      "description": pageDescription,
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Tech Medics Macon"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Macon",
-        "containedIn": {
-          "@type": "State",
-          "name": "Georgia"
-        }
-      }
-    };
+  // Only render service schema if a service type is specified
+  // The main LocalBusiness schema is already in index.html
+  if (!serviceType) {
+    return null;
   }
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": serviceType,
+    "description": pageDescription,
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": "https://techmedicsmacon.com/#business",
+      "name": "Tech Medics Macon"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Macon",
+      "containedIn": {
+        "@type": "State",
+        "name": "Georgia"
+      }
+    },
+    "serviceType": serviceType
+  };
 
   return (
     <Helmet>
       <script type="application/ld+json">
-        {JSON.stringify(schema)}
+        {JSON.stringify(serviceSchema)}
       </script>
     </Helmet>
   );
