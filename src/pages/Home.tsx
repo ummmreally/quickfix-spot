@@ -567,6 +567,98 @@ const Home = () => {
             },
           ]}
         />
+
+        {/* Blog & Resources Section - Internal Links for SEO */}
+        <section className="py-16 px-4">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
+              iPhone Repair Guides & Resources
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Expert advice on device repair, maintenance tips, and cost guides for Macon GA residents
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Link to="/blog/iphone-screen-repair-macon-ga" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Screen Repair Guide 2026</h3>
+                <p className="text-muted-foreground text-sm">Complete guide to screen repair costs, quality options, and what to expect.</p>
+              </Link>
+              <Link to="/blog/iphone-battery-replacement-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Battery Replacement</h3>
+                <p className="text-muted-foreground text-sm">Signs your battery needs replacing, costs, and same-day service info.</p>
+              </Link>
+              <Link to="/blog/same-day-iphone-repair-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">Same-Day iPhone Repair</h3>
+                <p className="text-muted-foreground text-sm">Fast repair options and what can be fixed while you wait.</p>
+              </Link>
+              <Link to="/blog/ipad-screen-repair-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">iPad Screen Repair Services</h3>
+                <p className="text-muted-foreground text-sm">All iPad models supported - Pro, Air, Mini. Pricing and repair times.</p>
+              </Link>
+              <Link to="/blog/macbook-repair-macon-ga" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">MacBook Repair in Macon</h3>
+                <p className="text-muted-foreground text-sm">Screen, keyboard, battery, and logic board repair services.</p>
+              </Link>
+              <Link to="/blog/tech-medics-vs-apple-store-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold mb-2 text-foreground">Tech Medics vs Apple Store</h3>
+                <p className="text-muted-foreground text-sm">Compare costs, warranty, and turnaround times.</p>
+              </Link>
+            </div>
+
+            <div className="text-center">
+              <Link to="/blog" className="text-primary hover:underline font-semibold">
+                View All Repair Guides →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Neighborhoods Served Section - Internal Links for SEO */}
+        <section className="py-16 px-4 bg-secondary/20">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
+              Serving All Macon GA Neighborhoods
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Conveniently located at 3742 Eisenhower Parkway - quick access from anywhere in Macon
+            </p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <Link to="/macon/vineville" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">Vineville</h3>
+                <p className="text-muted-foreground text-sm">Near Mercer University</p>
+              </Link>
+              <Link to="/macon/north-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">North Macon</h3>
+                <p className="text-muted-foreground text-sm">The Crossing area</p>
+              </Link>
+              <Link to="/macon/downtown" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">Downtown</h3>
+                <p className="text-muted-foreground text-sm">Cherry Street district</p>
+              </Link>
+              <Link to="/macon/ingleside" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">Ingleside</h3>
+                <p className="text-muted-foreground text-sm">Wesleyan College area</p>
+              </Link>
+              <Link to="/macon/east-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">East Macon</h3>
+                <p className="text-muted-foreground text-sm">River Crossing area</p>
+              </Link>
+              <Link to="/macon/south-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">South Macon</h3>
+                <p className="text-muted-foreground text-sm">Macon Mall area</p>
+              </Link>
+              <Link to="/macon/rutland" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">Rutland</h3>
+                <p className="text-muted-foreground text-sm">Bass Road area</p>
+              </Link>
+              <Link to="/macon/contact" className="bg-primary/10 border border-primary rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-primary">Contact Us</h3>
+                <p className="text-muted-foreground text-sm">Get directions</p>
+              </Link>
+            </div>
+          </div>
+        </section>
         </main>
 
         {/* Footer */}
@@ -610,7 +702,7 @@ const Home = () => {
             </div>
             
             <div className="text-center text-muted-foreground border-t border-border pt-6">
-              <p>© 2024 Tech Medics - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair</p>
+              <p>© 2026 Tech Medics Macon - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair</p>
             </div>
           </div>
         </footer>
