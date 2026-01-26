@@ -8,7 +8,7 @@ const IPhoneScreenRepair = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Best iPhone Screen Repair in Macon GA: Complete Guide 2025",
+    "headline": "Best iPhone Screen Repair in Macon GA: Complete Guide 2026",
     "description": "Everything you need to know about iPhone screen repair in Macon GA, including costs, same-day service, and how to choose the best repair shop.",
     "author": {
       "@type": "Organization",
@@ -22,16 +22,16 @@ const IPhoneScreenRepair = () => {
         "url": "https://techmedicsmacon.com/logo.png"
       }
     },
-    "datePublished": "2025-01-15",
-    "dateModified": "2025-01-15"
+    "datePublished": "2026-01-25",
+    "dateModified": "2026-01-25"
   };
 
   return (
     <>
       <Helmet>
         <title>Best iPhone Screen Repair in Macon GA | Same-Day Service | Tech Medics</title>
-        <meta name="description" content="Need iPhone screen repair in Macon GA? Get same-day service, affordable pricing, and lifetime warranty. Serving Mercer University area. iPhone 15, 14, 13 Pro Max supported." />
-        <meta name="keywords" content="iPhone screen repair Macon GA, cracked iPhone screen, iPhone 15 screen replacement, same-day iPhone repair, affordable iPhone repair near Mercer University, where to fix iPhone screen Macon" />
+        <meta name="description" content="Need iPhone screen repair in Macon GA? Get same-day service, affordable pricing, and lifetime warranty. Serving Mercer University area. iPhone 16, 15, 14 Pro Max supported." />
+        <meta name="keywords" content="iPhone screen repair Macon GA, cracked iPhone screen, iPhone 16 screen replacement, same-day iPhone repair, affordable iPhone repair near Mercer University, where to fix iPhone screen Macon" />
         <link rel="canonical" href="https://techmedicsmacon.com/blog/iphone-screen-repair-macon-ga" />
         
         <script type="application/ld+json">
@@ -54,13 +54,13 @@ const IPhoneScreenRepair = () => {
               ← Back to Blog
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Best iPhone Screen Repair in Macon GA: Complete Guide 2025
+              Best iPhone Screen Repair in Macon GA: Complete Guide 2026
             </h1>
             <p className="text-xl text-muted-foreground">
               Everything you need to know about getting your cracked iPhone screen fixed in Macon, GA
             </p>
             <div className="mt-4 text-sm text-muted-foreground">
-              Published January 15, 2025 | 8 min read
+              Updated January 25, 2026 | 8 min read
             </div>
           </div>
         </header>
@@ -72,25 +72,26 @@ const IPhoneScreenRepair = () => {
             </h2>
             <p className="text-muted-foreground mb-6">
               When your iPhone screen cracks, you need fast, affordable, and reliable repair service. At Tech Medics Macon, 
-              we specialize in same-day iPhone screen replacement for all models, including the latest iPhone 15, 15 Pro, 
-              and 15 Pro Max. Located near Mercer University, we're your local alternative to expensive Apple Store repairs.
+              we specialize in same-day iPhone screen replacement for all models, including the latest iPhone 16, 16 Pro, 
+              and 16 Pro Max. Located near Mercer University, we're your local alternative to expensive Apple Store repairs.
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4 text-foreground">
-              iPhone Screen Repair Cost in Macon GA
+              iPhone Screen Repair Cost in Macon GA (2026 Prices)
             </h2>
             <p className="text-muted-foreground mb-4">
-              One of the most common questions we get is: "How much does an iPhone 15 Pro Max screen repair cost?" 
+              One of the most common questions we get is: "How much does an iPhone 16 Pro Max screen repair cost?" 
               The answer depends on your model and the type of screen replacement you choose:
             </p>
             <ul className="list-disc pl-6 mb-6 text-muted-foreground space-y-2">
               <li><strong>LCD Screens (iPhone 11 and older):</strong> $89 - $149</li>
               <li><strong>OLED Screens (iPhone 12-14 series):</strong> $149 - $279</li>
               <li><strong>iPhone 15 Series Screens:</strong> $199 - $349</li>
+              <li><strong>iPhone 16 Series Screens:</strong> $249 - $399</li>
               <li><strong>Premium Quality Screens:</strong> Add $30-50 for higher quality displays</li>
             </ul>
             <p className="text-muted-foreground mb-6">
-              Compare this to Apple Store prices which can range from $279 to $379+ (without AppleCare+). 
+              Compare this to Apple Store prices which can range from $279 to $449+ (without AppleCare+). 
               At Tech Medics, we offer the same quality repair at 30-40% less cost.
             </p>
 
@@ -233,7 +234,7 @@ const IPhoneScreenRepair = () => {
 
       <footer className="bg-secondary/20 py-8 px-4">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>&copy; 2025 Tech Medics Macon. All rights reserved.</p>
+          <p>&copy; 2026 Tech Medics Macon. All rights reserved.</p>
           <div className="mt-4 space-x-4">
             <Link to="/macon/about" className="hover:text-primary">About</Link>
             <Link to="/privacy" className="hover:text-primary">Privacy Policy</Link>

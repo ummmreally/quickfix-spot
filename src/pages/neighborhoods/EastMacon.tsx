@@ -58,11 +58,15 @@ const EastMacon = () => {
     },
     {
       question: "Where can I find iPhone repair near me in East Macon GA?",
-      answer: "MyTechMedics is located at 3742 Eisenhower Parkway, easily accessible from Riverside Drive and Gray Highway. We serve all East Macon neighborhoods. Call (478) 259-6371 for directions."
+      answer: "Tech Medics Macon is located at 3742 Eisenhower Parkway, easily accessible from Riverside Drive and Gray Highway. We serve all East Macon neighborhoods. Call (478) 259-6371 for directions."
     },
     {
       question: "How long does iPhone repair take in East Macon?",
       answer: "Most iPhone repairs are completed in 30 minutes or less. Screen replacements, battery replacements, and charging port repairs are typically same-day service. We serve East Macon with fast, reliable repairs."
+    },
+    {
+      question: "Do you repair iPad screens for East Macon customers?",
+      answer: "Yes! We repair all iPad models including iPad Pro, iPad Air, iPad Mini, and standard iPads. Cracked screens, charging issues, battery replacement - all available with same-day service for East Macon residents."
     }
   ];
 
@@ -241,7 +245,7 @@ const EastMacon = () => {
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
             <p>
-              © 2024 MyTechMedics. All rights reserved. |{" "}
+              © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>

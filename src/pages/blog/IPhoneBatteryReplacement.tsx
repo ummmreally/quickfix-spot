@@ -7,7 +7,7 @@ const IPhoneBatteryReplacement = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "iPhone Battery Replacement in Macon: Cost, Time & What to Expect",
+    "headline": "iPhone Battery Replacement in Macon: Cost, Time & What to Expect (2026)",
     "description": "Complete guide to iPhone battery replacement in Macon GA. Learn about costs, warning signs, and same-day service options.",
     "author": {
       "@type": "Organization",
@@ -21,8 +21,8 @@ const IPhoneBatteryReplacement = () => {
         "url": "https://techmedicsmacon.com/logo.png"
       }
     },
-    "datePublished": "2025-01-12",
-    "dateModified": "2025-01-12"
+    "datePublished": "2026-01-24",
+    "dateModified": "2026-01-24"
   };
 
   return (
@@ -53,13 +53,13 @@ const IPhoneBatteryReplacement = () => {
               ← Back to Blog
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              iPhone Battery Replacement in Macon: Cost, Time & What to Expect
+              iPhone Battery Replacement in Macon: Cost, Time & What to Expect (2026)
             </h1>
             <p className="text-xl text-muted-foreground">
               Complete guide to iPhone battery replacement in Macon GA, including warning signs and same-day service
             </p>
             <div className="mt-4 text-sm text-muted-foreground">
-              Published January 12, 2025 | 7 min read
+              Updated January 24, 2026 | 7 min read
             </div>
           </div>
         </header>
@@ -108,7 +108,7 @@ const IPhoneBatteryReplacement = () => {
             </ul>
 
             <h2 className="text-3xl font-bold mt-12 mb-4 text-foreground">
-              iPhone Battery Replacement Cost in Macon GA
+              iPhone Battery Replacement Cost in Macon GA (2026 Prices)
             </h2>
             <p className="text-muted-foreground mb-4">
               Battery replacement costs vary by model. Here's our current pricing:
@@ -118,9 +118,10 @@ const IPhoneBatteryReplacement = () => {
               <li><strong>iPhone XR, XS, XS Max, 11 Series:</strong> $59</li>
               <li><strong>iPhone 12 Series, 13 Series:</strong> $69</li>
               <li><strong>iPhone 14 Series, 15 Series:</strong> $79-89</li>
+              <li><strong>iPhone 16 Series:</strong> $89-99</li>
             </ul>
             <p className="text-muted-foreground mb-6">
-              Compare this to Apple Store pricing ($89-109) or AppleCare+ service fees ($79). At Tech Medics Macon, 
+              Compare this to Apple Store pricing ($89-119) or AppleCare+ service fees ($79). At Tech Medics Macon, 
               you get the same quality battery replacement without paying premium Apple prices.
             </p>
 
@@ -238,7 +239,7 @@ const IPhoneBatteryReplacement = () => {
 
       <footer className="bg-secondary/20 py-8 px-4">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>&copy; 2025 Tech Medics Macon. All rights reserved.</p>
+          <p>&copy; 2026 Tech Medics Macon. All rights reserved.</p>
           <div className="mt-4 space-x-4">
             <Link to="/macon/about" className="hover:text-primary">About</Link>
             <Link to="/privacy" className="hover:text-primary">Privacy Policy</Link>

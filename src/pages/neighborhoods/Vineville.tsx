@@ -34,7 +34,15 @@ const Vineville = () => {
     },
     {
       question: "Where can I find iPhone repair near me in Vineville Macon GA?",
-      answer: "MyTechMedics is located at 3742 Eisenhower Parkway, just a short drive from Vineville. We serve all Vineville neighborhoods including College Hill and Shirley Hills. Call (478) 259-6371 for directions."
+      answer: "Tech Medics Macon is located at 3742 Eisenhower Parkway, just a short drive from Vineville. We serve all Vineville neighborhoods including College Hill and Shirley Hills. Call (478) 259-6371 for directions."
+    },
+    {
+      question: "Do you offer student discounts for Mercer University students?",
+      answer: "Yes! Mercer University students receive 10% off all repairs with a valid student ID. We're the go-to repair shop for Mercer students needing iPhone screen repair, battery replacement, or MacBook fixes."
+    },
+    {
+      question: "How fast can you fix a cracked iPhone screen for Vineville residents?",
+      answer: "Most iPhone screen repairs are completed in just 30 minutes! Vineville residents can drop off their iPhone and wait, or explore nearby shops while we work. Same-day service guaranteed."
     }
   ];
 
@@ -210,7 +218,7 @@ const Vineville = () => {
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
             <p>
-              © 2024 MyTechMedics. All rights reserved. |{" "}
+              © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>

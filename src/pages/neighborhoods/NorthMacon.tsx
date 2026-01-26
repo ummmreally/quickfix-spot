@@ -34,7 +34,15 @@ const NorthMacon = () => {
     },
     {
       question: "Where can I find iPhone repair near me in North Macon GA?",
-      answer: "MyTechMedics is located at 3742 Eisenhower Parkway, easily accessible from Hartley Bridge Road and Zebulon Road. We serve all North Macon neighborhoods. Call (478) 259-6371 for directions."
+      answer: "Tech Medics Macon is located at 3742 Eisenhower Parkway, easily accessible from Hartley Bridge Road and Zebulon Road. We serve all North Macon neighborhoods. Call (478) 259-6371 for directions."
+    },
+    {
+      question: "What iPhone models do you repair in North Macon?",
+      answer: "We repair all iPhone models from iPhone 8 through the latest iPhone 16 series. Screen repairs, battery replacements, charging port fixes - all completed same-day for North Macon customers."
+    },
+    {
+      question: "Is parking easy at your location for North Macon visitors?",
+      answer: "Yes! We have convenient free parking right in front of our shop on Eisenhower Parkway. Easy in and out - perfect for quick repairs while shopping at The Crossing."
     }
   ];
 
@@ -210,7 +218,7 @@ const NorthMacon = () => {
         <footer className="py-8 px-4 border-t border-border">
           <div className="max-w-7xl mx-auto text-center text-muted-foreground">
             <p>
-              © 2024 MyTechMedics. All rights reserved. |{" "}
+              © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
