@@ -1,6 +1,5 @@
 import { Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Helmet } from "react-helmet";
 
 interface Testimonial {
   name: string;
@@ -15,35 +14,11 @@ interface TestimonialSectionProps {
 }
 
 const TestimonialSection = ({ testimonials }: TestimonialSectionProps) => {
-  // Each review needs itemReviewed to be valid
-  const reviewSchemas = testimonials.map((testimonial) => ({
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": testimonial.name,
-    },
-    "datePublished": testimonial.date,
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": testimonial.rating.toString(),
-      "bestRating": "5",
-    },
-    "reviewBody": testimonial.text,
-    "itemReviewed": {
-      "@type": "LocalBusiness",
-      "@id": "https://techmedicsmacon.com/#business",
-      "name": "Tech Medics Macon"
-    }
-  }));
+  // Reviews are embedded in the main PhoneRepair schema in index.html
+  // No separate review schemas needed here to avoid duplicate entity errors
 
   return (
     <>
-      <Helmet>
-        {reviewSchemas.map((schema, index) => (
-          <script key={index} type="application/ld+json">{JSON.stringify(schema)}</script>
-        ))}
-      </Helmet>
 
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
