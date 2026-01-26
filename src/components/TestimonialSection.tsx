@@ -15,32 +15,34 @@ interface TestimonialSectionProps {
 }
 
 const TestimonialSection = ({ testimonials }: TestimonialSectionProps) => {
-  // Reference the main business entity instead of creating a duplicate
-  const reviewSchema = {
+  // Each review needs itemReviewed to be valid
+  const reviewSchemas = testimonials.map((testimonial) => ({
     "@context": "https://schema.org",
-    "@type": "PhoneRepair",
-    "@id": "https://techmedicsmacon.com/#business",
-    "name": "Tech Medics Macon",
-    "review": testimonials.map((testimonial) => ({
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": testimonial.name,
-      },
-      "datePublished": testimonial.date,
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": testimonial.rating.toString(),
-        "bestRating": "5",
-      },
-      "reviewBody": testimonial.text,
-    })),
-  };
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": testimonial.name,
+    },
+    "datePublished": testimonial.date,
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": testimonial.rating.toString(),
+      "bestRating": "5",
+    },
+    "reviewBody": testimonial.text,
+    "itemReviewed": {
+      "@type": "LocalBusiness",
+      "@id": "https://techmedicsmacon.com/#business",
+      "name": "Tech Medics Macon"
+    }
+  }));
 
   return (
     <>
       <Helmet>
-        <script type="application/ld+json">{JSON.stringify(reviewSchema)}</script>
+        {reviewSchemas.map((schema, index) => (
+          <script key={index} type="application/ld+json">{JSON.stringify(schema)}</script>
+        ))}
       </Helmet>
 
       <section className="py-20 px-4">
