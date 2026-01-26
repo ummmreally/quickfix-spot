@@ -9,18 +9,8 @@ const TechMedicsVsAppleStore = () => {
     "@type": "Article",
     "headline": "Tech Medics vs Apple Store: Which iPhone Repair is Better?",
     "description": "Comparing Tech Medics and Apple Store repairs: costs, warranty, turnaround time, and why local repair shops are often the better choice.",
-    "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-03",
     "dateModified": "2025-01-03"
   };

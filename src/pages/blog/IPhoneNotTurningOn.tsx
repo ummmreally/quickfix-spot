@@ -11,18 +11,8 @@ const IPhoneNotTurningOn = () => {
     "headline": "iPhone Not Turning On? 8 Fixes + When to Get Professional Help in Macon",
     "description": "Complete troubleshooting guide for iPhones that won't turn on. DIY fixes and professional repair options in Macon, GA.",
     "image": "https://techmedicsmacon.com/logo.png",
-    "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-01",
     "dateModified": "2025-01-01"
   };

@@ -11,26 +11,11 @@ const IPhoneScreenRepair = () => {
     "headline": "Best iPhone Screen Repair in Macon GA: Complete Guide 2026",
     "description": "Everything you need to know about iPhone screen repair in Macon GA, including costs, same-day service, and how to choose the best repair shop.",
     "image": "https://techmedicsmacon.com/logo.png",
-    "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "url": "https://techmedicsmacon.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "url": "https://techmedicsmacon.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2026-01-25",
     "dateModified": "2026-01-26",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://techmedicsmacon.com/blog/iphone-screen-repair-macon-ga"
-    }
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://techmedicsmacon.com/blog/iphone-screen-repair-macon-ga" }
   };
 
   return (

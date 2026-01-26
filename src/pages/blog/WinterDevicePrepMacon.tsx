@@ -9,12 +9,8 @@ const WinterDevicePrepMacon = () => {
     "@type": "Article",
     "headline": "Winter Device Prep Guide for Macon GA (January 2025)",
     "description": "Keep your iPhone, iPad, and MacBook performing through winter in Macon GA. Learn cold-weather battery care, moisture protection, and maintenance tips for January 2025.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-05",
     "dateModified": "2025-01-05"
   };

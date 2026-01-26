@@ -10,18 +10,8 @@ const WaterDamagedIPhone = () => {
     "headline": "Water Damaged iPhone? Complete Repair Guide for Macon Residents",
     "description": "Expert guide on water damaged iPhone repair in Macon, GA. Learn immediate steps, repair costs, and why professional service matters.",
     "image": "https://techmedicsmacon.com/logo.png",
-    "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-16",
     "dateModified": "2025-01-16"
   };

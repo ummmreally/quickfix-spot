@@ -9,12 +9,8 @@ const RepairShareDriveMacon = () => {
     "@type": "Article",
     "headline": "Repair & Share Drive in Macon GA: Tech Medics Joins the Cause",
     "description": "Learn how Tech Medics Macon is supporting the Repair & Share Drive hosted by QuackedScreens.com. Donate devices, recycle responsibly, and give back to Bibb County.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-10-22",
     "dateModified": "2025-10-22"
   };

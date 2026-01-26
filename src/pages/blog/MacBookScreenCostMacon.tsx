@@ -9,12 +9,8 @@ const MacBookScreenCostMacon = () => {
     "@type": "Article",
     "headline": "MacBook Screen Repair Cost in Macon GA: Complete 2025 Price Guide",
     "description": "How much does MacBook screen repair cost in Macon? Complete pricing for all models. Compare Tech Medics vs Apple Store prices.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
-    "publisher": { 
-      "@type": "Organization", 
-      "name": "Tech Medics Macon", 
-      "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" } 
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-19",
     "dateModified": "2025-01-19"
   };

@@ -10,18 +10,8 @@ const OEMvsAftermarket = () => {
     "headline": "OEM vs Aftermarket iPhone Screens: Complete 2025 Comparison Guide",
     "description": "Detailed comparison of OEM and aftermarket iPhone screens. Learn quality differences, pricing, and what Tech Medics Macon recommends.",
     "image": "https://techmedicsmacon.com/logo.png",
-    "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-05",
     "dateModified": "2025-01-05"
   };

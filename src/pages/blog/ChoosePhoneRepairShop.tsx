@@ -9,8 +9,8 @@ const ChoosePhoneRepairShop = () => {
     "@type": "Article",
     "headline": "How to Choose a Reliable Phone Repair Shop in Macon GA",
     "description": "Expert tips for selecting the best phone repair shop in Macon. Learn what to look for in reviews, warranties, and technician qualifications.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
-    "publisher": { "@type": "Organization", "name": "Tech Medics Macon", "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" } },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2024-12-28",
     "dateModified": "2024-12-28"
   };

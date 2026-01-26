@@ -54,18 +54,8 @@ const iPhoneVsAndroidRepairCosts = () => {
     "@type": "Article",
     "headline": "iPhone vs Android Repair Costs: Complete Macon GA Guide 2025",
     "description": "Comprehensive comparison of iPhone vs Android repair costs in Macon GA. Compare screen, battery, charging port repair pricing. Expert analysis from Tech Medics.",
-    "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-03-15",
     "dateModified": "2025-03-15"
   };

@@ -9,8 +9,8 @@ const CrackedScreenCost = () => {
     "@type": "Article",
     "headline": "How Much Does iPhone Screen Repair Cost in Macon GA? 2025 Prices",
     "description": "Complete iPhone screen repair pricing guide for Macon GA. Compare costs, quality options, and save money on cracked screen repair.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
-    "publisher": { "@type": "Organization", "name": "Tech Medics Macon", "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" } },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-20",
     "dateModified": "2025-01-20"
   };

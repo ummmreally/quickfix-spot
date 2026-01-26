@@ -10,13 +10,8 @@ const IPhoneBatteryReplacement2025 = () => {
     "headline": "7 Signs Your iPhone Battery Needs Replacement in 2026",
     "description": "Learn the warning signs your iPhone battery needs replacement. Expert guide from Macon's trusted iPhone repair shop.",
     "image": "https://techmedicsmacon.com/logo.png",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon", "url": "https://techmedicsmacon.com" },
-    "publisher": { 
-      "@type": "Organization", 
-      "name": "Tech Medics Macon",
-      "url": "https://techmedicsmacon.com",
-      "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" } 
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2026-01-15",
     "dateModified": "2026-01-26",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://techmedicsmacon.com/blog/iphone-battery-replacement-signs-2025" }
