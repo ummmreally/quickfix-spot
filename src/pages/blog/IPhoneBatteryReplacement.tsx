@@ -9,20 +9,27 @@ const IPhoneBatteryReplacement = () => {
     "@type": "Article",
     "headline": "iPhone Battery Replacement in Macon: Cost, Time & What to Expect (2026)",
     "description": "Complete guide to iPhone battery replacement in Macon GA. Learn about costs, warning signs, and same-day service options.",
+    "image": "https://techmedicsmacon.com/logo.png",
     "author": {
       "@type": "Organization",
-      "name": "Tech Medics Macon"
+      "name": "Tech Medics Macon",
+      "url": "https://techmedicsmacon.com"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Tech Medics Macon",
+      "url": "https://techmedicsmacon.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://techmedicsmacon.com/logo.png"
       }
     },
     "datePublished": "2026-01-24",
-    "dateModified": "2026-01-24"
+    "dateModified": "2026-01-26",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://techmedicsmacon.com/blog/iphone-battery-replacement-macon"
+    }
   };
 
   return (
