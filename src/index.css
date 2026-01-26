@@ -99,7 +99,35 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+    text-rendering: optimizeSpeed;
+  }
+
+  /* Optimize images for LCP */
+  img {
+    content-visibility: auto;
+  }
+
+  /* Reduce layout shift during font loading */
+  @font-face {
+    font-display: swap;
+  }
+}
+
+/* Performance optimizations */
+@layer utilities {
+  .content-visibility-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+  
+  /* GPU acceleration for smooth animations */
+  .will-change-transform {
+    will-change: transform;
   }
 }

@@ -164,10 +164,11 @@ const Home = () => {
                     <img
                       src={iphoneImage}
                       alt="iPhone screen repair Macon GA - cracked screen fix"
-                      width="800"
-                      height="600"
+                      width="662"
+                      height="496"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      fetchPriority="high"
+                      loading="lazy"
                       decoding="async"
                     />
                   </div>
@@ -194,8 +195,9 @@ const Home = () => {
                     <img
                       src={ipadImage}
                       alt="iPad repair Macon GA - screen and glass repair"
-                      width="800"
-                      height="600"
+                      width="662"
+                      height="496"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                       decoding="async"
@@ -224,8 +226,9 @@ const Home = () => {
                     <img
                       src={macbookImage}
                       alt="MacBook repair Macon GA - screen and logic board repair"
-                      width="800"
-                      height="800"
+                      width="662"
+                      height="496"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                       decoding="async"

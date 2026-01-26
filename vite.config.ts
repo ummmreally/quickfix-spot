@@ -23,30 +23,60 @@ export default defineConfig(({ mode }) => ({
         drop_console: mode === "production",
         drop_debugger: true,
         pure_funcs: ["console.log", "console.info"],
+        passes: 2,
+      },
+      mangle: {
+        safari10: true,
       },
     },
     // CSS optimizations
     cssCodeSplit: true,
-    // Optimize chunk splitting
+    cssMinify: 'lightningcss',
+    // Optimize chunk splitting for better caching
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Vendor chunks - split large dependencies
-          "vendor-react": ["react", "react-dom", "react-router-dom"],
-          "vendor-ui": [
-            "@radix-ui/react-dialog",
-            "@radix-ui/react-dropdown-menu",
-            "@radix-ui/react-accordion",
-            "@radix-ui/react-tabs",
-            "@radix-ui/react-tooltip",
-            "@radix-ui/react-popover",
-          ],
-          "vendor-query": ["@tanstack/react-query"],
+        manualChunks: (id) => {
+          // Core React - rarely changes
+          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/')) {
+            return 'vendor-react';
+          }
+          // Router - separate chunk
+          if (id.includes('node_modules/react-router')) {
+            return 'vendor-router';
+          }
+          // UI components - split by usage frequency
+          if (id.includes('@radix-ui')) {
+            return 'vendor-ui';
+          }
+          // Query - separate chunk
+          if (id.includes('@tanstack/react-query')) {
+            return 'vendor-query';
+          }
+          // Lucide icons - loaded as needed
+          if (id.includes('lucide-react')) {
+            return 'vendor-icons';
+          }
         },
-        // Optimize chunk file names
-        chunkFileNames: "assets/[name]-[hash].js",
-        entryFileNames: "assets/[name]-[hash].js",
-        assetFileNames: "assets/[name]-[hash].[ext]",
+        // Optimize chunk file names for better caching
+        chunkFileNames: (chunkInfo) => {
+          const facadeModuleId = chunkInfo.facadeModuleId;
+          if (facadeModuleId && facadeModuleId.includes('pages/')) {
+            return 'assets/pages/[name]-[hash].js';
+          }
+          return 'assets/[name]-[hash].js';
+        },
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name?.split('.') || [];
+          const ext = info[info.length - 1];
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico|webp/i.test(ext)) {
+            return 'assets/images/[name]-[hash][extname]';
+          }
+          if (/css/i.test(ext)) {
+            return 'assets/css/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
+        },
       },
     },
     // Increase chunk size warning limit
@@ -54,7 +84,9 @@ export default defineConfig(({ mode }) => ({
     // Enable source maps for production debugging (optional)
     sourcemap: false,
     // Target modern browsers for smaller output
-    target: "esnext",
+    target: 'esnext',
+    // Report compressed size
+    reportCompressedSize: true,
   },
   // Optimize dependency pre-bundling
   optimizeDeps: {

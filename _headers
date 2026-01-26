@@ -1,11 +1,23 @@
 # Netlify/Vercel Headers Configuration for Performance & Security
 # Place this file in the root directory of your project
 
-# Cache static assets aggressively (1 year)
+# Cache static assets aggressively (1 year) - hashed filenames
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Cache images
+# Cache images with hashes (1 year)
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache CSS with hashes (1 year)  
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache JavaScript with hashes (1 year)
+/assets/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache images in root paths
 /*.jpg
   Cache-Control: public, max-age=31536000, immutable
 /*.png
@@ -13,6 +25,14 @@
 /*.webp
   Cache-Control: public, max-age=31536000, immutable
 /*.svg
+  Cache-Control: public, max-age=31536000, immutable
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache fonts
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/*.woff
   Cache-Control: public, max-age=31536000, immutable
 
 # Security headers for all pages
@@ -29,3 +49,7 @@
 # Don't cache HTML to ensure fresh content
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
+
+# SPA fallback - don't cache
+/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
