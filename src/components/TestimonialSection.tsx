@@ -15,28 +15,25 @@ interface TestimonialSectionProps {
 }
 
 const TestimonialSection = ({ testimonials }: TestimonialSectionProps) => {
+  // Reference the main business entity instead of creating a duplicate
   const reviewSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Tech Medics",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: testimonials.length.toString(),
-    },
-    review: testimonials.map((testimonial) => ({
+    "@type": "PhoneRepair",
+    "@id": "https://techmedicsmacon.com/#business",
+    "name": "Tech Medics Macon",
+    "review": testimonials.map((testimonial) => ({
       "@type": "Review",
-      author: {
+      "author": {
         "@type": "Person",
-        name: testimonial.name,
+        "name": testimonial.name,
       },
-      datePublished: testimonial.date,
-      reviewRating: {
+      "datePublished": testimonial.date,
+      "reviewRating": {
         "@type": "Rating",
-        ratingValue: testimonial.rating.toString(),
-        bestRating: "5",
+        "ratingValue": testimonial.rating.toString(),
+        "bestRating": "5",
       },
-      reviewBody: testimonial.text,
+      "reviewBody": testimonial.text,
     })),
   };
 

@@ -12,11 +12,12 @@ interface ReviewSchemaProps {
  * This component adds individual review examples for rich snippets
  */
 const ReviewSchema = ({ ratingValue = "4.9", reviewCount = "60", bestRating = "5" }: ReviewSchemaProps) => {
-  // Individual reviews reference the main business entity
+  // Reference the main business entity with @id - no duplicate LocalBusiness
   const reviewsSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "PhoneRepair",
     "@id": "https://techmedicsmacon.com/#business",
+    "name": "Tech Medics Macon",
     "review": [
       {
         "@type": "Review",
