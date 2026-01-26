@@ -249,7 +249,7 @@ const iPhone = () => {
           </div>
 
           <div className="bg-secondary/30 rounded-lg p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Why Choose MyTechMedics for iPhone Repair?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Why Choose Tech Medics Macon for iPhone Repair?</h3>
             <div className="grid md:grid-cols-4 gap-6 mt-8">
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">30 Min</div>
@@ -312,7 +312,7 @@ const iPhone = () => {
           {
             question: "Where can I find iPhone repair near me in Macon, GA?",
             answer:
-              "MyTechMedics is conveniently located at 3742 Eisenhower Parkway in Macon, GA 31206. We serve all of Macon including Vineville, Ingleside, North Macon, and East Macon. Just search 'iPhone repair near me' and you'll find us!",
+              "Tech Medics Macon is conveniently located at 3742 Eisenhower Parkway in Macon, GA 31206. We serve all of Macon including Vineville, Ingleside, North Macon, and East Macon. Just search 'iPhone repair near me' and you'll find us!",
           },
           {
             question: "Can you recover data from a broken iPhone?",
@@ -382,8 +382,46 @@ const iPhone = () => {
         </div>
       </section>
 
-      {/* Related Services Section */}
+      {/* Related Blog Posts Section - Internal Links for SEO */}
       <section className="py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+            iPhone Repair Guides
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <Link to="/blog/iphone-screen-repair-macon-ga" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-bold mb-2 text-foreground">Screen Repair Complete Guide</h3>
+              <p className="text-muted-foreground text-sm">Costs, quality options, and what to expect</p>
+            </Link>
+            <Link to="/blog/iphone-battery-replacement-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-bold mb-2 text-foreground">Battery Replacement Guide</h3>
+              <p className="text-muted-foreground text-sm">Signs, costs, and same-day service</p>
+            </Link>
+            <Link to="/blog/water-damaged-iphone-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-bold mb-2 text-foreground">Water Damage Repair</h3>
+              <p className="text-muted-foreground text-sm">Emergency steps and professional repair</p>
+            </Link>
+            <Link to="/blog/iphone-dying-fast-after-charging" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Dying Fast?</h3>
+              <p className="text-muted-foreground text-sm">11 proven fixes for battery drain</p>
+            </Link>
+            <Link to="/blog/iphone-not-turning-on-fix" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Won't Turn On</h3>
+              <p className="text-muted-foreground text-sm">Troubleshooting and repair options</p>
+            </Link>
+            <Link to="/blog/iphone-repair-near-me-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Repair Near Me</h3>
+              <p className="text-muted-foreground text-sm">Your local Macon repair expert</p>
+            </Link>
+          </div>
+          <div className="text-center">
+            <Link to="/blog" className="text-primary hover:underline font-semibold">View All iPhone Repair Guides →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="py-16 px-4 bg-secondary/20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
             Other Apple Device Repair Services
@@ -405,13 +443,17 @@ const iPhone = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
           <p>
-            © 2024 MyTechMedics. All rights reserved. |{" "}
+            © 2026 Tech Medics Macon. All rights reserved. |{" "}
             <Link to="/macon/about" className="hover:text-primary transition-colors">
               About
             </Link>
             {" | "}
             <Link to="/privacy" className="hover:text-primary transition-colors">
               Privacy Policy
+            </Link>
+            {" | "}
+            <Link to="/blog" className="hover:text-primary transition-colors">
+              Blog
             </Link>
           </p>
         </div>
