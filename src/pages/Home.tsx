@@ -664,7 +664,7 @@ const Home = () => {
         {/* Footer */}
         <footer className="py-12 px-4 border-t border-border bg-secondary/20">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="font-bold text-lg mb-4 text-foreground">Contact</h3>
                 <p className="text-muted-foreground mb-2">3742 Eisenhower Parkway</p>
@@ -678,25 +678,33 @@ const Home = () => {
               </div>
               
               <div>
-                <h3 className="font-bold text-lg mb-4 text-foreground">Hours</h3>
-                <HoursDisplay />
-              </div>
-              
-              <div>
-                <h3 className="font-bold text-lg mb-4 text-foreground">Quick Links</h3>
+                <h3 className="font-bold text-lg mb-4 text-foreground">Services</h3>
                 <div className="space-y-2">
-                  <Link to="/macon/about" className="block text-muted-foreground hover:text-primary transition-colors">
-                    About
-                  </Link>
-                  <Link to="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">
-                    Privacy Policy
-                  </Link>
-                  <Link to="/blog" className="block text-muted-foreground hover:text-primary transition-colors">
-                    Blog
-                  </Link>
-                  <a href="tel:(478)259-6371" className="block text-muted-foreground hover:text-primary transition-colors">
-                    Call for Quote
-                  </a>
+                  <Link to="/" className="block text-muted-foreground hover:text-primary transition-colors">Home</Link>
+                  <Link to="/macon/iphone" className="block text-muted-foreground hover:text-primary transition-colors">iPhone Repair</Link>
+                  <Link to="/macon/ipad" className="block text-muted-foreground hover:text-primary transition-colors">iPad Repair</Link>
+                  <Link to="/macon/macbook" className="block text-muted-foreground hover:text-primary transition-colors">MacBook Repair</Link>
+                  <Link to="/blog" className="block text-muted-foreground hover:text-primary transition-colors">Repair Guides</Link>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-lg mb-4 text-foreground">Neighborhoods</h3>
+                <div className="space-y-2">
+                  <Link to="/macon/downtown" className="block text-muted-foreground hover:text-primary transition-colors">Downtown Macon</Link>
+                  <Link to="/macon/north-macon" className="block text-muted-foreground hover:text-primary transition-colors">North Macon</Link>
+                  <Link to="/macon/vineville" className="block text-muted-foreground hover:text-primary transition-colors">Vineville</Link>
+                  <Link to="/macon/ingleside" className="block text-muted-foreground hover:text-primary transition-colors">Ingleside</Link>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-lg mb-4 text-foreground">More Areas</h3>
+                <div className="space-y-2">
+                  <Link to="/macon/east-macon" className="block text-muted-foreground hover:text-primary transition-colors">East Macon</Link>
+                  <Link to="/macon/south-macon" className="block text-muted-foreground hover:text-primary transition-colors">South Macon</Link>
+                  <Link to="/macon/rutland" className="block text-muted-foreground hover:text-primary transition-colors">Rutland</Link>
+                  <Link to="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
                 </div>
               </div>
             </div>
