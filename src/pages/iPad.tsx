@@ -224,7 +224,7 @@ const iPad = () => {
           </div>
 
           <div className="bg-secondary/30 rounded-lg p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Why Choose MyTechMedics for iPad Repair?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Why Choose Tech Medics Macon for iPad Repair?</h3>
             <div className="grid md:grid-cols-4 gap-6 mt-8">
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">30 Min</div>
@@ -243,6 +243,73 @@ const iPad = () => {
                 <p className="text-muted-foreground">Conveniently located on Eisenhower Parkway</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* iPad Repair Guides Section */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+            iPad Repair Guides & Resources
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/blog/ipad-screen-repair-macon" className="bg-card border border-border rounded-lg p-5 hover:shadow-lg transition-shadow">
+              <h3 className="font-bold mb-2 text-foreground">iPad Screen Repair Guide</h3>
+              <p className="text-sm text-muted-foreground">Everything you need to know about iPad screen replacement costs and options in Macon.</p>
+            </Link>
+            <Link to="/blog/iphone-battery-replacement-macon" className="bg-card border border-border rounded-lg p-5 hover:shadow-lg transition-shadow">
+              <h3 className="font-bold mb-2 text-foreground">Battery Replacement Tips</h3>
+              <p className="text-sm text-muted-foreground">Signs your device battery needs replacement and what to expect from the service.</p>
+            </Link>
+            <Link to="/blog/water-damaged-iphone-repair" className="bg-card border border-border rounded-lg p-5 hover:shadow-lg transition-shadow">
+              <h3 className="font-bold mb-2 text-foreground">Water Damage Recovery</h3>
+              <p className="text-sm text-muted-foreground">What to do if your iPad gets wet - steps to maximize recovery chances.</p>
+            </Link>
+            <Link to="/blog/oem-vs-aftermarket-iphone-screens" className="bg-card border border-border rounded-lg p-5 hover:shadow-lg transition-shadow">
+              <h3 className="font-bold mb-2 text-foreground">OEM vs Aftermarket Parts</h3>
+              <p className="text-sm text-muted-foreground">Understanding the difference between replacement part quality options.</p>
+            </Link>
+            <Link to="/blog/tech-medics-vs-apple-store-repair" className="bg-card border border-border rounded-lg p-5 hover:shadow-lg transition-shadow">
+              <h3 className="font-bold mb-2 text-foreground">Local Repair vs Apple Store</h3>
+              <p className="text-sm text-muted-foreground">Compare repair options: local Tech Medics Macon vs driving to the Apple Store.</p>
+            </Link>
+            <Link to="/blog/same-day-iphone-repair-macon" className="bg-card border border-border rounded-lg p-5 hover:shadow-lg transition-shadow">
+              <h3 className="font-bold mb-2 text-foreground">Same-Day Repair Services</h3>
+              <p className="text-sm text-muted-foreground">How we provide fast, same-day device repairs in Macon.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Serving Macon Neighborhoods */}
+      <section className="py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+            Serving All Macon Neighborhoods
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+            <Link to="/macon/downtown" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <span className="font-medium text-foreground">Downtown</span>
+            </Link>
+            <Link to="/macon/north-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <span className="font-medium text-foreground">North Macon</span>
+            </Link>
+            <Link to="/macon/vineville" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <span className="font-medium text-foreground">Vineville</span>
+            </Link>
+            <Link to="/macon/ingleside" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <span className="font-medium text-foreground">Ingleside</span>
+            </Link>
+            <Link to="/macon/east-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <span className="font-medium text-foreground">East Macon</span>
+            </Link>
+            <Link to="/macon/south-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <span className="font-medium text-foreground">South Macon</span>
+            </Link>
+            <Link to="/macon/rutland" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <span className="font-medium text-foreground">Rutland</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -297,7 +364,7 @@ const iPad = () => {
           {
             question: "Where can I find iPad repair near me in Macon, GA?",
             answer:
-              "MyTechMedics is located at 3742 Eisenhower Parkway in Macon, GA 31206. We're easily accessible from Vineville, Ingleside, North Macon, and East Macon. Search 'iPad repair near me' to find directions!",
+              "Tech Medics Macon is located at 3742 Eisenhower Parkway in Macon, GA 31206. We're easily accessible from Vineville, Ingleside, North Macon, and East Macon. Search 'iPad repair near me' to find directions!",
           },
         ]}
       />
@@ -377,18 +444,51 @@ const iPad = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-border">
-        <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>
-            © 2024 MyTechMedics. All rights reserved. |{" "}
-            <Link to="/macon/about" className="hover:text-primary transition-colors">
-              About
-            </Link>
-            {" | "}
-            <Link to="/privacy" className="hover:text-primary transition-colors">
-              Privacy Policy
-            </Link>
-          </p>
+      <footer className="py-12 px-4 border-t border-border bg-secondary/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-foreground">Contact</h3>
+              <p className="text-muted-foreground mb-2">3742 Eisenhower Parkway</p>
+              <p className="text-muted-foreground mb-4">Macon, GA 31206</p>
+              <p className="text-muted-foreground">(478) 259-6371</p>
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-foreground">Services</h3>
+              <div className="space-y-2">
+                <Link to="/" className="block text-muted-foreground hover:text-primary transition-colors">Home</Link>
+                <Link to="/macon/iphone" className="block text-muted-foreground hover:text-primary transition-colors">iPhone Repair</Link>
+                <Link to="/macon/ipad" className="block text-muted-foreground hover:text-primary transition-colors">iPad Repair</Link>
+                <Link to="/macon/macbook" className="block text-muted-foreground hover:text-primary transition-colors">MacBook Repair</Link>
+                <Link to="/blog" className="block text-muted-foreground hover:text-primary transition-colors">Repair Guides</Link>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-foreground">Neighborhoods</h3>
+              <div className="space-y-2">
+                <Link to="/macon/downtown" className="block text-muted-foreground hover:text-primary transition-colors">Downtown Macon</Link>
+                <Link to="/macon/north-macon" className="block text-muted-foreground hover:text-primary transition-colors">North Macon</Link>
+                <Link to="/macon/vineville" className="block text-muted-foreground hover:text-primary transition-colors">Vineville</Link>
+                <Link to="/macon/ingleside" className="block text-muted-foreground hover:text-primary transition-colors">Ingleside</Link>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-foreground">More Areas</h3>
+              <div className="space-y-2">
+                <Link to="/macon/east-macon" className="block text-muted-foreground hover:text-primary transition-colors">East Macon</Link>
+                <Link to="/macon/south-macon" className="block text-muted-foreground hover:text-primary transition-colors">South Macon</Link>
+                <Link to="/macon/rutland" className="block text-muted-foreground hover:text-primary transition-colors">Rutland</Link>
+                <Link to="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center text-muted-foreground border-t border-border pt-6">
+            <p>© 2026 Tech Medics Macon. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
