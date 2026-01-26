@@ -15,6 +15,7 @@ const ArticleSchema = ({
   dateModified,
   image = "https://techmedicsmacon.com/logo.png"
 }: ArticleSchemaProps) => {
+  // Reference the main business entity via @id to avoid duplicate Organization declarations
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -22,18 +23,10 @@ const ArticleSchema = ({
     "description": description,
     "image": image,
     "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "url": "https://techmedicsmacon.com"
+      "@id": "https://techmedicsmacon.com/#business"
     },
     "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "url": "https://techmedicsmacon.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
+      "@id": "https://techmedicsmacon.com/#business"
     },
     "datePublished": datePublished,
     "dateModified": dateModified || datePublished,

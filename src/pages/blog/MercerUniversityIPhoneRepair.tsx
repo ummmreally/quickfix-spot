@@ -9,12 +9,8 @@ const MercerUniversityIPhoneRepair = () => {
     "@type": "Article",
     "headline": "iPhone Repair Near Mercer University | Student Discounts Available",
     "description": "Affordable iPhone repair for Mercer University students in Macon GA. Student discounts, fast service, walking distance from campus.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
-    "publisher": { 
-      "@type": "Organization", 
-      "name": "Tech Medics Macon", 
-      "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" } 
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-17",
     "dateModified": "2025-01-17"
   };

@@ -54,18 +54,8 @@ const SpringMaintenanceMacon = () => {
     "@type": "Article",
     "headline": "Spring iPhone Maintenance Tips for Macon GA 2025",
     "description": "Essential spring maintenance tips for iPhone, iPad, and MacBook owners in Macon GA. Combat humidity, pollen, and temperature changes with expert advice from Tech Medics.",
-    "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-03-01",
     "dateModified": "2025-03-01"
   };

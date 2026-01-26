@@ -9,18 +9,8 @@ const MacBookRepairMacon = () => {
     "@type": "Article",
     "headline": "MacBook Repair in Macon GA: Screen, Keyboard & More",
     "description": "Expert MacBook repair services in Macon GA. We fix screens, keyboards, liquid damage, and boot issues. Same-day service available.",
-    "author": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tech Medics Macon",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://techmedicsmacon.com/logo.png"
-      }
-    },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-10",
     "dateModified": "2025-01-10"
   };

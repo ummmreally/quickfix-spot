@@ -9,8 +9,8 @@ const IPhoneRepairNearMe = () => {
     "@type": "Article",
     "headline": "iPhone Repair Near Me in Macon GA: Fast, Affordable & Trusted",
     "description": "Looking for iPhone repair near me in Macon GA? Tech Medics offers same-day screen repair, battery replacement, and more.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
-    "publisher": { "@type": "Organization", "name": "Tech Medics Macon", "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" } },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-18",
     "dateModified": "2025-01-18"
   };

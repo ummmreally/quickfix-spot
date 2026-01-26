@@ -10,8 +10,8 @@ const FastIPhoneRepair = () => {
     "@type": "Article",
     "headline": "Same-Day iPhone Repair in Macon GA | Fast, Professional Service",
     "description": "Need fast iPhone repair in Macon GA? Tech Medics offers same-day screen repair, battery replacement, and more. Most repairs done in 30-60 minutes.",
-    "author": { "@type": "Organization", "name": "Tech Medics Macon" },
-    "publisher": { "@type": "Organization", "name": "Tech Medics Macon", "logo": { "@type": "ImageObject", "url": "https://techmedicsmacon.com/logo.png" } },
+    "author": { "@id": "https://techmedicsmacon.com/#business" },
+    "publisher": { "@id": "https://techmedicsmacon.com/#business" },
     "datePublished": "2025-01-22",
     "dateModified": "2025-01-22"
   };
