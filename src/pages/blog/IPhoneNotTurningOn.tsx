@@ -154,7 +154,7 @@ const IPhoneNotTurningOn = () => {
                 <li>✓ FREE diagnostic to identify the exact issue</li>
                 <li>✓ Most repairs completed same day</li>
                 <li>✓ Upfront, honest pricing - no hidden fees</li>
-                <li>✓ 90-day warranty on all repairs</li>
+                <li>✓ 30-day warranty on all repairs</li>
                 <li>✓ Data recovery available if possible</li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">

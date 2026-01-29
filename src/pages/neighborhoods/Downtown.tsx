@@ -221,6 +221,8 @@ const Downtown = () => {
               © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
               {" | "}
+              <Link to="/warranty-policy" className="hover:text-primary transition-colors">Warranty Policy</Link>
+              {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             </p>
           </div>

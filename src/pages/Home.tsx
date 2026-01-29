@@ -273,7 +273,7 @@ const Home = () => {
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Warranty Protected</h3>
+                <h3 className="font-bold text-xl mb-2">30-Day Warranty</h3>
                 <p className="text-muted-foreground">
                   All repairs backed by our comprehensive warranty for peace of mind
                 </p>
@@ -654,15 +654,16 @@ const Home = () => {
                 </div>
               </div>
 
-              <div>
-                <h3 className="font-bold text-lg mb-4 text-foreground">More Areas</h3>
-                <div className="space-y-2">
-                  <Link to="/macon/east-macon" className="block text-muted-foreground hover:text-primary transition-colors">East Macon</Link>
-                  <Link to="/macon/south-macon" className="block text-muted-foreground hover:text-primary transition-colors">South Macon</Link>
-                  <Link to="/macon/rutland" className="block text-muted-foreground hover:text-primary transition-colors">Rutland</Link>
-                  <Link to="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
-                </div>
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-foreground">More Areas</h3>
+              <div className="space-y-2">
+                <Link to="/macon/east-macon" className="block text-muted-foreground hover:text-primary transition-colors">East Macon</Link>
+                <Link to="/macon/south-macon" className="block text-muted-foreground hover:text-primary transition-colors">South Macon</Link>
+                <Link to="/macon/rutland" className="block text-muted-foreground hover:text-primary transition-colors">Rutland</Link>
+                <Link to="/warranty-policy" className="block text-muted-foreground hover:text-primary transition-colors">Warranty Policy</Link>
+                <Link to="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
               </div>
+            </div>
             </div>
             
             <div className="text-center text-muted-foreground border-t border-border pt-6">

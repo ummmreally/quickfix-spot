@@ -191,12 +191,12 @@ const IPhoneBatteryReplacement = () => {
               Battery Replacement Warranty & Quality Guarantee
             </h2>
             <p className="text-muted-foreground mb-6">
-              Every iPhone battery replacement at Tech Medics comes with a 1-year warranty against defects. 
+              Every iPhone battery replacement at Tech Medics comes with a 30-day warranty covering workmanship and parts.
               We use only high-quality replacement batteries that meet or exceed Apple's specifications. Your warranty covers:
             </p>
             <ul className="list-disc pl-6 mb-6 text-muted-foreground space-y-2">
-              <li>Battery capacity degradation (if it drops below 80% within 1 year)</li>
-              <li>Installation defects</li>
+              <li>Defects in parts we installed</li>
+              <li>Installation and workmanship issues</li>
               <li>Charging issues related to battery</li>
             </ul>
             <p className="text-muted-foreground mb-6">

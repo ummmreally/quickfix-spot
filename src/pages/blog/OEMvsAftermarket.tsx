@@ -117,7 +117,7 @@ const OEMvsAftermarket = () => {
                 <li>✓ Transparent pricing - no surprises</li>
                 <li>✓ 30-minute repairs for most models</li>
                 <li>✓ True Tone reprogramming included</li>
-                <li>✓ Industry-leading warranties</li>
+                <li>✓ 30-day warranty on all screen repairs</li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="tel:4782596371" className="bg-primary-foreground text-primary px-8 py-3 rounded-lg font-bold text-center hover:opacity-90 transition-opacity">

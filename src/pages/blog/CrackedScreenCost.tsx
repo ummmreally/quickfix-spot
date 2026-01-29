@@ -41,7 +41,7 @@ const CrackedScreenCost = () => {
         <div className="max-w-4xl mx-auto px-4 py-12">
           <section className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold mt-8 mb-4 text-foreground">Tech Medics Screen Repair Pricing (2025)</h2>
-            <p className="text-muted-foreground mb-6">All prices include parts, labor, and lifetime warranty against defects:</p>
+            <p className="text-muted-foreground mb-6">All prices include parts, labor, and 30-day warranty on workmanship:</p>
 
             <h3 className="text-2xl font-bold mt-8 mb-3 text-foreground">iPhone 15 Series</h3>
             <ul className="list-disc pl-6 mb-6 text-muted-foreground space-y-2">
@@ -110,7 +110,7 @@ const CrackedScreenCost = () => {
             <ul className="list-disc pl-6 mb-6 text-muted-foreground space-y-2">
               <li>✓ High-quality replacement screen (OEM-equivalent or premium aftermarket)</li>
               <li>✓ Professional installation by certified technicians</li>
-              <li>✓ Lifetime warranty against defects and installation issues</li>
+              <li>✓ 30-day warranty on parts and workmanship</li>
               <li>✓ Free diagnostic before repair</li>
               <li>✓ Same-day service (30-60 minutes typical)</li>
               <li>✓ Quality testing after repair</li>
@@ -153,7 +153,7 @@ const CrackedScreenCost = () => {
               <li><strong>Rush fees:</strong> No extra charge for same-day service</li>
               <li><strong>Installation fees:</strong> Included in screen price</li>
               <li><strong>Testing fees:</strong> Included (we test everything before returning)</li>
-              <li><strong>Warranty fees:</strong> Lifetime warranty included at no cost</li>
+              <li><strong>Warranty fees:</strong> 30-day warranty included at no cost</li>
             </ul>
 
             <h2 className="text-3xl font-bold mt-12 mb-4 text-foreground">Ways to Save Money on iPhone Screen Repair</h2>

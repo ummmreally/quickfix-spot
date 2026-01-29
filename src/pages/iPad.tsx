@@ -481,6 +481,7 @@ const iPad = () => {
                 <Link to="/macon/east-macon" className="block text-muted-foreground hover:text-primary transition-colors">East Macon</Link>
                 <Link to="/macon/south-macon" className="block text-muted-foreground hover:text-primary transition-colors">South Macon</Link>
                 <Link to="/macon/rutland" className="block text-muted-foreground hover:text-primary transition-colors">Rutland</Link>
+                <Link to="/warranty-policy" className="block text-muted-foreground hover:text-primary transition-colors">Warranty Policy</Link>
                 <Link to="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
               </div>
             </div>

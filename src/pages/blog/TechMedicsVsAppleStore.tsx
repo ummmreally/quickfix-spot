@@ -193,7 +193,7 @@ const TechMedicsVsAppleStore = () => {
                 <tbody>
                   <tr>
                     <td className="border border-border p-3">Warranty Period</td>
-                    <td className="border border-border p-3">Lifetime (screens), 1 year (batteries)</td>
+                    <td className="border border-border p-3">30 days on all repairs</td>
                     <td className="border border-border p-3">90 days (out-of-warranty)</td>
                   </tr>
                   <tr className="bg-secondary/10">

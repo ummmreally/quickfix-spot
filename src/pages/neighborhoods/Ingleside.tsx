@@ -42,7 +42,7 @@ const Ingleside = () => {
     },
     {
       question: "What makes Tech Medics different from other repair shops near Ingleside?",
-      answer: "We offer same-day service, lifetime warranty on screen repairs, certified technicians, and transparent pricing. No hidden fees, no upselling - just honest, quality repairs for Ingleside residents."
+      answer: "We offer same-day service, 30-day warranty on all repairs, certified technicians, and transparent pricing. No hidden fees, no upselling - just honest, quality repairs for Ingleside residents."
     }
   ];
 
@@ -220,6 +220,8 @@ const Ingleside = () => {
             <p>
               © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
+              {" | "}
+              <Link to="/warranty-policy" className="hover:text-primary transition-colors">Warranty Policy</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             </p>
