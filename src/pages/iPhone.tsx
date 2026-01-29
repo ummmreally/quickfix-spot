@@ -297,7 +297,7 @@ const iPhone = () => {
           {
             question: "Is there a warranty on iPhone screen repairs?",
             answer:
-              "Yes, all our iPhone screen repairs come with a warranty. We stand behind our work and use high-quality replacement parts to ensure your iPhone screen repair lasts.",
+              "Yes, all our iPhone screen repairs come with a 30-day warranty covering our workmanship and parts. We stand behind our work and use high-quality replacement parts to ensure your iPhone screen repair lasts.",
           },
           {
             question: "Can you fix my iPhone battery that drains quickly?",
@@ -509,6 +509,7 @@ const iPhone = () => {
                 <Link to="/macon/east-macon" className="block text-muted-foreground hover:text-primary transition-colors">East Macon</Link>
                 <Link to="/macon/south-macon" className="block text-muted-foreground hover:text-primary transition-colors">South Macon</Link>
                 <Link to="/macon/rutland" className="block text-muted-foreground hover:text-primary transition-colors">Rutland</Link>
+                <Link to="/warranty-policy" className="block text-muted-foreground hover:text-primary transition-colors">Warranty Policy</Link>
                 <Link to="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
               </div>
             </div>

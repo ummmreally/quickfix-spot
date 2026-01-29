@@ -98,7 +98,7 @@ const IPadScreenRepair = () => {
             </ul>
 
             <p className="text-muted-foreground mb-6">
-              All screen repairs include lifetime warranty against defects and same-day service (most repairs completed in 1-2 hours).
+              All screen repairs include a 30-day warranty on parts and workmanship, plus same-day service (most repairs completed in 1-2 hours).
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4 text-foreground">
@@ -251,7 +251,7 @@ const IPadScreenRepair = () => {
               <li><strong>Walk-ins welcome:</strong> No appointment necessary</li>
               <li><strong>Free diagnostics:</strong> We'll test your iPad and provide upfront pricing</li>
               <li><strong>Student discounts:</strong> 10% off for Mercer students with valid ID</li>
-              <li><strong>Lifetime warranty:</strong> Screen repairs covered for defects</li>
+              <li><strong>30-day warranty:</strong> All repairs covered for parts and workmanship</li>
               <li><strong>All iPad models:</strong> From iPad 2 to latest iPad Pro</li>
             </ul>
 

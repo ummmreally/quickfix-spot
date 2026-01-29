@@ -66,7 +66,7 @@ const Rutland = () => {
     },
     {
       question: "What's the warranty on repairs for Rutland customers?",
-      answer: "All screen repairs come with a lifetime warranty against defects. Battery replacements include a 1-year warranty. We stand behind our work for all Rutland and Southwest Macon customers."
+      answer: "All repairs come with a 30-day warranty covering our workmanship and parts. We stand behind our work for all Rutland and Southwest Macon customers. See our full warranty policy for details."
     }
   ];
 
@@ -247,6 +247,8 @@ const Rutland = () => {
             <p>
               © 2026 Tech Medics Macon. All rights reserved. |{" "}
               <Link to="/macon/about" className="hover:text-primary transition-colors">About</Link>
+              {" | "}
+              <Link to="/warranty-policy" className="hover:text-primary transition-colors">Warranty Policy</Link>
               {" | "}
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             </p>
