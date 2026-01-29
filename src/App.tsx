@@ -15,6 +15,7 @@ const About = lazy(() => import(/* webpackChunkName: "about" */ "./pages/About")
 const Business = lazy(() => import(/* webpackChunkName: "business" */ "./pages/Business"));
 const Education = lazy(() => import(/* webpackChunkName: "education" */ "./pages/Education"));
 const Privacy = lazy(() => import(/* webpackChunkName: "privacy" */ "./pages/Privacy"));
+const WarrantyPolicy = lazy(() => import(/* webpackChunkName: "warranty" */ "./pages/WarrantyPolicy"));
 const DIYRepair = lazy(() => import(/* webpackChunkName: "diy" */ "./pages/DIYRepair"));
 const NotFound = lazy(() => import(/* webpackChunkName: "notfound" */ "./pages/NotFound"));
 
@@ -79,6 +80,7 @@ const App = () => (
           <Route path="/macon/macbook" element={<MacBookPage />} />
           <Route path="/macon/diy-repair" element={<DIYRepair />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/warranty-policy" element={<WarrantyPolicy />} />
           <Route path="/macon/vineville" element={<Vineville />} />
           <Route path="/macon/ingleside" element={<Ingleside />} />
           <Route path="/macon/north-macon" element={<NorthMacon />} />
