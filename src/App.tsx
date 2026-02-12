@@ -10,7 +10,7 @@ import PageLoader from "@/components/PageLoader";
 const Home = lazy(() => import(/* webpackChunkName: "home" */ "./pages/Home"));
 const Index = lazy(() => import(/* webpackChunkName: "index" */ "./pages/Index"));
 const Contact = lazy(() => import(/* webpackChunkName: "contact" */ "./pages/Contact"));
-const PricingChart = lazy(() => import(/* webpackChunkName: "pricing" */ "./pages/PricingChart"));
+
 const About = lazy(() => import(/* webpackChunkName: "about" */ "./pages/About"));
 const Business = lazy(() => import(/* webpackChunkName: "business" */ "./pages/Business"));
 const Education = lazy(() => import(/* webpackChunkName: "education" */ "./pages/Education"));
@@ -71,7 +71,7 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/macon" element={<Index />} />
           <Route path="/macon/contact" element={<Contact />} />
-          <Route path="/macon/pricing-chart" element={<PricingChart />} />
+          
           <Route path="/macon/about" element={<About />} />
           <Route path="/macon/business" element={<Business />} />
           <Route path="/macon/education" element={<Education />} />

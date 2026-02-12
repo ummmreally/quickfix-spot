@@ -55,9 +55,6 @@ const Navigation = () => {
             <PrefetchLink to="/macon" className="text-foreground hover:text-primary transition-colors font-medium">
               Macon
             </PrefetchLink>
-            <PrefetchLink to="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium">
-              Price List
-            </PrefetchLink>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-primary transition-colors font-medium">
                 Services
@@ -126,9 +123,6 @@ const Navigation = () => {
                 </PrefetchLink>
                 <PrefetchLink to="/macon" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
                   Macon
-                </PrefetchLink>
-                <PrefetchLink to="/macon/pricing-chart" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>
-                  Price List
                 </PrefetchLink>
                 <div className="border-t border-border pt-2">
                   <p className="text-sm font-semibold text-muted-foreground mb-2">Services</p>
