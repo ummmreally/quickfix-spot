@@ -149,9 +149,6 @@ const iPad = () => {
                     Call Now for Quote
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" asChild className="border-2">
-                  <a href="/macon/pricing-chart">View Pricing</a>
-                </Button>
               </div>
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">

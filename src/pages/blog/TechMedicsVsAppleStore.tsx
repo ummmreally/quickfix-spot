@@ -311,12 +311,6 @@ const TechMedicsVsAppleStore = () => {
                 >
                   Call (478) 259-6371
                 </a>
-                <Link 
-                  to="/macon/pricing-chart"
-                  className="px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors text-center"
-                >
-                  View Pricing
-                </Link>
               </div>
             </div>
           </section>

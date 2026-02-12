@@ -6,7 +6,7 @@ const routeChunks: Record<string, () => Promise<unknown>> = {
   "/": () => import("@/pages/Home"),
   "/macon": () => import("@/pages/Index"),
   "/macon/contact": () => import("@/pages/Contact"),
-  "/macon/pricing-chart": () => import("@/pages/PricingChart"),
+  
   "/macon/about": () => import("@/pages/About"),
   "/macon/business": () => import("@/pages/Business"),
   "/macon/education": () => import("@/pages/Education"),
