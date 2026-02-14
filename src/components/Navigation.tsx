@@ -34,7 +34,7 @@ const Navigation = () => {
         </div>
       </div>
       
-      <header className="border-b border-border bg-background sticky top-0 z-50">
+      <header className="glass-nav sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <PrefetchLink to="/">

@@ -83,11 +83,11 @@ const Home = () => {
                 Expert iPhone, iPad & MacBook Repair in Macon Georgia
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                🚀 Most iPhone screen repairs done in 30 minutes or less
+                Most iPhone screen repairs done in 30 minutes or less
                 <br />
-                📍 Conveniently located at 3742 Eisenhower Parkway, Macon GA 31206
+                Conveniently located at 3742 Eisenhower Parkway, Macon GA 31206
                 <br />
-                🛠️ Walk-ins welcome – No appointment needed
+                Walk-ins welcome – No appointment needed
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -120,15 +120,15 @@ const Home = () => {
               </div>
 
               <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto text-center">
-                <div className="bg-background/80 backdrop-blur-sm p-4 rounded-lg border border-border">
+                <div className="glass-card p-4 rounded-xl">
                   <Clock className="h-8 w-8 text-primary mx-auto mb-2" />
                   <p className="font-semibold">30-Min Service</p>
                 </div>
-                <div className="bg-background/80 backdrop-blur-sm p-4 rounded-lg border border-border">
+                <div className="glass-card p-4 rounded-xl">
                   <Shield className="h-8 w-8 text-primary mx-auto mb-2" />
                   <p className="font-semibold">Warranty Included</p>
                 </div>
-                <div className="bg-background/80 backdrop-blur-sm p-4 rounded-lg border border-border">
+                <div className="glass-card p-4 rounded-xl">
                   <Wrench className="h-8 w-8 text-primary mx-auto mb-2" />
                   <p className="font-semibold">Expert Techs</p>
                 </div>
@@ -159,7 +159,7 @@ const Home = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {/* iPhone Repair */}
               <a href="/macon/iphone" className="group">
-                <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
+                <div className="glass-card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
                       src={iphoneImage}
@@ -190,7 +190,7 @@ const Home = () => {
 
               {/* iPad Repair */}
               <a href="/macon/ipad" className="group">
-                <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
+                <div className="glass-card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
                       src={ipadImage}
@@ -221,7 +221,7 @@ const Home = () => {
 
               {/* MacBook Repair */}
               <a href="/macon/macbook" className="group">
-                <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
+                <div className="glass-card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
                       src={macbookImage}
@@ -261,7 +261,7 @@ const Home = () => {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="glass-card w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Clock className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-bold text-xl mb-2">Lightning Fast Service</h3>
@@ -270,7 +270,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="glass-card w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-bold text-xl mb-2">30-Day Warranty</h3>
@@ -279,14 +279,14 @@ const Home = () => {
                 </p>
               </div>
               <div className="text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="glass-card w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-bold text-xl mb-2">Macon Local</h3>
                 <p className="text-muted-foreground">Proudly serving Macon, GA at 3742 Eisenhower Parkway since 2010</p>
               </div>
               <div className="text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="glass-card w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Wrench className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-bold text-xl mb-2">Expert Technicians</h3>
@@ -523,39 +523,39 @@ const Home = () => {
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Link to="/blog/iphone-screen-repair-macon-ga" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/iphone-screen-repair-macon-ga" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">iPhone Screen Repair Guide</h3>
                 <p className="text-muted-foreground text-sm">Complete guide to screen repair costs, quality options, and what to expect.</p>
               </Link>
-              <Link to="/blog/ipad-screen-repair-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/ipad-screen-repair-macon" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">iPad Screen Repair Tips</h3>
                 <p className="text-muted-foreground text-sm">All iPad models supported - Pro, Air, Mini. Pricing and repair times.</p>
               </Link>
-              <Link to="/blog/iphone-battery-replacement-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/iphone-battery-replacement-macon" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">When to Replace Your Battery</h3>
                 <p className="text-muted-foreground text-sm">Signs your battery needs replacing, costs, and same-day service info.</p>
               </Link>
-              <Link to="/blog/holiday-iphone-repair-checklist-macon-2025" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/holiday-iphone-repair-checklist-macon-2025" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">2026 Repair Checklist</h3>
                 <p className="text-muted-foreground text-sm">Prepare your iPhone for travel and holidays with this essential checklist.</p>
               </Link>
-              <Link to="/blog/iphone-dying-fast-after-charging" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/iphone-dying-fast-after-charging" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">Fixing Fast Battery Drain</h3>
                 <p className="text-muted-foreground text-sm">11 proven fixes for iPhone battery draining too fast.</p>
               </Link>
-              <Link to="/blog/iphone-battery-replacement-signs-2025" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/iphone-battery-replacement-signs-2025" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">Battery Health Guide 2026</h3>
                 <p className="text-muted-foreground text-sm">7 warning signs you need a battery replacement this year.</p>
               </Link>
-              <Link to="/blog/same-day-iphone-repair-macon" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/same-day-iphone-repair-macon" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">Same-Day iPhone Repair</h3>
                 <p className="text-muted-foreground text-sm">Fast repair options and what can be fixed while you wait.</p>
               </Link>
-              <Link to="/blog/macbook-repair-macon-ga" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/macbook-repair-macon-ga" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">MacBook Repair in Macon</h3>
                 <p className="text-muted-foreground text-sm">Screen, keyboard, battery, and logic board repair services.</p>
               </Link>
-              <Link to="/blog/tech-medics-vs-apple-store-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Link to="/blog/tech-medics-vs-apple-store-repair" className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-lg font-bold mb-2 text-foreground">Tech Medics vs Apple Store</h3>
                 <p className="text-muted-foreground text-sm">Compare costs, warranty, and turnaround times.</p>
               </Link>
@@ -580,35 +580,35 @@ const Home = () => {
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <Link to="/macon/vineville" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <Link to="/macon/vineville" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-foreground">Vineville</h3>
                 <p className="text-muted-foreground text-sm">Near Mercer University</p>
               </Link>
-              <Link to="/macon/north-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <Link to="/macon/north-macon" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-foreground">North Macon</h3>
                 <p className="text-muted-foreground text-sm">The Crossing area</p>
               </Link>
-              <Link to="/macon/downtown" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <Link to="/macon/downtown" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-foreground">Downtown</h3>
                 <p className="text-muted-foreground text-sm">Cherry Street district</p>
               </Link>
-              <Link to="/macon/ingleside" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <Link to="/macon/ingleside" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-foreground">Ingleside</h3>
                 <p className="text-muted-foreground text-sm">Wesleyan College area</p>
               </Link>
-              <Link to="/macon/east-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <Link to="/macon/east-macon" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-foreground">East Macon</h3>
                 <p className="text-muted-foreground text-sm">River Crossing area</p>
               </Link>
-              <Link to="/macon/south-macon" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <Link to="/macon/south-macon" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-foreground">South Macon</h3>
                 <p className="text-muted-foreground text-sm">Macon Mall area</p>
               </Link>
-              <Link to="/macon/rutland" className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <Link to="/macon/rutland" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-foreground">Rutland</h3>
                 <p className="text-muted-foreground text-sm">Bass Road area</p>
               </Link>
-              <Link to="/macon/contact" className="bg-primary/10 border border-primary rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+              <Link to="/macon/contact" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow border-primary/30">
                 <h3 className="font-bold text-primary">Contact Us</h3>
                 <p className="text-muted-foreground text-sm">Get directions</p>
               </Link>
