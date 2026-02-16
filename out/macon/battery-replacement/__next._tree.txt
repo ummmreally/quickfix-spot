@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/8dd4867a32c9ed38.css","style"]
+:HL["/images/iphone-repair.jpg","image"]
+0:{"buildId":"It_wQtXVzQE6NBUvbAJxj","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"macon","paramType":null,"paramKey":"macon","hasRuntimePrefetch":false,"slots":{"children":{"name":"battery-replacement","paramType":null,"paramKey":"battery-replacement","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

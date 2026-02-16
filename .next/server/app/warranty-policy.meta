@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/warranty-policy/layout,_N_T_/warranty-policy/page,_N_T_/warranty-policy"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/warranty-policy/__PAGE__",
+    "/warranty-policy",
+    "/_index",
+    "/_head"
+  ]
+}

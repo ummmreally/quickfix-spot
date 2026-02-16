@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/ipad/layout,_N_T_/macon/ipad/page,_N_T_/macon/ipad"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/macon/ipad/__PAGE__",
+    "/macon/ipad",
+    "/macon",
+    "/_index",
+    "/_head"
+  ]
+}
