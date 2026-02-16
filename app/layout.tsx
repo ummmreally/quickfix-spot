@@ -47,6 +47,40 @@ export const metadata: Metadata = {
   verification: {},
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://techmedicsmacon.com/#website",
+  name: "Tech Medics Macon",
+  url: "https://techmedicsmacon.com",
+  description: "Expert iPhone, iPad, and MacBook repair in Macon GA. Same-day service, walk-ins welcome.",
+  publisher: { "@id": "https://techmedicsmacon.com/#business" },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: { "@type": "EntryPoint", urlTemplate: "https://techmedicsmacon.com/?s={search_term_string}" },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const siteNavigationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SiteNavigationElement",
+  name: [
+    "iPhone Repair Macon GA",
+    "iPad Repair Macon GA",
+    "MacBook Repair Macon GA",
+    "Blog",
+    "Contact",
+  ],
+  url: [
+    "https://techmedicsmacon.com/macon/iphone",
+    "https://techmedicsmacon.com/macon/ipad",
+    "https://techmedicsmacon.com/macon/macbook",
+    "https://techmedicsmacon.com/blog",
+    "https://techmedicsmacon.com/macon/contact",
+  ],
+};
+
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "MobilePhoneRepairShop"],
@@ -167,12 +201,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
-        />
       </head>
       <body className="min-h-screen bg-background antialiased">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }} />
         <Navigation />
         <main>{children}</main>
         <Footer />

@@ -6,14 +6,22 @@ import { Card } from "@/components/ui/card";
 import FAQSection from "./components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "iPhone Screen Repair Macon GA | iPad & MacBook Repair | Same Day Service",
+  title: "iPhone Screen Repair Macon GA | iPad & MacBook Repair | 30 Min Service | (478) 259-6371",
   description:
-    "Expert iPhone screen repair, iPad repair & MacBook repair in Macon GA. Fast 30-minute service. Battery replacements, charging port fixes. Walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371",
+    "#1 rated iPhone, iPad & MacBook repair in Macon GA. Cracked screen fix from $79, battery replacement $59+. FAST 30-minute service, walk-ins welcome. All Apple devices serviced at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+  keywords: [
+    "iPhone screen repair Macon GA", "iPhone repair Macon", "iPad repair Macon GA", "MacBook repair Macon GA",
+    "phone repair Macon GA", "cracked screen repair Macon", "iPhone battery replacement Macon",
+    "screen repair near me Macon", "Apple repair Macon Georgia", "same day phone repair Macon",
+    "iPhone 15 repair Macon", "iPhone 16 repair Macon GA", "iPad screen replacement Macon",
+    "MacBook screen repair Macon", "laptop repair Macon GA", "phone repair near me",
+  ],
   alternates: { canonical: "https://techmedicsmacon.com/" },
   openGraph: {
-    title: "iPhone Screen Repair Macon GA | Same Day iPad & MacBook Repair",
+    title: "iPhone Screen Repair Macon GA | Same Day iPad & MacBook Repair from $79",
     description: "Macon's #1 iPhone screen repair experts. Fast iPad & MacBook repairs. 30-minute service, walk-ins welcome. 3742 Eisenhower Parkway.",
     url: "https://techmedicsmacon.com/",
+    images: [{ url: "/og-image.webp", width: 1200, height: 630, alt: "Tech Medics Macon - iPhone iPad MacBook Repair" }],
   },
 };
 
@@ -72,9 +80,18 @@ const faqSchema = {
   })),
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://techmedicsmacon.com" },
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero Section */}
@@ -247,15 +264,17 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-secondary/20">
         <div className="max-w-4xl mx-auto">
           <article className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold mb-6 text-foreground">Macon&apos;s Premier iPhone Screen Repair &amp; Apple Device Service Center</h2>
-            <p className="text-muted-foreground mb-4">When you need fast, reliable <strong>iPhone screen repair in Macon, GA</strong>, Tech Medics is your trusted local solution. Located conveniently at 3742 Eisenhower Parkway in Macon, Georgia, we specialize in same-day Apple device repairs including iPhone screen replacement, iPad repair, and MacBook service.</p>
-            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">Expert iPhone Repair Services in Macon</h3>
-            <p className="text-muted-foreground mb-4">Our certified technicians handle all types of <strong>iPhone repairs in Macon</strong>, from cracked screen replacements to battery issues, charging port problems, and water damage recovery. We service all iPhone models including the latest iPhone 15, iPhone 14, iPhone 13, and older generations. Most <strong>iPhone screen repairs in Macon GA</strong> are completed in 30 minutes or less.</p>
-            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">Complete iPad &amp; MacBook Repair in Macon, Georgia</h3>
-            <p className="text-muted-foreground mb-4">Beyond iPhone repair, we&apos;re your full-service Apple repair shop in Macon. Our <strong>iPad repair services in Macon</strong> include screen replacement, glass repair, and battery service. For <strong>MacBook repair in Macon GA</strong>, we handle everything from screen replacement and keyboard repairs to logic board diagnostics and battery replacement.</p>
-            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">Why Choose Tech Medics for iPhone Screen Repair in Macon?</h3>
-            <p className="text-muted-foreground mb-4">As Macon&apos;s most trusted Apple repair center, we combine fast turnaround times with quality workmanship. Walk-ins are always welcome – no appointment necessary. Every repair is backed by our warranty, and we use high-quality replacement parts.</p>
-            <p className="text-muted-foreground"><strong>Serving Macon, GA and surrounding areas</strong> including Warner Robins, Byron, Forsyth, and all of Bibb County with professional Apple device repair services since 2010.</p>
+            <h2 className="text-3xl font-bold mb-6 text-foreground">Macon&apos;s #1 iPhone Screen Repair &amp; Apple Device Service Center</h2>
+            <p className="text-muted-foreground mb-4">When you need fast, reliable <strong>iPhone screen repair in Macon, GA</strong>, Tech Medics is your trusted local solution. Located conveniently at <strong>3742 Eisenhower Parkway in Macon, Georgia</strong>, we specialize in same-day Apple device repairs including <strong>iPhone screen replacement</strong>, <strong>iPad repair</strong>, and <strong>MacBook service</strong>. As the highest-rated repair shop in Central Georgia with a 4.9-star rating across 60+ reviews, we&apos;re the name Macon trusts for all Apple device repairs.</p>
+            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">Expert iPhone Repair Services in Macon, GA</h3>
+            <p className="text-muted-foreground mb-4">Our certified technicians handle all types of <strong>iPhone repairs in Macon</strong>, from <strong>cracked iPhone screen replacements</strong> starting at just $79 to <strong>iPhone battery replacements</strong> from $59, <strong>charging port repairs</strong> from $69, and <strong>water damage recovery</strong>. We service every iPhone model including the latest <strong>iPhone 16, iPhone 15, iPhone 14, iPhone 13</strong>, and all older generations. Most <strong>iPhone screen repairs in Macon GA</strong> are completed in 30 minutes or less while you wait.</p>
+            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">Professional iPad Repair in Macon, Georgia</h3>
+            <p className="text-muted-foreground mb-4">Need <strong>iPad repair in Macon GA</strong>? We fix all iPad models including <strong>iPad Pro</strong> (11&rdquo; and 12.9&rdquo;), <strong>iPad Air</strong>, <strong>iPad Mini</strong>, and standard iPad. Our <strong>iPad screen replacement</strong> starts at $99, and we also handle <strong>iPad battery replacements</strong>, <strong>iPad charging port repairs</strong>, and <strong>iPad glass repair</strong>. Most iPad repairs are completed the same day.</p>
+            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">MacBook Repair Experts in Macon, GA</h3>
+            <p className="text-muted-foreground mb-4">For <strong>MacBook repair in Macon GA</strong>, we handle everything from <strong>MacBook screen replacement</strong> starting at $299 to <strong>MacBook keyboard repairs</strong>, <strong>MacBook battery replacement</strong>, and <strong>component-level logic board diagnostics</strong>. We service all <strong>MacBook Air</strong> (M1, M2, M3) and <strong>MacBook Pro</strong> (13&rdquo;, 14&rdquo;, 16&rdquo;) models, plus older Intel MacBooks.</p>
+            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">Why Choose Tech Medics for Apple Device Repair in Macon?</h3>
+            <p className="text-muted-foreground mb-4">As Macon&apos;s most trusted Apple repair center, we combine <strong>fast 30-minute turnaround times</strong> with quality workmanship. Walk-ins are always welcome – <strong>no appointment necessary</strong>. Every repair is backed by our <strong>30-day warranty</strong>, and we use high-quality replacement parts that meet or exceed OEM specifications. Our prices are <strong>30-50% less than Apple Store</strong> pricing.</p>
+            <p className="text-muted-foreground"><strong>Serving Macon, GA and surrounding areas</strong> including <strong>Warner Robins, Byron, Forsyth, Perry</strong>, and all of Bibb County with professional Apple device repair services. Conveniently located on Eisenhower Parkway with easy access from I-75.</p>
           </article>
         </div>
       </section>

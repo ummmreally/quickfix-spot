@@ -20,13 +20,15 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4 text-foreground">Services</h3>
+            <h3 className="font-bold text-lg mb-4 text-foreground">Repair Services</h3>
             <div className="space-y-2">
-              <Link href="/" className="block text-muted-foreground hover:text-primary transition-colors">Home</Link>
-              <Link href="/macon/iphone" className="block text-muted-foreground hover:text-primary transition-colors">iPhone Repair</Link>
-              <Link href="/macon/ipad" className="block text-muted-foreground hover:text-primary transition-colors">iPad Repair</Link>
-              <Link href="/macon/macbook" className="block text-muted-foreground hover:text-primary transition-colors">MacBook Repair</Link>
-              <Link href="/blog" className="block text-muted-foreground hover:text-primary transition-colors">Repair Guides</Link>
+              <Link href="/macon/iphone" className="block text-muted-foreground hover:text-primary transition-colors">iPhone Screen Repair Macon</Link>
+              <Link href="/macon/iphone" className="block text-muted-foreground hover:text-primary transition-colors">iPhone Battery Replacement</Link>
+              <Link href="/macon/ipad" className="block text-muted-foreground hover:text-primary transition-colors">iPad Screen Replacement</Link>
+              <Link href="/macon/ipad" className="block text-muted-foreground hover:text-primary transition-colors">iPad Repair Macon GA</Link>
+              <Link href="/macon/macbook" className="block text-muted-foreground hover:text-primary transition-colors">MacBook Screen Repair</Link>
+              <Link href="/macon/macbook" className="block text-muted-foreground hover:text-primary transition-colors">MacBook Keyboard Repair</Link>
+              <Link href="/blog" className="block text-muted-foreground hover:text-primary transition-colors">Repair Guides &amp; Blog</Link>
             </div>
           </div>
 
@@ -43,18 +45,21 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4 text-foreground">Nearby Cities</h3>
             <div className="space-y-2">
-              <Link href="/macon/warner-robins" className="block text-muted-foreground hover:text-primary transition-colors">Warner Robins</Link>
-              <Link href="/macon/byron" className="block text-muted-foreground hover:text-primary transition-colors">Byron</Link>
-              <Link href="/macon/perry" className="block text-muted-foreground hover:text-primary transition-colors">Perry</Link>
-              <Link href="/macon/forsyth" className="block text-muted-foreground hover:text-primary transition-colors">Forsyth</Link>
-              <Link href="/warranty-policy" className="block text-muted-foreground hover:text-primary transition-colors">Warranty Policy</Link>
-              <Link href="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
+              <Link href="/macon/warner-robins" className="block text-muted-foreground hover:text-primary transition-colors">Phone Repair Warner Robins</Link>
+              <Link href="/macon/byron" className="block text-muted-foreground hover:text-primary transition-colors">Phone Repair Byron GA</Link>
+              <Link href="/macon/perry" className="block text-muted-foreground hover:text-primary transition-colors">Phone Repair Perry GA</Link>
+              <Link href="/macon/forsyth" className="block text-muted-foreground hover:text-primary transition-colors">Phone Repair Forsyth GA</Link>
+              <Link href="/macon/east-macon" className="block text-muted-foreground hover:text-primary transition-colors">East Macon</Link>
+              <Link href="/macon/south-macon" className="block text-muted-foreground hover:text-primary transition-colors">South Macon</Link>
+              <Link href="/macon/rutland" className="block text-muted-foreground hover:text-primary transition-colors">Rutland</Link>
             </div>
           </div>
         </div>
 
-        <div className="text-center text-muted-foreground border-t border-border pt-6">
-          <p>&copy; 2026 Tech Medics Macon - iPhone Screen Repair Macon GA | iPad Repair | MacBook Repair</p>
+        <div className="text-center text-muted-foreground border-t border-border pt-6 space-y-2">
+          <p>&copy; 2026 Tech Medics Macon &ndash; Expert iPhone, iPad &amp; MacBook Repair in Macon, GA</p>
+          <p className="text-xs">iPhone Screen Repair Macon GA | iPad Screen Replacement | MacBook Repair | Same-Day Service | Walk-Ins Welcome</p>
+          <p className="text-xs"><Link href="/warranty-policy" className="hover:text-primary transition-colors">Warranty Policy</Link> &middot; <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></p>
         </div>
       </div>
     </footer>

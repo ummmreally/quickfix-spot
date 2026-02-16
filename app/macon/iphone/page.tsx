@@ -6,26 +6,58 @@ import { Card } from "@/components/ui/card";
 import FAQSection from "../../components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "iPhone Repair Macon GA | Same-Day Screen & Battery Fix",
-  description: "Expert iPhone repair in Macon GA. Screen replacement $79+, battery $59+. Most repairs in 30 min. Walk-ins welcome at 3742 Eisenhower Pkwy.",
-  keywords: ["iPhone repair Macon GA", "iPhone screen repair", "iPhone battery replacement", "cracked iPhone screen Macon"],
+  title: "iPhone Repair Macon GA | Same-Day Screen Fix $79+ | (478) 259-6371",
+  description: "#1 rated iPhone repair in Macon GA. Cracked screen replacement from $79, battery swap $59+, charging port fix $69+. 30-minute service, no appointment. All iPhone models – iPhone 16, 15, 14, 13. Walk-ins at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+  keywords: ["iPhone repair Macon GA", "iPhone screen repair Macon", "iPhone screen replacement Macon GA", "cracked iPhone screen repair Macon", "iPhone battery replacement Macon GA", "iPhone charging port repair Macon", "iPhone water damage repair Macon", "iPhone repair near me Macon", "same day iPhone repair Macon GA", "iPhone 15 screen repair Macon", "iPhone 16 repair Macon GA", "cheap iPhone repair Macon", "best iPhone repair Macon Georgia", "phone repair Macon GA"],
   alternates: { canonical: "https://techmedicsmacon.com/macon/iphone" },
-  openGraph: { title: "iPhone Repair Macon GA | Same-Day Screen & Battery Fix", url: "https://techmedicsmacon.com/macon/iphone" },
+  openGraph: {
+    title: "iPhone Repair Macon GA | Same-Day Screen & Battery Fix from $79",
+    description: "Macon's #1 iPhone repair shop. Screen replacement $79+, battery $59+. 30-min service, walk-ins welcome. All iPhone models serviced.",
+    url: "https://techmedicsmacon.com/macon/iphone",
+    images: [{ url: "/images/iphone-screen-repair-macon.webp", width: 800, height: 600, alt: "iPhone screen repair service in Macon GA" }],
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://techmedicsmacon.com" },
+    { "@type": "ListItem", position: 2, name: "Macon", item: "https://techmedicsmacon.com" },
+    { "@type": "ListItem", position: 3, name: "iPhone Repair", item: "https://techmedicsmacon.com/macon/iphone" },
+  ],
 };
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  "@id": "https://techmedicsmacon.com/macon/iphone#service",
   serviceType: "iPhone Repair",
-  provider: { "@type": "LocalBusiness", name: "Tech Medics Macon", telephone: "(478) 259-6371", address: { "@type": "PostalAddress", streetAddress: "3742 Eisenhower Parkway", addressLocality: "Macon", addressRegion: "GA", postalCode: "31206" } },
-  areaServed: { "@type": "City", name: "Macon", containedIn: { "@type": "State", name: "Georgia" } },
+  name: "iPhone Repair Service in Macon GA",
+  description: "Professional iPhone screen repair, battery replacement, charging port repair, and water damage recovery in Macon, Georgia. Same-day service for all iPhone models.",
+  provider: {
+    "@type": "LocalBusiness",
+    "@id": "https://techmedicsmacon.com/#business",
+    name: "Tech Medics Macon",
+    telephone: "(478) 259-6371",
+    address: { "@type": "PostalAddress", streetAddress: "3742 Eisenhower Parkway", addressLocality: "Macon", addressRegion: "GA", postalCode: "31206", addressCountry: "US" },
+  },
+  areaServed: [
+    { "@type": "City", name: "Macon", containedIn: { "@type": "State", name: "Georgia" } },
+    { "@type": "City", name: "Warner Robins" },
+    { "@type": "City", name: "Byron" },
+    { "@type": "City", name: "Perry" },
+    { "@type": "City", name: "Forsyth" },
+  ],
   hasOfferCatalog: {
     "@type": "OfferCatalog", name: "iPhone Repair Services",
     itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Screen Repair" }, priceSpecification: { "@type": "PriceSpecification", minPrice: "79.00", priceCurrency: "USD" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Battery Replacement" }, priceSpecification: { "@type": "PriceSpecification", minPrice: "59.00", priceCurrency: "USD" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Charging Port Repair" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Water Damage Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Screen Repair", description: "Same-day cracked iPhone screen replacement for all models including iPhone 16, 15, 14, 13" }, priceSpecification: { "@type": "UnitPriceSpecification", price: "79", priceCurrency: "USD", unitText: "starting at" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Battery Replacement", description: "Quick iPhone battery replacement to fix fast-draining or swollen batteries" }, priceSpecification: { "@type": "UnitPriceSpecification", price: "59", priceCurrency: "USD", unitText: "starting at" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Charging Port Repair", description: "Fix iPhone not charging, loose port, or slow charging issues" }, priceSpecification: { "@type": "UnitPriceSpecification", price: "69", priceCurrency: "USD", unitText: "starting at" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Water Damage Repair", description: "Emergency water damage repair and data recovery for all iPhone models" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Camera Repair", description: "Front and rear camera repair and replacement" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Speaker Repair", description: "Fix muffled, quiet, or non-working iPhone speakers" } },
     ],
   },
 };
@@ -42,6 +74,20 @@ const faqData = [
 ];
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqData.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
+
+const pricingData = [
+  { model: "iPhone 8 / SE", screen: "$79", battery: "$59", chargingPort: "$69", time: "30 min" },
+  { model: "iPhone X / XR / XS", screen: "$99", battery: "$69", chargingPort: "$79", time: "30 min" },
+  { model: "iPhone 11", screen: "$109", battery: "$69", chargingPort: "$79", time: "30 min" },
+  { model: "iPhone 12 / Mini", screen: "$119", battery: "$79", chargingPort: "$89", time: "30 min" },
+  { model: "iPhone 13 / Mini", screen: "$149", battery: "$79", chargingPort: "$89", time: "30-45 min" },
+  { model: "iPhone 14", screen: "$179", battery: "$89", chargingPort: "$99", time: "30-45 min" },
+  { model: "iPhone 14 Pro / Max", screen: "$229", battery: "$89", chargingPort: "$99", time: "45 min" },
+  { model: "iPhone 15", screen: "$199", battery: "$89", chargingPort: "$99", time: "45 min" },
+  { model: "iPhone 15 Pro / Max", screen: "$279", battery: "$99", chargingPort: "$109", time: "45 min" },
+  { model: "iPhone 16", screen: "$249", battery: "$99", chargingPort: "$109", time: "45 min" },
+  { model: "iPhone 16 Pro / Max", screen: "$329", battery: "$109", chargingPort: "$119", time: "45-60 min" },
+];
 
 const testimonials = [
   { name: "Sarah M.", rating: 5, text: "Cracked my iPhone 14 screen and they fixed it in 25 minutes! Great service and fair pricing.", service: "iPhone Screen Repair" },
@@ -63,6 +109,7 @@ const comparisonData = [
 export default function IPhonePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -170,11 +217,82 @@ export default function IPhonePage() {
         </div>
       </section>
 
+      {/* Pricing Table */}
+      <section className="py-20 px-4 bg-secondary/20">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">iPhone Repair Cost in Macon, GA – Transparent Pricing</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">How much does iPhone screen repair cost in Macon? See our prices below – always 30-50% less than Apple Store. Call <a href="tel:(478)259-6371" className="text-primary font-semibold">(478) 259-6371</a> for an exact quote.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
+              <thead>
+                <tr className="border-b border-border bg-primary text-primary-foreground">
+                  <th className="text-left p-4 font-bold">iPhone Model</th>
+                  <th className="text-center p-4 font-bold">Screen Repair</th>
+                  <th className="text-center p-4 font-bold">Battery</th>
+                  <th className="text-center p-4 font-bold">Charging Port</th>
+                  <th className="text-center p-4 font-bold">Repair Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {pricingData.map((row) => (
+                  <tr key={row.model} className="border-b border-border last:border-0 hover:bg-secondary/30">
+                    <td className="p-4 font-semibold text-foreground">{row.model}</td>
+                    <td className="p-4 text-center text-foreground font-medium">{row.screen}</td>
+                    <td className="p-4 text-center text-foreground">{row.battery}</td>
+                    <td className="p-4 text-center text-foreground">{row.chargingPort}</td>
+                    <td className="p-4 text-center text-muted-foreground">{row.time}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm text-muted-foreground mt-4 text-center">*Prices are estimates and may vary. Contact us for an exact quote. All repairs include a 30-day warranty.</p>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">How iPhone Repair Works at Tech Medics Macon</h2>
+          <p className="text-center text-muted-foreground mb-12">Getting your iPhone fixed in Macon is quick and easy – no appointment needed</p>
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              { step: "1", title: "Walk In or Call", desc: "Visit us at 3742 Eisenhower Parkway in Macon, GA or call (478) 259-6371 for a quote. No appointment needed – walk-ins welcome." },
+              { step: "2", title: "Free Diagnosis", desc: "Our certified technicians will inspect your iPhone and provide a free diagnosis with an exact repair quote – no hidden fees." },
+              { step: "3", title: "Fast Repair", desc: "Most iPhone screen repairs take just 30 minutes. We use high-quality parts and precision tools for a perfect repair every time." },
+              { step: "4", title: "Quality Check", desc: "Every iPhone repair is thoroughly tested before handoff. You leave with a working device and a 30-day warranty for peace of mind." },
+            ].map((s) => (
+              <div key={s.step} className="text-center">
+                <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">{s.step}</div>
+                <h3 className="text-xl font-bold mb-3 text-foreground">{s.title}</h3>
+                <p className="text-muted-foreground">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Content Block */}
+      <section className="py-20 px-4 bg-secondary/20">
+        <div className="max-w-4xl mx-auto">
+          <article className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold mb-6 text-foreground">The Best iPhone Repair Shop in Macon, Georgia</h2>
+            <p className="text-muted-foreground mb-4">Looking for <strong>iPhone repair near me in Macon, GA</strong>? Tech Medics Macon is the highest-rated iPhone repair shop in Central Georgia, specializing in fast, affordable <strong>iPhone screen repair in Macon</strong>. Whether you have a <strong>cracked iPhone screen</strong>, a dying battery, a broken charging port, or water damage, our expert technicians can fix it – usually in 30 minutes or less.</p>
+            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">iPhone Screen Repair in Macon GA – All Models</h3>
+            <p className="text-muted-foreground mb-4">We repair every iPhone model from the <strong>iPhone 8</strong> and <strong>iPhone SE</strong> all the way through the latest <strong>iPhone 16 Pro Max</strong>. Our <strong>iPhone screen replacement service in Macon</strong> uses high-quality LCD and OLED displays that match Apple&apos;s specifications. Whether you dropped your iPhone on concrete, sat on it, or it fell out of your car – we&apos;ve seen it all and can fix it. <strong>iPhone screen repair costs in Macon</strong> start at just $79, which is 30-50% less than Apple Store pricing.</p>
+            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">iPhone Battery Replacement in Macon – Same Day</h3>
+            <p className="text-muted-foreground mb-4">Is your <strong>iPhone battery dying fast</strong>? If your iPhone won&apos;t hold a charge, shuts off randomly, or shows a &ldquo;Service&rdquo; battery warning, you need an <strong>iPhone battery replacement in Macon GA</strong>. Our technicians replace iPhone batteries in about 30 minutes using premium cells that restore your phone&apos;s all-day battery life. We service all models including <strong>iPhone 13 battery replacement</strong>, <strong>iPhone 14 battery replacement</strong>, and <strong>iPhone 15 battery replacement</strong> in Macon.</p>
+            <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">Why Macon Residents Choose Tech Medics for iPhone Repair</h3>
+            <p className="text-muted-foreground mb-4">Unlike mail-in repair services or the Apple Store in Atlanta, Tech Medics is right here in Macon at <strong>3742 Eisenhower Parkway</strong>. We offer <strong>same-day iPhone repair</strong> with no appointment required. Our certified technicians have repaired thousands of iPhones, and every repair comes with a warranty. We&apos;re proud to serve all of Macon including <strong>Vineville, North Macon, Ingleside, Downtown, East Macon, South Macon</strong>, and nearby cities like <strong>Warner Robins, Byron, Perry, and Forsyth</strong>.</p>
+          </article>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="py-20 px-4 bg-secondary/30">
+      <section className="py-20 px-4 bg-primary/5">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Ready to Fix Your iPhone?</h2>
-          <p className="text-xl text-muted-foreground mb-8">Visit us at 3742 Eisenhower Parkway, Macon, GA 31206 or call for a free quote</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Need iPhone Repair in Macon GA? Get It Fixed Today</h2>
+          <p className="text-xl text-muted-foreground mb-8">Walk in to 3742 Eisenhower Parkway, Macon, GA 31206 – no appointment needed. Or call for a free quote.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"><a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call (478) 259-6371</a></Button>
             <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8"><a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer"><MapPin className="mr-2 h-5 w-5" />Get Directions</a></Button>
