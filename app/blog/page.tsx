@@ -1,0 +1,52 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "iPhone, iPad & MacBook Repair Guides | Tech Medics Macon Blog",
+  description: "Expert repair guides, tips, and cost breakdowns for iPhone, iPad, and MacBook repair in Macon GA. Learn about screen repair, battery replacement, and more.",
+  alternates: { canonical: "https://techmedicsmacon.com/blog" },
+};
+
+const posts = [
+  { slug: "iphone-screen-repair-macon-ga", title: "Complete iPhone Screen Repair Guide – Macon GA", desc: "Everything you need to know about iPhone screen repair costs, quality options, and what to expect at Tech Medics Macon.", category: "iPhone" },
+  { slug: "iphone-battery-replacement-macon", title: "iPhone Battery Replacement in Macon – Signs & Costs", desc: "When to replace your iPhone battery, how much it costs, and why same-day service matters.", category: "iPhone" },
+  { slug: "ipad-screen-repair-macon", title: "iPad Screen Repair in Macon GA – All Models", desc: "Complete guide to iPad screen repair for Pro, Air, Mini, and standard models. Pricing and turnaround.", category: "iPad" },
+  { slug: "macbook-repair-macon-ga", title: "MacBook Repair Services in Macon GA", desc: "Screen, keyboard, battery, and logic board repair for MacBook Air and Pro models.", category: "MacBook" },
+  { slug: "tech-medics-vs-apple-store-repair", title: "Tech Medics vs Apple Store – Repair Comparison", desc: "Compare costs, warranty, turnaround times, and convenience between local repair and Apple Store.", category: "General" },
+  { slug: "water-damaged-iphone-repair", title: "Water Damaged iPhone? Here's What to Do", desc: "Emergency steps and professional water damage repair options in Macon GA.", category: "iPhone" },
+  { slug: "iphone-dying-fast-after-charging", title: "iPhone Dying Fast After Charging? 11 Fixes", desc: "Proven solutions for iPhone battery draining too quickly after a full charge.", category: "iPhone" },
+  { slug: "iphone-not-turning-on-fix", title: "iPhone Not Turning On? Troubleshooting Guide", desc: "Step-by-step fixes for an iPhone that won't power on, and when to seek professional repair.", category: "iPhone" },
+  { slug: "oem-vs-aftermarket-iphone-screens", title: "OEM vs Aftermarket iPhone Screens Explained", desc: "Understanding the difference between screen types and which is right for your repair.", category: "iPhone" },
+  { slug: "iphone-screen-repair-cost-macon", title: "iPhone Screen Repair Cost in Macon GA (2026)", desc: "Updated pricing guide for all iPhone models. Compare costs and find the best value.", category: "iPhone" },
+  { slug: "iphone-repair-near-me-macon", title: "iPhone Repair Near Me in Macon GA", desc: "Why Tech Medics is Macon's top choice for local iPhone repair. Location, services, and more.", category: "iPhone" },
+  { slug: "same-day-iphone-repair-macon", title: "Same-Day iPhone Repair in Macon", desc: "What repairs can be done while you wait and how our 30-minute service works.", category: "iPhone" },
+  { slug: "choose-phone-repair-shop-macon", title: "How to Choose a Phone Repair Shop in Macon", desc: "Key factors to consider when selecting a repair shop for your device.", category: "General" },
+  { slug: "swollen-iphone-battery-replacement-macon", title: "Swollen iPhone Battery? Get It Replaced Now", desc: "Warning signs of a swollen battery and why immediate replacement is critical.", category: "iPhone" },
+  { slug: "macbook-screen-repair-cost-macon", title: "MacBook Screen Repair Cost in Macon GA", desc: "Pricing guide for MacBook Air and Pro screen replacement services.", category: "MacBook" },
+  { slug: "iphone-vs-android-repair-costs-macon", title: "iPhone vs Android Repair Costs in Macon", desc: "How repair costs compare between Apple and Android devices locally.", category: "General" },
+];
+
+export default function BlogIndex() {
+  return (
+    <>
+      <section className="py-16 md:py-24 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Repair Guides &amp; Resources</h1>
+            <p className="text-xl text-muted-foreground">Expert advice on iPhone, iPad, and MacBook repair from Macon&apos;s trusted technicians</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {posts.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow group">
+                <span className="text-xs font-semibold text-primary uppercase tracking-wider">{post.category}</span>
+                <h2 className="text-xl font-bold mt-2 mb-3 text-foreground group-hover:text-primary transition-colors">{post.title}</h2>
+                <p className="text-muted-foreground text-sm">{post.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

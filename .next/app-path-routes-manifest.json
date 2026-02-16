@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/page": "/blog",
+  "/macon/[neighborhood]/page": "/macon/[neighborhood]",
+  "/macon/ipad/page": "/macon/ipad",
+  "/macon/iphone/page": "/macon/iphone",
+  "/macon/macbook/page": "/macon/macbook",
+  "/page": "/",
+  "/privacy/page": "/privacy",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/warranty-policy/page": "/warranty-policy"
+}

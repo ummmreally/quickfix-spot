@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/73ff4d10b10877f9.css","style"]
+:HL["/images/iphone-screen-repair-macon.webp","image"]
+0:{"buildId":"FZGhHpr1YuBfJWf_Ih81A","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

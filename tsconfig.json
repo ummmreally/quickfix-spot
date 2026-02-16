@@ -1,16 +1,68 @@
 {
-  "files": [],
-  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "noImplicitAny": false,
-    "noUnusedParameters": false,
-    "skipLibCheck": true,
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
-    "noUnusedLocals": false,
-    "strictNullChecks": false
-  }
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "baseUrl": "."
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/App.tsx",
+    "src/App.css",
+    "src/main.tsx",
+    "src/index.css",
+    "src/legacy_pages",
+    "src/pages",
+    "src/components/Navigation.tsx",
+    "src/components/PrefetchLink.tsx",
+    "src/components/FAQSection.tsx",
+    "src/components/LocalBusinessSchema.tsx",
+    "src/components/NeighborhoodBusinessSchema.tsx",
+    "src/components/ReviewSchema.tsx",
+    "src/components/BreadcrumbNav.tsx",
+    "src/components/ServiceCard.tsx",
+    "src/components/TestimonialSection.tsx",
+    "src/components/RepairComparison.tsx",
+    "src/components/CompactReviewDisplay.tsx",
+    "src/components/TrustBadges.tsx",
+    "src/components/HoursDisplay.tsx",
+    "src/components/LazyGoogleMap.tsx",
+    "src/components/ArticleSchema.tsx",
+    "src/components/RelatedArticles.tsx",
+    "src/components/StudentDiscountBanner.tsx",
+    "src/components/DiscountPanel.tsx",
+    "src/components/PageLoader.tsx",
+    "vite.config.ts"
+  ]
 }
