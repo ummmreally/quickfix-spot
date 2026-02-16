@@ -88,7 +88,6 @@ const Navigation = () => {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Link href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium">Pricing</Link>
               <Link href="/blog" className="text-foreground hover:text-primary transition-colors font-medium">Blog</Link>
               <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <a href="tel:(478)259-6371">
@@ -121,7 +120,6 @@ const Navigation = () => {
                     <Link href="/macon/water-damage" className="text-foreground hover:text-primary transition-colors font-medium block mb-2" onClick={() => setMobileMenuOpen(false)}>Water Damage</Link>
                     <Link href="/macon/data-recovery" className="text-foreground hover:text-primary transition-colors font-medium block mb-2" onClick={() => setMobileMenuOpen(false)}>Data Recovery</Link>
                   </div>
-                  <Link href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
                   <Link href="/blog" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
                   <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
                     <a href="tel:(478)259-6371">

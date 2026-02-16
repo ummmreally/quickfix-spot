@@ -20,7 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/macon/game-console-repair`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/macon/data-recovery`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/macon/services`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/macon/pricing`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/macon/reviews`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/macon/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/macon/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

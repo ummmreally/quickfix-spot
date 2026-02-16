@@ -138,30 +138,30 @@ export default function MaconLandingPage() {
             <Card className="p-6 text-center border-2 hover:border-primary transition-colors">
               <Smartphone className="h-12 w-12 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair</h3>
-              <p className="text-muted-foreground text-sm mb-4">All models &ndash; screen, battery, charging port, water damage</p>
-              <p className="text-2xl font-extrabold text-primary mb-1">From $59</p>
-              <p className="text-xs text-muted-foreground">Screen from $79 &middot; Battery from $59</p>
+              <p className="text-muted-foreground text-sm mb-4">All models &ndash; screen, charging port, water damage</p>
+              <p className="text-2xl font-extrabold text-primary mb-1">From $69</p>
+              <p className="text-xs text-muted-foreground">Screen from $79 &middot; Charging port from $69</p>
             </Card>
             <Card className="p-6 text-center border-2 hover:border-primary transition-colors">
               <Tablet className="h-12 w-12 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-bold mb-2 text-foreground">iPad Repair</h3>
-              <p className="text-muted-foreground text-sm mb-4">Screen replacement, battery, charging port for all models</p>
+              <p className="text-muted-foreground text-sm mb-4">Screen replacement, charging port for all models</p>
               <p className="text-2xl font-extrabold text-primary mb-1">From $79</p>
-              <p className="text-xs text-muted-foreground">Screen from $99 &middot; Battery from $79</p>
+              <p className="text-xs text-muted-foreground">Screen from $99 &middot; Charging port from $89</p>
             </Card>
             <Card className="p-6 text-center border-2 hover:border-primary transition-colors">
               <Laptop className="h-12 w-12 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-bold mb-2 text-foreground">MacBook Repair</h3>
-              <p className="text-muted-foreground text-sm mb-4">Screen, battery, keyboard &ndash; Air &amp; Pro models</p>
-              <p className="text-2xl font-extrabold text-primary mb-1">From $149</p>
-              <p className="text-xs text-muted-foreground">Screen from $299 &middot; Battery from $149</p>
+              <p className="text-muted-foreground text-sm mb-4">Screen, keyboard &ndash; Air &amp; Pro models</p>
+              <p className="text-2xl font-extrabold text-primary mb-1">From $299</p>
+              <p className="text-xs text-muted-foreground">Screen from $299 &middot; Keyboard from $199</p>
             </Card>
             <Card className="p-6 text-center border-2 hover:border-primary transition-colors">
               <Gamepad2 className="h-12 w-12 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-bold mb-2 text-foreground">Console Repair</h3>
               <p className="text-muted-foreground text-sm mb-4">PS5, Xbox, Nintendo Switch &ndash; HDMI, disc drive, drift</p>
               <p className="text-2xl font-extrabold text-primary mb-1">From $39</p>
-              <p className="text-xs text-muted-foreground">Joy-Con from $39 &middot; HDMI from $99</p>
+              <p className="text-xs text-muted-foreground">Joy-Con from $39 &middot; HDMI from $149.99</p>
             </Card>
           </div>
           <div className="text-center mt-10">
@@ -202,7 +202,7 @@ export default function MaconLandingPage() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Popular Repairs &amp; Prices</h2>
-          <p className="text-center text-muted-foreground mb-10">30-50% less than Apple Store &ndash; <Link href="/macon/pricing" className="text-primary hover:underline font-semibold">see full pricing</Link></p>
+          <p className="text-center text-muted-foreground mb-10">30-50% less than Apple Store</p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
               <thead>
@@ -215,14 +215,12 @@ export default function MaconLandingPage() {
               <tbody>
                 {[
                   { repair: "iPhone Screen Repair", price: "$79", time: "25 min" },
-                  { repair: "iPhone Battery Replacement", price: "$59", time: "30 min" },
                   { repair: "iPhone Charging Port", price: "$69", time: "40 min" },
                   { repair: "iPad Screen Repair", price: "$99", time: "45 min" },
                   { repair: "MacBook Screen Replacement", price: "$299", time: "1-2 hrs" },
-                  { repair: "MacBook Battery", price: "$149", time: "1 hr" },
                   { repair: "Water Damage Repair", price: "$79", time: "1-3 hrs" },
-                  { repair: "Game Console (HDMI/Drive)", price: "$79", time: "1-2 hrs" },
-                  { repair: "Data Recovery", price: "$79", time: "1-5 days" },
+                  { repair: "Game Console (HDMI/Drive)", price: "$149.99", time: "1 business day" },
+                  { repair: "Data Recovery", price: "$99", time: "1-5 days" },
                 ].map((r) => (
                   <tr key={r.repair} className="border-b border-border last:border-0 hover:bg-secondary/30">
                     <td className="p-4 font-semibold text-foreground">{r.repair}</td>

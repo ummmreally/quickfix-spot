@@ -11,5 +11,7 @@
   "/macon/iphone/page": "app/macon/iphone/page.js",
   "/macon/macbook/page": "app/macon/macbook/page.js",
   "/macon/page": "app/macon/page.js",
+  "/macon/pricing/page": "app/macon/pricing/page.js",
+  "/macon/reviews/page": "app/macon/reviews/page.js",
   "/page": "app/page.js"
 }

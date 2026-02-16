@@ -180,15 +180,6 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
-// Validate ../../../app/macon/pricing/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/macon/pricing">> = Specific
-  const handler = {} as typeof import("../../../app/macon/pricing/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
 // Validate ../../../app/macon/reviews/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/reviews">> = Specific

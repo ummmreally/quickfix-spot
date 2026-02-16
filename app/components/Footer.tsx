@@ -30,7 +30,6 @@ const Footer = () => {
               <Link href="/macon/battery-replacement" className="block text-muted-foreground hover:text-primary transition-colors">Battery Replacement</Link>
               <Link href="/macon/water-damage" className="block text-muted-foreground hover:text-primary transition-colors">Water Damage Repair</Link>
               <Link href="/macon/data-recovery" className="block text-muted-foreground hover:text-primary transition-colors">Data Recovery</Link>
-              <Link href="/macon/pricing" className="block text-muted-foreground hover:text-primary transition-colors">Pricing</Link>
             </div>
           </div>
 
