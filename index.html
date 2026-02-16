@@ -76,14 +76,9 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
-    <!-- Preconnect for Google Maps (loaded lazily on scroll) -->
-    <link rel="preconnect" href="https://maps.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
+    <!-- DNS prefetch for Google Maps (loaded lazily on scroll) -->
     <link rel="dns-prefetch" href="https://maps.googleapis.com">
     <link rel="dns-prefetch" href="https://maps.gstatic.com">
-    
-    <!-- Preload critical logo for header LCP -->
-    <link rel="preload" as="image" href="/src/assets/optimized/logo.webp" type="image/webp">
     
     <!-- Modulepreload for critical JS chunks -->
     <link rel="modulepreload" href="/src/main.tsx">
@@ -177,14 +172,26 @@
 
   <body>
     <div id="root">
-      <!-- Initial loading skeleton for instant visual feedback -->
-      <div class="nav-skeleton animate-pulse"></div>
+      <!-- SSR-like hero for instant LCP paint -->
+      <div class="nav-skeleton"></div>
       <div class="hero-skeleton">
-        <div style="text-align: center; color: hsl(var(--muted-foreground));">
-          <div style="width: 48px; height: 48px; margin: 0 auto 16px; border: 3px solid hsl(var(--primary)); border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+        <div style="text-align: center; max-width: 56rem; margin: 0 auto; padding: 0 1rem;">
+          <h1 style="font-size: clamp(2.25rem, 5vw, 3.75rem); font-weight: 700; margin-bottom: 1.5rem; color: hsl(var(--foreground)); line-height: 1.1;">
+            iPhone Screen Repair in Macon, GA – Fast, Reliable, Local
+          </h1>
+          <p style="font-size: 1.25rem; color: hsl(var(--muted-foreground)); margin-bottom: 1rem;">
+            Expert iPhone, iPad &amp; MacBook Repair in Macon Georgia
+          </p>
+          <p style="font-size: 1.125rem; color: hsl(var(--muted-foreground)); margin-bottom: 2rem;">
+            Most iPhone screen repairs done in 30 minutes or less<br>
+            Conveniently located at 3742 Eisenhower Parkway, Macon GA 31206<br>
+            Walk-ins welcome – No appointment needed
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="tel:(478)259-6371" class="btn-primary">📞 Call (478) 259-6371</a>
+          </div>
         </div>
       </div>
-      <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
     </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
