@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import HoursDisplay from "@/components/HoursDisplay";
 import CompactReviewDisplay from "@/components/CompactReviewDisplay";
-import mapStatic from "@/assets/map-static.jpg";
+import mapStatic from "@/assets/map-location.png";
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Logo Header */}
