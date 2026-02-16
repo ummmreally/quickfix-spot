@@ -1,8 +1,0 @@
-{
-  "/_not-found/page": "app/_not-found/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/macon/[neighborhood]/page": "app/macon/[neighborhood]/page.js",
-  "/macon/ipad/page": "app/macon/ipad/page.js",
-  "/macon/iphone/page": "app/macon/iphone/page.js",
-  "/page": "app/page.js"
-}
