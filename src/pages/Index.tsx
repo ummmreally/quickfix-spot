@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import HoursDisplay from "@/components/HoursDisplay";
 import CompactReviewDisplay from "@/components/CompactReviewDisplay";
-import LazyGoogleMap from "@/components/LazyGoogleMap";
+import mapStatic from "@/assets/map-static.jpg";
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Logo Header */}
@@ -135,11 +135,22 @@ const Index = () => {
               </div>
             </div>
 
-            <LazyGoogleMap
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8373937877726!2d-83.68656332397183!3d32.78909817359875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5d0d4e3c8c8c3%3A0x5e3c3c3c3c3c3c3c!2s3742%20Eisenhower%20Pkwy%2C%20Macon%2C%20GA%2031206!5e0!3m2!1sen!2sus!4v1234567890123"
-              title="Tech Medics location - 3742 Eisenhower Parkway, Macon GA 31206"
-              className="bg-muted rounded-lg overflow-hidden h-96 shadow-lg"
-            />
+            <a
+              href="https://www.google.com/maps/place/3742+Eisenhower+Pkwy,+Macon,+GA+31206"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-muted rounded-lg overflow-hidden h-96 shadow-lg relative group"
+            >
+              <img
+                src={mapStatic}
+                alt="Map showing Tech Medics location at 3742 Eisenhower Parkway, Macon GA 31206"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute bottom-3 right-3 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-xs text-muted-foreground shadow-sm group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                Open in Google Maps →
+              </div>
+            </a>
           </div>
         </div>
       </section>
