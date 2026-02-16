@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/water-damage/layout,_N_T_/macon/water-damage/page,_N_T_/macon/water-damage"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/macon/water-damage/__PAGE__",
+    "/macon/water-damage",
+    "/macon",
+    "/_index",
+    "/_head"
+  ]
+}

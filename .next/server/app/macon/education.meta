@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/education/layout,_N_T_/macon/education/page,_N_T_/macon/education"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/macon/education/__PAGE__",
+    "/macon/education",
+    "/macon",
+    "/_index",
+    "/_head"
+  ]
+}

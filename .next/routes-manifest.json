@@ -1,0 +1,211 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/blog/[slug]",
+      "regex": "^/blog/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/blog/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/macon/[neighborhood]",
+      "regex": "^/macon/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPneighborhood": "nxtPneighborhood"
+      },
+      "namedRegex": "^/macon/(?<nxtPneighborhood>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/macon",
+      "regex": "^/macon(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon(?:/)?$"
+    },
+    {
+      "page": "/macon/about",
+      "regex": "^/macon/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/about(?:/)?$"
+    },
+    {
+      "page": "/macon/battery-replacement",
+      "regex": "^/macon/battery\\-replacement(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/battery\\-replacement(?:/)?$"
+    },
+    {
+      "page": "/macon/business",
+      "regex": "^/macon/business(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/business(?:/)?$"
+    },
+    {
+      "page": "/macon/charging-port-repair",
+      "regex": "^/macon/charging\\-port\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/charging\\-port\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/contact",
+      "regex": "^/macon/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/contact(?:/)?$"
+    },
+    {
+      "page": "/macon/data-recovery",
+      "regex": "^/macon/data\\-recovery(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/data\\-recovery(?:/)?$"
+    },
+    {
+      "page": "/macon/diy-repair",
+      "regex": "^/macon/diy\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/diy\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/education",
+      "regex": "^/macon/education(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/education(?:/)?$"
+    },
+    {
+      "page": "/macon/game-console-repair",
+      "regex": "^/macon/game\\-console\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/game\\-console\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/ipad",
+      "regex": "^/macon/ipad(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/ipad(?:/)?$"
+    },
+    {
+      "page": "/macon/iphone",
+      "regex": "^/macon/iphone(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/iphone(?:/)?$"
+    },
+    {
+      "page": "/macon/macbook",
+      "regex": "^/macon/macbook(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/macbook(?:/)?$"
+    },
+    {
+      "page": "/macon/reviews",
+      "regex": "^/macon/reviews(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/reviews(?:/)?$"
+    },
+    {
+      "page": "/macon/screen-repair",
+      "regex": "^/macon/screen\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/screen\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/services",
+      "regex": "^/macon/services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/services(?:/)?$"
+    },
+    {
+      "page": "/macon/water-damage",
+      "regex": "^/macon/water\\-damage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/water\\-damage(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/warranty-policy",
+      "regex": "^/warranty\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/warranty\\-policy(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
