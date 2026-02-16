@@ -42,9 +42,9 @@ const FAQSection = ({ faqs, deviceType }: FAQSectionProps) => {
             Common questions about our {deviceType} repair services
           </p>
           
-          <Accordion type="single" collapsible className="w-full [&_[data-state]]:will-change-[height] [&_[data-state]]:contain-layout">
+          <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="contain-paint">
+              <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left font-semibold">
                   {faq.question}
                 </AccordionTrigger>
