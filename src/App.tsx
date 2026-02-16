@@ -32,6 +32,10 @@ const Downtown = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pa
 const EastMacon = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/EastMacon"));
 const SouthMacon = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/SouthMacon"));
 const Rutland = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/Rutland"));
+const WarnerRobins = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/WarnerRobins"));
+const Byron = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/Byron"));
+const Perry = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/Perry"));
+const Forsyth = lazy(() => import(/* webpackChunkName: "neighborhoods" */ "./pages/neighborhoods/Forsyth"));
 
 // Blog pages - grouped chunk
 const Blog = lazy(() => import(/* webpackChunkName: "blog" */ "./pages/blog/Index"));
@@ -88,6 +92,10 @@ const App = () => (
           <Route path="/macon/east-macon" element={<EastMacon />} />
           <Route path="/macon/south-macon" element={<SouthMacon />} />
           <Route path="/macon/rutland" element={<Rutland />} />
+          <Route path="/macon/warner-robins" element={<WarnerRobins />} />
+          <Route path="/macon/byron" element={<Byron />} />
+          <Route path="/macon/perry" element={<Perry />} />
+          <Route path="/macon/forsyth" element={<Forsyth />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/iphone-screen-repair-macon-ga" element={<IPhoneScreenRepair />} />
           <Route path="/blog/iphone-battery-replacement-macon" element={<IPhoneBatteryReplacement />} />
@@ -104,9 +112,6 @@ const App = () => (
           <Route path="/blog/holiday-iphone-repair-checklist-macon-2025" element={<HolidayIPhoneRepairChecklist />} />
           <Route path="/blog/repair-share-drive-macon" element={<RepairShareDriveMacon />} />
           <Route path="/blog/winter-device-prep-macon-2025" element={<WinterDevicePrepMacon />} />
-          <Route path="/blog/water-damaged-iphone-repair" element={<WaterDamagedIPhone />} />
-          <Route path="/blog/iphone-not-turning-on-fix" element={<IPhoneNotTurningOn />} />
-          <Route path="/blog/oem-vs-aftermarket-iphone-screens" element={<OEMvsAftermarket />} />
           <Route path="/blog/iphone-battery-replacement-signs-2025" element={<IPhoneBatteryReplacement2025 />} />
           <Route path="/blog/iphone-dying-fast-after-charging" element={<IPhoneDyingFast />} />
           <Route path="/blog/iphone-repair-mercer-university-student-discount" element={<MercerUniversityIPhoneRepair />} />

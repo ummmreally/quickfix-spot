@@ -52,21 +52,6 @@ const Home = () => {
           property="og:description"
           content="Macon's #1 iPhone screen repair experts. Fast iPad & MacBook repairs. 30-minute service, walk-ins welcome. 3742 Eisenhower Parkway."
         />
-        {/* Breadcrumb schema only - main LocalBusiness schema is in index.html */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://techmedicsmacon.com/"
-              }
-            ]
-          })}
-        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -159,7 +144,7 @@ const Home = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {/* iPhone Repair */}
-              <a href="/macon/iphone" className="group">
+              <Link to="/macon/iphone" className="group">
                 <div className="glass-card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
@@ -169,8 +154,9 @@ const Home = () => {
                       height="496"
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
+                      loading="eager"
                       decoding="async"
+                      fetchPriority="high"
                     />
                   </div>
                   <div className="p-6">
@@ -187,10 +173,10 @@ const Home = () => {
                     </Button>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               {/* iPad Repair */}
-              <a href="/macon/ipad" className="group">
+              <Link to="/macon/ipad" className="group">
                 <div className="glass-card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
@@ -218,10 +204,10 @@ const Home = () => {
                     </Button>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               {/* MacBook Repair */}
-              <a href="/macon/macbook" className="group">
+              <Link to="/macon/macbook" className="group">
                 <div className="glass-card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
@@ -249,7 +235,7 @@ const Home = () => {
                     </Button>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -578,13 +564,13 @@ const Home = () => {
         <section className="py-16 px-4 bg-secondary/20">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
-              Serving All Macon GA Neighborhoods
+              Serving Macon GA & Surrounding Cities
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Conveniently located at 3742 Eisenhower Parkway - quick access from anywhere in Macon
+              Conveniently located at 3742 Eisenhower Parkway - serving Macon, Warner Robins, Byron, Perry & Forsyth
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <Link to="/macon/vineville" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
                 <h3 className="font-bold text-foreground">Vineville</h3>
                 <p className="text-muted-foreground text-sm">Near Mercer University</p>
@@ -613,9 +599,21 @@ const Home = () => {
                 <h3 className="font-bold text-foreground">Rutland</h3>
                 <p className="text-muted-foreground text-sm">Bass Road area</p>
               </Link>
-              <Link to="/macon/contact" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow border-primary/30">
-                <h3 className="font-bold text-foreground">Contact Us</h3>
-                <p className="text-muted-foreground text-sm">Get directions</p>
+              <Link to="/macon/warner-robins" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">Warner Robins</h3>
+                <p className="text-muted-foreground text-sm">20 min via I-75</p>
+              </Link>
+              <Link to="/macon/byron" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">Byron</h3>
+                <p className="text-muted-foreground text-sm">Peach County</p>
+              </Link>
+              <Link to="/macon/perry" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">Perry</h3>
+                <p className="text-muted-foreground text-sm">Houston County</p>
+              </Link>
+              <Link to="/macon/forsyth" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-foreground">Forsyth</h3>
+                <p className="text-muted-foreground text-sm">Monroe County</p>
               </Link>
             </div>
           </div>

@@ -103,6 +103,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://techmedicsmacon.com/macon/warner-robins</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://techmedicsmacon.com/macon/byron</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://techmedicsmacon.com/macon/perry</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://techmedicsmacon.com/macon/forsyth</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://techmedicsmacon.com/blog</loc>
     <lastmod>2026-01-26</lastmod>
     <changefreq>weekly</changefreq>
