@@ -6,6 +6,7 @@
   "/macon/about/page": "app/macon/about/page.js",
   "/macon/business/page": "app/macon/business/page.js",
   "/macon/contact/page": "app/macon/contact/page.js",
+  "/macon/game-console-repair/page": "app/macon/game-console-repair/page.js",
   "/macon/ipad/page": "app/macon/ipad/page.js",
   "/macon/iphone/page": "app/macon/iphone/page.js",
   "/macon/macbook/page": "app/macon/macbook/page.js",
