@@ -609,7 +609,7 @@ const Home = () => {
                 <p className="text-muted-foreground text-sm">Bass Road area</p>
               </Link>
               <Link to="/macon/contact" className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow border-primary/30">
-                <h3 className="font-bold text-primary">Contact Us</h3>
+                <h3 className="font-bold text-foreground">Contact Us</h3>
                 <p className="text-muted-foreground text-sm">Get directions</p>
               </Link>
             </div>
