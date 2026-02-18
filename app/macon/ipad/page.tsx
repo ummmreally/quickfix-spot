@@ -6,13 +6,13 @@ import { Card } from "@/components/ui/card";
 import FAQSection from "../../components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "iPad Repair Macon GA | Screen Replacement $99+ | (478) 259-6371",
-  description: "Macon GA's top iPad repair shop – 2026 models ready. iPad Pro M4, Air M3, Mini 7th gen screen replacement from $99. Battery & charging port fix. Same-day service, walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+  title: "iPad Repair Macon GA | Screen Replacement affordable pricing | (478) 259-6371",
+  description: "Macon GA's top iPad repair shop – 2026 models ready. iPad Pro M4, Air M3, Mini 7th gen screen replacement Call for quote. Battery & charging port fix. Same-day service, walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
   keywords: ["iPad repair Macon GA", "iPad screen repair Macon", "iPad screen replacement Macon GA", "cracked iPad screen repair Macon", "iPad battery replacement Macon GA", "iPad Pro M4 screen repair Macon", "iPad Air M3 screen replacement Macon", "iPad Mini 7 repair Macon", "iPad charging port repair Macon", "iPad repair near me Macon", "iPad glass repair Macon GA", "same day iPad repair Macon 2026", "best iPad repair Macon Georgia", "tablet repair Macon GA"],
   alternates: { canonical: "https://techmedicsmacon.com/macon/ipad" },
   openGraph: {
-    title: "iPad Repair Macon GA | Screen Replacement & Battery Fix from $99",
-    description: "Macon's #1 iPad repair shop. Screen replacement $99+, all iPad models serviced. Same-day service, walk-ins welcome.",
+    title: "iPad Repair Macon GA | Screen Replacement & Battery Fix Call for quote",
+    description: "Macon's #1 iPad repair shop. Screen replacement affordable pricing, all iPad models serviced. Same-day service, walk-ins welcome.",
     url: "https://techmedicsmacon.com/macon/ipad",
     images: [{ url: "/images/ipad-screen-repair-macon.webp", width: 800, height: 600, alt: "iPad screen repair service in Macon GA" }],
   },
@@ -68,16 +68,6 @@ const faqs = [
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
 
-const pricingData = [
-  { model: "iPad 7th / 8th Gen", screen: "$99", battery: "$89", chargingPort: "$79", time: "1-2 hrs" },
-  { model: "iPad 9th Gen", screen: "$119", battery: "$89", chargingPort: "$79", time: "1-2 hrs" },
-  { model: "iPad 10th Gen", screen: "$149", battery: "$99", chargingPort: "$89", time: "1-2 hrs" },
-  { model: "iPad Air M1 / M2", screen: "$199", battery: "$109", chargingPort: "$89", time: "2 hrs" },
-  { model: "iPad Air M3", screen: "$249", battery: "$119", chargingPort: "$89", time: "2 hrs" },
-  { model: "iPad Mini 6 / 7", screen: "$179", battery: "$99", chargingPort: "$89", time: "1-2 hrs" },
-  { model: 'iPad Pro 11" (M2/M4)', screen: "$349", battery: "$129", chargingPort: "$99", time: "2-3 hrs" },
-  { model: 'iPad Pro 13" (M4)', screen: "$449", battery: "$149", chargingPort: "$109", time: "2-3 hrs" },
-];
 
 const comparisonData = [
   { feature: "Warranty Included", diy: false, competitor: true, us: true },
@@ -110,7 +100,7 @@ export default function IPadPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">iPad Screen Repair &amp; Service in Macon, GA</h1>
-              <p className="text-xl text-muted-foreground mb-8">iPad Pro M4, Air M3, Mini 7th gen &amp; every older model — screen replacement from $99, battery service, charging port repair. Same-day turnaround at 3742 Eisenhower Parkway.</p>
+              <p className="text-xl text-muted-foreground mb-8">iPad Pro M4, Air M3, Mini 7th gen &amp; every older model — screen replacement Call for quote, battery service, charging port repair. Same-day turnaround at 3742 Eisenhower Parkway.</p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call Now for Quote</a>
               </Button>
@@ -173,36 +163,16 @@ export default function IPadPage() {
         </div>
       </section>
 
-      {/* Pricing Table */}
+      {/* Pricing CTA */}
       <section className="py-20 px-4 bg-secondary/20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">iPad Repair Cost in Macon, GA – Transparent Pricing</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">How much does iPad screen repair cost? See our prices below – significantly less than Apple Store pricing. Call <a href="tel:(478)259-6371" className="text-primary font-semibold">(478) 259-6371</a> for an exact quote.</p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
-              <thead>
-                <tr className="border-b border-border bg-primary text-primary-foreground">
-                  <th className="text-left p-4 font-bold">iPad Model</th>
-                  <th className="text-center p-4 font-bold">Screen Repair</th>
-                  <th className="text-center p-4 font-bold">Battery</th>
-                  <th className="text-center p-4 font-bold">Charging Port</th>
-                  <th className="text-center p-4 font-bold">Repair Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricingData.map((row) => (
-                  <tr key={row.model} className="border-b border-border last:border-0 hover:bg-secondary/30">
-                    <td className="p-4 font-semibold text-foreground">{row.model}</td>
-                    <td className="p-4 text-center text-foreground font-medium">{row.screen}</td>
-                    <td className="p-4 text-center text-foreground">{row.battery}</td>
-                    <td className="p-4 text-center text-foreground">{row.chargingPort}</td>
-                    <td className="p-4 text-center text-muted-foreground">{row.time}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Affordable iPad Repair Pricing</h2>
+          <p className="text-xl text-muted-foreground mb-8">We offer competitive pricing for all iPad models. Every repair includes a 30-day warranty and expert service.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
+            </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 text-center">*Prices are estimates and may vary. Contact us for an exact quote. All repairs include a 30-day warranty.</p>
         </div>
       </section>
 
@@ -302,7 +272,7 @@ export default function IPadPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">Other Apple Device Repair Services in Macon</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair in Macon</h3><p className="text-muted-foreground">Screen repair from $79, battery replacement &amp; more for all iPhone models</p></Link>
+            <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair in Macon</h3><p className="text-muted-foreground">Screen repair, battery replacement &amp; more for all iPhone models</p></Link>
             <Link href="/macon/macbook" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">MacBook Repair in Macon</h3><p className="text-muted-foreground">Expert MacBook repairs – screen, keyboard, battery &amp; logic board for Air &amp; Pro</p></Link>
           </div>
         </div>

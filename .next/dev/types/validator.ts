@@ -72,6 +72,24 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../app/macon/accessories/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/accessories">> = Specific
+  const handler = {} as typeof import("../../../app/macon/accessories/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/back-glass-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/back-glass-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/back-glass-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/macon/battery-replacement/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/battery-replacement">> = Specific
@@ -81,10 +99,46 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../app/macon/bibb-county-phone-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/bibb-county-phone-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/bibb-county-phone-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/macon/business/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/business">> = Specific
   const handler = {} as typeof import("../../../app/macon/business/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/button-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/button-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/button-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/byron-iphone-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/byron-iphone-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/byron-iphone-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/camera-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/camera-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/camera-repair/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -135,10 +189,28 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../app/macon/forsyth-iphone-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/forsyth-iphone-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/forsyth-iphone-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/macon/game-console-repair/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/game-console-repair">> = Specific
   const handler = {} as typeof import("../../../app/macon/game-console-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/houston-county-phone-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/houston-county-phone-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/houston-county-phone-repair/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -162,6 +234,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../app/macon/macbook-keyboard-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/macbook-keyboard-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/macbook-keyboard-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/macon/macbook/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/macbook">> = Specific
@@ -171,10 +252,37 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../app/macon/monroe-county-phone-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/monroe-county-phone-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/monroe-county-phone-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/macon/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon">> = Specific
   const handler = {} as typeof import("../../../app/macon/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/peach-county-phone-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/peach-county-phone-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/peach-county-phone-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/perry-iphone-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/perry-iphone-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/perry-iphone-repair/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -202,6 +310,33 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/services">> = Specific
   const handler = {} as typeof import("../../../app/macon/services/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/warner-robins-ipad-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/warner-robins-ipad-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/warner-robins-ipad-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/warner-robins-iphone-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/warner-robins-iphone-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/warner-robins-iphone-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/macon/warner-robins-macbook-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/warner-robins-macbook-repair">> = Specific
+  const handler = {} as typeof import("../../../app/macon/warner-robins-macbook-repair/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

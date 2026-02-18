@@ -364,6 +364,60 @@ const posts = [
             "iphone-screen-repair-cost-macon",
             "choose-phone-repair-shop-macon"
         ]
+    },
+    {
+        slug: "game-console-repair-macon-ga",
+        title: "Game Console Repair in Macon GA – PS5, Xbox & Nintendo Switch",
+        metaDescription: "Expert game console repair in Macon GA. PS5 HDMI port fix, Xbox disc drive repair, Nintendo Switch Joy-Con drift. Same-day service at Tech Medics.",
+        keywords: [
+            "game console repair Macon GA",
+            "PS5 repair Macon",
+            "Xbox repair Macon",
+            "Nintendo Switch repair Macon",
+            "HDMI port repair Macon"
+        ],
+        category: "Console",
+        content: `<h2>Game Console Repair Services in Macon, GA</h2>
+<p>Your gaming console is an investment – often $300 to $500 or more. When it breaks, replacing it shouldn't be your only option. At Tech Medics Macon, we repair PlayStation, Xbox, and Nintendo Switch consoles at a fraction of the replacement cost.</p>
+<h3>PS5 & PS4 Repair</h3>
+<p>The most common PlayStation repair we see is <strong>HDMI port damage</strong>. If your PS5 powers on but displays no video, the HDMI port is likely bent or broken. We use precision micro-soldering to replace the HDMI connector – a repair that most shops can't do. We also fix disc drive issues, overheating problems, and power supply failures.</p>
+<h3>Xbox Series X/S & Xbox One Repair</h3>
+<p>Xbox consoles share many of the same issues as PlayStation – HDMI port damage, disc drive failures, and overheating. We repair all Xbox models including the Series X, Series S, One X, One S, and original Xbox One. Controller repairs are also available for stick drift and broken bumpers.</p>
+<h3>Nintendo Switch Repair</h3>
+<p><strong>Joy-Con drift</strong> is by far the most common Switch issue. If your character moves on screen without touching the joystick, the analog stick module needs replacing. We fix Joy-Con drift permanently by replacing the module – usually in under an hour. We also handle Switch screen replacements, charging port repairs, and rail connector fixes.</p>
+<h3>How Much Does Console Repair Cost?</h3>
+<ul><li><strong>HDMI Port Repair:</strong> $99-$149</li><li><strong>Disc Drive Repair:</strong> From $79</li><li><strong>Joy-Con Drift Fix:</strong> From $39 per controller</li><li><strong>Overheating/Thermal Paste:</strong> From $59</li><li><strong>Controller Repair:</strong> From $39</li></ul>
+<p>All repairs include a 30-day warranty. Visit us at 3742 Eisenhower Parkway or call (478) 259-6371 for an exact quote.</p>`,
+        relatedSlugs: [
+            "choose-phone-repair-shop-macon",
+            "tech-medics-vs-apple-store-repair"
+        ]
+    },
+    {
+        slug: "data-recovery-macon-ga",
+        title: "Data Recovery in Macon GA – Save Your Photos & Files",
+        metaDescription: "Lost photos or files from a broken phone or laptop? Data recovery in Macon GA at Tech Medics. Recover data from water damage, broken screens & dead devices.",
+        keywords: [
+            "data recovery Macon GA",
+            "recover photos broken phone",
+            "iPhone data recovery Macon",
+            "MacBook data recovery"
+        ],
+        category: "General",
+        content: `<h2>Don't Lose Your Irreplaceable Data</h2>
+<p>Your device holds years of photos, important contacts, work documents, and memories that can't be replaced. When your iPhone screen shatters, your MacBook won't boot, or your device takes a swim – your data doesn't have to be lost forever.</p>
+<h3>When Do You Need Data Recovery?</h3>
+<ul><li><strong>Broken screen:</strong> Can't see or access anything on your device</li><li><strong>Water damage:</strong> Device won't turn on after liquid exposure</li><li><strong>Dead device:</strong> Phone or laptop completely unresponsive</li><li><strong>Failed update:</strong> iOS or macOS update bricked your device</li><li><strong>Hard drive failure:</strong> MacBook clicking, not booting, or showing folder icon</li></ul>
+<h3>Our Data Recovery Process</h3>
+<p>At Tech Medics Macon, we start with a <strong>free assessment</strong> to determine if recovery is possible and give you an honest estimate. We use professional tools and techniques to access your device's storage and extract your files. Recovery typically takes 1-5 business days depending on the complexity.</p>
+<h3>What Can We Recover?</h3>
+<p>Photos, videos, contacts, text messages, notes, documents, app data, and more. If it was stored on your device, there's a good chance we can get it back.</p>
+<h3>No Data, No Fee</h3>
+<p>We believe in honest service. If we can't recover your data, you don't pay for the recovery attempt. Assessment and diagnosis are always free. Visit us at 3742 Eisenhower Parkway or call (478) 259-6371.</p>`,
+        relatedSlugs: [
+            "water-damaged-iphone-repair",
+            "iphone-not-turning-on-fix"
+        ]
     }
 ];
 function getPost(slug) {
@@ -426,7 +480,7 @@ async function BlogPostPage({ params }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                lineNumber: 278,
+                lineNumber: 315,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -442,19 +496,19 @@ async function BlogPostPage({ params }) {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                                lineNumber: 282,
+                                lineNumber: 319,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 282,
+                            lineNumber: 319,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: "/"
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 282,
+                            lineNumber: 319,
                             columnNumber: 77
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -464,19 +518,19 @@ async function BlogPostPage({ params }) {
                                 children: "Blog"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                                lineNumber: 283,
+                                lineNumber: 320,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 283,
+                            lineNumber: 320,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: "/"
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 283,
+                            lineNumber: 320,
                             columnNumber: 81
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -484,18 +538,18 @@ async function BlogPostPage({ params }) {
                             children: post.title
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 284,
+                            lineNumber: 321,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/blog/[slug]/page.tsx",
-                    lineNumber: 281,
+                    lineNumber: 318,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                lineNumber: 280,
+                lineNumber: 317,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -508,7 +562,7 @@ async function BlogPostPage({ params }) {
                             children: post.category
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 290,
+                            lineNumber: 327,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -516,7 +570,7 @@ async function BlogPostPage({ params }) {
                             children: post.title
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 291,
+                            lineNumber: 328,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -526,18 +580,18 @@ async function BlogPostPage({ params }) {
                             }
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 292,
+                            lineNumber: 329,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/blog/[slug]/page.tsx",
-                    lineNumber: 289,
+                    lineNumber: 326,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                lineNumber: 288,
+                lineNumber: 325,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -554,7 +608,7 @@ async function BlogPostPage({ params }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 301,
+                            lineNumber: 338,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -562,7 +616,7 @@ async function BlogPostPage({ params }) {
                             children: "Visit Tech Medics at 3742 Eisenhower Parkway or call for a free quote"
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 302,
+                            lineNumber: 339,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -579,19 +633,19 @@ async function BlogPostPage({ params }) {
                                                 className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                                                lineNumber: 304,
+                                                lineNumber: 341,
                                                 columnNumber: 134
                                             }, this),
                                             "Call (478) 259-6371"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/blog/[slug]/page.tsx",
-                                        lineNumber: 304,
+                                        lineNumber: 341,
                                         columnNumber: 106
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/blog/[slug]/page.tsx",
-                                    lineNumber: 304,
+                                    lineNumber: 341,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -608,36 +662,36 @@ async function BlogPostPage({ params }) {
                                                 className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                                                lineNumber: 305,
+                                                lineNumber: 342,
                                                 columnNumber: 204
                                             }, this),
                                             "Get Directions"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/blog/[slug]/page.tsx",
-                                        lineNumber: 305,
+                                        lineNumber: 342,
                                         columnNumber: 78
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/blog/[slug]/page.tsx",
-                                    lineNumber: 305,
+                                    lineNumber: 342,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 303,
+                            lineNumber: 340,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/blog/[slug]/page.tsx",
-                    lineNumber: 300,
+                    lineNumber: 337,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                lineNumber: 299,
+                lineNumber: 336,
                 columnNumber: 7
             }, this),
             relatedPosts.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -650,7 +704,7 @@ async function BlogPostPage({ params }) {
                             children: "Related Guides"
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 314,
+                            lineNumber: 351,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -664,7 +718,7 @@ async function BlogPostPage({ params }) {
                                             children: rp.category
                                         }, void 0, false, {
                                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                                            lineNumber: 318,
+                                            lineNumber: 355,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -672,7 +726,7 @@ async function BlogPostPage({ params }) {
                                             children: rp.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                                            lineNumber: 319,
+                                            lineNumber: 356,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -680,29 +734,29 @@ async function BlogPostPage({ params }) {
                                             children: rp.metaDescription
                                         }, void 0, false, {
                                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                                            lineNumber: 320,
+                                            lineNumber: 357,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, rp.slug, true, {
                                     fileName: "[project]/app/blog/[slug]/page.tsx",
-                                    lineNumber: 317,
+                                    lineNumber: 354,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/blog/[slug]/page.tsx",
-                            lineNumber: 315,
+                            lineNumber: 352,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/blog/[slug]/page.tsx",
-                    lineNumber: 313,
+                    lineNumber: 350,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/[slug]/page.tsx",
-                lineNumber: 312,
+                lineNumber: 349,
                 columnNumber: 9
             }, this)
         ]

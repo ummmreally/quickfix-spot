@@ -52,7 +52,7 @@ const serviceSchema = {
 
 const faqData = [
   { question: "Can you recover data from a broken iPhone?", answer: "In most cases, yes. Even if your iPhone screen is completely shattered or the phone won't turn on, we can often recover your photos, contacts, messages, and other data. Bring it in for a free assessment." },
-  { question: "How much does data recovery cost in Macon?", answer: "Data recovery costs vary depending on the device, type of damage, and complexity. We provide a free diagnosis and quote before starting any work. Basic recovery starts at $79." },
+  { question: "How much does data recovery cost in Macon?", answer: "Data recovery costs vary depending on the device, type of damage, and complexity. We provide a free diagnosis and quote before starting any work." },
   { question: "Can you recover data from a water damaged device?", answer: "Yes, water damage data recovery is one of our specialties. Even devices that won't power on after water exposure can often have their data recovered through professional techniques." },
   { question: "What types of data can you recover?", answer: "We can recover photos, videos, contacts, text messages, notes, documents, app data, and more from iPhones, iPads, and MacBooks." },
   { question: "How long does data recovery take?", answer: "Simple recovery from a device with a broken screen may take 1-2 hours. More complex cases involving water damage or dead devices can take 2-5 business days." },
@@ -247,7 +247,7 @@ export default function DataRecoveryPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">Related Repair Services</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Link href="/macon/water-damage" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Water Damage Repair</h3><p className="text-muted-foreground">Recover water-damaged devices</p></Link>
-            <Link href="/macon/screen-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Screen Repair</h3><p className="text-muted-foreground">Fix broken screens from $79</p></Link>
+            <Link href="/macon/screen-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Screen Repair</h3><p className="text-muted-foreground">Fix broken screens</p></Link>
             <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair</h3><p className="text-muted-foreground">Complete iPhone repair services</p></Link>
           </div>
         </div>

@@ -156,8 +156,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$FAQSect
 ;
 ;
 const metadata = {
-    title: "iPad Repair Macon GA | Screen Replacement $99+ | (478) 259-6371",
-    description: "Macon GA's top iPad repair shop – 2026 models ready. iPad Pro M4, Air M3, Mini 7th gen screen replacement from $99. Battery & charging port fix. Same-day service, walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+    title: "iPad Repair Macon GA | Screen Replacement affordable pricing | (478) 259-6371",
+    description: "Macon GA's top iPad repair shop – 2026 models ready. iPad Pro M4, Air M3, Mini 7th gen screen replacement Call for quote. Battery & charging port fix. Same-day service, walk-ins welcome at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
     keywords: [
         "iPad repair Macon GA",
         "iPad screen repair Macon",
@@ -178,8 +178,8 @@ const metadata = {
         canonical: "https://techmedicsmacon.com/macon/ipad"
     },
     openGraph: {
-        title: "iPad Repair Macon GA | Screen Replacement & Battery Fix from $99",
-        description: "Macon's #1 iPad repair shop. Screen replacement $99+, all iPad models serviced. Same-day service, walk-ins welcome.",
+        title: "iPad Repair Macon GA | Screen Replacement & Battery Fix Call for quote",
+        description: "Macon's #1 iPad repair shop. Screen replacement affordable pricing, all iPad models serviced. Same-day service, walk-ins welcome.",
         url: "https://techmedicsmacon.com/macon/ipad",
         images: [
             {
@@ -349,64 +349,6 @@ const faqSchema = {
             }
         }))
 };
-const pricingData = [
-    {
-        model: "iPad 7th / 8th Gen",
-        screen: "$99",
-        battery: "$89",
-        chargingPort: "$79",
-        time: "1-2 hrs"
-    },
-    {
-        model: "iPad 9th Gen",
-        screen: "$119",
-        battery: "$89",
-        chargingPort: "$79",
-        time: "1-2 hrs"
-    },
-    {
-        model: "iPad 10th Gen",
-        screen: "$149",
-        battery: "$99",
-        chargingPort: "$89",
-        time: "1-2 hrs"
-    },
-    {
-        model: "iPad Air M1 / M2",
-        screen: "$199",
-        battery: "$109",
-        chargingPort: "$89",
-        time: "2 hrs"
-    },
-    {
-        model: "iPad Air M3",
-        screen: "$249",
-        battery: "$119",
-        chargingPort: "$89",
-        time: "2 hrs"
-    },
-    {
-        model: "iPad Mini 6 / 7",
-        screen: "$179",
-        battery: "$99",
-        chargingPort: "$89",
-        time: "1-2 hrs"
-    },
-    {
-        model: 'iPad Pro 11" (M2/M4)',
-        screen: "$349",
-        battery: "$129",
-        chargingPort: "$99",
-        time: "2-3 hrs"
-    },
-    {
-        model: 'iPad Pro 13" (M4)',
-        screen: "$449",
-        battery: "$149",
-        chargingPort: "$109",
-        time: "2-3 hrs"
-    }
-];
 const comparisonData = [
     {
         feature: "Warranty Included",
@@ -467,7 +409,7 @@ function IPadPage() {
                 }
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 96,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -477,7 +419,7 @@ function IPadPage() {
                 }
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 97,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -487,7 +429,7 @@ function IPadPage() {
                 }
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 98,
+                lineNumber: 88,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -503,19 +445,19 @@ function IPadPage() {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 102,
+                                lineNumber: 92,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 102,
+                            lineNumber: 92,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: "/"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 102,
+                            lineNumber: 92,
                             columnNumber: 77
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -525,19 +467,19 @@ function IPadPage() {
                                 children: "Macon"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 103,
+                                lineNumber: 93,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 103,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: "/"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 103,
+                            lineNumber: 93,
                             columnNumber: 88
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -545,18 +487,18 @@ function IPadPage() {
                             children: "iPad Repair"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 104,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 101,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 100,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -573,15 +515,15 @@ function IPadPage() {
                                         children: "iPad Screen Repair & Service in Macon, GA"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-xl text-muted-foreground mb-8",
-                                        children: "iPad Pro M4, Air M3, Mini 7th gen & every older model — screen replacement from $99, battery service, charging port repair. Same-day turnaround at 3742 Eisenhower Parkway."
+                                        children: "iPad Pro M4, Air M3, Mini 7th gen & every older model — screen replacement Call for quote, battery service, charging port repair. Same-day turnaround at 3742 Eisenhower Parkway."
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -595,25 +537,25 @@ function IPadPage() {
                                                     className: "mr-2 h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 115,
+                                                    lineNumber: 105,
                                                     columnNumber: 45
                                                 }, this),
                                                 "Call Now for Quote"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 105,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 104,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 111,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -628,28 +570,28 @@ function IPadPage() {
                                     decoding: "async"
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 119,
+                                    lineNumber: 109,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 118,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/macon/ipad/page.tsx",
-                        lineNumber: 110,
+                        lineNumber: 100,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 109,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 108,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -662,7 +604,7 @@ function IPadPage() {
                             children: "iPad Repair Services in Macon, GA"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 127,
+                            lineNumber: 117,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -700,7 +642,7 @@ function IPadPage() {
                                             children: s.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 138,
+                                            lineNumber: 128,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -708,18 +650,18 @@ function IPadPage() {
                                             children: s.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 139,
+                                            lineNumber: 129,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, s.title, true, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 137,
+                                    lineNumber: 127,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 128,
+                            lineNumber: 118,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -730,7 +672,7 @@ function IPadPage() {
                                     children: "iPad Models We Service"
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 134,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -751,34 +693,34 @@ function IPadPage() {
                                                 children: m
                                             }, void 0, false, {
                                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                                lineNumber: 147,
+                                                lineNumber: 137,
                                                 columnNumber: 98
                                             }, this)
                                         }, m, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 147,
+                                            lineNumber: 137,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 143,
+                            lineNumber: 133,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 126,
+                    lineNumber: 116,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 125,
+                lineNumber: 115,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$FAQSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -786,7 +728,7 @@ function IPadPage() {
                 faqs: faqs
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 154,
+                lineNumber: 144,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -799,7 +741,7 @@ function IPadPage() {
                             children: "What Our Customers Say"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 158,
+                            lineNumber: 148,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -807,7 +749,7 @@ function IPadPage() {
                             children: "Real reviews from iPad repair customers in Macon, GA"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 159,
+                            lineNumber: 149,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -839,12 +781,12 @@ function IPadPage() {
                                                     className: "h-5 w-5 fill-primary text-primary"
                                                 }, j, false, {
                                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 167,
+                                                    lineNumber: 157,
                                                     columnNumber: 92
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 167,
+                                            lineNumber: 157,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -856,7 +798,7 @@ function IPadPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 168,
+                                            lineNumber: 158,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -867,7 +809,7 @@ function IPadPage() {
                                                     children: t.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 169,
+                                                    lineNumber: 159,
                                                     columnNumber: 62
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -875,213 +817,100 @@ function IPadPage() {
                                                     children: t.service
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 169,
+                                                    lineNumber: 159,
                                                     columnNumber: 119
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 169,
+                                            lineNumber: 159,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 166,
+                                    lineNumber: 156,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 160,
+                            lineNumber: 150,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 157,
+                    lineNumber: 147,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 156,
+                lineNumber: 146,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "py-20 px-4 bg-secondary/20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto",
+                    className: "max-w-4xl mx-auto text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-3xl md:text-4xl font-bold text-center mb-4 text-foreground",
-                            children: "iPad Repair Cost in Macon, GA – Transparent Pricing"
+                            className: "text-3xl md:text-4xl font-bold mb-4 text-foreground",
+                            children: "Affordable iPad Repair Pricing"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 179,
+                            lineNumber: 169,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-center text-muted-foreground mb-12 max-w-3xl mx-auto",
-                            children: [
-                                "How much does iPad screen repair cost? See our prices below – significantly less than Apple Store pricing. Call ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "tel:(478)259-6371",
-                                    className: "text-primary font-semibold",
-                                    children: "(478) 259-6371"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 180,
-                                    columnNumber: 196
-                                }, this),
-                                " for an exact quote."
-                            ]
-                        }, void 0, true, {
+                            className: "text-xl text-muted-foreground mb-8",
+                            children: "We offer competitive pricing for all iPad models. Every repair includes a 30-day warranty and expert service."
+                        }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 180,
+                            lineNumber: 170,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "overflow-x-auto",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
-                                className: "w-full border-collapse bg-card rounded-lg overflow-hidden",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                            className: "border-b border-border bg-primary text-primary-foreground",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-left p-4 font-bold",
-                                                    children: "iPad Model"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 185,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-center p-4 font-bold",
-                                                    children: "Screen Repair"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 186,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-center p-4 font-bold",
-                                                    children: "Battery"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 187,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-center p-4 font-bold",
-                                                    children: "Charging Port"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 188,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-center p-4 font-bold",
-                                                    children: "Repair Time"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 189,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                            className: "flex flex-col sm:flex-row gap-4 justify-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
+                                asChild: true,
+                                size: "lg",
+                                className: "bg-primary hover:bg-primary/90 text-primary-foreground",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "tel:(478)259-6371",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                            className: "mr-2 h-5 w-5"
+                                        }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 184,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 183,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
-                                        children: pricingData.map((row)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                                className: "border-b border-border last:border-0 hover:bg-secondary/30",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 font-semibold text-foreground",
-                                                        children: row.model
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 195,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 text-center text-foreground font-medium",
-                                                        children: row.screen
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 196,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 text-center text-foreground",
-                                                        children: row.battery
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 197,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 text-center text-foreground",
-                                                        children: row.chargingPort
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 198,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 text-center text-muted-foreground",
-                                                        children: row.time
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 199,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, row.model, true, {
-                                                fileName: "[project]/app/macon/ipad/page.tsx",
-                                                lineNumber: 194,
-                                                columnNumber: 19
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 192,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                            lineNumber: 173,
+                                            columnNumber: 43
+                                        }, this),
+                                        "Call for Free Quote"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/macon/ipad/page.tsx",
+                                    lineNumber: 173,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 182,
+                                lineNumber: 172,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 181,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-sm text-muted-foreground mt-4 text-center",
-                            children: "*Prices are estimates and may vary. Contact us for an exact quote. All repairs include a 30-day warranty."
-                        }, void 0, false, {
-                            fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 205,
+                            lineNumber: 171,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 178,
+                    lineNumber: 168,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 177,
+                lineNumber: 167,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1094,7 +923,7 @@ function IPadPage() {
                             children: "Why Choose Us for iPad Repair in Macon?"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 212,
+                            lineNumber: 182,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1102,7 +931,7 @@ function IPadPage() {
                             children: "Compare your iPad repair options and see the Tech Medics difference"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 213,
+                            lineNumber: 183,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1119,7 +948,7 @@ function IPadPage() {
                                                     children: "Feature"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 216,
+                                                    lineNumber: 186,
                                                     columnNumber: 61
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1127,7 +956,7 @@ function IPadPage() {
                                                     children: "DIY"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 216,
+                                                    lineNumber: 186,
                                                     columnNumber: 129
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1135,7 +964,7 @@ function IPadPage() {
                                                     children: "Other Shops"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 216,
+                                                    lineNumber: 186,
                                                     columnNumber: 201
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1143,18 +972,18 @@ function IPadPage() {
                                                     children: "Tech Medics"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                                    lineNumber: 216,
+                                                    lineNumber: 186,
                                                     columnNumber: 281
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 216,
+                                            lineNumber: 186,
                                             columnNumber: 22
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 216,
+                                        lineNumber: 186,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1166,7 +995,7 @@ function IPadPage() {
                                                         children: row.feature
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 219,
+                                                        lineNumber: 189,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1175,18 +1004,18 @@ function IPadPage() {
                                                             className: "h-5 w-5 text-green-600 mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                                            lineNumber: 220,
+                                                            lineNumber: 190,
                                                             columnNumber: 62
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                                             className: "h-5 w-5 text-muted-foreground mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                                            lineNumber: 220,
+                                                            lineNumber: 190,
                                                             columnNumber: 117
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 220,
+                                                        lineNumber: 190,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1195,18 +1024,18 @@ function IPadPage() {
                                                             className: "h-5 w-5 text-green-600 mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                                            lineNumber: 221,
+                                                            lineNumber: 191,
                                                             columnNumber: 69
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                                             className: "h-5 w-5 text-muted-foreground mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                                            lineNumber: 221,
+                                                            lineNumber: 191,
                                                             columnNumber: 124
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 221,
+                                                        lineNumber: 191,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1215,51 +1044,51 @@ function IPadPage() {
                                                             className: "h-5 w-5 text-primary mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                                            lineNumber: 222,
+                                                            lineNumber: 192,
                                                             columnNumber: 74
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                                             className: "h-5 w-5 text-muted-foreground mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                                            lineNumber: 222,
+                                                            lineNumber: 192,
                                                             columnNumber: 127
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                                        lineNumber: 222,
+                                                        lineNumber: 192,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, row.feature, true, {
                                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                                lineNumber: 218,
+                                                lineNumber: 188,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 217,
+                                        lineNumber: 187,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 215,
+                                lineNumber: 185,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 214,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 211,
+                    lineNumber: 181,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 210,
+                lineNumber: 180,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1272,7 +1101,7 @@ function IPadPage() {
                             children: "How iPad Repair Works at Tech Medics Macon"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 233,
+                            lineNumber: 203,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1280,7 +1109,7 @@ function IPadPage() {
                             children: "Getting your iPad fixed in Macon is simple – no appointment needed"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 234,
+                            lineNumber: 204,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1314,7 +1143,7 @@ function IPadPage() {
                                             children: s.step
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 243,
+                                            lineNumber: 213,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1322,7 +1151,7 @@ function IPadPage() {
                                             children: s.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 244,
+                                            lineNumber: 214,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1330,29 +1159,29 @@ function IPadPage() {
                                             children: s.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 245,
+                                            lineNumber: 215,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, s.step, true, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 242,
+                                    lineNumber: 212,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 235,
+                            lineNumber: 205,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 232,
+                    lineNumber: 202,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 231,
+                lineNumber: 201,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1367,7 +1196,7 @@ function IPadPage() {
                                 children: "Macon's Best iPad Repair Service – All Models, Same-Day Fix"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 256,
+                                lineNumber: 226,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1378,7 +1207,7 @@ function IPadPage() {
                                         children: "iPad repair near me in Macon, GA"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 227,
                                         columnNumber: 67
                                     }, this),
                                     "? Tech Medics Macon is your trusted local iPad repair expert. We fix ",
@@ -1386,7 +1215,7 @@ function IPadPage() {
                                         children: "cracked iPad screens"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 227,
                                         columnNumber: 185
                                     }, this),
                                     ", replace dying batteries, repair charging ports, and recover water-damaged iPads – all at our convenient ",
@@ -1394,14 +1223,14 @@ function IPadPage() {
                                         children: "3742 Eisenhower Parkway"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 227,
                                         columnNumber: 328
                                     }, this),
                                     " location."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 257,
+                                lineNumber: 227,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1409,7 +1238,7 @@ function IPadPage() {
                                 children: "iPad Screen Replacement in Macon GA – Pro, Air, Mini & Standard"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 258,
+                                lineNumber: 228,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1420,7 +1249,7 @@ function IPadPage() {
                                         children: "iPad screen replacement for every model"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 229,
                                         columnNumber: 65
                                     }, this),
                                     " including ",
@@ -1428,7 +1257,7 @@ function IPadPage() {
                                         children: "iPad Pro 12.9”"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 229,
                                         columnNumber: 132
                                     }, this),
                                     ", ",
@@ -1436,7 +1265,7 @@ function IPadPage() {
                                         children: "iPad Pro 11”"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 229,
                                         columnNumber: 171
                                     }, this),
                                     ", ",
@@ -1444,7 +1273,7 @@ function IPadPage() {
                                         children: "iPad Air"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 229,
                                         columnNumber: 208
                                     }, this),
                                     ", ",
@@ -1452,7 +1281,7 @@ function IPadPage() {
                                         children: "iPad Mini"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 229,
                                         columnNumber: 235
                                     }, this),
                                     ", and standard iPad. Our ",
@@ -1460,14 +1289,14 @@ function IPadPage() {
                                         children: "iPad screen repair in Macon"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 229,
                                         columnNumber: 286
                                     }, this),
                                     " uses high-quality digitizers and LCD panels that restore your iPad to like-new condition. Whether your iPad screen is cracked, shattered, or has touch issues – we can fix it, often the same day."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 259,
+                                lineNumber: 229,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1475,7 +1304,7 @@ function IPadPage() {
                                 children: "iPad Battery Replacement in Macon – Restore All-Day Power"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 260,
+                                lineNumber: 230,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1486,7 +1315,7 @@ function IPadPage() {
                                         children: "iPad battery drains fast"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 261,
+                                        lineNumber: 231,
                                         columnNumber: 63
                                     }, this),
                                     ", won't charge past 80%, or shows signs of swelling, you need an ",
@@ -1494,14 +1323,14 @@ function IPadPage() {
                                         children: "iPad battery replacement in Macon GA"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 261,
+                                        lineNumber: 231,
                                         columnNumber: 174
                                     }, this),
                                     ". Our technicians safely replace iPad batteries for all models, restoring the 10+ hour battery life you expect from your iPad."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 261,
+                                lineNumber: 231,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1509,7 +1338,7 @@ function IPadPage() {
                                 children: "Affordable iPad Repair – Save 30-50% vs Apple Store"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 262,
+                                lineNumber: 232,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1520,7 +1349,7 @@ function IPadPage() {
                                         children: "iPad repair at 30-50% lower prices"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 263,
+                                        lineNumber: 233,
                                         columnNumber: 146
                                     }, this),
                                     "? Our ",
@@ -1528,7 +1357,7 @@ function IPadPage() {
                                         children: "iPad screen repair costs in Macon"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 263,
+                                        lineNumber: 233,
                                         columnNumber: 203
                                     }, this),
                                     " start at just $99, and every repair comes with a warranty. We serve all of ",
@@ -1536,30 +1365,30 @@ function IPadPage() {
                                         children: "Macon, Warner Robins, Byron, Perry, Forsyth"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 263,
+                                        lineNumber: 233,
                                         columnNumber: 329
                                     }, this),
                                     ", and surrounding Central Georgia communities."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 263,
+                                lineNumber: 233,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/macon/ipad/page.tsx",
-                        lineNumber: 255,
+                        lineNumber: 225,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 254,
+                    lineNumber: 224,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 253,
+                lineNumber: 223,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1572,7 +1401,7 @@ function IPadPage() {
                             children: "Need iPad Repair in Macon GA? Get It Fixed Today"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 271,
+                            lineNumber: 241,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1580,7 +1409,7 @@ function IPadPage() {
                             children: "Walk in to 3742 Eisenhower Parkway, Macon, GA 31206 – no appointment needed"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 272,
+                            lineNumber: 242,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1597,19 +1426,19 @@ function IPadPage() {
                                                 className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                                lineNumber: 274,
+                                                lineNumber: 244,
                                                 columnNumber: 147
                                             }, this),
                                             "Call (478) 259-6371"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 274,
+                                        lineNumber: 244,
                                         columnNumber: 119
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 274,
+                                    lineNumber: 244,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -1626,36 +1455,36 @@ function IPadPage() {
                                                 className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                                lineNumber: 275,
+                                                lineNumber: 245,
                                                 columnNumber: 217
                                             }, this),
                                             "Get Directions"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 275,
+                                        lineNumber: 245,
                                         columnNumber: 91
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 275,
+                                    lineNumber: 245,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 273,
+                            lineNumber: 243,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 270,
+                    lineNumber: 240,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 269,
+                lineNumber: 239,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1668,7 +1497,7 @@ function IPadPage() {
                             children: "iPad Repair Guides & Resources"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 283,
+                            lineNumber: 253,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1698,7 +1527,7 @@ function IPadPage() {
                                             children: p.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 291,
+                                            lineNumber: 261,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1706,18 +1535,18 @@ function IPadPage() {
                                             children: p.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 292,
+                                            lineNumber: 262,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, p.href, true, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 290,
+                                    lineNumber: 260,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 284,
+                            lineNumber: 254,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1728,23 +1557,23 @@ function IPadPage() {
                                 children: "View All Repair Guides →"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/ipad/page.tsx",
-                                lineNumber: 296,
+                                lineNumber: 266,
                                 columnNumber: 40
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 296,
+                            lineNumber: 266,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 282,
+                    lineNumber: 252,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 281,
+                lineNumber: 251,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1757,7 +1586,7 @@ function IPadPage() {
                             children: "Other Apple Device Repair Services in Macon"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 303,
+                            lineNumber: 273,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1772,21 +1601,21 @@ function IPadPage() {
                                             children: "iPhone Repair in Macon"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 305,
+                                            lineNumber: 275,
                                             columnNumber: 130
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-muted-foreground",
-                                            children: "Screen repair from $79, battery replacement & more for all iPhone models"
+                                            children: "Screen repair, battery replacement & more for all iPhone models"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 305,
+                                            lineNumber: 275,
                                             columnNumber: 212
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 305,
+                                    lineNumber: 275,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1798,7 +1627,7 @@ function IPadPage() {
                                             children: "MacBook Repair in Macon"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 306,
+                                            lineNumber: 276,
                                             columnNumber: 131
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1806,30 +1635,30 @@ function IPadPage() {
                                             children: "Expert MacBook repairs – screen, keyboard, battery & logic board for Air & Pro"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/ipad/page.tsx",
-                                            lineNumber: 306,
+                                            lineNumber: 276,
                                             columnNumber: 214
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 306,
+                                    lineNumber: 276,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 304,
+                            lineNumber: 274,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 302,
+                    lineNumber: 272,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 301,
+                lineNumber: 271,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1842,7 +1671,7 @@ function IPadPage() {
                             children: "Serving All Macon Neighborhoods & Nearby Cities"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 314,
+                            lineNumber: 284,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1863,28 +1692,28 @@ function IPadPage() {
                                         children: n
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/ipad/page.tsx",
-                                        lineNumber: 317,
+                                        lineNumber: 287,
                                         columnNumber: 185
                                     }, this)
                                 }, n, false, {
                                     fileName: "[project]/app/macon/ipad/page.tsx",
-                                    lineNumber: 317,
+                                    lineNumber: 287,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/ipad/page.tsx",
-                            lineNumber: 315,
+                            lineNumber: 285,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/ipad/page.tsx",
-                    lineNumber: 313,
+                    lineNumber: 283,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/ipad/page.tsx",
-                lineNumber: 312,
+                lineNumber: 282,
                 columnNumber: 7
             }, this)
         ]

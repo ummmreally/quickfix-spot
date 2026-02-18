@@ -1,6 +1,5 @@
 var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/macon/page.js")
-R.c("server/chunks/ssr/[root-of-the-server]__1524374b._.js")
-R.c("server/chunks/ssr/app_macon_page_tsx_6e9d8381._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__5087bb1e._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_4b63a0e1._.js")
 R.c("server/chunks/ssr/_a8890f91._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__8df684dd._.js")

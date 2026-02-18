@@ -156,31 +156,31 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$FAQSect
 ;
 ;
 const metadata = {
-    title: "MacBook Repair Macon GA | Screen & Keyboard Fix $299+ | (478) 259-6371",
-    description: "#1 MacBook repair in Macon GA. Screen replacement from $299, keyboard repair, battery service, logic board fix. MacBook Air & Pro – M1, M2, M3, Intel. Same-day service at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+    title: "MacBook Repair Macon GA | Screen & Keyboard Fix competitive pricing | (478) 259-6371",
+    description: "Macon GA's top MacBook repair shop – 2026 models ready. MacBook Air M4, Pro M4 Pro/Max screen replacement Call for quote, keyboard repair, battery service. Same-day turnaround at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
     keywords: [
         "MacBook repair Macon GA",
         "MacBook screen repair Macon",
         "MacBook screen replacement Macon GA",
         "MacBook keyboard repair Macon",
         "MacBook battery replacement Macon GA",
-        "MacBook Air repair Macon",
-        "MacBook Pro repair Macon",
+        "MacBook Air M4 repair Macon",
+        "MacBook Pro M4 repair Macon",
         "MacBook logic board repair Macon",
         "MacBook repair near me Macon",
         "MacBook not turning on Macon",
         "laptop repair Macon GA",
         "Apple laptop repair Macon",
-        "MacBook M1 M2 repair Macon",
-        "best MacBook repair Macon Georgia",
+        "MacBook M4 M3 M2 repair Macon",
+        "best MacBook repair Macon Georgia 2026",
         "same day MacBook repair Macon GA"
     ],
     alternates: {
         canonical: "https://techmedicsmacon.com/macon/macbook"
     },
     openGraph: {
-        title: "MacBook Repair Macon GA | Screen, Keyboard & Battery Fix from $299",
-        description: "Macon's #1 MacBook repair shop. Screen replacement $299+, keyboard repair, battery service. MacBook Air & Pro. Same-day service.",
+        title: "MacBook Repair Macon GA | Screen, Keyboard & Battery Fix Call for quote",
+        description: "Macon's #1 MacBook repair shop. Screen replacement competitive pricing, keyboard repair, battery service. MacBook Air & Pro. Same-day service.",
         url: "https://techmedicsmacon.com/macon/macbook",
         images: [
             {
@@ -222,7 +222,7 @@ const serviceSchema = {
     "@id": "https://techmedicsmacon.com/macon/macbook#service",
     serviceType: "MacBook Repair",
     name: "MacBook Repair Service in Macon GA",
-    description: "Professional MacBook screen replacement, keyboard repair, battery service, and logic board diagnostics for all MacBook Air and Pro models in Macon, Georgia.",
+    description: "Professional MacBook screen replacement, keyboard repair, battery service, and logic board diagnostics. MacBook Air M4, Pro M4 Pro/Max, and all older models serviced same-day in Macon, Georgia.",
     provider: {
         "@type": "LocalBusiness",
         "@id": "https://techmedicsmacon.com/#business",
@@ -272,7 +272,7 @@ const serviceSchema = {
                 itemOffered: {
                     "@type": "Service",
                     name: "MacBook Screen Replacement",
-                    description: "MacBook Air and Pro Retina screen replacement for all models"
+                    description: "MacBook Air M4, Pro M4 Pro/Max, and all older model Retina screen replacement"
                 },
                 priceSpecification: {
                     "@type": "UnitPriceSpecification",
@@ -327,23 +327,23 @@ const serviceSchema = {
 const faqs = [
     {
         question: "How much does MacBook screen repair cost in Macon GA?",
-        answer: "MacBook screen repair starts at $299 for MacBook Air models. MacBook Pro screen replacements range from $399-$699 depending on the model and year. Call (478) 259-6371 for an exact quote."
+        answer: "MacBook screen repair costs vary by model and display size. Call (478) 259-6371 for a free quote for your specific MacBook."
     },
     {
         question: "Can you fix MacBook keyboard issues?",
-        answer: "Yes! We repair butterfly and Magic Keyboard issues including sticky keys, unresponsive keys, and complete keyboard replacements for all MacBook models."
+        answer: "Yes! We repair butterfly and Magic Keyboard issues including sticky keys, liquid damage, and complete keyboard replacements. We service the latest MacBook Air M4 and MacBook Pro M4 keyboards as well as all older models."
     },
     {
         question: "How long does MacBook repair take?",
-        answer: "Most MacBook repairs take 2-4 hours. Screen replacements and battery swaps are often same-day. Logic board repairs may take 1-3 business days."
+        answer: "Most MacBook screen and battery repairs are same-day. Apple Silicon models (M1-M4) typically take 2-4 hours. Logic board component-level repair may take 1-3 business days depending on complexity."
     },
     {
-        question: "Do you repair MacBook Air and MacBook Pro?",
-        answer: "Yes! We repair all MacBook models including MacBook Air (M1, M2, M3), MacBook Pro (13\", 14\", 16\"), and older Intel models."
+        question: "Do you repair the new MacBook Air M4 and MacBook Pro M4?",
+        answer: "Yes! We stock parts for every 2026 MacBook model: MacBook Air M4 (13\" and 15\"), MacBook Pro M4, M4 Pro, and M4 Max (14\" and 16\"), plus all M3, M2, M1, and Intel models."
     },
     {
         question: "Can you fix a MacBook that won't turn on?",
-        answer: "Yes! We diagnose and repair MacBooks that won't power on, including logic board issues, battery failures, and power connector problems."
+        answer: "Absolutely. We diagnose dead MacBooks using component-level board diagnostics. Common causes include liquid damage, failed power ICs, dead batteries, and corroded connectors — we fix them all."
     }
 ];
 const faqSchema = {
@@ -358,64 +358,6 @@ const faqSchema = {
             }
         }))
 };
-const pricingData = [
-    {
-        model: "MacBook Air (Intel)",
-        screen: "$299",
-        battery: "$149",
-        keyboard: "$199",
-        time: "2-4 hrs"
-    },
-    {
-        model: "MacBook Air M1",
-        screen: "$349",
-        battery: "$169",
-        keyboard: "$229",
-        time: "2-4 hrs"
-    },
-    {
-        model: "MacBook Air M2",
-        screen: "$399",
-        battery: "$179",
-        keyboard: "$249",
-        time: "2-4 hrs"
-    },
-    {
-        model: "MacBook Air M3",
-        screen: "$449",
-        battery: "$189",
-        keyboard: "$269",
-        time: "Same day"
-    },
-    {
-        model: 'MacBook Pro 13" (Intel)',
-        screen: "$399",
-        battery: "$179",
-        keyboard: "$249",
-        time: "2-4 hrs"
-    },
-    {
-        model: 'MacBook Pro 13" M1/M2',
-        screen: "$449",
-        battery: "$189",
-        keyboard: "$269",
-        time: "Same day"
-    },
-    {
-        model: 'MacBook Pro 14"',
-        screen: "$549",
-        battery: "$199",
-        keyboard: "$299",
-        time: "Same day"
-    },
-    {
-        model: 'MacBook Pro 16"',
-        screen: "$699",
-        battery: "$219",
-        keyboard: "$349",
-        time: "1-2 days"
-    }
-];
 const comparisonData = [
     {
         feature: "Warranty Included",
@@ -448,7 +390,7 @@ const comparisonData = [
         us: true
     },
     {
-        feature: "M1/M2/M3 Expertise",
+        feature: "M1/M2/M3/M4 Expertise",
         diy: false,
         competitor: false,
         us: true
@@ -476,7 +418,7 @@ function MacBookPage() {
                 }
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 97,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -486,7 +428,7 @@ function MacBookPage() {
                 }
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 98,
+                lineNumber: 88,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -496,7 +438,7 @@ function MacBookPage() {
                 }
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 99,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -512,19 +454,19 @@ function MacBookPage() {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 103,
+                                lineNumber: 93,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 103,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: "/"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 103,
+                            lineNumber: 93,
                             columnNumber: 77
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -534,19 +476,19 @@ function MacBookPage() {
                                 children: "Macon"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 104,
+                                lineNumber: 94,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 104,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: "/"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 104,
+                            lineNumber: 94,
                             columnNumber: 91
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -554,18 +496,18 @@ function MacBookPage() {
                             children: "MacBook Repair"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 105,
+                            lineNumber: 95,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 102,
+                    lineNumber: 92,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 101,
+                lineNumber: 91,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -582,15 +524,15 @@ function MacBookPage() {
                                         children: "MacBook Repair in Macon, GA"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-xl text-muted-foreground mb-8",
-                                        children: "Expert MacBook repair for Air & Pro models. Screen replacement, keyboard repair, battery service, logic board diagnostics, and more. Fast turnaround at 3742 Eisenhower Parkway."
+                                        children: "MacBook Air M4, Pro M4 Pro/Max & every older model — Retina display replacement Call for quote, keyboard repair, battery service, logic board diagnostics. Same-day turnaround at 3742 Eisenhower Parkway."
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 104,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -604,25 +546,25 @@ function MacBookPage() {
                                                     className: "mr-2 h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 106,
                                                     columnNumber: 45
                                                 }, this),
                                                 "Call Now for Quote"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 106,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 112,
+                                lineNumber: 102,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -637,28 +579,28 @@ function MacBookPage() {
                                     decoding: "async"
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 110,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 119,
+                                lineNumber: 109,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/macon/macbook/page.tsx",
-                        lineNumber: 111,
+                        lineNumber: 101,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 110,
+                    lineNumber: 100,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 109,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -671,7 +613,7 @@ function MacBookPage() {
                             children: "MacBook Repair Services in Macon, GA"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 128,
+                            lineNumber: 118,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -709,7 +651,7 @@ function MacBookPage() {
                                             children: s.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 139,
+                                            lineNumber: 129,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -717,18 +659,18 @@ function MacBookPage() {
                                             children: s.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 130,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, s.title, true, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 138,
+                                    lineNumber: 128,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 129,
+                            lineNumber: 119,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -739,7 +681,7 @@ function MacBookPage() {
                                     children: "MacBook Models We Service"
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -760,34 +702,34 @@ function MacBookPage() {
                                                 children: m
                                             }, void 0, false, {
                                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                                lineNumber: 148,
+                                                lineNumber: 138,
                                                 columnNumber: 98
                                             }, this)
                                         }, m, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 138,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 146,
+                                    lineNumber: 136,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 144,
+                            lineNumber: 134,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 127,
+                    lineNumber: 117,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 126,
+                lineNumber: 116,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$FAQSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -795,7 +737,7 @@ function MacBookPage() {
                 faqs: faqs
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 155,
+                lineNumber: 145,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -808,7 +750,7 @@ function MacBookPage() {
                             children: "What Our Customers Say"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 159,
+                            lineNumber: 149,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -816,7 +758,7 @@ function MacBookPage() {
                             children: "Real reviews from MacBook repair customers"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 160,
+                            lineNumber: 150,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -848,12 +790,12 @@ function MacBookPage() {
                                                     className: "h-5 w-5 fill-primary text-primary"
                                                 }, j, false, {
                                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 168,
+                                                    lineNumber: 158,
                                                     columnNumber: 92
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 168,
+                                            lineNumber: 158,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -865,7 +807,7 @@ function MacBookPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 169,
+                                            lineNumber: 159,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -876,7 +818,7 @@ function MacBookPage() {
                                                     children: t.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 170,
+                                                    lineNumber: 160,
                                                     columnNumber: 62
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -884,213 +826,100 @@ function MacBookPage() {
                                                     children: t.service
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 170,
+                                                    lineNumber: 160,
                                                     columnNumber: 119
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 170,
+                                            lineNumber: 160,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 167,
+                                    lineNumber: 157,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 161,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 158,
+                    lineNumber: 148,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 157,
+                lineNumber: 147,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "py-20 px-4 bg-secondary/20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto",
+                    className: "max-w-4xl mx-auto text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-3xl md:text-4xl font-bold text-center mb-4 text-foreground",
-                            children: "MacBook Repair Cost in Macon, GA – Transparent Pricing"
+                            className: "text-3xl md:text-4xl font-bold mb-4 text-foreground",
+                            children: "Affordable MacBook Repair Pricing"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 180,
+                            lineNumber: 170,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-center text-muted-foreground mb-12 max-w-3xl mx-auto",
-                            children: [
-                                "How much does MacBook screen repair cost? See our prices below – save 30-50% vs Apple Store. Call ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "tel:(478)259-6371",
-                                    className: "text-primary font-semibold",
-                                    children: "(478) 259-6371"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 181,
-                                    columnNumber: 182
-                                }, this),
-                                " for an exact quote."
-                            ]
-                        }, void 0, true, {
+                            className: "text-xl text-muted-foreground mb-8",
+                            children: "We offer competitive pricing for all MacBook models. Every repair includes a 30-day warranty and expert service."
+                        }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 181,
+                            lineNumber: 171,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "overflow-x-auto",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
-                                className: "w-full border-collapse bg-card rounded-lg overflow-hidden",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                            className: "border-b border-border bg-primary text-primary-foreground",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-left p-4 font-bold",
-                                                    children: "MacBook Model"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 186,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-center p-4 font-bold",
-                                                    children: "Screen Repair"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 187,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-center p-4 font-bold",
-                                                    children: "Battery"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 188,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-center p-4 font-bold",
-                                                    children: "Keyboard"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 189,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                    className: "text-center p-4 font-bold",
-                                                    children: "Repair Time"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 190,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                            className: "flex flex-col sm:flex-row gap-4 justify-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
+                                asChild: true,
+                                size: "lg",
+                                className: "bg-primary hover:bg-primary/90 text-primary-foreground",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "tel:(478)259-6371",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                            className: "mr-2 h-5 w-5"
+                                        }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 185,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 184,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
-                                        children: pricingData.map((row)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                                className: "border-b border-border last:border-0 hover:bg-secondary/30",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 font-semibold text-foreground",
-                                                        children: row.model
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 196,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 text-center text-foreground font-medium",
-                                                        children: row.screen
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 197,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 text-center text-foreground",
-                                                        children: row.battery
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 198,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 text-center text-foreground",
-                                                        children: row.keyboard
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 199,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "p-4 text-center text-muted-foreground",
-                                                        children: row.time
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 200,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, row.model, true, {
-                                                fileName: "[project]/app/macon/macbook/page.tsx",
-                                                lineNumber: 195,
-                                                columnNumber: 19
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 193,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                            lineNumber: 174,
+                                            columnNumber: 43
+                                        }, this),
+                                        "Call for Free Quote"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/macon/macbook/page.tsx",
+                                    lineNumber: 174,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 183,
+                                lineNumber: 173,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 182,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-sm text-muted-foreground mt-4 text-center",
-                            children: "*Prices are estimates and may vary. Logic board repair quoted on diagnosis. All repairs include a 30-day warranty."
-                        }, void 0, false, {
-                            fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 206,
+                            lineNumber: 172,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 179,
+                    lineNumber: 169,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 178,
+                lineNumber: 168,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1103,7 +932,7 @@ function MacBookPage() {
                             children: "Why Choose Us for MacBook Repair in Macon?"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 213,
+                            lineNumber: 183,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1111,7 +940,7 @@ function MacBookPage() {
                             children: "Compare your MacBook repair options and see the Tech Medics difference"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 214,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1128,7 +957,7 @@ function MacBookPage() {
                                                     children: "Feature"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 217,
+                                                    lineNumber: 187,
                                                     columnNumber: 61
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1136,7 +965,7 @@ function MacBookPage() {
                                                     children: "DIY"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 217,
+                                                    lineNumber: 187,
                                                     columnNumber: 129
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1144,7 +973,7 @@ function MacBookPage() {
                                                     children: "Other Shops"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 217,
+                                                    lineNumber: 187,
                                                     columnNumber: 201
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1152,18 +981,18 @@ function MacBookPage() {
                                                     children: "Tech Medics"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                                    lineNumber: 217,
+                                                    lineNumber: 187,
                                                     columnNumber: 281
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 217,
+                                            lineNumber: 187,
                                             columnNumber: 22
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 217,
+                                        lineNumber: 187,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1175,7 +1004,7 @@ function MacBookPage() {
                                                         children: row.feature
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 220,
+                                                        lineNumber: 190,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1184,18 +1013,18 @@ function MacBookPage() {
                                                             className: "h-5 w-5 text-green-600 mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                                            lineNumber: 221,
+                                                            lineNumber: 191,
                                                             columnNumber: 62
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                                             className: "h-5 w-5 text-muted-foreground mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                                            lineNumber: 221,
+                                                            lineNumber: 191,
                                                             columnNumber: 117
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 221,
+                                                        lineNumber: 191,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1204,18 +1033,18 @@ function MacBookPage() {
                                                             className: "h-5 w-5 text-green-600 mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                                            lineNumber: 222,
+                                                            lineNumber: 192,
                                                             columnNumber: 69
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                                             className: "h-5 w-5 text-muted-foreground mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                                            lineNumber: 222,
+                                                            lineNumber: 192,
                                                             columnNumber: 124
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 222,
+                                                        lineNumber: 192,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1224,51 +1053,51 @@ function MacBookPage() {
                                                             className: "h-5 w-5 text-primary mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                                            lineNumber: 223,
+                                                            lineNumber: 193,
                                                             columnNumber: 74
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                                             className: "h-5 w-5 text-muted-foreground mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                                            lineNumber: 223,
+                                                            lineNumber: 193,
                                                             columnNumber: 127
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                                        lineNumber: 223,
+                                                        lineNumber: 193,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, row.feature, true, {
                                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                                lineNumber: 219,
+                                                lineNumber: 189,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 218,
+                                        lineNumber: 188,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 216,
+                                lineNumber: 186,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 215,
+                            lineNumber: 185,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 212,
+                    lineNumber: 182,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 211,
+                lineNumber: 181,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1281,7 +1110,7 @@ function MacBookPage() {
                             children: "How MacBook Repair Works at Tech Medics Macon"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 234,
+                            lineNumber: 204,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1289,7 +1118,7 @@ function MacBookPage() {
                             children: "Getting your MacBook fixed in Macon is straightforward – no appointment needed"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 235,
+                            lineNumber: 205,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1323,7 +1152,7 @@ function MacBookPage() {
                                             children: s.step
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 244,
+                                            lineNumber: 214,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1331,7 +1160,7 @@ function MacBookPage() {
                                             children: s.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 245,
+                                            lineNumber: 215,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1339,29 +1168,29 @@ function MacBookPage() {
                                             children: s.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 246,
+                                            lineNumber: 216,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, s.step, true, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 243,
+                                    lineNumber: 213,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 236,
+                            lineNumber: 206,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 233,
+                    lineNumber: 203,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 232,
+                lineNumber: 202,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1376,7 +1205,7 @@ function MacBookPage() {
                                 children: "Macon's Most Trusted MacBook Repair Shop"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 257,
+                                lineNumber: 227,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1387,7 +1216,7 @@ function MacBookPage() {
                                         children: "MacBook repair near me in Macon, GA"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 228,
                                         columnNumber: 67
                                     }, this),
                                     "? Tech Medics Macon is Central Georgia's premier MacBook repair shop, offering expert ",
@@ -1395,7 +1224,7 @@ function MacBookPage() {
                                         children: "MacBook screen replacement"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 228,
                                         columnNumber: 210
                                     }, this),
                                     ", ",
@@ -1403,7 +1232,7 @@ function MacBookPage() {
                                         children: "keyboard repair"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 228,
                                         columnNumber: 255
                                     }, this),
                                     ", ",
@@ -1411,7 +1240,7 @@ function MacBookPage() {
                                         children: "battery replacement"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 228,
                                         columnNumber: 289
                                     }, this),
                                     ", and ",
@@ -1419,14 +1248,14 @@ function MacBookPage() {
                                         children: "logic board diagnostics"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 228,
                                         columnNumber: 331
                                     }, this),
                                     " for all MacBook Air and MacBook Pro models."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 258,
+                                lineNumber: 228,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1434,7 +1263,7 @@ function MacBookPage() {
                                 children: "MacBook Screen Repair in Macon GA – Air & Pro Models"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 259,
+                                lineNumber: 229,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1445,7 +1274,7 @@ function MacBookPage() {
                                         children: "MacBook screen"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 230,
                                         columnNumber: 76
                                     }, this),
                                     " doesn't mean you need a new laptop. Our ",
@@ -1453,7 +1282,7 @@ function MacBookPage() {
                                         children: "MacBook screen replacement service in Macon"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 230,
                                         columnNumber: 153
                                     }, this),
                                     " covers all models from older Intel MacBooks to the latest ",
@@ -1461,7 +1290,7 @@ function MacBookPage() {
                                         children: "MacBook Air M3"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 230,
                                         columnNumber: 272
                                     }, this),
                                     " and ",
@@ -1469,7 +1298,7 @@ function MacBookPage() {
                                         children: "MacBook Pro 14” and 16”"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 230,
                                         columnNumber: 308
                                     }, this),
                                     ". We replace Retina displays with high-quality panels that match Apple's specifications. ",
@@ -1477,14 +1306,14 @@ function MacBookPage() {
                                         children: "MacBook screen repair costs in Macon"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 230,
                                         columnNumber: 454
                                     }, this),
                                     " start at $299 – that's 30-50% less than Apple Store pricing."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 260,
+                                lineNumber: 230,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1492,7 +1321,7 @@ function MacBookPage() {
                                 children: "MacBook Keyboard Repair in Macon – Butterfly & Magic Keyboard"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 261,
+                                lineNumber: 231,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1503,7 +1332,7 @@ function MacBookPage() {
                                         children: "MacBook keyboard problems"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 262,
+                                        lineNumber: 232,
                                         columnNumber: 105
                                     }, this),
                                     " are one of the most common issues we fix. Whether you have a butterfly keyboard MacBook or a newer Magic Keyboard model, our technicians perform full ",
@@ -1511,14 +1340,14 @@ function MacBookPage() {
                                         children: "MacBook keyboard repair and replacement in Macon GA"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 262,
+                                        lineNumber: 232,
                                         columnNumber: 298
                                     }, this),
                                     ". We also fix trackpad issues, USB-C port problems, and speaker malfunctions."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 262,
+                                lineNumber: 232,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1526,7 +1355,7 @@ function MacBookPage() {
                                 children: "MacBook Battery & Logic Board Repair in Macon"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 263,
+                                lineNumber: 233,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1537,7 +1366,7 @@ function MacBookPage() {
                                         children: "MacBook battery is swelling"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 264,
+                                        lineNumber: 234,
                                         columnNumber: 63
                                     }, this),
                                     ", draining fast, or your MacBook won't turn on, we can help. Our ",
@@ -1545,7 +1374,7 @@ function MacBookPage() {
                                         children: "MacBook battery replacement service in Macon"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 264,
+                                        lineNumber: 234,
                                         columnNumber: 177
                                     }, this),
                                     " restores portable performance for all models. For more complex issues, we offer ",
@@ -1553,14 +1382,14 @@ function MacBookPage() {
                                         children: "component-level logic board repair"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 264,
+                                        lineNumber: 234,
                                         columnNumber: 319
                                     }, this),
                                     " – diagnosing and fixing power issues, random shutdowns, and no-boot problems that other shops can't handle."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 264,
+                                lineNumber: 234,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1568,7 +1397,7 @@ function MacBookPage() {
                                 children: "Save Money on MacBook Repair in Macon vs Apple Store"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 265,
+                                lineNumber: 235,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1579,7 +1408,7 @@ function MacBookPage() {
                                         children: "MacBook repair at significantly lower prices"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 266,
+                                        lineNumber: 236,
                                         columnNumber: 149
                                     }, this),
                                     ", with faster turnaround. Every repair comes with a warranty. We proudly serve all of ",
@@ -1587,30 +1416,30 @@ function MacBookPage() {
                                         children: "Macon, Warner Robins, Byron, Perry, Forsyth"
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 266,
+                                        lineNumber: 236,
                                         columnNumber: 296
                                     }, this),
                                     ", and surrounding Central Georgia communities."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 266,
+                                lineNumber: 236,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/macon/macbook/page.tsx",
-                        lineNumber: 256,
+                        lineNumber: 226,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 255,
+                    lineNumber: 225,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 254,
+                lineNumber: 224,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1623,7 +1452,7 @@ function MacBookPage() {
                             children: "Need MacBook Repair in Macon GA? Get It Fixed Today"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 274,
+                            lineNumber: 244,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1631,7 +1460,7 @@ function MacBookPage() {
                             children: "Walk in to 3742 Eisenhower Parkway, Macon, GA 31206 – no appointment needed"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 275,
+                            lineNumber: 245,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1648,19 +1477,19 @@ function MacBookPage() {
                                                 className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                                lineNumber: 277,
+                                                lineNumber: 247,
                                                 columnNumber: 147
                                             }, this),
                                             "Call (478) 259-6371"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 277,
+                                        lineNumber: 247,
                                         columnNumber: 119
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 277,
+                                    lineNumber: 247,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -1677,36 +1506,36 @@ function MacBookPage() {
                                                 className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                                lineNumber: 278,
+                                                lineNumber: 248,
                                                 columnNumber: 217
                                             }, this),
                                             "Get Directions"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 278,
+                                        lineNumber: 248,
                                         columnNumber: 91
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 278,
+                                    lineNumber: 248,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 276,
+                            lineNumber: 246,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 273,
+                    lineNumber: 243,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 272,
+                lineNumber: 242,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1719,7 +1548,7 @@ function MacBookPage() {
                             children: "MacBook Repair Guides & Resources"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 286,
+                            lineNumber: 256,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1749,7 +1578,7 @@ function MacBookPage() {
                                             children: p.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 294,
+                                            lineNumber: 264,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1757,18 +1586,18 @@ function MacBookPage() {
                                             children: p.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 295,
+                                            lineNumber: 265,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, p.href, true, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 293,
+                                    lineNumber: 263,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 287,
+                            lineNumber: 257,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1779,23 +1608,23 @@ function MacBookPage() {
                                 children: "View All Repair Guides →"
                             }, void 0, false, {
                                 fileName: "[project]/app/macon/macbook/page.tsx",
-                                lineNumber: 299,
+                                lineNumber: 269,
                                 columnNumber: 40
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 299,
+                            lineNumber: 269,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 285,
+                    lineNumber: 255,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 284,
+                lineNumber: 254,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1808,7 +1637,7 @@ function MacBookPage() {
                             children: "Other Apple Device Repair Services in Macon"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 306,
+                            lineNumber: 276,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1823,21 +1652,21 @@ function MacBookPage() {
                                             children: "iPhone Repair in Macon"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 308,
+                                            lineNumber: 278,
                                             columnNumber: 130
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-muted-foreground",
-                                            children: "Screen repair from $79, battery replacement & more for all iPhone models"
+                                            children: "Screen repair, battery replacement & more for all iPhone models"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 308,
+                                            lineNumber: 278,
                                             columnNumber: 212
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 308,
+                                    lineNumber: 278,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1849,38 +1678,38 @@ function MacBookPage() {
                                             children: "iPad Repair in Macon"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 309,
+                                            lineNumber: 279,
                                             columnNumber: 128
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-muted-foreground",
-                                            children: "Screen replacement from $99, glass repair & battery service for all iPads"
+                                            children: "Screen replacement Call for quote, glass repair & battery service for all iPads"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/macbook/page.tsx",
-                                            lineNumber: 309,
+                                            lineNumber: 279,
                                             columnNumber: 208
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 309,
+                                    lineNumber: 279,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 307,
+                            lineNumber: 277,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 305,
+                    lineNumber: 275,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 304,
+                lineNumber: 274,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1893,7 +1722,7 @@ function MacBookPage() {
                             children: "Serving All Macon Neighborhoods & Nearby Cities"
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 317,
+                            lineNumber: 287,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1914,28 +1743,28 @@ function MacBookPage() {
                                         children: n
                                     }, void 0, false, {
                                         fileName: "[project]/app/macon/macbook/page.tsx",
-                                        lineNumber: 320,
+                                        lineNumber: 290,
                                         columnNumber: 185
                                     }, this)
                                 }, n, false, {
                                     fileName: "[project]/app/macon/macbook/page.tsx",
-                                    lineNumber: 320,
+                                    lineNumber: 290,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/macon/macbook/page.tsx",
-                            lineNumber: 318,
+                            lineNumber: 288,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/macon/macbook/page.tsx",
-                    lineNumber: 316,
+                    lineNumber: 286,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/macon/macbook/page.tsx",
-                lineNumber: 315,
+                lineNumber: 285,
                 columnNumber: 7
             }, this)
         ]

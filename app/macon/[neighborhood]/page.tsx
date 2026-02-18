@@ -115,9 +115,9 @@ export default async function NeighborhoodPage({ params }: { params: Promise<{ n
           <p className="text-center text-muted-foreground mb-12 text-lg">iPhone 16e, iPad Pro M4, MacBook Air M4 &amp; every older model — all serviced same-day</p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { href: "/macon/iphone", img: "/images/iphone-repair.jpg", title: "iPhone Repair", desc: "Screen fix from $79" },
-              { href: "/macon/macbook", img: "/images/macbook-repair.jpg", title: "MacBook Repair", desc: "Display from $299" },
-              { href: "/macon/ipad", img: "/images/ipad-repair.jpg", title: "iPad Repair", desc: "Screen from $99" },
+              { href: "/macon/iphone", img: "/images/iphone-repair.jpg", title: "iPhone Repair", desc: "Screen & battery repair" },
+              { href: "/macon/macbook", img: "/images/macbook-repair.jpg", title: "MacBook Repair", desc: "Screen & keyboard repair" },
+              { href: "/macon/ipad", img: "/images/ipad-repair.jpg", title: "iPad Repair", desc: "Screen & battery service" },
             ].map((svc) => (
               <Link key={svc.href} href={svc.href} className="block">
                 <Card className="overflow-hidden border-border bg-card hover:shadow-lg transition-all duration-300 cursor-pointer">

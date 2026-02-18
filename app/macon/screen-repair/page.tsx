@@ -6,13 +6,13 @@ import { Card } from "@/components/ui/card";
 import FAQSection from "../../components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Screen Repair Macon GA | iPhone, iPad & MacBook | Same-Day $79+ | (478) 259-6371",
-  description: "Cracked screen? Tech Medics Macon fixes iPhone, iPad & MacBook screens same-day from $79. 30-minute service, no appointment needed. Walk-ins at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+  title: "Screen Repair Macon GA | iPhone, iPad & MacBook | Same-Day Service | (478) 259-6371",
+  description: "Cracked screen? Tech Medics Macon fixes iPhone, iPad & MacBook screens same-day. 30-minute service, no appointment needed. Walk-ins at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
   keywords: ["screen repair Macon GA", "cracked screen repair Macon", "phone screen repair near me", "screen replacement Macon GA", "broken screen fix Macon", "iPhone screen repair Macon", "iPad screen repair Macon", "MacBook screen repair Macon", "same day screen repair Macon", "cheap screen repair Macon GA"],
   alternates: { canonical: "https://techmedicsmacon.com/macon/screen-repair" },
   openGraph: {
     title: "Screen Repair Macon GA | iPhone, iPad & MacBook Screens Fixed Same-Day",
-    description: "Macon's #1 screen repair shop. iPhone from $79, iPad from $99, MacBook from $299. 30-min service, walk-ins welcome.",
+    description: "Macon's #1 screen repair shop. iPhone, iPad & MacBook screens repaired same-day. 30-min service, walk-ins welcome.",
     url: "https://techmedicsmacon.com/macon/screen-repair",
   },
 };
@@ -33,7 +33,7 @@ const serviceSchema = {
   "@id": "https://techmedicsmacon.com/macon/screen-repair#service",
   serviceType: "Screen Repair",
   name: "Screen Repair Service in Macon GA",
-  description: "Professional screen repair for iPhone, iPad, and MacBook devices in Macon, Georgia. Same-day cracked screen replacement starting at $79.",
+  description: "Professional screen repair for iPhone, iPad, and MacBook devices in Macon, Georgia. Same-day cracked screen replacement.",
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://techmedicsmacon.com/#business",
@@ -70,30 +70,6 @@ const faqData = [
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqData.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
 
-const pricingData = [
-  { device: "iPhone 8 / SE", price: "$79", time: "30 min" },
-  { device: "iPhone X / XR / XS", price: "$99", time: "30 min" },
-  { device: "iPhone 11", price: "$109", time: "30 min" },
-  { device: "iPhone 12 / Mini", price: "$119", time: "30 min" },
-  { device: "iPhone 13 / Mini", price: "$149", time: "30-45 min" },
-  { device: "iPhone 14", price: "$179", time: "30-45 min" },
-  { device: "iPhone 14 Pro / Max", price: "$229", time: "45 min" },
-  { device: "iPhone 15", price: "$199", time: "45 min" },
-  { device: "iPhone 15 Pro / Max", price: "$279", time: "45 min" },
-  { device: "iPhone 16", price: "$249", time: "45 min" },
-  { device: "iPhone 16 Pro / Max", price: "$329", time: "45-60 min" },
-  { device: "iPhone 16e", price: "$199", time: "45 min" },
-  { device: "iPad (Standard)", price: "$99", time: "45-60 min" },
-  { device: "iPad Mini", price: "$119", time: "45-60 min" },
-  { device: "iPad Air", price: "$149", time: "60 min" },
-  { device: "iPad Pro 11\"", price: "$249", time: "60-90 min" },
-  { device: "iPad Pro 12.9\"", price: "$349", time: "60-90 min" },
-  { device: "MacBook Air (Intel)", price: "$299", time: "1-2 hrs" },
-  { device: "MacBook Air M1/M2/M3", price: "$349-$399", time: "1-2 hrs" },
-  { device: "MacBook Pro 13\"", price: "$349-$399", time: "1-2 hrs" },
-  { device: "MacBook Pro 14\"", price: "$499", time: "2-3 hrs" },
-  { device: "MacBook Pro 16\"", price: "$599-$699", time: "2-3 hrs" },
-];
 
 const testimonials = [
   { name: "Marcus D.", rating: 5, text: "Dropped my iPhone 15 face-down on the parking lot. They had the screen replaced in 25 minutes and it looks brand new. Saved me hundreds compared to Apple!", service: "iPhone 15 Screen Repair" },
@@ -150,17 +126,17 @@ export default function ScreenRepairPage() {
             <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-shadow group">
               <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">iPhone Screen Repair</h3>
               <p className="text-muted-foreground mb-4">All models from iPhone 8 through iPhone 16 Pro Max. OLED and LCD replacements available. Most repairs done in 30 minutes.</p>
-              <p className="text-primary font-bold text-lg">From $79</p>
+              <p className="text-primary font-bold text-lg">Call for Quote</p>
             </Link>
             <Link href="/macon/ipad" className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-shadow group">
               <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">iPad Screen Repair</h3>
               <p className="text-muted-foreground mb-4">iPad, iPad Mini, iPad Air, and iPad Pro screen replacement. Glass and digitizer repair for all generations.</p>
-              <p className="text-primary font-bold text-lg">From $99</p>
+              <p className="text-primary font-bold text-lg">Call for Quote</p>
             </Link>
             <Link href="/macon/macbook" className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-shadow group">
               <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">MacBook Screen Repair</h3>
               <p className="text-muted-foreground mb-4">Retina display replacement for MacBook Air and MacBook Pro. Intel and Apple Silicon models supported.</p>
-              <p className="text-primary font-bold text-lg">From $299</p>
+              <p className="text-primary font-bold text-lg">Call for Quote</p>
             </Link>
           </div>
         </div>
@@ -188,32 +164,16 @@ export default function ScreenRepairPage() {
         </div>
       </section>
 
-      {/* Pricing Table */}
+      {/* Pricing CTA */}
       <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Screen Repair Pricing in Macon, GA</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">Transparent pricing &ndash; always 30-50% less than Apple Store. Call <a href="tel:(478)259-6371" className="text-primary font-semibold">(478) 259-6371</a> for an exact quote.</p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
-              <thead>
-                <tr className="border-b border-border bg-primary text-primary-foreground">
-                  <th className="text-left p-4 font-bold">Device</th>
-                  <th className="text-center p-4 font-bold">Screen Repair Price</th>
-                  <th className="text-center p-4 font-bold">Repair Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricingData.map((row) => (
-                  <tr key={row.device} className="border-b border-border last:border-0 hover:bg-secondary/30">
-                    <td className="p-4 font-semibold text-foreground">{row.device}</td>
-                    <td className="p-4 text-center text-foreground font-medium">{row.price}</td>
-                    <td className="p-4 text-center text-muted-foreground">{row.time}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Affordable Screen Repair Pricing</h2>
+          <p className="text-xl text-muted-foreground mb-8">We offer competitive pricing for all screen repairs. Every repair includes a 30-day warranty and expert service.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
+            </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 text-center">*Prices are estimates and may vary. Contact us for an exact quote. All repairs include a 30-day warranty.</p>
         </div>
       </section>
 

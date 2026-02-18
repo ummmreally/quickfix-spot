@@ -7,11 +7,11 @@ import FAQSection from "../../components/FAQSection";
 
 export const metadata: Metadata = {
   title: "iPhone Repair Macon GA | Same-Day Screen Fix $79+ | (478) 259-6371",
-  description: "Macon GA's top iPhone repair shop – 2026 models ready. iPhone 16e, 16 Pro Max, 15, 14 screen replacement from $79, battery $59+. 30-minute same-day service, no appointment. Walk-ins at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+  description: "Macon GA's top iPhone repair shop – 2026 models ready. iPhone 16e, 16 Pro Max, 15, 14 screen replacement affordable pricing. 30-minute same-day service, no appointment. Walk-ins at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
   keywords: ["iPhone repair Macon GA", "iPhone screen repair Macon", "iPhone screen replacement Macon GA", "cracked iPhone screen repair Macon", "iPhone battery replacement Macon GA", "iPhone charging port repair Macon", "iPhone water damage repair Macon", "iPhone repair near me Macon", "same day iPhone repair Macon GA", "iPhone 16e screen repair Macon", "iPhone 16 Pro Max repair Macon GA", "iPhone 16e repair Macon", "best iPhone repair Macon Georgia 2026", "phone repair Macon GA"],
   alternates: { canonical: "https://techmedicsmacon.com/macon/iphone" },
   openGraph: {
-    title: "iPhone Repair Macon GA | Same-Day Screen & Battery Fix from $79",
+    title: "iPhone Repair Macon GA | Same-Day Screen & Battery Fix Call for quote",
     description: "Macon's #1 iPhone repair shop. Screen replacement $79+, battery $59+. 30-min service, walk-ins welcome. All iPhone models serviced.",
     url: "https://techmedicsmacon.com/macon/iphone",
     images: [{ url: "/images/iphone-screen-repair-macon.webp", width: 800, height: 600, alt: "iPhone screen repair service in Macon GA" }],
@@ -64,7 +64,7 @@ const serviceSchema = {
 
 const faqData = [
   { question: "How long does iPhone screen repair take in Macon, GA?", answer: "Most iPhone screen repairs — including the iPhone 16e and 16 Pro Max — are completed in 30 minutes or less. Walk into our Eisenhower Parkway location any time during business hours. No appointment needed." },
-  { question: "How much does iPhone screen repair cost in Macon?", answer: "Prices range from $79 (iPhone 8/SE) to $329 (iPhone 16 Pro Max). The new iPhone 16e screen replacement is $199. Call (478) 259-6371 for an exact quote for your specific model." },
+  { question: "How much does iPhone screen repair cost in Macon?", answer: "We offer competitive pricing for all iPhone models. Call (478) 259-6371 for a free quote for your specific model." },
   { question: "Do you repair the new iPhone 16e and iPhone 16 Pro Max?", answer: "Yes! We stock parts for every 2026 iPhone model including the iPhone 16e, 16, 16 Plus, 16 Pro, and 16 Pro Max, plus all older generations back to iPhone 7." },
   { question: "Is there a warranty on iPhone screen repairs?", answer: "Every iPhone screen repair comes with our 30-day warranty covering both parts and labor. If anything goes wrong, bring it back and we'll make it right." },
   { question: "Can you fix my iPhone battery that drains quickly?", answer: "Absolutely — battery replacement is our most popular service. If your iPhone dies by noon or shows 'Service' in Battery Health, we can swap it in about 30 minutes. We carry batteries for every model from iPhone 7 through iPhone 16 Pro Max." },
@@ -74,21 +74,6 @@ const faqData = [
 ];
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqData.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
-
-const pricingData = [
-  { model: "iPhone 8 / SE", screen: "$79", battery: "$59", chargingPort: "$69", time: "30 min" },
-  { model: "iPhone X / XR / XS", screen: "$99", battery: "$69", chargingPort: "$79", time: "30 min" },
-  { model: "iPhone 11", screen: "$109", battery: "$69", chargingPort: "$79", time: "30 min" },
-  { model: "iPhone 12 / Mini", screen: "$119", battery: "$79", chargingPort: "$89", time: "30 min" },
-  { model: "iPhone 13 / Mini", screen: "$149", battery: "$79", chargingPort: "$89", time: "30-45 min" },
-  { model: "iPhone 14", screen: "$179", battery: "$89", chargingPort: "$99", time: "30-45 min" },
-  { model: "iPhone 14 Pro / Max", screen: "$229", battery: "$89", chargingPort: "$99", time: "45 min" },
-  { model: "iPhone 15", screen: "$199", battery: "$89", chargingPort: "$99", time: "45 min" },
-  { model: "iPhone 15 Pro / Max", screen: "$279", battery: "$99", chargingPort: "$109", time: "45 min" },
-  { model: "iPhone 16", screen: "$249", battery: "$99", chargingPort: "$109", time: "45 min" },
-  { model: "iPhone 16 Pro / Max", screen: "$329", battery: "$109", chargingPort: "$119", time: "45-60 min" },
-  { model: "iPhone 16e", screen: "$199", battery: "$89", chargingPort: "$99", time: "45 min" },
-];
 
 const testimonials = [
   { name: "Sarah M.", rating: 5, text: "Cracked my iPhone 16 screen at work and they fixed it in 25 minutes. Screen looks perfect — can't even tell it was broken. Best iPhone repair in Macon.", service: "iPhone 16 Screen Repair" },
@@ -130,7 +115,7 @@ export default function IPhonePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">iPhone Screen Repair Near Me in Macon, GA</h1>
-              <p className="text-xl text-muted-foreground mb-8">Looking for iPhone repair near me? We&apos;re located at 3742 Eisenhower Parkway in Macon, GA. Expert iPhone repair services including screen replacements, battery replacements, charging port repairs, and more. Fast, reliable service with no appointment needed - most repairs completed in 30 minutes or less.</p>
+              <p className="text-xl text-muted-foreground mb-8">Looking for iPhone repair near me? We're located at 3742 Eisenhower Parkway in Macon, GA. Expert iPhone repair services including screen replacements, battery replacements, charging port repairs, and more. Fast, reliable service with no appointment needed - most repairs completed in 30 minutes or less.</p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call Now for Quote</a>
               </Button>
@@ -218,36 +203,16 @@ export default function IPhonePage() {
         </div>
       </section>
 
-      {/* Pricing Table */}
+      {/* Pricing CTA */}
       <section className="py-20 px-4 bg-secondary/20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">iPhone Repair Cost in Macon, GA – Transparent Pricing</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">How much does iPhone screen repair cost in Macon? See our prices below – always 30-50% less than Apple Store. Call <a href="tel:(478)259-6371" className="text-primary font-semibold">(478) 259-6371</a> for an exact quote.</p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
-              <thead>
-                <tr className="border-b border-border bg-primary text-primary-foreground">
-                  <th className="text-left p-4 font-bold">iPhone Model</th>
-                  <th className="text-center p-4 font-bold">Screen Repair</th>
-                  <th className="text-center p-4 font-bold">Battery</th>
-                  <th className="text-center p-4 font-bold">Charging Port</th>
-                  <th className="text-center p-4 font-bold">Repair Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricingData.map((row) => (
-                  <tr key={row.model} className="border-b border-border last:border-0 hover:bg-secondary/30">
-                    <td className="p-4 font-semibold text-foreground">{row.model}</td>
-                    <td className="p-4 text-center text-foreground font-medium">{row.screen}</td>
-                    <td className="p-4 text-center text-foreground">{row.battery}</td>
-                    <td className="p-4 text-center text-foreground">{row.chargingPort}</td>
-                    <td className="p-4 text-center text-muted-foreground">{row.time}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Affordable iPhone Repair Pricing</h2>
+          <p className="text-xl text-muted-foreground mb-8">We offer competitive pricing for all iPhone models. Every repair includes a 30-day warranty and expert service.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
+            </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 text-center">*Prices are estimates and may vary. Contact us for an exact quote. All repairs include a 30-day warranty.</p>
         </div>
       </section>
 

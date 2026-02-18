@@ -46,7 +46,7 @@ const Navigation = () => {
               />
             </Link>
 
-            <nav className="hidden md:flex items-center gap-8">
+            <nav className="hidden md:flex items-center gap-6">
               <Link href="/" className="text-foreground hover:text-primary transition-colors font-medium">Home</Link>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-primary transition-colors font-medium">
@@ -86,10 +86,17 @@ const Navigation = () => {
                   <DropdownMenuItem asChild>
                     <Link href="/macon/data-recovery" className="cursor-pointer w-full">Data Recovery</Link>
                   </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/macon/camera-repair" className="cursor-pointer w-full">Camera Repair</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/macon/back-glass-repair" className="cursor-pointer w-full">Back Glass Repair</Link>
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Link href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium">Pricing</Link>
-              <Link href="/blog" className="text-foreground hover:text-primary transition-colors font-medium">Blog</Link>
+              <Link href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium">About</Link>
+              <Link href="/macon/accessories" className="text-foreground hover:text-primary transition-colors font-medium">Accessories</Link>
+              <Link href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium">Contact</Link>
               <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <a href="tel:(478)259-6371">
                   <Phone className="mr-2 h-4 w-4" />
@@ -120,9 +127,12 @@ const Navigation = () => {
                     <Link href="/macon/charging-port-repair" className="text-foreground hover:text-primary transition-colors font-medium block mb-2" onClick={() => setMobileMenuOpen(false)}>Charging Port Repair</Link>
                     <Link href="/macon/water-damage" className="text-foreground hover:text-primary transition-colors font-medium block mb-2" onClick={() => setMobileMenuOpen(false)}>Water Damage</Link>
                     <Link href="/macon/data-recovery" className="text-foreground hover:text-primary transition-colors font-medium block mb-2" onClick={() => setMobileMenuOpen(false)}>Data Recovery</Link>
+                    <Link href="/macon/camera-repair" className="text-foreground hover:text-primary transition-colors font-medium block mb-2" onClick={() => setMobileMenuOpen(false)}>Camera Repair</Link>
+                    <Link href="/macon/back-glass-repair" className="text-foreground hover:text-primary transition-colors font-medium block mb-2" onClick={() => setMobileMenuOpen(false)}>Back Glass Repair</Link>
                   </div>
-                  <Link href="/macon/pricing" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
-                  <Link href="/blog" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+                  <Link href="/macon/about" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>About</Link>
+                  <Link href="/macon/accessories" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Accessories</Link>
+                  <Link href="/macon/contact" className="text-foreground hover:text-primary transition-colors font-medium text-lg" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                   <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
                     <a href="tel:(478)259-6371">
                       <Phone className="mr-2 h-4 w-4" />

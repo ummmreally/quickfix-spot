@@ -6,13 +6,13 @@ import { Card } from "@/components/ui/card";
 import FAQSection from "../../components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "MacBook Repair Macon GA | Screen & Keyboard Fix $299+ | (478) 259-6371",
-  description: "Macon GA's top MacBook repair shop – 2026 models ready. MacBook Air M4, Pro M4 Pro/Max screen replacement from $299, keyboard repair, battery service. Same-day turnaround at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+  title: "MacBook Repair Macon GA | Screen & Keyboard Fix competitive pricing | (478) 259-6371",
+  description: "Macon GA's top MacBook repair shop – 2026 models ready. MacBook Air M4, Pro M4 Pro/Max screen replacement Call for quote, keyboard repair, battery service. Same-day turnaround at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
   keywords: ["MacBook repair Macon GA", "MacBook screen repair Macon", "MacBook screen replacement Macon GA", "MacBook keyboard repair Macon", "MacBook battery replacement Macon GA", "MacBook Air M4 repair Macon", "MacBook Pro M4 repair Macon", "MacBook logic board repair Macon", "MacBook repair near me Macon", "MacBook not turning on Macon", "laptop repair Macon GA", "Apple laptop repair Macon", "MacBook M4 M3 M2 repair Macon", "best MacBook repair Macon Georgia 2026", "same day MacBook repair Macon GA"],
   alternates: { canonical: "https://techmedicsmacon.com/macon/macbook" },
   openGraph: {
-    title: "MacBook Repair Macon GA | Screen, Keyboard & Battery Fix from $299",
-    description: "Macon's #1 MacBook repair shop. Screen replacement $299+, keyboard repair, battery service. MacBook Air & Pro. Same-day service.",
+    title: "MacBook Repair Macon GA | Screen, Keyboard & Battery Fix Call for quote",
+    description: "Macon's #1 MacBook repair shop. Screen replacement competitive pricing, keyboard repair, battery service. MacBook Air & Pro. Same-day service.",
     url: "https://techmedicsmacon.com/macon/macbook",
     images: [{ url: "/images/macbook-repair-macon.webp", width: 800, height: 600, alt: "MacBook repair service in Macon GA" }],
   },
@@ -60,7 +60,7 @@ const serviceSchema = {
 };
 
 const faqs = [
-  { question: "How much does MacBook screen repair cost in Macon GA?", answer: "MacBook Air screen repair starts at $299 (Intel) up to $499 for the MacBook Air M4. MacBook Pro screen replacements range from $399-$699 depending on model and size. Call (478) 259-6371 for an exact quote." },
+  { question: "How much does MacBook screen repair cost in Macon GA?", answer: "MacBook screen repair costs vary by model and display size. Call (478) 259-6371 for a free quote for your specific MacBook." },
   { question: "Can you fix MacBook keyboard issues?", answer: "Yes! We repair butterfly and Magic Keyboard issues including sticky keys, liquid damage, and complete keyboard replacements. We service the latest MacBook Air M4 and MacBook Pro M4 keyboards as well as all older models." },
   { question: "How long does MacBook repair take?", answer: "Most MacBook screen and battery repairs are same-day. Apple Silicon models (M1-M4) typically take 2-4 hours. Logic board component-level repair may take 1-3 business days depending on complexity." },
   { question: "Do you repair the new MacBook Air M4 and MacBook Pro M4?", answer: "Yes! We stock parts for every 2026 MacBook model: MacBook Air M4 (13\" and 15\"), MacBook Pro M4, M4 Pro, and M4 Max (14\" and 16\"), plus all M3, M2, M1, and Intel models." },
@@ -69,17 +69,6 @@ const faqs = [
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
 
-const pricingData = [
-  { model: "MacBook Air (Intel)", screen: "$299", battery: "$149", keyboard: "$199", time: "2-4 hrs" },
-  { model: "MacBook Air M1", screen: "$349", battery: "$169", keyboard: "$229", time: "2-4 hrs" },
-  { model: "MacBook Air M2", screen: "$399", battery: "$179", keyboard: "$249", time: "2-4 hrs" },
-  { model: "MacBook Air M3", screen: "$449", battery: "$189", keyboard: "$269", time: "Same day" },
-  { model: "MacBook Air M4", screen: "$499", battery: "$199", keyboard: "$289", time: "Same day" },
-  { model: 'MacBook Pro 13" (Intel)', screen: "$399", battery: "$179", keyboard: "$249", time: "2-4 hrs" },
-  { model: 'MacBook Pro 13" M1/M2', screen: "$449", battery: "$189", keyboard: "$269", time: "Same day" },
-  { model: 'MacBook Pro 14" (M3/M4)', screen: "$549", battery: "$199", keyboard: "$299", time: "Same day" },
-  { model: 'MacBook Pro 16" (M3/M4)', screen: "$699", battery: "$219", keyboard: "$349", time: "1-2 days" },
-];
 
 const comparisonData = [
   { feature: "Warranty Included", diy: false, competitor: true, us: true },
@@ -112,7 +101,7 @@ export default function MacBookPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">MacBook Repair in Macon, GA</h1>
-              <p className="text-xl text-muted-foreground mb-8">MacBook Air M4, Pro M4 Pro/Max &amp; every older model — Retina display replacement from $299, keyboard repair, battery service, logic board diagnostics. Same-day turnaround at 3742 Eisenhower Parkway.</p>
+              <p className="text-xl text-muted-foreground mb-8">MacBook Air M4, Pro M4 Pro/Max &amp; every older model — Retina display replacement Call for quote, keyboard repair, battery service, logic board diagnostics. Same-day turnaround at 3742 Eisenhower Parkway.</p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call Now for Quote</a>
               </Button>
@@ -175,36 +164,16 @@ export default function MacBookPage() {
         </div>
       </section>
 
-      {/* Pricing Table */}
+      {/* Pricing CTA */}
       <section className="py-20 px-4 bg-secondary/20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">MacBook Repair Cost in Macon, GA – Transparent Pricing</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">How much does MacBook screen repair cost? See our prices below – save 30-50% vs Apple Store. Call <a href="tel:(478)259-6371" className="text-primary font-semibold">(478) 259-6371</a> for an exact quote.</p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
-              <thead>
-                <tr className="border-b border-border bg-primary text-primary-foreground">
-                  <th className="text-left p-4 font-bold">MacBook Model</th>
-                  <th className="text-center p-4 font-bold">Screen Repair</th>
-                  <th className="text-center p-4 font-bold">Battery</th>
-                  <th className="text-center p-4 font-bold">Keyboard</th>
-                  <th className="text-center p-4 font-bold">Repair Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricingData.map((row) => (
-                  <tr key={row.model} className="border-b border-border last:border-0 hover:bg-secondary/30">
-                    <td className="p-4 font-semibold text-foreground">{row.model}</td>
-                    <td className="p-4 text-center text-foreground font-medium">{row.screen}</td>
-                    <td className="p-4 text-center text-foreground">{row.battery}</td>
-                    <td className="p-4 text-center text-foreground">{row.keyboard}</td>
-                    <td className="p-4 text-center text-muted-foreground">{row.time}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Affordable MacBook Repair Pricing</h2>
+          <p className="text-xl text-muted-foreground mb-8">We offer competitive pricing for all MacBook models. Every repair includes a 30-day warranty and expert service.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
+            </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 text-center">*Prices are estimates and may vary. Logic board repair quoted on diagnosis. All repairs include a 30-day warranty.</p>
         </div>
       </section>
 
@@ -306,8 +275,8 @@ export default function MacBookPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">Other Apple Device Repair Services in Macon</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair in Macon</h3><p className="text-muted-foreground">Screen repair from $79, battery replacement &amp; more for all iPhone models</p></Link>
-            <Link href="/macon/ipad" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPad Repair in Macon</h3><p className="text-muted-foreground">Screen replacement from $99, glass repair &amp; battery service for all iPads</p></Link>
+            <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair in Macon</h3><p className="text-muted-foreground">Screen repair, battery replacement &amp; more for all iPhone models</p></Link>
+            <Link href="/macon/ipad" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPad Repair in Macon</h3><p className="text-muted-foreground">Screen replacement Call for quote, glass repair &amp; battery service for all iPads</p></Link>
           </div>
         </div>
       </section>

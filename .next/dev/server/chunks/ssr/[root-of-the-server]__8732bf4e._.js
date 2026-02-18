@@ -256,7 +256,7 @@ const faqData = [
     },
     {
         question: "How much does game console repair cost?",
-        answer: "Repair costs vary by console and issue. HDMI port repairs typically start at $99-$149, disc drive repairs from $79, and Joy-Con drift fixes from $39 per controller. Call (478) 259-6371 for an exact quote."
+        answer: "Repair costs vary by console and issue. Call (478) 259-6371 for a free quote on your specific repair."
     },
     {
         question: "Can you fix HDMI port issues on PS5 and Xbox?",
@@ -1369,7 +1369,7 @@ function GameConsoleRepairPage() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-muted-foreground",
-                                            children: "Screen, battery & more from $79"
+                                            children: "Screen, battery & more"
                                         }, void 0, false, {
                                             fileName: "[project]/app/macon/game-console-repair/page.tsx",
                                             lineNumber: 255,

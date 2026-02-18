@@ -60,15 +60,15 @@ export default function MaconLandingPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow text-center">
               <h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair</h3>
-              <p className="text-muted-foreground text-sm">Screen repair from $79, battery replacement &amp; more</p>
+              <p className="text-muted-foreground text-sm">Affordable screen repair, battery replacement &amp; more</p>
             </Link>
             <Link href="/macon/ipad" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow text-center">
               <h3 className="text-xl font-bold mb-2 text-foreground">iPad Repair</h3>
-              <p className="text-muted-foreground text-sm">Screen replacement from $99 for all iPad models</p>
+              <p className="text-muted-foreground text-sm">Screen replacement for all iPad models</p>
             </Link>
             <Link href="/macon/macbook" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow text-center">
               <h3 className="text-xl font-bold mb-2 text-foreground">MacBook Repair</h3>
-              <p className="text-muted-foreground text-sm">Screen, keyboard &amp; battery service from $299</p>
+              <p className="text-muted-foreground text-sm">Screen, keyboard &amp; battery service</p>
             </Link>
             <Link href="/macon/game-console-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow text-center">
               <h3 className="text-xl font-bold mb-2 text-foreground">Game Console Repair</h3>

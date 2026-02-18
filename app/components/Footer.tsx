@@ -25,12 +25,11 @@ const Footer = () => {
               <Link href="/macon/iphone" className="block text-muted-foreground hover:text-primary transition-colors">iPhone Repair</Link>
               <Link href="/macon/ipad" className="block text-muted-foreground hover:text-primary transition-colors">iPad Repair</Link>
               <Link href="/macon/macbook" className="block text-muted-foreground hover:text-primary transition-colors">MacBook Repair</Link>
-              <Link href="/macon/game-console-repair" className="block text-muted-foreground hover:text-primary transition-colors">Game Console Repair</Link>
               <Link href="/macon/screen-repair" className="block text-muted-foreground hover:text-primary transition-colors">Screen Repair</Link>
               <Link href="/macon/battery-replacement" className="block text-muted-foreground hover:text-primary transition-colors">Battery Replacement</Link>
-              <Link href="/macon/water-damage" className="block text-muted-foreground hover:text-primary transition-colors">Water Damage Repair</Link>
+              <Link href="/macon/camera-repair" className="block text-muted-foreground hover:text-primary transition-colors">Camera Repair</Link>
+              <Link href="/macon/water-damage" className="block text-muted-foreground hover:text-primary transition-colors">Water Damage</Link>
               <Link href="/macon/data-recovery" className="block text-muted-foreground hover:text-primary transition-colors">Data Recovery</Link>
-              <Link href="/macon/pricing" className="block text-muted-foreground hover:text-primary transition-colors">Pricing</Link>
             </div>
           </div>
 
@@ -47,13 +46,13 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4 text-foreground">Nearby Cities</h3>
             <div className="space-y-2">
-              <Link href="/macon/warner-robins" className="block text-muted-foreground hover:text-primary transition-colors">Phone Repair Warner Robins</Link>
-              <Link href="/macon/byron" className="block text-muted-foreground hover:text-primary transition-colors">Phone Repair Byron GA</Link>
-              <Link href="/macon/perry" className="block text-muted-foreground hover:text-primary transition-colors">Phone Repair Perry GA</Link>
-              <Link href="/macon/forsyth" className="block text-muted-foreground hover:text-primary transition-colors">Phone Repair Forsyth GA</Link>
-              <Link href="/macon/east-macon" className="block text-muted-foreground hover:text-primary transition-colors">East Macon</Link>
-              <Link href="/macon/south-macon" className="block text-muted-foreground hover:text-primary transition-colors">South Macon</Link>
-              <Link href="/macon/rutland" className="block text-muted-foreground hover:text-primary transition-colors">Rutland</Link>
+              <Link href="/macon/warner-robins-iphone-repair" className="block text-muted-foreground hover:text-primary transition-colors">Warner Robins Repair</Link>
+              <Link href="/macon/houston-county-phone-repair" className="block text-muted-foreground hover:text-primary transition-colors">Houston County</Link>
+              <Link href="/macon/byron-iphone-repair" className="block text-muted-foreground hover:text-primary transition-colors">Byron Repair</Link>
+              <Link href="/macon/perry-iphone-repair" className="block text-muted-foreground hover:text-primary transition-colors">Perry Repair</Link>
+              <Link href="/macon/forsyth-iphone-repair" className="block text-muted-foreground hover:text-primary transition-colors">Forsyth Repair</Link>
+              <Link href="/macon/peach-county-phone-repair" className="block text-muted-foreground hover:text-primary transition-colors">Peach County</Link>
+              <Link href="/macon/monroe-county-phone-repair" className="block text-muted-foreground hover:text-primary transition-colors">Monroe County</Link>
             </div>
           </div>
         </div>

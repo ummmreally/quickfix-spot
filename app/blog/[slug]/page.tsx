@@ -18,7 +18,7 @@ const posts: BlogPost[] = [
   {
     slug: "iphone-screen-repair-macon-ga",
     title: "Complete iPhone Screen Repair Guide – Macon GA",
-    metaDescription: "Everything about iPhone screen repair in Macon GA. Costs from $79, 30-min service, quality options explained. Tech Medics at 3742 Eisenhower Pkwy.",
+    metaDescription: "Everything about iPhone screen repair in Macon GA. Affordable pricing, 30-min service, quality options explained. Tech Medics at 3742 Eisenhower Pkwy.",
     keywords: ["iPhone screen repair Macon GA", "cracked iPhone screen fix Macon", "iPhone screen replacement cost"],
     category: "iPhone",
     content: `<h2>iPhone Screen Repair in Macon, GA – What You Need to Know</h2>
@@ -35,7 +35,7 @@ const posts: BlogPost[] = [
   {
     slug: "iphone-battery-replacement-macon",
     title: "iPhone Battery Replacement in Macon – Signs, Costs & Same-Day Service",
-    metaDescription: "iPhone battery replacement in Macon GA from $59. Signs you need a new battery, costs by model, 30-min same-day service at Tech Medics.",
+    metaDescription: "iPhone battery replacement in Macon GA competitive rates. Signs you need a new battery, costs by model, 30-min same-day service at Tech Medics.",
     keywords: ["iPhone battery replacement Macon", "iPhone battery cost Macon GA", "iPhone battery draining fast"],
     category: "iPhone",
     content: `<h2>When Does Your iPhone Need a Battery Replacement?</h2>
@@ -69,7 +69,7 @@ const posts: BlogPost[] = [
 <p>If your iPhone dies quickly after charging, there are several potential causes – from software issues to a degraded battery.</p>
 <h3>11 Fixes for Fast iPhone Battery Drain</h3>
 <ol><li><strong>Check Battery Health</strong> – Go to Settings > Battery > Battery Health. Below 80%? Time for replacement.</li><li><strong>Update iOS</strong> – Apple regularly fixes battery drain bugs</li><li><strong>Reduce Screen Brightness</strong> – Or enable Auto-Brightness</li><li><strong>Disable Background App Refresh</strong> for apps you don't need</li><li><strong>Turn off Location Services</strong> for non-essential apps</li><li><strong>Disable push email</strong> – Switch to fetch every 15-30 minutes</li><li><strong>Close unused widgets</strong> on your home screen</li><li><strong>Reset All Settings</strong> (won't delete data)</li><li><strong>Check for rogue apps</strong> in Settings > Battery usage</li><li><strong>Disable Raise to Wake</strong> if you don't use it</li><li><strong>Get a professional battery replacement</strong> at Tech Medics</li></ol>
-<p>If these fixes don't help, your battery likely needs physical replacement. Visit us at 3742 Eisenhower Parkway for a 30-minute battery swap starting at $59.</p>`,
+<p>If these fixes don't help, your battery likely needs physical replacement. Visit us at 3742 Eisenhower Parkway for a 30-minute battery swap competitive rates.</p>`,
     relatedSlugs: ["iphone-battery-replacement-macon", "swollen-iphone-battery-replacement-macon"],
   },
   {
@@ -88,13 +88,13 @@ const posts: BlogPost[] = [
   {
     slug: "macbook-repair-macon-ga",
     title: "MacBook Repair Services in Macon GA – Screen, Keyboard & More",
-    metaDescription: "Complete MacBook repair in Macon GA. Screen replacement from $299, keyboard repair, battery service, logic board diagnostics. Call (478) 259-6371.",
+    metaDescription: "Complete MacBook repair in Macon GA. Screen replacement competitive pricing, keyboard repair, battery service, logic board diagnostics. Call (478) 259-6371.",
     keywords: ["MacBook repair Macon GA", "MacBook screen replacement Macon", "MacBook keyboard repair"],
     category: "MacBook",
     content: `<h2>Expert MacBook Repair in Macon, Georgia</h2>
 <p>Tech Medics Macon provides comprehensive MacBook repair services for all models including MacBook Air (M1, M2, M3) and MacBook Pro (13", 14", 16"). Our certified technicians handle everything from screen replacements to complex logic board repairs.</p>
 <h3>Our MacBook Repair Services</h3>
-<ul><li><strong>Screen Replacement</strong> – Retina display replacement starting at $299</li><li><strong>Keyboard Repair</strong> – Butterfly and Magic Keyboard fixes</li><li><strong>Battery Replacement</strong> – Restore all-day battery life</li><li><strong>Logic Board Repair</strong> – Component-level diagnostics and repair</li><li><strong>SSD Upgrades</strong> – Faster storage for compatible models</li><li><strong>Trackpad Repair</strong> – Fix clicking and tracking issues</li></ul>`,
+<ul><li><strong>Screen Replacement</strong> – Retina display replacement competitive pricing</li><li><strong>Keyboard Repair</strong> – Butterfly and Magic Keyboard fixes</li><li><strong>Battery Replacement</strong> – Restore all-day battery life</li><li><strong>Logic Board Repair</strong> – Component-level diagnostics and repair</li><li><strong>SSD Upgrades</strong> – Faster storage for compatible models</li><li><strong>Trackpad Repair</strong> – Fix clicking and tracking issues</li></ul>`,
     relatedSlugs: ["macbook-screen-repair-cost-macon", "tech-medics-vs-apple-store-repair"],
   },
   {
@@ -141,7 +141,7 @@ const posts: BlogPost[] = [
   {
     slug: "iphone-screen-repair-cost-macon",
     title: "iPhone Screen Repair Cost in Macon GA (2026 Guide)",
-    metaDescription: "Updated 2026 iPhone screen repair costs in Macon GA. Compare prices by model. Tech Medics offers the best value starting at $79.",
+    metaDescription: "Updated 2026 iPhone screen repair costs in Macon GA. Compare prices by model. Tech Medics offers the best value affordable pricing.",
     keywords: ["iPhone screen repair cost Macon", "how much iPhone screen repair", "iPhone screen replacement price Macon GA"],
     category: "iPhone",
     content: `<h2>How Much Does iPhone Screen Repair Cost in Macon?</h2>
@@ -162,7 +162,7 @@ const posts: BlogPost[] = [
 <h3>Conveniently Located</h3>
 <p>We're at <strong>3742 Eisenhower Parkway, Macon, GA 31206</strong> – easily accessible from all Macon neighborhoods including Vineville, North Macon, Downtown, Ingleside, East Macon, and South Macon. We also serve Warner Robins, Byron, Perry, and Forsyth.</p>
 <h3>Why Macon Chooses Us</h3>
-<ul><li>30-minute screen repairs while you wait</li><li>No appointment needed – walk-ins welcome</li><li>Competitive pricing starting at $79</li><li>30-day warranty on all repairs</li><li>Certified, experienced technicians</li><li>Open Mon-Fri 10-6, Sat 10-5</li></ul>`,
+<ul><li>30-minute screen repairs while you wait</li><li>No appointment needed – walk-ins welcome</li><li>Competitive pricing affordable pricing</li><li>30-day warranty on all repairs</li><li>Certified, experienced technicians</li><li>Open Mon-Fri 10-6, Sat 10-5</li></ul>`,
     relatedSlugs: ["iphone-screen-repair-macon-ga", "choose-phone-repair-shop-macon"],
   },
   {
@@ -209,7 +209,7 @@ const posts: BlogPost[] = [
   {
     slug: "macbook-screen-repair-cost-macon",
     title: "MacBook Screen Repair Cost in Macon GA (2026)",
-    metaDescription: "MacBook screen repair costs in Macon GA starting at $299. MacBook Air & Pro pricing for all models. Tech Medics offers the best value.",
+    metaDescription: "MacBook screen repair costs in Macon GA competitive pricing. MacBook Air & Pro pricing for all models. Tech Medics offers the best value.",
     keywords: ["MacBook screen repair cost", "MacBook screen replacement price Macon", "MacBook display repair Macon GA"],
     category: "MacBook",
     content: `<h2>MacBook Screen Repair Pricing in Macon</h2>
@@ -269,6 +269,92 @@ const posts: BlogPost[] = [
 <h3>No Data, No Fee</h3>
 <p>We believe in honest service. If we can't recover your data, you don't pay for the recovery attempt. Assessment and diagnosis are always free. Visit us at 3742 Eisenhower Parkway or call (478) 259-6371.</p>`,
     relatedSlugs: ["water-damaged-iphone-repair", "iphone-not-turning-on-fix"],
+  },
+  {
+    slug: "iphone-repair-warner-robins-ga",
+    title: "iPhone Repair Warner Robins GA – 20 Minutes from Robins AFB",
+    metaDescription: "iPhone repair near Warner Robins & Robins AFB. Screen affordable rates, competitive battery service, 30-min service. Tech Medics Macon just 20 min via I-75. Call (478) 259-6371.",
+    keywords: ["iPhone repair Warner Robins", "phone repair Robins AFB", "iPhone screen Warner Robins GA", "cell phone repair Houston County"],
+    category: "iPhone",
+    content: `<h2>iPhone Repair for Warner Robins & Robins AFB</h2>
+<p>If you're in Warner Robins, Centerville, Bonaire, or stationed at Robins Air Force Base and need iPhone repair, Tech Medics Macon is your closest expert repair shop. We're just 20 minutes north via I-75 and offer same-day service for most repairs.</p>
+<h3>Why Warner Robins Chooses Tech Medics</h3>
+<ul><li><strong>Close proximity:</strong> Just 20 minutes from Warner Robins via I-75 North (Exit 167)</li><li><strong>No appointment needed:</strong> Walk-ins welcome – most repairs done in 30 minutes</li><li><strong>Affordable pricing:</strong> iPhone screen repair affordable rates, battery competitive rates</li><li><strong>Quality guarantee:</strong> Lifetime warranty on all repairs</li><li><strong>Military-friendly:</strong> We proudly serve Robins AFB personnel and families</li></ul>
+<h3>Common iPhone Repairs for Warner Robins Customers</h3>
+<ul><li><strong>Cracked screen replacement:</strong> 30-minute service, affordable rates</li><li><strong>Battery replacement:</strong> Dies too fast? New battery competitive rates</li><li><strong>Charging port repair:</strong> Won't charge? We fix it same-day</li><li><strong>Camera repair:</strong> Blurry or not working? We replace front & rear cameras</li><li><strong>Water damage:</strong> Dropped in water? Bring it immediately for best recovery chance</li></ul>
+<h3>Directions from Warner Robins to Tech Medics Macon</h3>
+<ol><li>Take I-75 North from Warner Robins</li><li>Take Exit 167 for Eisenhower Parkway</li><li>Turn right onto Eisenhower Parkway</li><li>Tech Medics is at 3742 Eisenhower Parkway on your right</li></ol>
+<p><strong>Total drive time: 20 minutes</strong></p>
+<h3>Why Drive to Macon Instead of Local Warner Robins Shops?</h3>
+<p>Tech Medics offers faster turnaround (30 minutes vs. hours or days), better warranty coverage (lifetime vs. 30-90 days), and more experienced technicians. We've completed thousands of iPhone repairs and specialize in Apple devices. The 20-minute drive is worth it for quality service you can trust.</p>`,
+    relatedSlugs: ["iphone-screen-repair-macon-ga", "same-day-iphone-repair-macon", "iphone-battery-replacement-macon"],
+  },
+  {
+    slug: "iphone-screen-repair-vs-replacement",
+    title: "iPhone Screen Repair vs Full Replacement – Which Is Right?",
+    metaDescription: "Should you repair your cracked iPhone screen or replace the whole phone? Cost comparison, when to repair vs replace, explained by Tech Medics Macon.",
+    keywords: ["repair vs replace iPhone", "should I fix cracked iPhone", "iPhone screen repair worth it", "when to replace iPhone"],
+    category: "iPhone",
+    content: `<h2>Repair or Replace Your iPhone? Here's How to Decide</h2>
+<p>When your iPhone screen cracks, you face a choice: repair the screen or buy a new phone. The right decision depends on your phone's age, condition, and repair cost.</p>
+<h3>When Screen Repair Makes Sense</h3>
+<ul><li><strong>iPhone is 3 years old or newer:</strong> Repair is almost always worth it</li><li><strong>Only the screen is damaged:</strong> Everything else works fine</li><li><strong>You owe money on the phone:</strong> Repair costs less than paying off + buying new</li><li><strong>Repair cost is under $200:</strong> Significantly cheaper than $700-$1200 for new iPhone</li><li><strong>You like your current model:</strong> No need to upgrade if it meets your needs</li></ul>
+<h3>When Replacement Might Be Better</h3>
+<ul><li><strong>iPhone is 5+ years old:</strong> Battery and other components likely degraded too</li><li><strong>Multiple issues:</strong> Cracked screen + dead battery + charging problems = expensive repairs</li><li><strong>Trade-in value is good:</strong> Apple or carrier offering high trade-in credit</li><li><strong>You want newer features:</strong> Better camera, 5G, longer battery life</li></ul>
+<h3>Cost Comparison Example (iPhone 13)</h3>
+<table><tr><th>Option</th><th>Cost</th></tr><tr><td>Screen repair at Tech Medics</td><td>$149</td></tr><tr><td>Screen + battery repair</td><td>$208</td></tr><tr><td>New iPhone 15 (minus trade-in)</td><td>$600-$800</td></tr><tr><td>Used iPhone 13 replacement</td><td>$400-$500</td></tr></table>
+<h3>The Math Is Clear</h3>
+<p>For most people with an iPhone 11 or newer, screen repair is the smart financial choice. You'll save $400-$650 compared to buying a replacement phone. That's money you can spend on something else!</p>
+<h3>What About Older iPhones?</h3>
+<p>If you have an iPhone 8, X, or XR with a cracked screen, repair still makes sense if everything else works. These phones remain fast and capable in 2026. At Tech Medics, screen repair for these models starts at just $79-$99 – a fraction of replacement cost.</p>`,
+    relatedSlugs: ["iphone-screen-repair-cost-macon", "iphone-battery-replacement-macon", "choose-phone-repair-shop-macon"],
+  },
+  {
+    slug: "macbook-battery-issues-swelling-macon",
+    title: "MacBook Battery Swelling? Warning Signs & Replacement in Macon",
+    metaDescription: "MacBook battery swelling or trackpad not clicking? Warning signs and safe battery replacement at Tech Medics Macon. Don't wait – call (478) 259-6371.",
+    keywords: ["MacBook battery swelling", "MacBook trackpad not clicking", "swollen MacBook battery Macon", "MacBook battery replacement"],
+    category: "MacBook",
+    content: `<h2>Is Your MacBook Battery Swelling? Act Immediately</h2>
+<p>A swollen MacBook battery is a serious safety hazard. If you notice your trackpad not clicking properly, your MacBook wobbling on a flat surface, or the bottom case bulging, stop using it and bring it to Tech Medics Macon immediately.</p>
+<h3>Warning Signs of a Swollen MacBook Battery</h3>
+<ul><li><strong>Trackpad won't click:</strong> The most common first sign – battery swelling pushes up on trackpad</li><li><strong>MacBook won't sit flat:</strong> Bottom case visibly bulging or raised</li><li><strong>Keyboard feels raised:</strong> Keys feel higher than normal or uneven</li><li><strong>Gaps in the case:</strong> Seams separating, especially near trackpad</li><li><strong>Screen won't close properly:</strong> Bulge prevents lid from closing flush</li></ul>
+<h3>Why Do MacBook Batteries Swell?</h3>
+<p>Lithium-ion batteries degrade over time. As they age, chemical reactions can produce gas, causing the battery to expand. This typically happens after 3-5 years of use, especially if you frequently keep your MacBook plugged in at 100% charge.</p>
+<h3>What to Do If Your Battery Is Swelling</h3>
+<ol><li><strong>Stop using the MacBook immediately</strong> – Continued use can damage the trackpad, keyboard, and display</li><li><strong>Don't charge it</strong> – Unplug from power</li><li><strong>Don't try to remove the battery yourself</strong> – Puncturing a swollen battery can cause fire</li><li><strong>Don't press on the bulge</strong> – This can rupture the battery</li><li><strong>Bring it to Tech Medics for safe removal</strong> – We properly discharge and remove swollen batteries</li></ol>
+<h3>MacBook Battery Replacement Cost in Macon</h3>
+<p>At Tech Medics, MacBook battery replacement starts at $129 and includes:</p>
+<ul><li>Safe removal of the old/swollen battery</li><li>High-capacity replacement battery</li><li>Inspection of trackpad and internal components for damage</li><li>30-day warranty on parts and labor</li></ul>
+<h3>Models We Service</h3>
+<p>We replace batteries in all MacBook models: MacBook Air (2015-2024), MacBook Pro 13" (2012-2024), MacBook Pro 15"/16" (2012-2024), and 12" MacBook Retina (2015-2019).</p>
+<h3>How Long Does Battery Replacement Take?</h3>
+<p>Most MacBook battery replacements are completed same-day, typically within 2-3 hours. For severely swollen batteries requiring extra care, we may keep it overnight to ensure safe removal.</p>`,
+    relatedSlugs: ["macbook-repair-macon-ga", "swollen-iphone-battery-replacement-macon", "macbook-screen-repair-cost-macon"],
+  },
+  {
+    slug: "water-damage-phone-repair-cost-houston-county",
+    title: "Water Damage Phone Repair Cost in Houston County GA",
+    metaDescription: "How much does water damage repair cost in Houston County? iPhone, Samsung, Google Pixel liquid damage repair pricing & success rates. Serving Warner Robins, Perry, Centerville.",
+    keywords: ["water damage repair cost Houston County", "iPhone water damage Warner Robins", "liquid damage repair Perry GA", "phone dropped in water Centerville"],
+    category: "General",
+    content: `<h2>Water Damage Phone Repair in Houston County, GA</h2>
+<p>Dropped your phone in water, the toilet, or spilled a drink on it? You need to act fast. Tech Medics Macon serves all of Houston County including Warner Robins, Centerville, Perry, and Bonaire with emergency water damage repair services.</p>
+<h3>Immediate Steps If You Drop Your Phone in Water</h3>
+<ol><li><strong>Remove it immediately</strong> – Get it out of the liquid as fast as possible</li><li><strong>Power it OFF</strong> – Do NOT try to turn it on or charge it</li><li><strong>Remove case and SIM card</strong></li><li><strong>Gently shake out water</strong> from ports and openings</li><li><strong>Do NOT use rice</strong> – This is a myth that can cause more damage</li><li><strong>Drive to Tech Medics ASAP</strong> – The sooner we clean it, the better your chances</li></ol>
+<h3>How Much Does Water Damage Repair Cost?</h3>
+<p>Water damage repair pricing depends on the extent of damage and what components need replacing:</p>
+<ul><li><strong>Diagnostic & Ultrasonic Cleaning:</strong> $49 (applied toward repair if you proceed)</li><li><strong>Minor liquid damage (caught early):</strong> $79-$149 after cleaning</li><li><strong>Moderate damage requiring parts:</strong> $149-$299 (screen, battery, charging port)</li><li><strong>Severe corrosion requiring logic board repair:</strong> $199-$399</li></ul>
+<h3>Success Rate for Water Damage Recovery</h3>
+<p>Your chances of successful recovery depend heavily on timing:</p>
+<ul><li><strong>Within 24 hours:</strong> 70-80% success rate with professional cleaning</li><li><strong>24-48 hours:</strong> 40-60% success rate</li><li><strong>After 3+ days:</strong> 20-30% success rate due to corrosion</li></ul>
+<h3>What We Do During Water Damage Repair</h3>
+<ol><li><strong>Disassemble the device completely</strong></li><li><strong>Ultrasonic cleaning</strong> to remove liquid and mineral deposits</li><li><strong>Inspect for corrosion</strong> on logic board and connectors</li><li><strong>Replace damaged components</strong> (battery, screen, ports as needed)</li><li><strong>Test all functions</strong> before returning to you</li></ol>
+<h3>Why Drive from Houston County to Tech Medics Macon?</h3>
+<p>Tech Medics is just 20-25 minutes from anywhere in Houston County via I-75. We have professional ultrasonic cleaning equipment that most local repair shops don't have. Our technicians have successfully recovered thousands of water-damaged devices. The drive is worth it when your photos, contacts, and data are at risk.</p>
+<h3>Serving All of Houston County</h3>
+<p>We provide water damage repair services to customers from Warner Robins, Centerville, Perry, Bonaire, and all surrounding Houston County communities. Visit us at 3742 Eisenhower Parkway in Macon or call (478) 259-6371 for emergency service.</p>`,
+    relatedSlugs: ["water-damaged-iphone-repair", "data-recovery-macon-ga", "iphone-repair-warner-robins-ga"],
   },
 ];
 

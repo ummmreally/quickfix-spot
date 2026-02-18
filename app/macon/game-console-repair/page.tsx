@@ -52,7 +52,7 @@ const serviceSchema = {
 
 const faqData = [
   { question: "What game consoles do you repair in Macon?", answer: "We repair PlayStation 5, PlayStation 4, Xbox Series X, Xbox Series S, Xbox One, Nintendo Switch, Nintendo Switch OLED, and Nintendo Switch Lite. We also service older consoles on a case-by-case basis." },
-  { question: "How much does game console repair cost?", answer: "Repair costs vary by console and issue. HDMI port repairs typically start at $99-$149, disc drive repairs from $79, and Joy-Con drift fixes from $39 per controller. Call (478) 259-6371 for an exact quote." },
+  { question: "How much does game console repair cost?", answer: "Repair costs vary by console and issue. Call (478) 259-6371 for a free quote on your specific repair." },
   { question: "Can you fix HDMI port issues on PS5 and Xbox?", answer: "Yes! HDMI port repair is one of our most common console repairs. We use micro-soldering to replace damaged HDMI ports on PS5, PS4, Xbox Series X/S, and Xbox One consoles." },
   { question: "Can you fix Nintendo Switch Joy-Con drift?", answer: "Absolutely. Joy-Con drift is extremely common and we fix it regularly. We replace the analog stick module for a permanent fix, typically in under an hour." },
   { question: "How long does game console repair take?", answer: "Most console repairs take 1-3 days depending on the issue and parts availability. Simple repairs like Joy-Con drift can often be done same-day. We'll give you an estimated timeline during diagnosis." },
@@ -252,7 +252,7 @@ export default function GameConsoleRepairPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">Other Repair Services</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair</h3><p className="text-muted-foreground">Screen, battery &amp; more from $79</p></Link>
+            <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair</h3><p className="text-muted-foreground">Screen, battery &amp; more</p></Link>
             <Link href="/macon/ipad" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPad Repair</h3><p className="text-muted-foreground">Screen &amp; battery repair for all models</p></Link>
             <Link href="/macon/data-recovery" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Data Recovery</h3><p className="text-muted-foreground">Recover data from damaged devices</p></Link>
           </div>

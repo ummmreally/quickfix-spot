@@ -6,13 +6,13 @@ import { Card } from "@/components/ui/card";
 import FAQSection from "../../components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Battery Replacement Macon GA | iPhone, iPad & MacBook | $59+ | (478) 259-6371",
-  description: "iPhone, iPad & MacBook battery replacement in Macon GA from $59. Same-day 30-minute service, no appointment. Fix fast-draining or swollen batteries. Tech Medics at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+  title: "Battery Replacement Macon GA | iPhone, iPad & MacBook | Same-Day Service | (478) 259-6371",
+  description: "iPhone, iPad & MacBook battery replacement in Macon GA. Same-day 30-minute service, no appointment. Fix fast-draining or swollen batteries. Tech Medics at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
   keywords: ["battery replacement Macon GA", "iPhone battery replacement Macon", "iPad battery replacement Macon GA", "MacBook battery replacement Macon", "phone battery repair near me", "battery dying fast fix Macon", "swollen battery replacement Macon", "same day battery replacement Macon GA"],
   alternates: { canonical: "https://techmedicsmacon.com/macon/battery-replacement" },
   openGraph: {
     title: "Battery Replacement Macon GA | iPhone, iPad & MacBook | Same-Day $59+",
-    description: "Expert battery replacement in Macon GA. iPhone from $59, iPad from $79, MacBook from $149. 30-min service, walk-ins welcome.",
+    description: "Expert battery replacement in Macon GA. iPhone, iPad & MacBook batteries replaced same-day. 30-min service, walk-ins welcome.",
     url: "https://techmedicsmacon.com/macon/battery-replacement",
   },
 };
@@ -33,7 +33,7 @@ const serviceSchema = {
   "@id": "https://techmedicsmacon.com/macon/battery-replacement#service",
   serviceType: "Battery Replacement",
   name: "Battery Replacement Service in Macon GA",
-  description: "Professional battery replacement for iPhone, iPad, and MacBook in Macon, Georgia. Same-day service starting at $59.",
+  description: "Professional battery replacement for iPhone, iPad, and MacBook in Macon, Georgia. Same-day service available.",
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://techmedicsmacon.com/#business",
@@ -60,7 +60,7 @@ const serviceSchema = {
 
 const faqData = [
   { question: "How do I know if my battery needs replacing?", answer: "Common signs include: battery health below 80% (Settings > Battery > Battery Health on iPhone), phone dying at 20-30%, unexpected shutdowns, excessive heat during normal use, or a visibly swollen battery. We offer free diagnostics to check your battery health." },
-  { question: "How much does battery replacement cost in Macon?", answer: "iPhone battery replacement starts at $59, iPad batteries from $79, and MacBook batteries from $149. Call (478) 259-6371 for an exact quote for your model." },
+  { question: "How much does battery replacement cost in Macon?", answer: "We offer competitive pricing for all battery replacements. Call (478) 259-6371 for a free quote for your specific device model." },
   { question: "How long does battery replacement take?", answer: "iPhone battery replacement takes about 30 minutes. iPad batteries take 45-60 minutes. MacBook battery replacement typically takes 1-2 hours depending on the model." },
   { question: "Will I lose my data during battery replacement?", answer: "No. Battery replacement does not affect your data, photos, apps, or settings. Your device will be exactly as you left it, just with a brand new battery." },
   { question: "What if my battery is swollen?", answer: "A swollen battery is a safety hazard – stop using and charging the device immediately. Bring it to Tech Medics right away for safe removal and replacement. Do not attempt to fix a swollen battery yourself." },
@@ -70,27 +70,6 @@ const faqData = [
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqData.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
 
-const pricingData = [
-  { device: "iPhone 8 / SE", price: "$59", time: "30 min" },
-  { device: "iPhone X / XR / XS", price: "$69", time: "30 min" },
-  { device: "iPhone 11", price: "$69", time: "30 min" },
-  { device: "iPhone 12 / Mini", price: "$79", time: "30 min" },
-  { device: "iPhone 13 / Mini", price: "$79", time: "30 min" },
-  { device: "iPhone 14", price: "$89", time: "30-45 min" },
-  { device: "iPhone 14 Pro / Max", price: "$89", time: "30-45 min" },
-  { device: "iPhone 15", price: "$89", time: "30-45 min" },
-  { device: "iPhone 15 Pro / Max", price: "$99", time: "45 min" },
-  { device: "iPhone 16", price: "$99", time: "45 min" },
-  { device: "iPhone 16 Pro / Max", price: "$109", time: "45 min" },
-  { device: "iPhone 16e", price: "$89", time: "45 min" },
-  { device: "iPad (Standard)", price: "$79", time: "45-60 min" },
-  { device: "iPad Mini", price: "$89", time: "45-60 min" },
-  { device: "iPad Air", price: "$99", time: "60 min" },
-  { device: "iPad Pro", price: "$119", time: "60-90 min" },
-  { device: "MacBook Air", price: "$149-$199", time: "1-2 hrs" },
-  { device: "MacBook Pro 13\"", price: "$179-$229", time: "1-2 hrs" },
-  { device: "MacBook Pro 14\" / 16\"", price: "$249-$349", time: "2-3 hrs" },
-];
 
 const testimonials = [
   { name: "James T.", rating: 5, text: "My iPhone 15 battery was dying by lunch every day. They swapped it in 30 minutes and now it lasts all day again. Way cheaper than Apple Store too.", service: "iPhone Battery Replacement" },
@@ -121,7 +100,7 @@ export default function BatteryReplacementPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Battery Replacement in Macon, GA</h1>
-              <p className="text-xl text-muted-foreground mb-8">iPhone dying by noon? MacBook won&apos;t hold a charge? We replace batteries for all Apple devices same-day at 3742 Eisenhower Parkway. Starting at $59, most iPhone batteries swapped in 30 minutes. Walk-ins welcome &ndash; no appointment needed.</p>
+              <p className="text-xl text-muted-foreground mb-8">iPhone dying by noon? MacBook won&apos;t hold a charge? We replace batteries for all Apple devices same-day at 3742 Eisenhower Parkway. Most iPhone batteries swapped in 30 minutes. Walk-ins welcome &ndash; no appointment needed.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
@@ -169,48 +148,32 @@ export default function BatteryReplacementPage() {
             <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-shadow group">
               <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">iPhone Battery</h3>
               <p className="text-muted-foreground mb-4">All models from iPhone 8 through iPhone 16 Pro Max. Premium cells that restore all-day battery life. 30-minute service.</p>
-              <p className="text-primary font-bold text-lg">From $59</p>
+              <p className="text-primary font-bold text-lg">Call for Quote</p>
             </Link>
             <Link href="/macon/ipad" className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-shadow group">
               <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">iPad Battery</h3>
               <p className="text-muted-foreground mb-4">iPad, iPad Mini, iPad Air, and iPad Pro battery replacement. Restore tablet performance and runtime.</p>
-              <p className="text-primary font-bold text-lg">From $79</p>
+              <p className="text-primary font-bold text-lg">Call for Quote</p>
             </Link>
             <Link href="/macon/macbook" className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-shadow group">
               <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">MacBook Battery</h3>
               <p className="text-muted-foreground mb-4">MacBook Air and MacBook Pro battery replacement. Intel and Apple Silicon models. Restore all-day battery life.</p>
-              <p className="text-primary font-bold text-lg">From $149</p>
+              <p className="text-primary font-bold text-lg">Call for Quote</p>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Pricing Table */}
+      {/* Pricing CTA */}
       <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Battery Replacement Pricing in Macon, GA</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">Transparent pricing &ndash; save 30-50% compared to Apple Store. Call <a href="tel:(478)259-6371" className="text-primary font-semibold">(478) 259-6371</a> for an exact quote.</p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
-              <thead>
-                <tr className="border-b border-border bg-primary text-primary-foreground">
-                  <th className="text-left p-4 font-bold">Device</th>
-                  <th className="text-center p-4 font-bold">Battery Price</th>
-                  <th className="text-center p-4 font-bold">Repair Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricingData.map((row) => (
-                  <tr key={row.device} className="border-b border-border last:border-0 hover:bg-secondary/30">
-                    <td className="p-4 font-semibold text-foreground">{row.device}</td>
-                    <td className="p-4 text-center text-foreground font-medium">{row.price}</td>
-                    <td className="p-4 text-center text-muted-foreground">{row.time}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Affordable Battery Replacement Pricing</h2>
+          <p className="text-xl text-muted-foreground mb-8">We offer competitive pricing for all battery replacements. Every repair includes a 30-day warranty and expert service.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
+            </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 text-center">*Prices are estimates and may vary. Contact us for an exact quote. All repairs include a 30-day warranty.</p>
         </div>
       </section>
 
@@ -221,7 +184,7 @@ export default function BatteryReplacementPage() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               { stat: "30 Min", desc: "Most iPhone battery replacements done in 30 minutes" },
-              { stat: "$59+", desc: "Battery replacement starting at just $59" },
+              { stat: "Fast", desc: "Quick and affordable battery replacement" },
               { stat: "Premium", desc: "High-quality batteries matching Apple specifications" },
               { stat: "Warranty", desc: "30-day warranty on all battery replacements" },
             ].map((s) => (
@@ -287,7 +250,7 @@ export default function BatteryReplacementPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">Related Repair Services</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/macon/screen-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Screen Repair</h3><p className="text-muted-foreground">Cracked screen? Fixed same-day from $79</p></Link>
+            <Link href="/macon/screen-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Screen Repair</h3><p className="text-muted-foreground">Cracked screen? Fixed same-day</p></Link>
             <Link href="/macon/charging-port-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Charging Port Repair</h3><p className="text-muted-foreground">Device not charging? We fix it fast</p></Link>
             <Link href="/macon/water-damage" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Water Damage Repair</h3><p className="text-muted-foreground">Dropped in water? We can save it</p></Link>
           </div>

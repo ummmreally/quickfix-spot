@@ -233,21 +233,12 @@ const Footer = ()=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/game-console-repair",
-                                            className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "Game Console Repair"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/Footer.tsx",
-                                            lineNumber: 28,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/macon/screen-repair",
                                             className: "block text-muted-foreground hover:text-primary transition-colors",
                                             children: "Screen Repair"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
-                                            lineNumber: 29,
+                                            lineNumber: 28,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -256,13 +247,22 @@ const Footer = ()=>{
                                             children: "Battery Replacement"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
+                                            lineNumber: 29,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/macon/camera-repair",
+                                            className: "block text-muted-foreground hover:text-primary transition-colors",
+                                            children: "Camera Repair"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 30,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/macon/water-damage",
                                             className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "Water Damage Repair"
+                                            children: "Water Damage"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 31,
@@ -275,15 +275,6 @@ const Footer = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 32,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/pricing",
-                                            className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "Pricing"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/Footer.tsx",
-                                            lineNumber: 33,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
@@ -305,7 +296,7 @@ const Footer = ()=>{
                                     children: "Neighborhoods"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Footer.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -317,7 +308,7 @@ const Footer = ()=>{
                                             children: "Downtown Macon"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
-                                            lineNumber: 40,
+                                            lineNumber: 39,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -326,7 +317,7 @@ const Footer = ()=>{
                                             children: "North Macon"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
-                                            lineNumber: 41,
+                                            lineNumber: 40,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -335,7 +326,7 @@ const Footer = ()=>{
                                             children: "Vineville"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 41,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -344,19 +335,19 @@ const Footer = ()=>{
                                             children: "Ingleside"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
-                                            lineNumber: 43,
+                                            lineNumber: 42,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Footer.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Footer.tsx",
-                            lineNumber: 37,
+                            lineNumber: 36,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -366,85 +357,85 @@ const Footer = ()=>{
                                     children: "Nearby Cities"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Footer.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/warner-robins",
+                                            href: "/macon/warner-robins-iphone-repair",
                                             className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "Phone Repair Warner Robins"
+                                            children: "Warner Robins Repair"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/Footer.tsx",
+                                            lineNumber: 49,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/macon/houston-county-phone-repair",
+                                            className: "block text-muted-foreground hover:text-primary transition-colors",
+                                            children: "Houston County"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 50,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/byron",
+                                            href: "/macon/byron-iphone-repair",
                                             className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "Phone Repair Byron GA"
+                                            children: "Byron Repair"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 51,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/perry",
+                                            href: "/macon/perry-iphone-repair",
                                             className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "Phone Repair Perry GA"
+                                            children: "Perry Repair"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 52,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/forsyth",
+                                            href: "/macon/forsyth-iphone-repair",
                                             className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "Phone Repair Forsyth GA"
+                                            children: "Forsyth Repair"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 53,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/east-macon",
+                                            href: "/macon/peach-county-phone-repair",
                                             className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "East Macon"
+                                            children: "Peach County"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 54,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/south-macon",
+                                            href: "/macon/monroe-county-phone-repair",
                                             className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "South Macon"
+                                            children: "Monroe County"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Footer.tsx",
                                             lineNumber: 55,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/macon/rutland",
-                                            className: "block text-muted-foreground hover:text-primary transition-colors",
-                                            children: "Rutland"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/Footer.tsx",
-                                            lineNumber: 56,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Footer.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Footer.tsx",
-                            lineNumber: 47,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -460,7 +451,7 @@ const Footer = ()=>{
                             children: "© 2026 Tech Medics Macon – Expert iPhone, iPad & MacBook Repair in Macon, GA"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Footer.tsx",
-                            lineNumber: 62,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -468,7 +459,7 @@ const Footer = ()=>{
                             children: "iPhone Screen Repair Macon GA | iPad Screen Replacement | MacBook Repair | Same-Day Service | Walk-Ins Welcome"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Footer.tsx",
-                            lineNumber: 63,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -480,7 +471,7 @@ const Footer = ()=>{
                                     children: "Warranty Policy"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Footer.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 63,
                                     columnNumber: 34
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 " · ",
@@ -490,19 +481,19 @@ const Footer = ()=>{
                                     children: "Privacy Policy"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Footer.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 63,
                                     columnNumber: 145
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Footer.tsx",
-                            lineNumber: 64,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Footer.tsx",
-                    lineNumber: 61,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]

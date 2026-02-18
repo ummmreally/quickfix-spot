@@ -26,6 +26,10 @@ const posts = [
   { slug: "iphone-vs-android-repair-costs-macon", title: "iPhone vs Android Repair Costs in Macon", desc: "How repair costs compare between Apple and Android devices locally.", category: "General" },
   { slug: "game-console-repair-macon-ga", title: "Game Console Repair in Macon GA", desc: "PS5 HDMI port repair, Xbox disc drive fix, Nintendo Switch Joy-Con drift and more.", category: "Console" },
   { slug: "data-recovery-macon-ga", title: "Data Recovery in Macon GA", desc: "Recover photos, contacts and files from broken, water-damaged or dead devices.", category: "General" },
+  { slug: "iphone-repair-warner-robins-ga", title: "iPhone Repair Warner Robins GA", desc: "iPhone repair near Warner Robins & Robins AFB. Just 20 minutes via I-75. Screen, battery, water damage.", category: "iPhone" },
+  { slug: "iphone-screen-repair-vs-replacement", title: "iPhone Screen Repair vs Full Replacement", desc: "Should you repair or replace your cracked iPhone? Cost comparison and decision guide.", category: "iPhone" },
+  { slug: "macbook-battery-issues-swelling-macon", title: "MacBook Battery Swelling? Warning Signs", desc: "Trackpad not clicking or MacBook bulging? Swollen battery warning signs and safe replacement.", category: "MacBook" },
+  { slug: "water-damage-phone-repair-cost-houston-county", title: "Water Damage Phone Repair Cost Houston County", desc: "Water damage repair pricing and success rates for Houston County GA. Emergency service available.", category: "General" },
 ];
 
 export default function BlogIndex() {

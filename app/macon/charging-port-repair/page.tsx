@@ -6,13 +6,13 @@ import { Card } from "@/components/ui/card";
 import FAQSection from "../../components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Charging Port Repair Macon GA | iPhone, iPad & MacBook | $69+ | (478) 259-6371",
-  description: "iPhone, iPad or MacBook not charging? Charging port repair in Macon GA from $69. Same-day fix for loose ports, slow charging & more. Tech Medics at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
+  title: "Charging Port Repair Macon GA | iPhone, iPad & MacBook | Same-Day Service | (478) 259-6371",
+  description: "iPhone, iPad or MacBook not charging? Charging port repair in Macon GA. Same-day fix for loose ports, slow charging & more. Tech Medics at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
   keywords: ["charging port repair Macon GA", "iPhone not charging fix Macon", "charging port replacement Macon", "phone not charging repair near me", "iPhone charging port repair Macon", "iPad charging port fix Macon", "MacBook charging port repair Macon GA", "lightning port repair Macon", "USB-C port repair Macon"],
   alternates: { canonical: "https://techmedicsmacon.com/macon/charging-port-repair" },
   openGraph: {
     title: "Charging Port Repair Macon GA | iPhone, iPad & MacBook | Same-Day $69+",
-    description: "Device not charging? Expert charging port repair in Macon GA from $69. Same-day service, walk-ins welcome.",
+    description: "Device not charging? Expert charging port repair in Macon GA. Same-day service, walk-ins welcome.",
     url: "https://techmedicsmacon.com/macon/charging-port-repair",
   },
 };
@@ -33,7 +33,7 @@ const serviceSchema = {
   "@id": "https://techmedicsmacon.com/macon/charging-port-repair#service",
   serviceType: "Charging Port Repair",
   name: "Charging Port Repair Service in Macon GA",
-  description: "Professional charging port repair and replacement for iPhone, iPad, and MacBook in Macon, Georgia. Same-day service starting at $69.",
+  description: "Professional charging port repair and replacement for iPhone, iPad, and MacBook in Macon, Georgia. Same-day service available.",
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://techmedicsmacon.com/#business",
@@ -60,7 +60,7 @@ const serviceSchema = {
 
 const faqData = [
   { question: "How do I know if my charging port is broken?", answer: "Common signs include: cable falls out easily or feels loose, device only charges at certain angles, charging is very slow, device won't charge at all, or you see lint/debris in the port. We offer free diagnostics to determine the issue." },
-  { question: "How much does charging port repair cost in Macon?", answer: "iPhone charging port repair starts at $69, iPad from $89, and MacBook from $129. Call (478) 259-6371 for an exact quote for your specific model." },
+  { question: "How much does charging port repair cost in Macon?", answer: "We offer competitive pricing for all charging port repairs. Call (478) 259-6371 for a free quote for your specific model." },
   { question: "Can you just clean the charging port instead of replacing it?", answer: "Yes! Sometimes the issue is just lint, dust, or debris blocking the connection. We'll clean the port first (included in our free diagnosis) and only recommend replacement if the port is actually damaged." },
   { question: "How long does charging port repair take?", answer: "iPhone charging port repairs take 30-45 minutes. iPad repairs take about 60 minutes. MacBook port repairs may take 1-3 hours depending on the model and issue." },
   { question: "Will I lose my data during charging port repair?", answer: "No. Charging port repair does not affect your data, photos, or apps. Your device will be exactly as you left it." },
@@ -69,22 +69,6 @@ const faqData = [
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqData.map(f => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
 
-const pricingData = [
-  { device: "iPhone 8 / SE", price: "$69", time: "30-45 min" },
-  { device: "iPhone X / XR / XS", price: "$79", time: "30-45 min" },
-  { device: "iPhone 11", price: "$79", time: "30-45 min" },
-  { device: "iPhone 12 / Mini", price: "$89", time: "45 min" },
-  { device: "iPhone 13 / Mini", price: "$89", time: "45 min" },
-  { device: "iPhone 14", price: "$99", time: "45 min" },
-  { device: "iPhone 14 Pro / Max", price: "$99", time: "45 min" },
-  { device: "iPhone 15 / 16", price: "$99-$109", time: "45-60 min" },
-  { device: "iPhone 15 Pro / 16 Pro", price: "$109-$119", time: "45-60 min" },
-  { device: "iPad (Standard)", price: "$89", time: "60 min" },
-  { device: "iPad Mini / Air", price: "$99", time: "60 min" },
-  { device: "iPad Pro", price: "$119", time: "60-90 min" },
-  { device: "MacBook Air", price: "$129-$199", time: "1-2 hrs" },
-  { device: "MacBook Pro", price: "$149-$249", time: "1-3 hrs" },
-];
 
 const testimonials = [
   { name: "Christina M.", rating: 5, text: "My iPhone 14 would only charge if I held the cable at a weird angle. They replaced the charging port in 40 minutes and now it works perfectly. So relieved!", service: "iPhone Charging Port Repair" },
@@ -115,7 +99,7 @@ export default function ChargingPortRepairPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Charging Port Repair in Macon, GA</h1>
-              <p className="text-xl text-muted-foreground mb-8">iPhone, iPad, or MacBook not charging? Don&apos;t replace your device &ndash; let us fix the charging port. Same-day repair starting at $69 at 3742 Eisenhower Parkway. We fix loose ports, slow charging, and devices that won&apos;t charge at all.</p>
+              <p className="text-xl text-muted-foreground mb-8">iPhone, iPad, or MacBook not charging? Don&apos;t replace your device &ndash; let us fix the charging port. Same-day repair at 3742 Eisenhower Parkway. We fix loose ports, slow charging, and devices that won&apos;t charge at all.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
@@ -155,32 +139,16 @@ export default function ChargingPortRepairPage() {
         </div>
       </section>
 
-      {/* Pricing Table */}
-      <section className="py-20 px-4 bg-secondary/20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Charging Port Repair Pricing in Macon, GA</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">Affordable prices with no hidden fees. Call <a href="tel:(478)259-6371" className="text-primary font-semibold">(478) 259-6371</a> for an exact quote.</p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
-              <thead>
-                <tr className="border-b border-border bg-primary text-primary-foreground">
-                  <th className="text-left p-4 font-bold">Device</th>
-                  <th className="text-center p-4 font-bold">Charging Port Price</th>
-                  <th className="text-center p-4 font-bold">Repair Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricingData.map((row) => (
-                  <tr key={row.device} className="border-b border-border last:border-0 hover:bg-secondary/30">
-                    <td className="p-4 font-semibold text-foreground">{row.device}</td>
-                    <td className="p-4 text-center text-foreground font-medium">{row.price}</td>
-                    <td className="p-4 text-center text-muted-foreground">{row.time}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+      {/* Pricing CTA */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Affordable Charging Port Repair Pricing</h2>
+          <p className="text-xl text-muted-foreground mb-8">We offer competitive pricing for all charging port repairs. Every repair includes a 30-day warranty and expert service.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
+            </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 text-center">*Prices are estimates and may vary. Contact us for an exact quote. All repairs include a 30-day warranty.</p>
         </div>
       </section>
 
@@ -257,8 +225,8 @@ export default function ChargingPortRepairPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">Related Repair Services</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/macon/battery-replacement" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Battery Replacement</h3><p className="text-muted-foreground">Battery dying fast? New battery from $59</p></Link>
-            <Link href="/macon/screen-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Screen Repair</h3><p className="text-muted-foreground">Cracked screen fixed same-day from $79</p></Link>
+            <Link href="/macon/battery-replacement" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Battery Replacement</h3><p className="text-muted-foreground">Battery dying fast? We can help</p></Link>
+            <Link href="/macon/screen-repair" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Screen Repair</h3><p className="text-muted-foreground">Cracked screen fixed same-day</p></Link>
             <Link href="/macon/water-damage" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Water Damage Repair</h3><p className="text-muted-foreground">Liquid damage recovery for all devices</p></Link>
           </div>
         </div>
