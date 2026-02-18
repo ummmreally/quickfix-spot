@@ -2,15 +2,6 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/battery-replacement/layout,_N_T_/macon/battery-replacement/page,_N_T_/macon/battery-replacement"
-  },
-  "segmentPaths": [
-    "/_tree",
-    "/_full",
-    "/macon/battery-replacement/__PAGE__",
-    "/macon/battery-replacement",
-    "/macon",
-    "/_index",
-    "/_head"
-  ]
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/battery-replacement/layout,_N_T_/macon/battery-replacement/page,_N_T_/macon/battery-replacement/"
+  }
 }

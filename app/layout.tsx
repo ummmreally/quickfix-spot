@@ -164,9 +164,9 @@ const businessSchema = {
         "@type": "OfferCatalog",
         name: "iPhone Repair",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Screen Repair", description: "Same-day cracked iPhone screen replacement for all models" }, priceSpecification: { "@type": "UnitPriceSpecification", price: "79", priceCurrency: "USD", unitText: "starting at" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Battery Replacement", description: "iPhone battery replacement with high-quality cells" }, priceSpecification: { "@type": "UnitPriceSpecification", price: "59", priceCurrency: "USD", unitText: "starting at" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Charging Port Repair", description: "Fix iPhone not charging issues" }, priceSpecification: { "@type": "UnitPriceSpecification", price: "69", priceCurrency: "USD", unitText: "starting at" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Screen Repair", description: "Same-day cracked iPhone screen replacement for all models" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Battery Replacement", description: "iPhone battery replacement with high-quality cells" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Charging Port Repair", description: "Fix iPhone not charging issues" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPhone Water Damage Repair", description: "Emergency water damage recovery for iPhones" } },
         ],
       },
@@ -174,7 +174,7 @@ const businessSchema = {
         "@type": "OfferCatalog",
         name: "iPad Repair",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPad Screen Replacement", description: "iPad screen and glass replacement for all models" }, priceSpecification: { "@type": "UnitPriceSpecification", price: "99", priceCurrency: "USD", unitText: "starting at" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPad Screen Replacement", description: "iPad screen and glass replacement for all models" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPad Battery Replacement", description: "iPad battery service for all models" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "iPad Charging Port Repair", description: "Fix iPad charging issues" } },
         ],
@@ -183,7 +183,7 @@ const businessSchema = {
         "@type": "OfferCatalog",
         name: "MacBook Repair",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "MacBook Screen Replacement", description: "MacBook Air and Pro screen replacement" }, priceSpecification: { "@type": "UnitPriceSpecification", price: "299", priceCurrency: "USD", unitText: "starting at" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "MacBook Screen Replacement", description: "MacBook Air and Pro screen replacement" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "MacBook Battery Replacement", description: "MacBook battery replacement service" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "MacBook Keyboard Repair", description: "MacBook keyboard repair and replacement" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "MacBook Logic Board Repair", description: "MacBook logic board diagnostics and repair" } },
@@ -202,9 +202,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preload" as="image" href="/images/iphone-screen-repair-macon.webp" />
+        {/* Google Tag Manager - deferred until browser idle */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function loadGTM() {
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-TJ82LBSH');
+              }
+              if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadGTM, { timeout: 3000 });
+              } else {
+                window.addEventListener('load', function() { setTimeout(loadGTM, 500); });
+              }
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen bg-background antialiased">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TJ82LBSH"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }} />

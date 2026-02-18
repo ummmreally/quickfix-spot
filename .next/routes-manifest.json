@@ -1,17 +1,28 @@
 {
   "version": 3,
   "pages404": true,
-  "appType": "app",
   "caseSensitive": false,
   "basePath": "",
   "redirects": [
     {
-      "source": "/:path+/",
-      "destination": "/:path+",
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
       "internal": true,
-      "priority": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
       "statusCode": 308,
-      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
     }
   ],
   "headers": [],
@@ -46,12 +57,6 @@
       "namedRegex": "^/(?:/)?$"
     },
     {
-      "page": "/_global-error",
-      "regex": "^/_global\\-error(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/_global\\-error(?:/)?$"
-    },
-    {
       "page": "/_not-found",
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
@@ -76,16 +81,52 @@
       "namedRegex": "^/macon/about(?:/)?$"
     },
     {
+      "page": "/macon/accessories",
+      "regex": "^/macon/accessories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/accessories(?:/)?$"
+    },
+    {
+      "page": "/macon/back-glass-repair",
+      "regex": "^/macon/back\\-glass\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/back\\-glass\\-repair(?:/)?$"
+    },
+    {
       "page": "/macon/battery-replacement",
       "regex": "^/macon/battery\\-replacement(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/macon/battery\\-replacement(?:/)?$"
     },
     {
+      "page": "/macon/bibb-county-phone-repair",
+      "regex": "^/macon/bibb\\-county\\-phone\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/bibb\\-county\\-phone\\-repair(?:/)?$"
+    },
+    {
       "page": "/macon/business",
       "regex": "^/macon/business(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/macon/business(?:/)?$"
+    },
+    {
+      "page": "/macon/button-repair",
+      "regex": "^/macon/button\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/button\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/byron-iphone-repair",
+      "regex": "^/macon/byron\\-iphone\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/byron\\-iphone\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/camera-repair",
+      "regex": "^/macon/camera\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/camera\\-repair(?:/)?$"
     },
     {
       "page": "/macon/charging-port-repair",
@@ -118,10 +159,22 @@
       "namedRegex": "^/macon/education(?:/)?$"
     },
     {
+      "page": "/macon/forsyth-iphone-repair",
+      "regex": "^/macon/forsyth\\-iphone\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/forsyth\\-iphone\\-repair(?:/)?$"
+    },
+    {
       "page": "/macon/game-console-repair",
       "regex": "^/macon/game\\-console\\-repair(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/macon/game\\-console\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/houston-county-phone-repair",
+      "regex": "^/macon/houston\\-county\\-phone\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/houston\\-county\\-phone\\-repair(?:/)?$"
     },
     {
       "page": "/macon/ipad",
@@ -142,6 +195,30 @@
       "namedRegex": "^/macon/macbook(?:/)?$"
     },
     {
+      "page": "/macon/macbook-keyboard-repair",
+      "regex": "^/macon/macbook\\-keyboard\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/macbook\\-keyboard\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/monroe-county-phone-repair",
+      "regex": "^/macon/monroe\\-county\\-phone\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/monroe\\-county\\-phone\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/peach-county-phone-repair",
+      "regex": "^/macon/peach\\-county\\-phone\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/peach\\-county\\-phone\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/perry-iphone-repair",
+      "regex": "^/macon/perry\\-iphone\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/perry\\-iphone\\-repair(?:/)?$"
+    },
+    {
       "page": "/macon/reviews",
       "regex": "^/macon/reviews(?:/)?$",
       "routeKeys": {},
@@ -158,6 +235,24 @@
       "regex": "^/macon/services(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/macon/services(?:/)?$"
+    },
+    {
+      "page": "/macon/warner-robins-ipad-repair",
+      "regex": "^/macon/warner\\-robins\\-ipad\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/warner\\-robins\\-ipad\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/warner-robins-iphone-repair",
+      "regex": "^/macon/warner\\-robins\\-iphone\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/warner\\-robins\\-iphone\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/warner-robins-macbook-repair",
+      "regex": "^/macon/warner\\-robins\\-macbook\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/warner\\-robins\\-macbook\\-repair(?:/)?$"
     },
     {
       "page": "/macon/water-damage",
@@ -198,11 +293,10 @@
     "didPostponeHeader": "x-nextjs-postponed",
     "contentTypeHeader": "text/x-component",
     "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
     "prefetchSegmentHeader": "next-router-segment-prefetch",
     "prefetchSegmentSuffix": ".segment.rsc",
-    "prefetchSegmentDirSuffix": ".segments",
-    "clientParamParsing": false,
-    "dynamicRSCPrerender": false
+    "prefetchSegmentDirSuffix": ".segments"
   },
   "rewriteHeaders": {
     "pathHeader": "x-nextjs-rewritten-path",

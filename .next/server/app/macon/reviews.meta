@@ -2,15 +2,6 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/reviews/layout,_N_T_/macon/reviews/page,_N_T_/macon/reviews"
-  },
-  "segmentPaths": [
-    "/_tree",
-    "/_full",
-    "/macon/reviews/__PAGE__",
-    "/macon/reviews",
-    "/macon",
-    "/_index",
-    "/_head"
-  ]
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/reviews/layout,_N_T_/macon/reviews/page,_N_T_/macon/reviews/"
+  }
 }

@@ -2,15 +2,6 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/charging-port-repair/layout,_N_T_/macon/charging-port-repair/page,_N_T_/macon/charging-port-repair"
-  },
-  "segmentPaths": [
-    "/_tree",
-    "/_full",
-    "/macon/charging-port-repair/__PAGE__",
-    "/macon/charging-port-repair",
-    "/macon",
-    "/_index",
-    "/_head"
-  ]
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/macon/layout,_N_T_/macon/charging-port-repair/layout,_N_T_/macon/charging-port-repair/page,_N_T_/macon/charging-port-repair/"
+  }
 }
