@@ -1,0 +1,387 @@
+# Tech Medics Macon — Complete Business Reference
+
+> Expert iPhone, iPad, MacBook, and game console repair in Macon, Georgia. Same-day service, 30-minute turnaround, walk-ins welcome. Locally owned and operated since 2024. 4.9-star rating with 100+ verified reviews.
+
+---
+
+## Business Identity
+
+- **Legal Name:** Tech Medics Macon
+- **Business Type:** Local electronics repair shop specializing in Apple devices
+- **Schema Types:** LocalBusiness, MobilePhoneRepairShop
+- **Year Established:** 2024
+- **Experience:** Apple device repair specialists serving Macon since 2024
+- **Website:** https://techmedicsmacon.com
+- **Facebook:** https://www.facebook.com/TechMedicsMacon
+
+## Contact Information
+
+- **Phone:** (478) 259-6371
+- **Email:** Support@MyTechMedics.com
+- **Address:** 3742 Eisenhower Parkway, Macon, GA 31206
+- **Google Maps:** https://www.google.com/maps/place/3742+Eisenhower+Pkwy,+Macon,+GA+31206
+- **Directions:** https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206
+- **Coordinates:** 32.816°N, 83.708°W
+
+## Hours of Operation
+
+| Day | Hours |
+|-----|-------|
+| Monday | 10:00 AM – 6:00 PM |
+| Tuesday | 10:00 AM – 6:00 PM |
+| Wednesday | 10:00 AM – 6:00 PM |
+| Thursday | 10:00 AM – 6:00 PM |
+| Friday | 10:00 AM – 6:00 PM |
+| Saturday | 10:00 AM – 5:00 PM |
+| Sunday | Closed |
+
+Walk-ins welcome during all business hours. No appointment necessary.
+
+## Service Area
+
+### Primary Service Area
+- Macon, GA (Bibb County)
+
+### Cities Served
+- Warner Robins, GA (20 minutes via I-75) — including Robins Air Force Base
+- Byron, GA (20 minutes via I-75) — Peach County
+- Perry, GA (25 minutes via I-75) — Houston County
+- Forsyth, GA (25 minutes via I-75) — Monroe County
+- Centerville, GA
+- Bonaire, GA
+- Fort Valley, GA
+- Juliette, GA
+
+### Counties Served
+- Bibb County
+- Houston County
+- Peach County
+- Monroe County
+
+### Macon Neighborhoods Served
+- Vineville (near Mercer University — student discounts available with valid ID)
+- North Macon (near The Crossing shopping center, River North, Bass Road)
+- Downtown Macon (Cherry Street, Historic District, Navicent Health area)
+- Ingleside (near Wesleyan College)
+- East Macon (River Crossing area)
+- South Macon (Macon Mall area — shop is located on Eisenhower Parkway)
+- Bloomfield (South Macon area — minutes from the shop on Eisenhower Parkway)
+- Rutland (Bass Road, Hartley Bridge Road area)
+
+---
+
+## Repair Services — Full Detail
+
+### iPhone Repair
+
+**Models Serviced:** Every iPhone from iPhone 5s through iPhone 16 Pro Max, including:
+- iPhone 16 Pro Max, 16 Pro, 16 Plus, 16, 16e
+- iPhone 15 Pro Max, 15 Pro, 15 Plus, 15
+- iPhone 14 Pro Max, 14 Pro, 14 Plus, 14
+- iPhone 13 Pro Max, 13 Pro, 13, 13 mini
+- iPhone 12 Pro Max, 12 Pro, 12, 12 mini
+- iPhone 11 Pro Max, 11 Pro, 11
+- iPhone XS Max, XS, XR, X
+- iPhone 8 Plus, 8, 7 Plus, 7
+- iPhone SE (3rd gen), SE (2nd gen), SE (1st gen)
+- iPhone 6s Plus, 6s, 6 Plus, 6, 5s
+
+**Services Offered:**
+1. **Screen Repair** — Cracked, shattered, or unresponsive touchscreen replacement. Both OEM-equivalent and premium aftermarket options available. Most completed in 30 minutes.
+2. **Battery Replacement** — For batteries with degraded health (below 80%), fast drain, unexpected shutdowns, or swelling. 30-minute service.
+3. **Charging Port Repair** — Fix loose, corroded, or non-functional Lightning/USB-C ports. Resolves slow charging and connection issues.
+4. **Back Glass Repair** — Cracked rear glass replacement for iPhone 8 and newer models with glass backs.
+5. **Camera Repair** — Front and rear camera module replacement for blurry photos, black screens, or cracked camera lenses.
+6. **Speaker Repair** — Fix muffled, quiet, or non-working earpiece and loudspeaker.
+7. **Water Damage Diagnostic & Recovery** — Ultrasonic cleaning and micro-soldering to recover water-damaged iPhones. Data recovery included when possible.
+
+### iPad Repair
+
+**Models Serviced:**
+- iPad Pro 13" (M4), iPad Pro 11" (M4)
+- iPad Pro 13" (M2), iPad Pro 11" (M2)
+- iPad Air 13" (M2), iPad Air 11" (M2), iPad Air (M1)
+- iPad mini 7, iPad mini 6
+- iPad 10th gen, 9th gen, 8th gen
+- All older iPad generations
+
+**Services Offered:**
+1. **Screen & Digitizer Replacement** — Glass and LCD replacement for cracked, shattered, or touch-unresponsive iPads.
+2. **Battery Replacement** — For iPads with degraded battery life or swollen batteries.
+3. **Charging Port Repair** — Fix USB-C or Lightning port issues.
+4. **Camera Repair** — Front and rear camera replacement.
+5. **Speaker Repair** — Fix audio output issues.
+6. **Water Damage Diagnostic & Recovery** — Professional cleaning and component-level repair.
+
+### MacBook Repair
+
+**Models Serviced:**
+- MacBook Air 15" (M4), MacBook Air 13" (M4)
+- MacBook Air 15" (M3), MacBook Air 13" (M3)
+- MacBook Air (M2), MacBook Air (M1)
+- MacBook Pro 16" (M4), MacBook Pro 14" (M4)
+- MacBook Pro 16" (M3), MacBook Pro 14" (M3)
+- MacBook Pro 13" (M2), MacBook Pro 13" (M1)
+- All Intel-based MacBook Air and Pro models
+
+**Services Offered:**
+1. **Screen / Retina Display Replacement** — Full display assembly replacement for cracked, dead-pixel, or damaged screens.
+2. **Battery Replacement** — For degraded, swollen, or non-charging batteries.
+3. **Keyboard Repair** — Fix stuck, unresponsive, or liquid-damaged keyboards. Full keyboard replacement available.
+4. **Charging Port Repair** — MagSafe and USB-C port repair.
+5. **Data Recovery** — Recover files from non-booting, liquid-damaged, or failed drives.
+6. **Logic Board Diagnostics & Repair** — Component-level diagnosis and micro-soldering for complex board-level issues.
+7. **Water Damage Diagnostic & Recovery** — Professional ultrasonic cleaning and board repair.
+
+### Game Console Repair
+
+**Devices Serviced:**
+- PlayStation 5, PlayStation 5 Slim
+- Xbox Series X, Xbox Series S
+- Nintendo Switch OLED, Nintendo Switch, Nintendo Switch Lite
+- Steam Deck
+
+**Services Offered:**
+1. **HDMI Port Repair** — Fix no-display or intermittent video output (PS5, Xbox).
+2. **Disc Drive Repair** — Fix disc read errors, ejection issues, grinding noises (PS5, Xbox).
+3. **Controller Repair** — Joy-Con drift fix, stick replacement, button repair (all consoles).
+4. **Fan / Overheating Repair** — Thermal paste replacement, fan cleaning or replacement.
+5. **Battery Replacement** — For portable consoles (Switch, Switch Lite, Steam Deck).
+6. **Screen Repair** — LCD/OLED replacement for portable consoles.
+
+### Additional Services
+
+- **Data Recovery** — Recover photos, contacts, messages, and files from broken, water-damaged, or dead devices.
+- **Business Device Repair** — Fleet management, volume discounts, priority service, on-site support, invoice billing, scheduled maintenance programs.
+- **Accessories** — Screen protectors, cases, and charging accessories.
+- **Education Support** — Device repair services for schools and educational institutions.
+- **DIY Repair Resources** — Guides and advice for common repairs.
+
+---
+
+## Why Tech Medics vs. Other Macon Repair Shops
+
+Tech Medics is Macon's only **Apple-specialist repair shop**. Unlike national franchise chains and big-box kiosks that fix every brand (Samsung, Motorola, LG, Google, etc.), Tech Medics focuses exclusively on **Apple devices (iPhone, iPad, MacBook) and game consoles**. This specialization delivers:
+
+- **Deeper expertise:** Technicians work on Apple devices all day, every day — not rotating between dozens of brands.
+- **Faster repairs:** 30-minute iPhone screen repairs because parts are always in stock and workflows are optimized for Apple hardware.
+- **Higher success rates:** Micro-soldering capability for board-level repairs (water damage, logic board issues, HDMI ports) that generalist shops cannot perform.
+- **4.9-star rating with 100+ reviews:** The highest customer rating among Macon phone repair shops.
+
+### How We Compare
+
+| Feature | Tech Medics | National Chains | Big-Box Kiosks |
+|---------|-------------|-----------------|----------------|
+| Apple-Only Specialists | Yes | No (fix all brands) | No (fix all brands) |
+| 30-Minute Screen Repair | Yes | No (often next-day) | No |
+| Micro-Soldering | Yes | No | No |
+| Independently Owned | Yes (since 2024) | No (franchise) | No (franchise) |
+| Walk-Ins Welcome | Yes | Sometimes | Varies |
+| Price Match Guarantee | Yes | Some locations | No |
+| Free Diagnostics | Yes | Yes | Yes |
+| 30–50% Below Apple Pricing | Yes | Yes | Yes |
+
+---
+
+## Policies & Guarantees
+
+- **30-Day Warranty:** Every repair includes a comprehensive 30-day warranty covering both parts and labor. If anything goes wrong with a repair, bring it back for a free fix.
+- **No Fix, No Fee:** Customers only pay if the device is successfully repaired.
+- **Walk-Ins Welcome:** No appointment necessary during business hours.
+- **Price Match Guarantee:** Will match any local competitor's repair pricing.
+- **Free Counter Diagnostics:** Quick assessment at the counter at no charge.
+- **Apple Genuine Parts:** Tech Medics uses Apple genuine parts for eligible iPhone repairs through the Apple Self Service Repair program, ensuring the highest quality screen, battery, and camera replacements.
+- **Parts Quality:** Premium OEM-equivalent and aftermarket options also available. Customers can choose based on budget and preference.
+- **Pricing:** Typically 30–50% below Apple Store rates.
+- **Independently Owned:** Not a franchise — independently owned and operated in Macon since 2024.
+
+---
+
+## Customer Reviews & Testimonials
+
+**Aggregate Rating:** 4.9 out of 5.0 stars based on 100+ verified reviews.
+
+### Selected Reviews
+
+- **Jessica M.** (5 stars): "Cracked my iPhone 16 screen and they had it fixed in 20 minutes flat! Hands down the best iPhone repair in Macon. Fast, fair pricing, and they even put on a free screen protector."
+- **Thomas R.** (5 stars): "My iPad Pro M4 screen was completely shattered. They had the exact part in stock and replaced it same day. Looks brand new — can't even tell it was broken."
+- **Karen W.** (5 stars): "MacBook Air M3 keyboard stopped working after a coffee spill. They cleaned it, replaced the keyboard, and had it back to me the same afternoon. Incredible turnaround."
+- **Brandon C.** (5 stars): "iPhone 15 battery was dying by noon every day. They swapped it in 25 minutes and my phone lasts all day again. Way cheaper than the Apple Store too."
+- **Michelle D.** (5 stars): "My daughter dropped her iPad in the bathtub. Tech Medics recovered it and saved every photo. I thought it was a goner — these guys are miracle workers."
+- **Steven J.** (5 stars): "Had my MacBook Pro 14-inch screen replaced here. They texted me updates the whole time and the repair is flawless. Already sent two coworkers their way."
+
+---
+
+## Frequently Asked Questions
+
+### General
+
+**Q: How long do repairs take?**
+A: Most iPhone screen repairs take 30 minutes or less, including the latest iPhone 16e and 16 Pro Max. iPad repairs typically take 1–2 hours. MacBook repairs range from 2–4 hours depending on the service. Same-day service for most repairs.
+
+**Q: Do I need an appointment?**
+A: No. Walk-ins are welcome Monday–Friday 10am–6pm and Saturday 10am–5pm. Most customers are in and out within 30–45 minutes. You can call ahead at (478) 259-6371 during busy periods.
+
+**Q: Do you offer same-day repair?**
+A: Yes. Most iPhone repairs are completed while you wait. iPad and MacBook repairs are typically same-day as well.
+
+**Q: What areas do you serve?**
+A: All of Central Georgia: Macon, Warner Robins, Byron, Forsyth, Perry, Bibb County, Houston County, and Peach County. Located at 3742 Eisenhower Parkway with easy I-75 access.
+
+**Q: Are your parts genuine Apple parts?**
+A: We use premium-grade replacement parts that meet or exceed OEM specifications. For 2026 models like the iPhone 16e and iPad Pro M4, we stock both OEM-equivalent and aftermarket options so customers can choose the best fit for their budget. All parts come with a 30-day warranty.
+
+**Q: Do you offer warranties on repairs?**
+A: Every repair comes with a 30-day comprehensive warranty covering both parts and labor.
+
+**Q: Can you fix water-damaged devices?**
+A: Yes. Water damage repair is a specialty. We use ultrasonic cleaning and micro-soldering to recover devices other shops turn away. The sooner the device is brought in after water exposure, the better the chances of full recovery.
+
+### iPhone-Specific
+
+**Q: How much does iPhone screen repair cost?**
+A: Call (478) 259-6371 for a free quote for your specific model. Pricing is competitive and typically 30–50% below Apple Store rates.
+
+**Q: Do you repair the iPhone 16e and iPhone 16 Pro Max?**
+A: Yes. Parts are stocked for every 2026 iPhone model including the iPhone 16e, 16, 16 Plus, 16 Pro, and 16 Pro Max, plus all older generations back to iPhone 7.
+
+**Q: Can you fix a fast-draining iPhone battery?**
+A: Yes. Battery replacement is the most popular service. If the iPhone dies by noon or shows "Service" in Battery Health, the battery can be swapped in about 30 minutes. Batteries are carried for every model from iPhone 7 through iPhone 16 Pro Max.
+
+### Business Services
+
+**Q: Do you offer business repair services?**
+A: Yes. Services include fleet device management, bulk repair discounts, priority service for urgent needs, scheduled maintenance programs, on-site support, and invoice billing for accounting departments.
+
+---
+
+## Complete Site Map
+
+### Main Pages
+- https://techmedicsmacon.com/ — Home
+- https://techmedicsmacon.com/macon/iphone — iPhone Repair
+- https://techmedicsmacon.com/macon/ipad — iPad Repair
+- https://techmedicsmacon.com/macon/macbook — MacBook Repair
+- https://techmedicsmacon.com/macon/services — All Repair Services
+- https://techmedicsmacon.com/macon/pricing-chart — Interactive Repair Quote Tool
+- https://techmedicsmacon.com/macon/apple-genuine-parts — Apple Genuine Parts
+- https://techmedicsmacon.com/macon/about — About Us
+- https://techmedicsmacon.com/macon/contact — Contact
+- https://techmedicsmacon.com/macon/reviews — Customer Reviews
+- https://techmedicsmacon.com/macon/business — Business Solutions
+- https://techmedicsmacon.com/blog — Blog & Repair Guides
+- https://techmedicsmacon.com/privacy — Privacy Policy
+- https://techmedicsmacon.com/warranty-policy — Warranty Policy
+
+### Specific Service Pages
+- https://techmedicsmacon.com/macon/screen-repair — Screen Repair
+- https://techmedicsmacon.com/macon/battery-replacement — Battery Replacement
+- https://techmedicsmacon.com/macon/charging-port-repair — Charging Port Repair
+- https://techmedicsmacon.com/macon/water-damage — Water Damage Repair
+- https://techmedicsmacon.com/macon/camera-repair — Camera Repair
+- https://techmedicsmacon.com/macon/back-glass-repair — Back Glass Repair
+- https://techmedicsmacon.com/macon/button-repair — Button Repair
+- https://techmedicsmacon.com/macon/data-recovery — Data Recovery
+- https://techmedicsmacon.com/macon/macbook-keyboard-repair — MacBook Keyboard Repair
+- https://techmedicsmacon.com/macon/game-console-repair — Game Console Repair
+- https://techmedicsmacon.com/macon/console-hdmi-stick-drift — Console HDMI Port Repair & Controller Stick Drift Fix
+- https://techmedicsmacon.com/macon/diy-repair — DIY Repair Resources
+- https://techmedicsmacon.com/macon/accessories — Accessories
+- https://techmedicsmacon.com/macon/education — Education Device Support
+
+### iPhone Model Pages
+- https://techmedicsmacon.com/macon/iphone/iphone-16-pro-max-repair — iPhone 16 Pro Max Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-16-pro-repair — iPhone 16 Pro Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-16e-repair — iPhone 16e Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-16-repair — iPhone 16 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-16-plus-repair — iPhone 16 Plus Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-15-pro-max-repair — iPhone 15 Pro Max Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-15-pro-repair — iPhone 15 Pro Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-15-repair — iPhone 15 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-15-plus-repair — iPhone 15 Plus Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-14-pro-max-repair — iPhone 14 Pro Max Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-14-pro-repair — iPhone 14 Pro Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-14-repair — iPhone 14 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-13-pro-max-repair — iPhone 13 Pro Max Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-13-pro-repair — iPhone 13 Pro Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-13-repair — iPhone 13 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-13-mini-repair — iPhone 13 mini Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-12-pro-max-repair — iPhone 12 Pro Max Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-12-pro-repair — iPhone 12 Pro Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-12-repair — iPhone 12 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-12-mini-repair — iPhone 12 mini Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-11-pro-max-repair — iPhone 11 Pro Max Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-11-pro-repair — iPhone 11 Pro Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-11-repair — iPhone 11 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-xs-max-repair — iPhone XS Max Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-xs-repair — iPhone XS Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-xr-repair — iPhone XR Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-x-repair — iPhone X Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-8-plus-repair — iPhone 8 Plus Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-8-repair — iPhone 8 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-7-plus-repair — iPhone 7 Plus Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-7-repair — iPhone 7 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-se-3rd-gen-repair — iPhone SE (3rd Gen) Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-se-2nd-gen-repair — iPhone SE (2nd Gen) Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-se-1st-gen-repair — iPhone SE (1st Gen) Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-6s-plus-repair — iPhone 6s Plus Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-6s-repair — iPhone 6s Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-6-plus-repair — iPhone 6 Plus Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-6-repair — iPhone 6 Repair
+- https://techmedicsmacon.com/macon/iphone/iphone-5s-repair — iPhone 5s Repair
+
+### Nearby City Pages
+- https://techmedicsmacon.com/macon/warner-robins-iphone-repair — Warner Robins iPhone Repair
+- https://techmedicsmacon.com/macon/warner-robins-ipad-repair — Warner Robins iPad Repair
+- https://techmedicsmacon.com/macon/warner-robins-macbook-repair — Warner Robins MacBook Repair
+- https://techmedicsmacon.com/macon/byron-iphone-repair — Byron iPhone Repair
+- https://techmedicsmacon.com/macon/perry-iphone-repair — Perry iPhone Repair
+- https://techmedicsmacon.com/macon/forsyth-iphone-repair — Forsyth iPhone Repair
+- https://techmedicsmacon.com/macon/bibb-county-phone-repair — Bibb County Phone Repair
+- https://techmedicsmacon.com/macon/houston-county-phone-repair — Houston County Phone Repair
+- https://techmedicsmacon.com/macon/peach-county-phone-repair — Peach County Phone Repair
+- https://techmedicsmacon.com/macon/monroe-county-phone-repair — Monroe County Phone Repair
+
+### Neighborhood Pages
+- https://techmedicsmacon.com/macon/vineville — Vineville / Mercer University
+- https://techmedicsmacon.com/macon/north-macon — North Macon / The Crossing
+- https://techmedicsmacon.com/macon/downtown — Downtown Macon / Cherry Street
+- https://techmedicsmacon.com/macon/ingleside — Ingleside / Wesleyan College
+- https://techmedicsmacon.com/macon/east-macon — East Macon / River Crossing
+- https://techmedicsmacon.com/macon/south-macon — South Macon / Macon Mall Area
+- https://techmedicsmacon.com/macon/bloomfield — Bloomfield / South Macon
+- https://techmedicsmacon.com/macon/rutland — Rutland / Bass Road
+
+### Blog Articles
+- https://techmedicsmacon.com/blog/iphone-screen-repair-macon-ga — Complete iPhone Screen Repair Guide – Macon GA
+- https://techmedicsmacon.com/blog/iphone-battery-replacement-macon — iPhone Battery Replacement in Macon – Signs & Costs
+- https://techmedicsmacon.com/blog/ipad-screen-repair-macon — iPad Screen Repair in Macon GA – All Models
+- https://techmedicsmacon.com/blog/macbook-repair-macon-ga — MacBook Repair Services in Macon GA
+- https://techmedicsmacon.com/blog/tech-medics-vs-apple-store-repair — Tech Medics vs Apple Store – Repair Comparison
+- https://techmedicsmacon.com/blog/water-damaged-iphone-repair — Water Damaged iPhone? Here's What to Do
+- https://techmedicsmacon.com/blog/iphone-dying-fast-after-charging — iPhone Dying Fast After Charging? 11 Fixes
+- https://techmedicsmacon.com/blog/iphone-not-turning-on-fix — iPhone Not Turning On? Troubleshooting Guide
+- https://techmedicsmacon.com/blog/oem-vs-aftermarket-iphone-screens — OEM vs Aftermarket iPhone Screens Explained
+- https://techmedicsmacon.com/blog/iphone-screen-repair-cost-macon — iPhone Screen Repair Cost in Macon GA (2026)
+- https://techmedicsmacon.com/blog/iphone-repair-near-me-macon — iPhone Repair Near Me in Macon GA
+- https://techmedicsmacon.com/blog/same-day-iphone-repair-macon — Same-Day iPhone Repair in Macon
+- https://techmedicsmacon.com/blog/choose-phone-repair-shop-macon — How to Choose a Phone Repair Shop in Macon
+- https://techmedicsmacon.com/blog/swollen-iphone-battery-replacement-macon — Swollen iPhone Battery? Get It Replaced Now
+- https://techmedicsmacon.com/blog/macbook-screen-repair-cost-macon — MacBook Screen Repair Cost in Macon GA
+- https://techmedicsmacon.com/blog/iphone-vs-android-repair-costs-macon — iPhone vs Android Repair Costs in Macon
+- https://techmedicsmacon.com/blog/game-console-repair-macon-ga — Game Console Repair in Macon GA
+- https://techmedicsmacon.com/blog/data-recovery-macon-ga — Data Recovery in Macon GA
+- https://techmedicsmacon.com/blog/iphone-repair-warner-robins-ga — iPhone Repair Warner Robins GA
+- https://techmedicsmacon.com/blog/iphone-screen-repair-vs-replacement — iPhone Screen Repair vs Full Replacement
+- https://techmedicsmacon.com/blog/macbook-battery-issues-swelling-macon — MacBook Battery Swelling? Warning Signs
+- https://techmedicsmacon.com/blog/water-damage-phone-repair-cost-houston-county — Water Damage Phone Repair Cost Houston County
+
+---
+
+## Technical Details
+
+- **Framework:** Next.js (static export)
+- **Hosting:** Hostinger
+- **GTM Container:** GTM-TJ82LBSH
+- **Structured Data:** Schema.org JSON-LD (LocalBusiness, MobilePhoneRepairShop, Service, FAQPage, BreadcrumbList, SiteNavigationElement, WebSite, BlogPosting)
+- **Canonical Domain:** https://techmedicsmacon.com
