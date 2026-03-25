@@ -82,9 +82,9 @@ const Footer = () => {
         <div className="text-center text-muted-foreground border-t border-border pt-6 space-y-2">
           {isMaconLanding ? (
             <>
-              <p>&copy; 2026 Tech Medics Macon &ndash; Device Accessories &amp; Hardware Repair in Macon, GA</p>
+              <p>&copy; 2026 Tech Medics Macon &ndash; Device Accessories in Macon, GA</p>
               <p className="text-xs">Phone Cases | Screen Protectors | Chargers | Cables | Walk-Ins Welcome</p>
-              <p className="text-xs mt-2 text-muted-foreground font-medium">Disclaimer: We specialize in physical hardware repair and retail accessories, and we do not offer software troubleshooting or remote technical support.</p>
+              <p className="text-xs mt-2 text-muted-foreground font-medium">Disclaimer: We specialize in retail device accessories. We do not offer software troubleshooting or remote technical support.</p>
             </>
           ) : (
             <>

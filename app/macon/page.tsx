@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, Star, CheckCircle, Smartphone, Shield, ShoppingBag, Cable, Battery, Headphones } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tech Medics Macon GA | Device Accessories & Hardware Repair | (478) 259-6371",
-  description: "Tech Medics is an independently owned device accessories shop in Macon, GA. iPhone cases, screen protectors, chargers, cables, and free hardware estimates at 3742 Eisenhower Pkwy. Walk-ins welcome.",
+  title: "Tech Medics Macon GA | Device Accessories | (478) 259-6371",
+  description: "Tech Medics is an independently owned device accessories shop in Macon, GA. iPhone cases, screen protectors, chargers, cables, and more at 3742 Eisenhower Pkwy. Walk-ins welcome.",
   keywords: ["phone accessories Macon GA", "iPhone cases Macon", "screen protectors Macon GA", "phone chargers Macon", "Tech Medics Macon", "device accessories Macon GA", "phone store Macon"],
   alternates: { canonical: "https://techmedicsmacon.com/macon" },
   openGraph: {
-    title: "Device Accessories & Hardware Repair in Macon GA | Tech Medics",
-    description: "Independently owned device accessories shop in Macon. Cases, screen protectors, chargers, cables, and free hardware estimates. Walk-ins welcome.",
+    title: "Device Accessories in Macon GA | Tech Medics",
+    description: "Independently owned device accessories shop in Macon. Cases, screen protectors, chargers, cables, and more. Walk-ins welcome.",
     url: "https://techmedicsmacon.com/macon",
   },
 };
@@ -37,10 +37,10 @@ export default function MaconLandingPage() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Device Accessories &amp; Hardware Repair<br className="hidden md:block" /> in Macon, GA
+            Device Accessories<br className="hidden md:block" /> in Macon, GA
           </h1>
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-            Independently owned shop on Eisenhower Parkway carrying iPhone cases, screen protectors, chargers, cables, and more. Walk in or call for a free hardware estimate.
+            Independently owned shop on Eisenhower Parkway carrying iPhone cases, screen protectors, chargers, cables, and more. Walk in or call us today.
           </p>
           <div className="mb-8 rounded-xl border border-white/15 bg-white/5 px-5 py-4 text-center text-sm text-slate-200 max-w-3xl mx-auto">
             <p className="font-semibold text-white mb-1">Tech Medics Macon</p>
@@ -60,7 +60,7 @@ export default function MaconLandingPage() {
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-slate-300 text-sm">
             <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Walk-Ins Welcome</span>
             <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Major-Brand Accessories</span>
-            <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Free Hardware Estimates</span>
+            <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Accessory Fitting</span>
             <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Independently Owned</span>
           </div>
         </div>
@@ -133,8 +133,8 @@ export default function MaconLandingPage() {
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">Free Hardware Estimates</h3>
-              <p className="text-muted-foreground">Not sure what you need? Walk in and talk to our team for a free hardware estimate or accessory fitting.</p>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Accessory Fitting</h3>
+              <p className="text-muted-foreground">Not sure what you need? Walk in and our team will help you find the right accessory for your device.</p>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -165,12 +165,12 @@ export default function MaconLandingPage() {
               <h3 className="text-xl font-bold mb-3 text-foreground">Store Policies</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p>Walk-ins welcome during business hours.</p>
-                <p>Free hardware estimates at no extra charge.</p>
+                <p>Free accessory fitting and product advice.</p>
                 <p>Privacy and policy details are available below.</p>
               </div>
               <div className="flex flex-wrap gap-3 mt-5">
                 <Link href="/privacy" className="text-primary hover:underline font-medium">Privacy Policy</Link>
-                <Link href="/warranty-policy" className="text-primary hover:underline font-medium">Warranty Policy</Link>
+
                 <Link href="/macon/contact" className="text-primary hover:underline font-medium">Contact Page</Link>
               </div>
             </div>
@@ -274,14 +274,13 @@ export default function MaconLandingPage() {
       {/* Final CTA Banner */}
       <section className="py-12 px-4 bg-primary text-primary-foreground text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">Need Accessories or Hardware Repair?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">Need Device Accessories?</h2>
           <p className="text-primary-foreground/80 mb-6">Call ahead, get directions, or walk in during store hours at 3742 Eisenhower Parkway in Macon.</p>
           <a href="tel:(478)259-6371" className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold text-xl px-10 py-4 rounded-lg hover:bg-slate-100 transition-colors shadow-lg">
             <Phone className="h-6 w-6" /> (478) 259-6371
           </a>
           <div className="mt-5 flex flex-wrap justify-center gap-4 text-sm">
             <Link href="/privacy" className="text-primary-foreground/90 hover:text-primary-foreground underline underline-offset-4">Privacy Policy</Link>
-            <Link href="/warranty-policy" className="text-primary-foreground/90 hover:text-primary-foreground underline underline-offset-4">Warranty Policy</Link>
           </div>
           <p className="mt-6 text-xs text-primary-foreground/70 max-w-2xl mx-auto">
             Tech Medics is an independently owned business and is not affiliated with Apple Inc. or any device manufacturer.
