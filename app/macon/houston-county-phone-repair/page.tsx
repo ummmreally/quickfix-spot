@@ -4,8 +4,14 @@ import { Phone, Clock, Shield, MapPin, CheckCircle2, Smartphone } from "lucide-r
 
 export const metadata: Metadata = {
   title: "Houston County Phone Repair | Warner Robins, Centerville, Perry | Tech Medics",
-  description: "Expert phone repair serving Houston County GA. iPhone, Samsung, Google Pixel repair. Serving Warner Robins, Centerville, Perry. Call (478) 259-6371.",
+  description: "Expert phone repair serving Houston County GA. iPhone, iPad, MacBook repair. Serving Warner Robins, Centerville, Perry. Call (478) 259-6371.",
   keywords: ["Houston County phone repair", "Warner Robins cell phone repair", "Centerville phone repair", "Perry phone repair GA", "Bonaire phone repair"],
+  alternates: { canonical: "https://techmedicsmacon.com/macon/houston-county-phone-repair/" },
+  openGraph: {
+    title: "Houston County Phone Repair | Warner Robins, Centerville, Perry | Tech Medics",
+    description: "Expert phone repair serving Houston County GA. iPhone, iPad, MacBook repair. Serving Warner Robins, Centerville, Perry. Call (478) 259-6371.",
+    url: "https://techmedicsmacon.com/macon/houston-county-phone-repair/",
+  },
 };
 
 export default function HoustonCountyPhoneRepairPage() {
@@ -61,7 +67,7 @@ export default function HoustonCountyPhoneRepairPage() {
               </div>
             </div>
             <a
-              href="tel:4782596371"
+              href="tel:(478)259-6371"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -91,38 +97,38 @@ export default function HoustonCountyPhoneRepairPage() {
 
             <div className="bg-white rounded-xl shadow-lg p-8">
               <Smartphone className="w-12 h-12 text-blue-600 mb-4" />
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">Samsung Repair</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">iPad Repair</h2>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>Galaxy S & Note series</span>
+                  <span>iPad screen replacement</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>Screen & battery service</span>
+                  <span>Battery & charging port</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>Charging port repair</span>
+                  <span>All iPad models serviced</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
               <Smartphone className="w-12 h-12 text-blue-600 mb-4" />
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">Other Devices</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">MacBook Repair</h2>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>Google Pixel repair</span>
+                  <span>Screen & battery replacement</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>iPad & tablet repair</span>
+                  <span>Keyboard & trackpad fix</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>MacBook repair</span>
+                  <span>Water damage recovery</span>
                 </li>
               </ul>
             </div>
@@ -166,7 +172,7 @@ export default function HoustonCountyPhoneRepairPage() {
                   How much does phone repair cost in Houston County?
                 </h3>
                 <p className="text-slate-700">
-                  We offer competitive pricing for iPhone, Samsung, and Android repairs. Call (478) 259-6371 for a free quote.
+                  We offer competitive pricing for iPhone, iPad, and MacBook repairs. Call (478) 259-6371 for a free quote.
                 </p>
               </div>
               <div>
@@ -215,7 +221,7 @@ export default function HoustonCountyPhoneRepairPage() {
             Serving Warner Robins, Centerville, Perry & beyond. Fast, affordable, guaranteed.
           </p>
           <a
-            href="tel:4782596371"
+            href="tel:(478)259-6371"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             <Phone className="w-5 h-5" />

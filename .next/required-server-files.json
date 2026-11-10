@@ -101,6 +101,10 @@
       }
     },
     "outputFileTracingRoot": "/Users/swiezytv/Documents/GitHub/quickfix-spot",
+    "allowedDevOrigins": [
+      "http://127.0.0.1:49532",
+      "http://localhost:49532"
+    ],
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -159,7 +163,7 @@
       "middlewarePrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 11,
+      "cpus": 9,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -168,7 +172,7 @@
       "imgOptSkipMetadata": null,
       "isrFlushToDisk": true,
       "workerThreads": false,
-      "optimizeCss": false,
+      "optimizeCss": true,
       "nextScriptWorkers": false,
       "scrollRestoration": false,
       "externalDir": false,
@@ -313,7 +317,8 @@
     ".next/BUILD_ID",
     ".next/server/next-font-manifest.js",
     ".next/server/next-font-manifest.json",
-    ".next/required-server-files.json"
+    ".next/required-server-files.json",
+    ".next/static/css/6b3f63f025c0c23c.css"
   ],
   "ignore": [
     "node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*"

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "MacBook Repair Warner Robins GA | Screen, Battery, Keyboard | Tech Medics",
   description: "Expert MacBook repair near Warner Robins & Robins AFB. Screen, battery, keyboard, trackpad. Same-day service. Call (478) 259-6371. Just 20 min via I-75.",
   keywords: ["MacBook repair Warner Robins", "MacBook screen repair Robins AFB", "MacBook battery Warner Robins", "laptop repair Houston County"],
+  alternates: { canonical: "https://techmedicsmacon.com/macon/warner-robins-macbook-repair/" },
   openGraph: {
     title: "MacBook Repair Warner Robins GA | Tech Medics Macon",
     description: "Fast MacBook repair near Warner Robins & Robins AFB. Screen, battery, keyboard repair. Call (478) 259-6371.",
@@ -68,7 +69,7 @@ export default function WarnerRobinsMacBookRepairPage() {
               </div>
             </div>
             <a
-              href="tel:4782596371"
+              href="tel:(478)259-6371"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -165,7 +166,7 @@ export default function WarnerRobinsMacBookRepairPage() {
             Drive up from Warner Robins today. Expert service guaranteed.
           </p>
           <a
-            href="tel:4782596371"
+            href="tel:(478)259-6371"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             <Phone className="w-5 h-5" />

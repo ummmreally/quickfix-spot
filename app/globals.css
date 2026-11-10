@@ -80,9 +80,6 @@
     @apply bg-background text-foreground;
     text-rendering: optimizeSpeed;
   }
-  img {
-    content-visibility: auto;
-  }
 }
 
 @layer utilities {
@@ -120,5 +117,12 @@
     backdrop-filter: blur(20px) saturate(1.8);
     -webkit-backdrop-filter: blur(20px) saturate(1.8);
     border-bottom: 1px solid hsl(var(--border) / 0.35);
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }

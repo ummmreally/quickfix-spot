@@ -7,19 +7,19 @@ import { Phone, GraduationCap, Users, DollarSign, Laptop } from "lucide-react";
 export const metadata: Metadata = {
   title: "School & Student Device Repair Macon GA | Educational Discounts | Tech Medics",
   description: "iPad & MacBook repair for schools in Macon GA. Student discounts, bulk repairs, educational pricing. Serving K-12 & colleges. Call (478) 259-6371.",
-  keywords: ["school iPad repair Macon", "student device repair", "educational technology support", "Mercer University repair", "school MacBook repair Macon"],
-  alternates: { canonical: "https://techmedicsmacon.com/macon/education" },
+  keywords: ["school iPad repair Macon", "student device repair", "educational technology services", "Mercer University repair", "school MacBook repair Macon"],
+  alternates: { canonical: "https://techmedicsmacon.com/macon/education/" },
   openGraph: {
-    title: "Education Technology Support | Tech Medics Macon GA",
+    title: "Education & More | Tech Medics Macon GA",
     description: "Professional repair services for schools, teachers, and students in Macon, GA. Educational pricing available.",
-    url: "https://techmedicsmacon.com/macon/education",
+    url: "https://techmedicsmacon.com/macon/education/",
   },
 };
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Education Technology Support",
+  name: "Education & More",
   description: "Professional Apple device repair services for schools, teachers, and students in Macon with educational pricing and bulk repair programs",
   provider: { "@type": "LocalBusiness", "@id": "https://techmedicsmacon.com/#business", name: "Tech Medics Macon" },
   areaServed: { "@type": "City", name: "Macon", containedIn: { "@type": "State", name: "Georgia" } },
@@ -34,7 +34,7 @@ export default function EducationPage() {
       {/* Hero */}
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Education Technology Support</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Education &amp; More</h1>
           <p className="text-xl text-muted-foreground mb-8">Professional repair services for schools, teachers, and students throughout the Macon area</p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
             <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Contact Us for Schools</a>
@@ -114,10 +114,10 @@ export default function EducationPage() {
           {/* CTA */}
           <div className="text-center bg-secondary/30 rounded-lg p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Partner with Tech Medics</h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">Let&apos;s discuss how we can support your school&apos;s technology needs. Contact us to learn about our educational pricing and service programs.</p>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">Let&apos;s discuss how we can assist with your school&apos;s technology needs. Contact us to learn about our educational pricing and service programs.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"><a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call (478) 259-6371</a></Button>
-              <Button size="lg" variant="outline" asChild className="border-2 text-lg px-8"><a href="mailto:Support@MyTechMedics.com">Email for Quote</a></Button>
+              <Button size="lg" variant="outline" asChild className="border-2 text-lg px-8"><a href="mailto:Contact@MyTechMedics.com">Email for Quote</a></Button>
             </div>
           </div>
         </div>

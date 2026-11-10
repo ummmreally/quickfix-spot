@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "MacBook Keyboard & Trackpad Repair Macon GA | Tech Medics",
   description: "Expert MacBook keyboard and trackpad repair in Macon. Sticky keys, broken trackpad, liquid spills. All MacBook models. Same-day service. Call (478) 259-6371.",
   keywords: ["MacBook keyboard repair Macon", "MacBook trackpad repair", "sticky keys MacBook", "laptop keyboard replacement Macon"],
+  alternates: { canonical: "https://techmedicsmacon.com/macon/macbook-keyboard-repair/" },
+  openGraph: {
+    title: "MacBook Keyboard & Trackpad Repair Macon GA | Tech Medics",
+    description: "Expert MacBook keyboard and trackpad repair in Macon. Sticky keys, broken trackpad, liquid spills. All MacBook models. Same-day service. Call (478) 259-6371.",
+    url: "https://techmedicsmacon.com/macon/macbook-keyboard-repair/",
+  },
 };
 
 export default function MacBookKeyboardRepairPage() {
@@ -32,7 +38,7 @@ export default function MacBookKeyboardRepairPage() {
               </div>
             </div>
             <a
-              href="tel:4782596371"
+              href="tel:(478)259-6371"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -248,7 +254,7 @@ export default function MacBookKeyboardRepairPage() {
             Walk-ins welcome at 3742 Eisenhower Parkway. Expert service guaranteed.
           </p>
           <a
-            href="tel:4782596371"
+            href="tel:(478)259-6371"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             <Phone className="w-5 h-5" />

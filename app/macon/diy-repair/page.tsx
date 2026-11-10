@@ -47,7 +47,7 @@ export default function DIYRepairPage() {
     mainEntity: [
       { "@type": "Question", name: "How do I eject water from my iPhone speaker?", acceptedAnswer: { "@type": "Answer", text: "Use our water ejection sound tool by turning your iPhone volume to maximum, placing it speaker-down, and playing the 165Hz frequency sound for 15-30 seconds to vibrate water out of the speakers." } },
       { "@type": "Question", name: "Can I replace my iPhone screen myself?", acceptedAnswer: { "@type": "Answer", text: "Yes, with the right tools and careful attention to detail. However, DIY screen replacement requires precision. Damage to internal cables can cause permanent issues, so consider professional repair if unsure." } },
-      { "@type": "Question", name: "Is DIY iPhone battery replacement safe?", acceptedAnswer: { "@type": "Answer", text: "It can be done safely if you follow proper procedures: discharge battery below 25%, use heat to soften adhesive, never force removal, and be careful not to puncture the battery. Swollen batteries require immediate professional help." } },
+      { "@type": "Question", name: "Is DIY iPhone battery replacement safe?", acceptedAnswer: { "@type": "Answer", text: "It can be done safely if you follow proper procedures: discharge battery below 25%, use heat to soften adhesive, never force removal, and be careful not to puncture the battery. Swollen batteries require immediate professional attention." } },
     ],
   };
 
@@ -59,7 +59,7 @@ export default function DIYRepairPage() {
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">DIY iPhone Repair Tools</h1>
-          <p className="text-xl text-muted-foreground mb-8">Free tools and guides to help you fix common iPhone issues at home</p>
+          <p className="text-xl text-muted-foreground mb-8">Free tools and guides to assist you with common iPhone issues at home</p>
         </div>
       </section>
 
@@ -70,7 +70,7 @@ export default function DIYRepairPage() {
             <CardHeader className="text-center">
               <div className="flex justify-center mb-4"><Volume2 className="h-16 w-16 text-primary" /></div>
               <CardTitle className="text-3xl mb-2">Water Ejection Sound</CardTitle>
-              <CardDescription className="text-lg">Use this sound to help remove water from your iPhone speakers</CardDescription>
+              <CardDescription className="text-lg">Use this sound to assist in removing water from your iPhone speakers</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="bg-secondary/30 p-6 rounded-lg">
@@ -79,7 +79,7 @@ export default function DIYRepairPage() {
                   <li>Turn your iPhone volume to maximum</li>
                   <li>Place your iPhone with speakers facing down</li>
                   <li>Press play and let the sound run for 15-30 seconds</li>
-                  <li>The specific frequency will help vibrate water out of the speakers</li>
+                  <li>The specific frequency will assist in vibrating water out of the speakers</li>
                   <li>Wipe away any water that comes out</li>
                   <li>Repeat if necessary</li>
                 </ol>
@@ -172,7 +172,7 @@ export default function DIYRepairPage() {
                     </ol>
                   </div>
                   <div className="bg-red-500/10 border border-red-500/30 p-4 rounded-lg">
-                    <p className="text-sm text-red-700 dark:text-red-400"><strong>Safety Warning:</strong> Lithium-ion batteries are dangerous if punctured or bent. Never force removal. If battery is swollen, seek professional help immediately.</p>
+                    <p className="text-sm text-red-700 dark:text-red-400"><strong>Safety Warning:</strong> Lithium-ion batteries are dangerous if punctured or bent. Never force removal. If battery is swollen, seek professional attention immediately.</p>
                   </div>
                 </CardContent>
               </Card>
@@ -184,10 +184,10 @@ export default function DIYRepairPage() {
       {/* When to Seek Help */}
       <section className="py-16 px-4 bg-secondary/20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">When to Seek Professional Help</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">When to Visit a Professional</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card><CardHeader><CardTitle>DIY Solutions Work For:</CardTitle></CardHeader><CardContent><ul className="list-disc list-inside space-y-2 text-muted-foreground"><li>Minor water in speakers</li><li>Surface moisture</li><li>Quick water exposure</li></ul></CardContent></Card>
-            <Card><CardHeader><CardTitle>Professional Help Needed For:</CardTitle></CardHeader><CardContent><ul className="list-disc list-inside space-y-2 text-muted-foreground"><li>Phone won&apos;t turn on</li><li>Screen flickering/distortion</li><li>Complete water submersion</li><li>Charging issues</li></ul></CardContent></Card>
+            <Card><CardHeader><CardTitle>Professional Service Needed For:</CardTitle></CardHeader><CardContent><ul className="list-disc list-inside space-y-2 text-muted-foreground"><li>Phone won&apos;t turn on</li><li>Screen flickering/distortion</li><li>Complete water submersion</li><li>Charging issues</li></ul></CardContent></Card>
           </div>
           <div className="mt-8 text-center">
             <p className="text-lg mb-4">Need professional water damage repair in Macon?</p>

@@ -1,58 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { posts } from "./posts";
 
 export const metadata: Metadata = {
-  title: "iPhone, iPad & MacBook Repair Guides | Tech Medics Macon Blog",
-  description: "Expert repair guides, tips, and cost breakdowns for iPhone, iPad, and MacBook repair in Macon GA. Learn about screen repair, battery replacement, and more.",
-  alternates: { canonical: "https://techmedicsmacon.com/blog" },
+  title: "Repair Guides & Tips | Tech Medics Macon Blog",
+  description: "Helpful guides to iPhone, iPad, MacBook and game console repair in Macon, GA. Learn about common problems and what to expect from a repair.",
+  alternates: { canonical: "https://techmedicsmacon.com/blog/" },
 };
 
-const posts = [
-  { slug: "iphone-screen-repair-macon-ga", title: "Complete iPhone Screen Repair Guide – Macon GA", desc: "Everything you need to know about iPhone screen repair costs, quality options, and what to expect at Tech Medics Macon.", category: "iPhone" },
-  { slug: "iphone-battery-replacement-macon", title: "iPhone Battery Replacement in Macon – Signs & Costs", desc: "When to replace your iPhone battery, how much it costs, and why same-day service matters.", category: "iPhone" },
-  { slug: "ipad-screen-repair-macon", title: "iPad Screen Repair in Macon GA – All Models", desc: "Complete guide to iPad screen repair for Pro, Air, Mini, and standard models. Pricing and turnaround.", category: "iPad" },
-  { slug: "macbook-repair-macon-ga", title: "MacBook Repair Services in Macon GA", desc: "Screen, keyboard, battery, and logic board repair for MacBook Air and Pro models.", category: "MacBook" },
-  { slug: "tech-medics-vs-apple-store-repair", title: "Tech Medics vs Apple Store – Repair Comparison", desc: "Compare costs, warranty, turnaround times, and convenience between local repair and Apple Store.", category: "General" },
-  { slug: "water-damaged-iphone-repair", title: "Water Damaged iPhone? Here's What to Do", desc: "Emergency steps and professional water damage repair options in Macon GA.", category: "iPhone" },
-  { slug: "iphone-dying-fast-after-charging", title: "iPhone Dying Fast After Charging? 11 Fixes", desc: "Proven solutions for iPhone battery draining too quickly after a full charge.", category: "iPhone" },
-  { slug: "iphone-not-turning-on-fix", title: "iPhone Not Turning On? Troubleshooting Guide", desc: "Step-by-step fixes for an iPhone that won't power on, and when to seek professional repair.", category: "iPhone" },
-  { slug: "oem-vs-aftermarket-iphone-screens", title: "OEM vs Aftermarket iPhone Screens Explained", desc: "Understanding the difference between screen types and which is right for your repair.", category: "iPhone" },
-  { slug: "iphone-screen-repair-cost-macon", title: "iPhone Screen Repair Cost in Macon GA (2026)", desc: "Updated pricing guide for all iPhone models. Compare costs and find the best value.", category: "iPhone" },
-  { slug: "iphone-repair-near-me-macon", title: "iPhone Repair Near Me in Macon GA", desc: "Why Tech Medics is Macon's top choice for local iPhone repair. Location, services, and more.", category: "iPhone" },
-  { slug: "same-day-iphone-repair-macon", title: "Same-Day iPhone Repair in Macon", desc: "What repairs can be done while you wait and how our 30-minute service works.", category: "iPhone" },
-  { slug: "choose-phone-repair-shop-macon", title: "How to Choose a Phone Repair Shop in Macon", desc: "Key factors to consider when selecting a repair shop for your device.", category: "General" },
-  { slug: "swollen-iphone-battery-replacement-macon", title: "Swollen iPhone Battery? Get It Replaced Now", desc: "Warning signs of a swollen battery and why immediate replacement is critical.", category: "iPhone" },
-  { slug: "macbook-screen-repair-cost-macon", title: "MacBook Screen Repair Cost in Macon GA", desc: "Pricing guide for MacBook Air and Pro screen replacement services.", category: "MacBook" },
-  { slug: "iphone-vs-android-repair-costs-macon", title: "iPhone vs Android Repair Costs in Macon", desc: "How repair costs compare between Apple and Android devices locally.", category: "General" },
-  { slug: "game-console-repair-macon-ga", title: "Game Console Repair in Macon GA", desc: "PS5 HDMI port repair, Xbox disc drive fix, Nintendo Switch Joy-Con drift and more.", category: "Console" },
-  { slug: "data-recovery-macon-ga", title: "Data Recovery in Macon GA", desc: "Recover photos, contacts and files from broken, water-damaged or dead devices.", category: "General" },
-  { slug: "iphone-repair-warner-robins-ga", title: "iPhone Repair Warner Robins GA", desc: "iPhone repair near Warner Robins & Robins AFB. Just 20 minutes via I-75. Screen, battery, water damage.", category: "iPhone" },
-  { slug: "iphone-screen-repair-vs-replacement", title: "iPhone Screen Repair vs Full Replacement", desc: "Should you repair or replace your cracked iPhone? Cost comparison and decision guide.", category: "iPhone" },
-  { slug: "macbook-battery-issues-swelling-macon", title: "MacBook Battery Swelling? Warning Signs", desc: "Trackpad not clicking or MacBook bulging? Swollen battery warning signs and safe replacement.", category: "MacBook" },
-  { slug: "water-damage-phone-repair-cost-houston-county", title: "Water Damage Phone Repair Cost Houston County", desc: "Water damage repair pricing and success rates for Houston County GA. Emergency service available.", category: "General" },
-];
-
 export default function BlogIndex() {
-  return (
-    <>
-      <section className="py-16 md:py-24 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Repair Guides &amp; Resources</h1>
-            <p className="text-xl text-muted-foreground">Expert advice on iPhone, iPad, and MacBook repair from Macon&apos;s trusted technicians</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow group">
-                <span className="text-xs font-semibold text-primary uppercase tracking-wider">{post.category}</span>
-                <h2 className="text-xl font-bold mt-2 mb-3 text-foreground group-hover:text-primary transition-colors">{post.title}</h2>
-                <p className="text-muted-foreground text-sm">{post.desc}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  );
+  return <>
+    <section className="bg-secondary/30 px-5 py-16 md:py-24"><div className="mx-auto max-w-7xl"><p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-primary">Tech Medics · Macon, GA</p><h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">Repair guides for the devices you rely on.</h1><p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">Practical answers about screens, batteries, liquid damage, game consoles, and more—so you can make an informed decision about your repair.</p></div></section>
+    <section className="px-5 py-16 md:py-20"><div className="mx-auto max-w-7xl"><div className="mb-8 flex items-end justify-between gap-4"><div><p className="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-primary">Explore the guides</p><h2 className="text-3xl font-bold tracking-tight">Advice for common device problems</h2></div><span className="hidden text-sm text-muted-foreground sm:block">{posts.length} articles</span></div><div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{posts.map(post => <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg"><img src={post.image} alt="" width="1536" height="1024" className="aspect-[16/9] w-full object-cover" loading="lazy" /><div className="flex flex-1 flex-col p-6"><span className="text-xs font-bold uppercase tracking-wider text-primary">{post.category}</span><h3 className="mt-3 text-xl font-bold group-hover:text-primary">{post.title}</h3><p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{post.metaDescription}</p><span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary">Read guide <ArrowRight className="h-4 w-4" /></span></div></Link>)}</div></div></section>
+  </>;
 }

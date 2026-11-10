@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "Data Recovery Macon GA | iPhone, iPad & MacBook | (478) 259-6371",
   description: "Lost photos, contacts or files? Data recovery in Macon GA for iPhone, iPad & MacBook. Recover data from broken screens, water damage & dead devices. Tech Medics at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
   keywords: ["data recovery Macon GA", "iPhone data recovery Macon", "recover photos broken phone Macon", "data recovery near me", "MacBook data recovery Macon GA", "iPad data recovery Macon", "phone data recovery Macon Georgia", "recover data dead phone Macon", "broken phone data recovery"],
-  alternates: { canonical: "https://techmedicsmacon.com/macon/data-recovery" },
+  alternates: { canonical: "https://techmedicsmacon.com/macon/data-recovery/" },
   openGraph: {
     title: "Data Recovery Macon GA | iPhone, iPad & MacBook | Recover Lost Files",
     description: "Lost photos or data? Expert data recovery in Macon GA for broken, water-damaged & dead devices. Call now!",
-    url: "https://techmedicsmacon.com/macon/data-recovery",
+    url: "https://techmedicsmacon.com/macon/data-recovery/",
   },
 };
 
@@ -112,7 +112,7 @@ export default function DataRecoveryPage() {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">What We Can Recover</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">We recover data from devices that other shops say are beyond help</p>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">We recover data from devices that other shops say are beyond repair</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "Photos & Videos", desc: "Family photos, memories, and videos – often the most irreplaceable data on your device." },
@@ -138,7 +138,7 @@ export default function DataRecoveryPage() {
               { title: "Broken / Shattered Screen", desc: "Screen completely destroyed but phone still vibrates or makes sounds? We can access your data by repairing or bypassing the screen." },
               { title: "Water Damaged Device", desc: "Phone fell in water and won't turn on? We use professional techniques to access the storage and recover your files." },
               { title: "Device Won't Turn On", desc: "Completely dead device with no signs of life? Battery, logic board, or other issues may be fixable to access your data." },
-              { title: "Forgotten Passcode", desc: "Locked out of your device? In some cases we can help recover data from devices you own but can't access. Proof of ownership required." },
+               { title: "Forgotten Passcode", desc: "Locked out of your device? In some cases we can recover data from devices you own but can't access. Proof of ownership required." },
               { title: "Failed Update / Restore", desc: "iOS update went wrong and now your device is stuck? We can often recover data from failed updates without a factory reset." },
               { title: "MacBook Drive Failure", desc: "MacBook won't boot or hard drive clicking? We recover data from failing SSDs and hard drives using professional tools." },
             ].map((s) => (
@@ -222,7 +222,7 @@ export default function DataRecoveryPage() {
             <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">iPhone &amp; iPad Data Recovery</h3>
             <p className="text-muted-foreground mb-4">Whether your iPhone has a shattered screen, water damage, or simply won&apos;t turn on, our technicians can often access the internal storage and recover your photos, contacts, messages, and files. <strong>iPhone data recovery in Macon</strong> is one of our most requested services &ndash; and we have a high success rate even with severely damaged devices.</p>
             <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">MacBook Data Recovery</h3>
-            <p className="text-muted-foreground mb-4">MacBook hard drive or SSD failing? Spilled liquid on your laptop? We use professional data recovery tools to extract files from damaged MacBook drives. Whether it&apos;s a spinning hard drive or a soldered SSD, our <strong>MacBook data recovery service in Macon</strong> can help save your important work files, photos, and documents.</p>
+            <p className="text-muted-foreground mb-4">MacBook hard drive or SSD failing? Spilled liquid on your laptop? We use professional data recovery tools to extract files from damaged MacBook drives. Whether it&apos;s a spinning hard drive or a soldered SSD, our <strong>MacBook data recovery service in Macon</strong> can save your important work files, photos, and documents.</p>
             <h3 className="text-2xl font-bold mb-4 text-foreground mt-8">No Data, No Fee Guarantee</h3>
             <p className="text-muted-foreground mb-4">We believe in honest, transparent service. If we can&apos;t recover your data, you don&apos;t pay for the recovery. Assessment and diagnosis are always free. Visit us at <strong>3742 Eisenhower Parkway</strong> in Macon or call <strong>(478) 259-6371</strong>. We serve Macon, Warner Robins, Byron, Perry, Forsyth, and all of Central Georgia.</p>
           </article>
@@ -232,7 +232,7 @@ export default function DataRecoveryPage() {
       {/* CTA */}
       <section className="py-20 px-4 bg-primary/5">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Lost Important Data? We Can Help</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Lost Important Data? We Can Recover It</h2>
           <p className="text-xl text-muted-foreground mb-8">Free assessment &ndash; bring your device to 3742 Eisenhower Parkway or call for guidance.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"><a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call (478) 259-6371</a></Button>

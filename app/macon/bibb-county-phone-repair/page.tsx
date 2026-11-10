@@ -4,8 +4,14 @@ import { Phone, Clock, Shield, MapPin, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Bibb County Phone Repair | Macon GA | Tech Medics",
-  description: "Expert phone repair serving Bibb County GA. iPhone, Samsung, Android repair. Serving all Macon neighborhoods. Call (478) 259-6371.",
+  description: "Expert phone repair serving Bibb County GA. iPhone, iPad, and MacBook repair. Serving all Macon neighborhoods. Call (478) 259-6371.",
   keywords: ["Bibb County phone repair", "Macon phone repair", "Bibb County iPhone repair", "Macon cell phone repair"],
+  alternates: { canonical: "https://techmedicsmacon.com/macon/bibb-county-phone-repair/" },
+  openGraph: {
+    title: "Bibb County Phone Repair | Macon GA | Tech Medics",
+    description: "Expert phone repair serving Bibb County GA. iPhone, iPad, and MacBook repair. Serving all Macon neighborhoods. Call (478) 259-6371.",
+    url: "https://techmedicsmacon.com/macon/bibb-county-phone-repair/",
+  },
 };
 
 export default function BibbCountyPhoneRepairPage() {
@@ -35,7 +41,7 @@ export default function BibbCountyPhoneRepairPage() {
               </div>
             </div>
             <a
-              href="tel:4782596371"
+              href="tel:(478)259-6371"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -67,19 +73,19 @@ export default function BibbCountyPhoneRepairPage() {
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">Android & Other Devices</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">MacBook & Other Services</h2>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>Samsung Galaxy repair</span>
+                  <span>MacBook screen repair</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>Google Pixel repair</span>
+                  <span>MacBook battery replacement</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span>All major phone brands</span>
+                  <span>Charging port & camera repair</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
@@ -94,7 +100,7 @@ export default function BibbCountyPhoneRepairPage() {
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
               <div>Downtown Macon</div>
               <div>North Macon</div>
-              <div>South Macon</div>
+              <div>South Macon / Bloomfield</div>
               <div>East Macon</div>
               <div>Vineville</div>
               <div>Ingleside</div>
@@ -129,7 +135,7 @@ export default function BibbCountyPhoneRepairPage() {
             Located right here in Macon. Walk-ins welcome. Same-day service.
           </p>
           <a
-            href="tel:4782596371"
+            href="tel:(478)259-6371"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             <Phone className="w-5 h-5" />

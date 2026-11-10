@@ -10,14 +10,15 @@ interface FAQ {
 interface FAQSectionProps {
   faqs: FAQ[];
   deviceType: string;
+  title?: string;
 }
 
-const FAQSection = ({ faqs, deviceType }: FAQSectionProps) => {
+const FAQSection = ({ faqs, deviceType, title }: FAQSectionProps) => {
   return (
     <section className="py-20 px-4 bg-secondary/20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
-          Frequently Asked Questions About {deviceType} Repair in Macon, GA
+          {title ?? `Frequently Asked Questions About ${deviceType} Repair in Macon, GA`}
         </h2>
         <p className="text-center text-muted-foreground mb-12">
           Common questions about our {deviceType} repair services

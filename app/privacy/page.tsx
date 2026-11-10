@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Privacy policy for Tech Medics Macon. Learn how we handle your personal information and device data during repairs.",
-  alternates: { canonical: "https://techmedicsmacon.com/privacy" },
+  alternates: { canonical: "https://techmedicsmacon.com/privacy/" },
 };
 
 export default function PrivacyPage() {

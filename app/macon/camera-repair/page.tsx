@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "iPhone & iPad Camera Repair Macon GA | Front & Rear Camera | Tech Medics",
   description: "Expert iPhone & iPad camera repair in Macon. Front & rear camera replacement. Blurry photos, black screen, focus issues. Same-day service. Call (478) 259-6371.",
   keywords: ["iPhone camera repair Macon", "iPad camera replacement", "phone camera fix Macon", "blurry camera repair"],
+  alternates: { canonical: "https://techmedicsmacon.com/macon/camera-repair/" },
+  openGraph: {
+    title: "iPhone & iPad Camera Repair Macon GA | Front & Rear Camera | Tech Medics",
+    description: "Expert iPhone & iPad camera repair in Macon. Front & rear camera replacement. Blurry photos, black screen, focus issues. Same-day service. Call (478) 259-6371.",
+    url: "https://techmedicsmacon.com/macon/camera-repair/",
+  },
 };
 
 export default function CameraRepairPage() {
@@ -32,7 +38,7 @@ export default function CameraRepairPage() {
               </div>
             </div>
             <a
-              href="tel:4782596371"
+              href="tel:(478)259-6371"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -212,7 +218,7 @@ export default function CameraRepairPage() {
             Walk-ins welcome at 3742 Eisenhower Parkway. Most repairs done same day.
           </p>
           <a
-            href="tel:4782596371"
+            href="tel:(478)259-6371"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             <Phone className="w-5 h-5" />

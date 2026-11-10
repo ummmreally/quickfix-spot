@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "About Tech Medics – Macon GA iPhone Screen Repair Experts | 10+ Years Experience",
   description: "Tech Medics offers expert iPhone screen repair in Macon, GA with 10+ years experience. Same-day iPad, MacBook & Apple device repair. 30-day warranty. Call (478) 259-6371.",
   keywords: ["about Tech Medics Macon", "iPhone repair experts Macon GA", "Apple repair shop Macon", "phone repair experience Macon"],
-  alternates: { canonical: "https://techmedicsmacon.com/macon/about" },
+  alternates: { canonical: "https://techmedicsmacon.com/macon/about/" },
   openGraph: {
     title: "About Tech Medics – Macon GA iPhone Screen Repair Experts",
     description: "10+ years experience in Apple device repair. Serving Macon, GA with same-day service and 30-day warranty.",
-    url: "https://techmedicsmacon.com/macon/about",
+    url: "https://techmedicsmacon.com/macon/about/",
   },
 };
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Our Story</h2>
               <p className="text-lg text-foreground leading-relaxed mb-6">With over a decade of experience in Apple repairs, Tech Medics brings expert iPhone screen repair services to Macon, GA. Our journey started with a simple mission: to provide the fastest, most reliable Apple device repairs in Middle Georgia.</p>
               <p className="text-lg text-foreground leading-relaxed mb-6">We pride ourselves on delivering exceptional service that exceeds our customers&apos; expectations. Our skilled technicians are proficient in diagnosing and fixing a wide range of issues, from iPhone screen replacements to iPad battery enhancements, ensuring that your device functions like new again.</p>
-              <p className="text-lg text-foreground leading-relaxed">We understand the importance of your time and device, which is why we offer same-day service for most repairs without compromising quality. Our commitment to amazing customer service means that we go the extra mile to provide clear communication, personalized solutions, and support every step of the way.</p>
+              <p className="text-lg text-foreground leading-relaxed">We understand the importance of your time and device, which is why we offer same-day service for most repairs without compromising quality. Our commitment to amazing customer service means that we go the extra mile to provide clear communication, personalized solutions, and care every step of the way.</p>
             </div>
             <Card>
               <CardContent className="p-8">
@@ -127,7 +127,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3"><Phone className="h-6 w-6 text-primary flex-shrink-0" /><div><p className="text-sm text-muted-foreground">Call or Text</p><a href="tel:(478)259-6371" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">(478) 259-6371</a></div></div>
                 <div className="flex items-center gap-3"><MapPin className="h-6 w-6 text-primary flex-shrink-0" /><div><p className="text-sm text-muted-foreground">Location</p><p className="text-lg font-semibold text-foreground">3742 Eisenhower Parkway, Macon, GA 31206</p></div></div>
-                <div className="flex items-start gap-3"><Wrench className="h-6 w-6 text-primary flex-shrink-0 mt-1" /><div><p className="text-sm text-muted-foreground">Email</p><a href="mailto:Support@MyTechMedics.com" className="text-lg font-semibold text-foreground hover:text-primary transition-colors break-all">Support@MyTechMedics.com</a></div></div>
+                <div className="flex items-start gap-3"><Wrench className="h-6 w-6 text-primary flex-shrink-0 mt-1" /><div><p className="text-sm text-muted-foreground">Email</p><a href="mailto:Contact@MyTechMedics.com" className="text-lg font-semibold text-foreground hover:text-primary transition-colors break-all">Contact@MyTechMedics.com</a></div></div>
               </div>
               <div className="mt-8">
                 <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"><a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for iPhone Screen Repair</a></Button>

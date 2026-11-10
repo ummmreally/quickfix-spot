@@ -81,6 +81,24 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../app/macon/afterpay/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/afterpay">> = Specific
+  const handler = {} as typeof import("../../app/macon/afterpay/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/macon/apple-genuine-parts/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/apple-genuine-parts">> = Specific
+  const handler = {} as typeof import("../../app/macon/apple-genuine-parts/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/macon/back-glass-repair/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/back-glass-repair">> = Specific
@@ -153,6 +171,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../app/macon/console-hdmi-stick-drift/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/console-hdmi-stick-drift">> = Specific
+  const handler = {} as typeof import("../../app/macon/console-hdmi-stick-drift/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/macon/contact/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/contact">> = Specific
@@ -198,6 +225,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../app/macon/free-diagnostic/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/free-diagnostic">> = Specific
+  const handler = {} as typeof import("../../app/macon/free-diagnostic/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/macon/game-console-repair/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/game-console-repair">> = Specific
@@ -216,10 +252,28 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../app/macon/imac/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/imac">> = Specific
+  const handler = {} as typeof import("../../app/macon/imac/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/macon/ipad/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/ipad">> = Specific
   const handler = {} as typeof import("../../app/macon/ipad/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/macon/iphone/[model]/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/iphone/[model]">> = Specific
+  const handler = {} as typeof import("../../app/macon/iphone/[model]/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -288,6 +342,24 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../app/macon/pricing-chart/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/pricing-chart">> = Specific
+  const handler = {} as typeof import("../../app/macon/pricing-chart/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/macon/ps5-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/ps5-repair">> = Specific
+  const handler = {} as typeof import("../../app/macon/ps5-repair/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/macon/reviews/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/reviews">> = Specific
@@ -310,6 +382,24 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/services">> = Specific
   const handler = {} as typeof import("../../app/macon/services/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/macon/trade-in/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/trade-in">> = Specific
+  const handler = {} as typeof import("../../app/macon/trade-in/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/macon/walk-in/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/walk-in">> = Specific
+  const handler = {} as typeof import("../../app/macon/walk-in/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -342,10 +432,28 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../app/macon/warranty/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/warranty">> = Specific
+  const handler = {} as typeof import("../../app/macon/warranty/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/macon/water-damage/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/macon/water-damage">> = Specific
   const handler = {} as typeof import("../../app/macon/water-damage/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/macon/xbox-repair/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/macon/xbox-repair">> = Specific
+  const handler = {} as typeof import("../../app/macon/xbox-repair/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

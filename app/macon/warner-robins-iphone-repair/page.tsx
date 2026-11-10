@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "iPhone Repair Warner Robins GA | Near Robins AFB | Tech Medics",
   description: "Expert iPhone repair near Warner Robins & Robins AFB. Fast, affordable service. 30-min repairs. Call (478) 259-6371. Just 20 min via I-75.",
   keywords: ["iPhone repair Warner Robins", "iPhone screen repair Robins AFB", "iPhone battery Warner Robins", "phone repair Houston County"],
+  alternates: { canonical: "https://techmedicsmacon.com/macon/warner-robins-iphone-repair/" },
   openGraph: {
     title: "iPhone Repair Warner Robins GA | Tech Medics Macon",
     description: "Fast iPhone repair near Warner Robins & Robins AFB. Screen, battery, charging port. 30-min service. Call (478) 259-6371.",
@@ -73,7 +74,7 @@ export default function WarnerRobinsIPhoneRepairPage() {
               </div>
             </div>
             <a
-              href="tel:4782596371"
+              href="tel:(478)259-6371"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -252,7 +253,7 @@ export default function WarnerRobinsIPhoneRepairPage() {
             Drive up from Warner Robins today. Most repairs done in 30 minutes.
           </p>
           <a
-            href="tel:4782596371"
+            href="tel:(478)259-6371"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             <Phone className="w-5 h-5" />

@@ -35,10 +35,14 @@ const Footer = () => {
                   <Link href="/macon/iphone" className="block text-muted-foreground hover:text-primary transition-colors">iPhone Repair</Link>
                   <Link href="/macon/ipad" className="block text-muted-foreground hover:text-primary transition-colors">iPad Repair</Link>
                   <Link href="/macon/macbook" className="block text-muted-foreground hover:text-primary transition-colors">MacBook Repair</Link>
+                  <Link href="/macon/imac" className="block text-muted-foreground hover:text-primary transition-colors">iMac Repair</Link>
                   <Link href="/macon/screen-repair" className="block text-muted-foreground hover:text-primary transition-colors">Screen Repair</Link>
                   <Link href="/macon/battery-replacement" className="block text-muted-foreground hover:text-primary transition-colors">Battery Replacement</Link>
                   <Link href="/macon/camera-repair" className="block text-muted-foreground hover:text-primary transition-colors">Camera Repair</Link>
                   <Link href="/macon/water-damage" className="block text-muted-foreground hover:text-primary transition-colors">Water Damage</Link>
+                  <Link href="/macon/game-console-repair" className="block text-muted-foreground hover:text-primary transition-colors">Game Console Repair</Link>
+                  <Link href="/macon/ps5-repair" className="block text-muted-foreground hover:text-primary transition-colors">PS5 Repair</Link>
+                  <Link href="/macon/xbox-repair" className="block text-muted-foreground hover:text-primary transition-colors">Xbox Repair</Link>
                   <Link href="/macon/console-hdmi-stick-drift" className="block text-muted-foreground hover:text-primary transition-colors">HDMI & Stick Drift</Link>
                   <Link href="/macon/data-recovery" className="block text-muted-foreground hover:text-primary transition-colors">Data Recovery</Link>
                 </div>
@@ -70,14 +74,49 @@ const Footer = () => {
                   <Link href="/macon/pricing-chart" className="block text-muted-foreground hover:text-primary transition-colors">Pricing Chart</Link>
                   <Link href="/macon/reviews" className="block text-muted-foreground hover:text-primary transition-colors">Customer Reviews</Link>
                   <Link href="/macon/accessories" className="block text-muted-foreground hover:text-primary transition-colors">Accessories</Link>
+                  <Link href="/blog/ps5-repair-macon-ga" className="block text-muted-foreground hover:text-primary transition-colors">PS5 Repair Guide</Link>
+                  <Link href="/blog/xbox-repair-macon-ga" className="block text-muted-foreground hover:text-primary transition-colors">Xbox Repair Guide</Link>
                   <Link href="/blog/iphone-screen-repair-cost-macon" className="block text-muted-foreground hover:text-primary transition-colors">Screen Repair Cost Guide</Link>
-                  <Link href="/blog/oem-vs-aftermarket-iphone-screens" className="block text-muted-foreground hover:text-primary transition-colors">OEM vs Aftermarket Screens</Link>
+                  <Link href="/blog/game-console-repair-macon-ga" className="block text-muted-foreground hover:text-primary transition-colors">Console Repair Guide</Link>
                   <Link href="/blog/tech-medics-vs-apple-store-repair" className="block text-muted-foreground hover:text-primary transition-colors">Tech Medics vs Apple Store</Link>
                 </div>
               </div>
             </>
           )}
         </div>
+
+        {!isMaconLanding && (
+          <div className="border-t border-border pt-8 mb-8">
+            <h3 className="font-bold text-sm uppercase tracking-wider text-foreground mb-4 text-center">
+              Popular iPhone Models We Repair
+            </h3>
+            <div className="flex flex-wrap justify-center gap-2 text-xs">
+              {[
+                { slug: "iphone-16-pro-max-repair", label: "iPhone 16 Pro Max" },
+                { slug: "iphone-16-pro-repair", label: "iPhone 16 Pro" },
+                { slug: "iphone-16-repair", label: "iPhone 16" },
+                { slug: "iphone-15-pro-max-repair", label: "iPhone 15 Pro Max" },
+                { slug: "iphone-15-repair", label: "iPhone 15" },
+                { slug: "iphone-14-pro-repair", label: "iPhone 14 Pro" },
+                { slug: "iphone-14-repair", label: "iPhone 14" },
+                { slug: "iphone-13-repair", label: "iPhone 13" },
+                { slug: "iphone-12-repair", label: "iPhone 12" },
+                { slug: "iphone-11-repair", label: "iPhone 11" },
+                { slug: "iphone-xr-repair", label: "iPhone XR" },
+                { slug: "iphone-8-repair", label: "iPhone 8" },
+                { slug: "iphone-se-2nd-gen-repair", label: "iPhone SE" },
+              ].map((m) => (
+                <Link
+                  key={m.slug}
+                  href={`/macon/iphone/${m.slug}`}
+                  className="px-3 py-1.5 rounded-full border border-border bg-card text-muted-foreground hover:border-primary hover:text-primary transition-colors"
+                >
+                  {m.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="text-center text-muted-foreground border-t border-border pt-6 space-y-2">
           {isMaconLanding ? (

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Warranty Policy",
   description: "Tech Medics Macon warranty policy. All repairs include a 30-day warranty on parts and labor. Learn about coverage details.",
-  alternates: { canonical: "https://techmedicsmacon.com/warranty-policy" },
+  alternates: { canonical: "https://techmedicsmacon.com/warranty-policy/" },
 };
 
 export default function WarrantyPolicyPage() {

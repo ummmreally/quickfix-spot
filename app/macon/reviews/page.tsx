@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Customer Reviews & Testimonials | Tech Medics Macon GA | 4.9 Stars",
   description: "See what real customers say about Tech Medics Macon GA. 90+ five-star Google reviews. Fast service, great prices, and friendly staff at 3742 Eisenhower Pkwy.",
   keywords: ["Tech Medics reviews", "Tech Medics Macon testimonials", "phone repair reviews Macon GA", "best phone shop Macon", "Tech Medics Google reviews"],
-  alternates: { canonical: "https://techmedicsmacon.com/macon/reviews" },
+  alternates: { canonical: "https://techmedicsmacon.com/macon/reviews/" },
   openGraph: {
     title: "Customer Reviews | Tech Medics Macon GA – 4.9 Star Rating",
     description: "90+ five-star Google reviews. See why Macon trusts Tech Medics for fast, affordable device service.",
-    url: "https://techmedicsmacon.com/macon/reviews",
+    url: "https://techmedicsmacon.com/macon/reviews/",
   },
 };
 

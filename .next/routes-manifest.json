@@ -41,6 +41,14 @@
       "namedRegex": "^/blog/(?<nxtPslug>[^/]+?)(?:/)?$"
     },
     {
+      "page": "/macon/iphone/[model]",
+      "regex": "^/macon/iphone/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPmodel": "nxtPmodel"
+      },
+      "namedRegex": "^/macon/iphone/(?<nxtPmodel>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/macon/[neighborhood]",
       "regex": "^/macon/([^/]+?)(?:/)?$",
       "routeKeys": {
@@ -85,6 +93,18 @@
       "regex": "^/macon/accessories(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/macon/accessories(?:/)?$"
+    },
+    {
+      "page": "/macon/afterpay",
+      "regex": "^/macon/afterpay(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/afterpay(?:/)?$"
+    },
+    {
+      "page": "/macon/apple-genuine-parts",
+      "regex": "^/macon/apple\\-genuine\\-parts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/apple\\-genuine\\-parts(?:/)?$"
     },
     {
       "page": "/macon/back-glass-repair",
@@ -135,6 +155,12 @@
       "namedRegex": "^/macon/charging\\-port\\-repair(?:/)?$"
     },
     {
+      "page": "/macon/console-hdmi-stick-drift",
+      "regex": "^/macon/console\\-hdmi\\-stick\\-drift(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/console\\-hdmi\\-stick\\-drift(?:/)?$"
+    },
+    {
       "page": "/macon/contact",
       "regex": "^/macon/contact(?:/)?$",
       "routeKeys": {},
@@ -165,6 +191,12 @@
       "namedRegex": "^/macon/forsyth\\-iphone\\-repair(?:/)?$"
     },
     {
+      "page": "/macon/free-diagnostic",
+      "regex": "^/macon/free\\-diagnostic(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/free\\-diagnostic(?:/)?$"
+    },
+    {
       "page": "/macon/game-console-repair",
       "regex": "^/macon/game\\-console\\-repair(?:/)?$",
       "routeKeys": {},
@@ -175,6 +207,12 @@
       "regex": "^/macon/houston\\-county\\-phone\\-repair(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/macon/houston\\-county\\-phone\\-repair(?:/)?$"
+    },
+    {
+      "page": "/macon/imac",
+      "regex": "^/macon/imac(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/imac(?:/)?$"
     },
     {
       "page": "/macon/ipad",
@@ -219,6 +257,18 @@
       "namedRegex": "^/macon/perry\\-iphone\\-repair(?:/)?$"
     },
     {
+      "page": "/macon/pricing-chart",
+      "regex": "^/macon/pricing\\-chart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/pricing\\-chart(?:/)?$"
+    },
+    {
+      "page": "/macon/ps5-repair",
+      "regex": "^/macon/ps5\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/ps5\\-repair(?:/)?$"
+    },
+    {
       "page": "/macon/reviews",
       "regex": "^/macon/reviews(?:/)?$",
       "routeKeys": {},
@@ -235,6 +285,18 @@
       "regex": "^/macon/services(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/macon/services(?:/)?$"
+    },
+    {
+      "page": "/macon/trade-in",
+      "regex": "^/macon/trade\\-in(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/trade\\-in(?:/)?$"
+    },
+    {
+      "page": "/macon/walk-in",
+      "regex": "^/macon/walk\\-in(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/walk\\-in(?:/)?$"
     },
     {
       "page": "/macon/warner-robins-ipad-repair",
@@ -255,10 +317,22 @@
       "namedRegex": "^/macon/warner\\-robins\\-macbook\\-repair(?:/)?$"
     },
     {
+      "page": "/macon/warranty",
+      "regex": "^/macon/warranty(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/warranty(?:/)?$"
+    },
+    {
       "page": "/macon/water-damage",
       "regex": "^/macon/water\\-damage(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/macon/water\\-damage(?:/)?$"
+    },
+    {
+      "page": "/macon/xbox-repair",
+      "regex": "^/macon/xbox\\-repair(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/macon/xbox\\-repair(?:/)?$"
     },
     {
       "page": "/privacy",

@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "All Repair Services Macon GA | iPhone, iPad, MacBook, Console & More | (478) 259-6371",
   description: "Complete repair services at Tech Medics Macon GA. iPhone, iPad, MacBook, game console repair, screen replacement, battery swap, charging port fix, water damage recovery & data recovery. Call (478) 259-6371.",
   keywords: ["repair services Macon GA", "phone repair services Macon", "device repair Macon GA", "Tech Medics services", "Apple repair services Macon", "game console repair Macon", "data recovery Macon GA", "screen repair services Macon"],
-  alternates: { canonical: "https://techmedicsmacon.com/macon/services" },
+  alternates: { canonical: "https://techmedicsmacon.com/macon/services/" },
   openGraph: {
     title: "All Repair Services | Tech Medics Macon GA",
     description: "iPhone, iPad, MacBook, game console repair & more. Screen, battery, charging port, water damage, data recovery. Same-day service.",
-    url: "https://techmedicsmacon.com/macon/services",
+    url: "https://techmedicsmacon.com/macon/services/",
   },
 };
 
@@ -70,7 +70,7 @@ export default function ServicesPage() {
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">All Repair Services in Macon, GA</h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">From cracked iPhone screens to broken game consoles, Tech Medics fixes it all. Same-day service, no appointment needed, 30-day warranty on every repair. Located at 3742 Eisenhower Parkway.</p>
+          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">From cracked iPhone screens to broken game consoles, Tech Medics fixes it all. Same-day service, no appointment needed, 30-day warranty on every repair. Independently owned and operated in Macon at 3742 Eisenhower Parkway.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call for Free Quote</a>
@@ -183,7 +183,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">Serving All Macon Neighborhoods &amp; Nearby Cities</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
-            {["Downtown", "North Macon", "Vineville", "Ingleside", "East Macon", "South Macon", "Rutland"].map((n) => (
+            {["Downtown", "North Macon", "Vineville", "Ingleside", "East Macon", "South Macon", "Bloomfield", "Rutland"].map((n) => (
               <Link key={n} href={`/macon/${n.toLowerCase().replace(/ /g, "-")}`} className="bg-card border border-border rounded-lg p-4 text-center hover:shadow-lg transition-shadow"><span className="font-medium text-foreground">{n}</span></Link>
             ))}
           </div>

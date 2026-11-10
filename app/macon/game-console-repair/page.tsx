@@ -9,11 +9,12 @@ export const metadata: Metadata = {
   title: "Game Console Repair Macon GA | PS5, Xbox, Nintendo Switch | (478) 259-6371",
   description: "Expert game console repair in Macon GA – PS5, Xbox Series X/S, Nintendo Switch, PS4 & more. HDMI port repair, disc drive fix, overheating & controller drift. Tech Medics at 3742 Eisenhower Pkwy. Call (478) 259-6371.",
   keywords: ["game console repair Macon GA", "PS5 repair Macon", "Xbox repair Macon GA", "Nintendo Switch repair Macon", "PS4 repair Macon", "HDMI port repair Macon GA", "Xbox Series X repair Macon", "Nintendo Switch Joy-Con drift fix Macon", "game console fix near me", "PlayStation repair Macon Georgia"],
-  alternates: { canonical: "https://techmedicsmacon.com/macon/game-console-repair" },
+  alternates: { canonical: "https://techmedicsmacon.com/macon/game-console-repair/" },
   openGraph: {
     title: "Game Console Repair Macon GA | PS5, Xbox, Nintendo Switch Fix",
     description: "Expert game console repair in Macon GA. PS5, Xbox, Nintendo Switch & more. HDMI port, disc drive, overheating fixes. Same-day service.",
-    url: "https://techmedicsmacon.com/macon/game-console-repair",
+    url: "https://techmedicsmacon.com/macon/game-console-repair/",
+    images: [{ url: "/images/game-console-group.webp", width: 1536, height: 1024, alt: "PS5, Xbox and Nintendo Switch consoles together" }],
   },
 };
 
@@ -101,12 +102,8 @@ export default function GameConsoleRepairPage() {
                 </Button>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden shadow-lg bg-secondary/50 p-12 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🎮</div>
-                <p className="text-2xl font-bold text-foreground">PS5 &bull; Xbox &bull; Switch</p>
-                <p className="text-muted-foreground mt-2">All Major Consoles Repaired</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img src="/images/game-console-group.webp" alt="PS5, Xbox and Nintendo Switch consoles together on a gaming desk" width="1536" height="1024" className="aspect-[3/2] w-full object-cover" fetchPriority="high" />
             </div>
           </div>
         </div>
@@ -157,7 +154,26 @@ export default function GameConsoleRepairPage() {
         </div>
       </section>
 
-      {/* Common Repairs */}
+      {/* Dedicated Console Pages */}
+      <section className="py-12 px-4 bg-primary/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-foreground">Dedicated Repair Pages by Console</h2>
+          <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">Need help with a specific console? Visit our dedicated PS5 or Xbox repair pages for detailed information, pricing guidance, and repair-specific FAQs.</p>
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <Link href="/macon/ps5-repair" className="bg-card border-2 border-border rounded-lg p-6 hover:shadow-lg hover:border-primary transition-all group">
+              <div className="text-4xl mb-3">🎮</div>
+              <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">PS5 Repair Macon GA</h3>
+              <p className="text-muted-foreground text-sm">HDMI port repair, disc drive, overheating, DualSense controller drift & more. Full PlayStation 5 repair guide.</p>
+            </Link>
+            <Link href="/macon/xbox-repair" className="bg-card border-2 border-border rounded-lg p-6 hover:shadow-lg hover:border-primary transition-all group">
+              <div className="text-4xl mb-3">🟩</div>
+              <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">Xbox Repair Macon GA</h3>
+              <p className="text-muted-foreground text-sm">Xbox Series X/S & Xbox One HDMI repair, disc drive fix, overheating, controller stick drift & more.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-4 bg-secondary/20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Common Console Repairs</h2>
@@ -254,7 +270,7 @@ export default function GameConsoleRepairPage() {
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Link href="/macon/iphone" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPhone Repair</h3><p className="text-muted-foreground">Screen, battery &amp; more</p></Link>
             <Link href="/macon/ipad" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">iPad Repair</h3><p className="text-muted-foreground">Screen &amp; battery repair for all models</p></Link>
-            <Link href="/macon/data-recovery" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">Data Recovery</h3><p className="text-muted-foreground">Recover data from damaged devices</p></Link>
+            <Link href="/macon/console-hdmi-stick-drift" className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"><h3 className="text-xl font-bold mb-2 text-foreground">HDMI & Stick Drift</h3><p className="text-muted-foreground">HDMI port repair &amp; controller drift fix</p></Link>
           </div>
         </div>
       </section>

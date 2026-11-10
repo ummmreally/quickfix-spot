@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Clock, Shield, Wrench, Star, ExternalLink, CheckCircle2, Award, Cpu, Check, X } from "lucide-react";
+import { MapPin, Phone, Clock, Shield, Wrench, Star, ExternalLink, CheckCircle2, Award, Cpu, Check, X, ArrowRight, Smartphone, Tablet, Laptop, Gamepad2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import FAQSection from "./components/FAQSection";
+import HeroCarousel from "./components/HeroCarousel";
 
 export const metadata: Metadata = {
   title: "iPhone Screen Repair Macon GA | iPad & MacBook Repair | 30 Min Same-Day Service | (478) 259-6371",
@@ -63,7 +64,7 @@ const neighborhoods = [
   { href: "/macon/downtown", name: "Downtown", desc: "Cherry Street district" },
   { href: "/macon/ingleside", name: "Ingleside", desc: "Wesleyan College area" },
   { href: "/macon/east-macon", name: "East Macon", desc: "River Crossing area" },
-  { href: "/macon/south-macon", name: "South Macon", desc: "Macon Mall area" },
+  { href: "/macon/south-macon", name: "South Macon", desc: "Bloomfield & Macon Mall area" },
   { href: "/macon/rutland", name: "Rutland", desc: "Bass Road area" },
   { href: "/macon/warner-robins", name: "Warner Robins", desc: "20 min via I-75" },
   { href: "/macon/byron", name: "Byron", desc: "Peach County" },
@@ -95,70 +96,91 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 via-background to-secondary/5 py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
-              iPhone, iPad &amp; MacBook Repair in Macon, GA
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed">
-              Macon&apos;s Highest-Rated Apple Device Repair Shop — Every Model, Every Fix
-            </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              iPhone 16e to MacBook M4 — most repairs done in 30 minutes<br />
-              3742 Eisenhower Parkway, Macon GA 31206<br />
-              Walk-ins welcome · No appointment needed
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
-                <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call (478) 259-6371</a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8 py-6">
-                <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
-                  <MapPin className="mr-2 h-5 w-5" />Get Directions
-                </a>
-              </Button>
-            </div>
-            <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto text-center">
-              <div className="glass-card p-4 rounded-xl"><Clock className="h-8 w-8 text-primary mx-auto mb-2" /><p className="font-semibold">30-Min Service</p></div>
-              <div className="glass-card p-4 rounded-xl"><Shield className="h-8 w-8 text-primary mx-auto mb-2" /><p className="font-semibold">Warranty Included</p></div>
-              <div className="glass-card p-4 rounded-xl"><Wrench className="h-8 w-8 text-primary mx-auto mb-2" /><p className="font-semibold">Expert Techs</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hidden H1 for SEO (carousel has visual headings) */}
+      <h1 className="sr-only">iPhone, iPad &amp; MacBook Repair in Macon, GA — Tech Medics</h1>
 
-      {/* Trust Badges */}
-      <section className="py-8 px-4 bg-secondary/30 border-y border-border">
+      {/* Hero Carousel - Mobilesentrix style */}
+      <HeroCarousel />
+
+      {/* Promotional Banners - Mobilesentrix style row */}
+      <section className="py-8 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="flex flex-col items-center gap-2">
-              <div className="bg-background border-2 border-primary/20 rounded-full p-3"><CheckCircle2 className="h-6 w-6 text-primary" /></div>
-              <p className="text-sm font-semibold text-foreground">High-Quality Parts</p>
-              <p className="text-xs text-muted-foreground">OEM &amp; Premium Options</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Quality Standards Banner */}
+            <div className="flex items-center gap-6 bg-gradient-to-r from-slate-50 to-white rounded-xl p-6 border border-border hover:shadow-md transition-shadow">
+              <div className="shrink-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-sm text-muted-foreground">Discover Our</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Quality Standards</h3>
+                <p className="text-sm text-muted-foreground mt-1">Premium parts that meet or exceed OEM specifications</p>
+                <Link href="/macon/apple-genuine-parts" className="text-primary text-sm font-semibold mt-2 inline-flex items-center gap-1 hover:underline">
+                  Learn more <ArrowRight className="h-3 w-3" />
+                </Link>
+              </div>
+              <div className="hidden sm:flex items-center gap-2">
+                <div className="bg-primary/10 rounded-lg p-3"><Shield className="h-8 w-8 text-primary" /></div>
+                <div className="bg-primary/10 rounded-lg p-3"><Award className="h-8 w-8 text-primary" /></div>
+              </div>
             </div>
-            <div className="flex flex-col items-center gap-2">
-              <div className="bg-background border-2 border-primary/20 rounded-full p-3"><Award className="h-6 w-6 text-primary" /></div>
-              <p className="text-sm font-semibold text-foreground">Certified Technicians</p>
-              <p className="text-xs text-muted-foreground">Free Counter Diagnostics</p>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <div className="bg-background border-2 border-primary/20 rounded-full p-3"><Shield className="h-6 w-6 text-primary" /></div>
-              <p className="text-sm font-semibold text-foreground">30 Day Warranty</p>
-              <p className="text-xs text-muted-foreground">On All Repairs</p>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <div className="bg-background border-2 border-primary/20 rounded-full p-3"><Cpu className="h-6 w-6 text-primary" /></div>
-              <p className="text-sm font-semibold text-foreground">Advanced Equipment</p>
-              <p className="text-xs text-muted-foreground">Latest Repair Technology</p>
+
+            {/* Tech / Warranty Banner */}
+            <div className="flex items-center gap-6 bg-gradient-to-r from-primary/5 to-white rounded-xl p-6 border border-border hover:shadow-md transition-shadow">
+              <div className="shrink-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-2xl font-black text-primary">30</span>
+                  <span className="text-xs font-bold text-muted-foreground uppercase leading-tight">Day<br/>Warranty</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Unmatched Quality &amp; Reliability</h3>
+                <p className="text-sm text-muted-foreground mt-1">Every repair backed by our parts &amp; labor warranty</p>
+              </div>
+              <div className="hidden sm:flex items-center gap-2">
+                <div className="bg-primary/10 rounded-lg p-3"><Wrench className="h-8 w-8 text-primary" /></div>
+                <div className="bg-primary/10 rounded-lg p-3"><Cpu className="h-8 w-8 text-primary" /></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Review Display */}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-6 px-4">
+      {/* Trust Badges - compact row */}
+      <section className="py-6 px-4 border-y border-border bg-secondary/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div className="flex items-center justify-center gap-3">
+              <div className="bg-background border border-primary/20 rounded-full p-2.5"><CheckCircle2 className="h-5 w-5 text-primary" /></div>
+              <div className="text-left">
+                <p className="text-sm font-semibold text-foreground">High-Quality Parts</p>
+                <p className="text-xs text-muted-foreground">OEM &amp; Premium Options</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <div className="bg-background border border-primary/20 rounded-full p-2.5"><Award className="h-5 w-5 text-primary" /></div>
+              <div className="text-left">
+                <p className="text-sm font-semibold text-foreground">Expert Technicians</p>
+                <p className="text-xs text-muted-foreground">Free Diagnostics</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <div className="bg-background border border-primary/20 rounded-full p-2.5"><Shield className="h-5 w-5 text-primary" /></div>
+              <div className="text-left">
+                <p className="text-sm font-semibold text-foreground">30-Day Warranty</p>
+                <p className="text-xs text-muted-foreground">Parts &amp; Labor</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <div className="bg-background border border-primary/20 rounded-full p-2.5"><Clock className="h-5 w-5 text-primary" /></div>
+              <div className="text-left">
+                <p className="text-sm font-semibold text-foreground">30-Min Service</p>
+                <p className="text-xs text-muted-foreground">Walk-Ins Welcome</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Review Badge - inline */}
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-5 px-4 bg-white">
         <div className="flex items-center gap-2">
           <div className="flex">{[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-primary text-primary" />)}</div>
           <span className="text-lg font-bold text-foreground">4.9 / 5.0</span>
@@ -171,29 +193,69 @@ export default function HomePage() {
         </Button>
       </div>
 
-      {/* Services Section */}
-      <section className="py-20 px-4">
+      {/* Services Grid - clean card layout */}
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">Apple Device Repair Services in Macon, GA</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">iPhone 16e screen replacements, iPad Pro M4 glass repair, MacBook Air M4 service — we fix every Apple device released through 2026 with same-day turnaround</p>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">Apple Device Repair Services</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Every Apple device, every fix — same-day turnaround in Macon, GA</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              { href: "/macon/iphone", img: "/images/iphone-screen-repair-macon.webp", alt: "iPhone screen repair Macon GA - cracked screen fix", title: "iPhone Screen Repair Macon GA", items: ["iPhone 16e / 16 Pro Max screen fix", "Battery replacement from $59", "Charging port & speaker repair", "Water damage recovery", "Every iPhone model since iPhone 7"], cta: "View iPhone Pricing →", eager: true },
-              { href: "/macon/ipad", img: "/images/ipad-screen-repair-macon.webp", alt: "iPad repair Macon GA - screen and glass repair", title: "iPad Repair Macon GA", items: ["iPad Pro M4 & iPad Air M3 repair", "Screen & digitizer replacement", "Battery service from $89", "Charging port fix", "All iPad generations supported"], cta: "View iPad Pricing →" },
-              { href: "/macon/macbook", img: "/images/macbook-repair-macon.webp", alt: "MacBook repair Macon GA - screen and logic board repair", title: "MacBook Repair Macon GA", items: ["MacBook Air M4 & Pro M4 service", "Retina display replacement", "Keyboard & trackpad repair", "Battery & logic board fix", "Intel + Apple Silicon models"], cta: "View MacBook Pricing →" },
+              { href: "/macon/iphone", icon: Smartphone, img: "/images/iphone-screen-repair-macon.webp", alt: "iPhone screen repair Macon GA - cracked screen fix", title: "iPhone Repair", price: "from $79", items: ["iPhone 16e / 16 Pro Max screen fix", "Battery replacement from $59", "Charging port & speaker repair", "Water damage recovery", "Every iPhone model since iPhone 7"], cta: "View iPhone Pricing" },
+              { href: "/macon/ipad", icon: Tablet, img: "/images/ipad-screen-repair-macon.webp", alt: "iPad repair Macon GA - screen and glass repair", title: "iPad Repair", price: "from $99", items: ["iPad Pro M4 & iPad Air M3 repair", "Screen & digitizer replacement", "Battery service from $89", "Charging port fix", "All iPad generations supported"], cta: "View iPad Pricing" },
+              { href: "/macon/macbook", icon: Laptop, img: "/images/macbook-repair-macon.webp", alt: "MacBook repair Macon GA - screen and logic board repair", title: "MacBook Repair", price: "from $299", items: ["MacBook Air M4 & Pro M4 service", "Retina display replacement", "Keyboard & trackpad repair", "Battery & logic board fix", "Intel + Apple Silicon models"], cta: "View MacBook Pricing" },
             ].map((svc) => (
               <Link key={svc.href} href={svc.href} className="group">
-                <div className="glass-card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img src={svc.img} alt={svc.alt} width="662" height="496" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading={svc.eager ? "eager" : "lazy"} decoding="async" />
+                <div className="bg-white rounded-xl border border-border overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all duration-300 h-full">
+                  <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-secondary to-white">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet={`${svc.img.replace(".webp", "")}-480.webp 480w, ${svc.img.replace(".webp", "")}-662.webp 662w, ${svc.img} 760w`}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
+                      />
+                      <img
+                        src={svc.img}
+                        alt={svc.alt}
+                        width="662"
+                        height="496"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-3 text-foreground">{svc.title}</h3>
-                    <ul className="space-y-2 text-muted-foreground">{svc.items.map((item) => <li key={item}>✓ {item}</li>)}</ul>
-                    <Button className="mt-4 w-full" variant="outline">{svc.cta}</Button>
+                    <div className="flex items-center justify-between mb-3">
+                      <h3 className="text-xl font-bold text-foreground">{svc.title}</h3>
+                      <span className="text-sm font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full">{svc.price}</span>
+                    </div>
+                    <ul className="space-y-1.5 text-sm text-muted-foreground mb-4">{svc.items.map((item) => <li key={item} className="flex items-start gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" />{item}</li>)}</ul>
+                    <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-2 transition-all">
+                      {svc.cta} <ArrowRight className="h-4 w-4 ml-1" />
+                    </div>
                   </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Additional service links - horizontal row like Mobilesentrix categories */}
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { href: "/macon/game-console-repair", icon: Gamepad2, title: "Game Console Repair", desc: "PS5, Xbox, Nintendo Switch" },
+              { href: "/macon/screen-repair", icon: Smartphone, title: "Screen Repair", desc: "All devices, all models" },
+              { href: "/macon/battery-replacement", icon: Cpu, title: "Battery Replacement", desc: "iPhone, iPad & MacBook" },
+              { href: "/macon/water-damage", icon: Shield, title: "Water Damage Recovery", desc: "Ultrasonic cleaning & repair" },
+            ].map((svc) => (
+              <Link key={svc.href} href={svc.href} className="group flex items-center gap-3 bg-white rounded-xl border border-border p-4 hover:shadow-md hover:border-primary/30 transition-all">
+                <div className="bg-primary/10 rounded-lg p-2.5 shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <svc.icon className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm text-foreground">{svc.title}</h3>
+                  <p className="text-xs text-muted-foreground">{svc.desc}</p>
                 </div>
               </Link>
             ))}
@@ -201,21 +263,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 px-4 bg-secondary/20">
+      {/* Why Choose Us - clean grid */}
+      <section className="py-16 px-4 bg-secondary/10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Why Macon Trusts Us for iPhone Screen Repair &amp; More</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-foreground">Why Macon Trusts Tech Medics</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: Clock, title: "30-Minute Turnaround", desc: "Walk in, get repaired, walk out. Most iPhone screen fixes done before your coffee gets cold" },
               { icon: Shield, title: "30-Day Warranty", desc: "Every repair backed by our parts & labor warranty — if it's not right, we'll fix it free" },
-              { icon: MapPin, title: "Macon Local Since 2010", desc: "15+ years of Apple repair experience. Now serving Central GA from 3742 Eisenhower Parkway" },
+              { icon: MapPin, title: "Independently Owned", desc: "Independent local shop serving Central GA from 3742 Eisenhower Parkway since 2024" },
               { icon: Wrench, title: "2026-Model Ready", desc: "iPhone 16e, iPad Pro M4, MacBook M4 — we stock parts for the latest devices on day one" },
             ].map((item) => (
-              <div key={item.title} className="text-center">
-                <div className="glass-card w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"><item.icon className="h-8 w-8 text-primary" /></div>
-                <h3 className="font-bold text-xl mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.desc}</p>
+              <div key={item.title} className="bg-white rounded-xl border border-border p-6 text-center hover:shadow-md transition-shadow">
+                <div className="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4"><item.icon className="h-7 w-7 text-primary" /></div>
+                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -223,37 +285,46 @@ export default function HomePage() {
       </section>
 
       {/* Location Section */}
-      <section className="py-20 px-4">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Visit Our iPhone Repair Shop in Macon, GA</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Visit Our Repair Shop</h2>
               <div className="space-y-4 mb-8">
-                <div>
-                  <h3 className="font-semibold text-lg mb-1 flex items-center gap-2"><MapPin className="h-5 w-5 text-primary" />Address</h3>
-                  <p className="text-muted-foreground ml-7">3742 Eisenhower Parkway<br />Macon, GA 31206</p>
+                <div className="flex items-start gap-3">
+                  <div className="bg-primary/10 rounded-lg p-2 shrink-0"><MapPin className="h-5 w-5 text-primary" /></div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Address</h3>
+                    <p className="text-sm text-muted-foreground">3742 Eisenhower Parkway<br />Macon, GA 31206</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1 flex items-center gap-2"><Clock className="h-5 w-5 text-primary" />Hours</h3>
-                  <p className="text-muted-foreground ml-7">Monday - Friday: 10:00 AM - 6:00 PM<br />Saturday: 10:00 AM - 5:00 PM<br />Sunday: Closed</p>
+                <div className="flex items-start gap-3">
+                  <div className="bg-primary/10 rounded-lg p-2 shrink-0"><Clock className="h-5 w-5 text-primary" /></div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Hours</h3>
+                    <p className="text-sm text-muted-foreground">Mon-Fri: 10AM - 6PM<br />Saturday: 10AM - 5PM<br />Sunday: Closed</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1 flex items-center gap-2"><Phone className="h-5 w-5 text-primary" />Phone</h3>
-                  <p className="text-muted-foreground ml-7">(478) 259-6371</p>
+                <div className="flex items-start gap-3">
+                  <div className="bg-primary/10 rounded-lg p-2 shrink-0"><Phone className="h-5 w-5 text-primary" /></div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Phone</h3>
+                    <p className="text-sm text-muted-foreground">(478) 259-6371</p>
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call Now for iPhone Repair</a>
+                  <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call Now</a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-2">
+                <Button asChild size="lg" variant="outline">
                   <a href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">
                     <MapPin className="mr-2 h-5 w-5" />Get Directions
                   </a>
                 </Button>
               </div>
             </div>
-            <a href="https://www.google.com/maps/place/3742+Eisenhower+Pkwy,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer" className="block bg-muted rounded-lg overflow-hidden h-96 shadow-lg relative group">
+            <a href="https://www.google.com/maps/place/3742+Eisenhower+Pkwy,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer" className="block bg-muted rounded-xl overflow-hidden h-80 md:h-96 shadow-lg relative group">
               <img src="/images/map-location.png" alt="Map showing Tech Medics location at 3742 Eisenhower Parkway, Macon GA 31206" className="w-full h-full object-cover" loading="lazy" />
               <div className="absolute bottom-3 right-3 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-xs text-muted-foreground shadow-sm group-hover:bg-primary group-hover:text-primary-foreground transition-colors">Open in Google Maps →</div>
             </a>
@@ -262,7 +333,7 @@ export default function HomePage() {
       </section>
 
       {/* SEO Content */}
-      <section className="py-20 px-4 bg-secondary/20">
+      <section className="py-16 px-4 bg-secondary/10">
         <div className="max-w-4xl mx-auto">
           <article className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold mb-6 text-foreground">Macon&apos;s Top-Rated Apple Repair Shop — Updated for 2026</h2>
@@ -281,16 +352,16 @@ export default function HomePage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-20 px-4">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Why Choose Us for iPhone, iPad &amp; MacBook Repair in Macon?</h2>
-          <p className="text-center text-muted-foreground mb-12">Compare your repair options and see the Tech Medics difference</p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">Why Choose Us?</h2>
+          <p className="text-center text-muted-foreground mb-10">Compare your repair options and see the Tech Medics difference</p>
+          <div className="overflow-x-auto max-w-3xl mx-auto">
+            <table className="w-full border-collapse bg-white rounded-xl overflow-hidden border border-border">
               <thead>
                 <tr className="border-b border-border">
                   <th className="text-left p-4 font-bold text-foreground">Feature</th>
-                  <th className="text-center p-4 font-bold text-muted-foreground">DIY Repair</th>
+                  <th className="text-center p-4 font-bold text-muted-foreground">DIY</th>
                   <th className="text-center p-4 font-bold text-muted-foreground">Other Shops</th>
                   <th className="text-center p-4 font-bold text-primary-foreground bg-primary">Tech Medics</th>
                 </tr>
@@ -298,10 +369,10 @@ export default function HomePage() {
               <tbody>
                 {comparisonData.map((row) => (
                   <tr key={row.feature} className="border-b border-border last:border-0">
-                    <td className="p-4 font-medium text-foreground">{row.feature}</td>
-                    <td className="p-4 text-center">{row.diy ? <Check className="h-5 w-5 text-green-600 mx-auto" /> : <X className="h-5 w-5 text-muted-foreground mx-auto" />}</td>
-                    <td className="p-4 text-center">{row.competitor ? <Check className="h-5 w-5 text-green-600 mx-auto" /> : <X className="h-5 w-5 text-muted-foreground mx-auto" />}</td>
-                    <td className="p-4 text-center bg-primary/5">{row.us ? <Check className="h-5 w-5 text-primary mx-auto" /> : <X className="h-5 w-5 text-muted-foreground mx-auto" />}</td>
+                    <td className="p-4 font-medium text-foreground text-sm">{row.feature}</td>
+                    <td className="p-4 text-center">{row.diy ? <Check className="h-5 w-5 text-green-600 mx-auto" /> : <X className="h-5 w-5 text-muted-foreground/40 mx-auto" />}</td>
+                    <td className="p-4 text-center">{row.competitor ? <Check className="h-5 w-5 text-green-600 mx-auto" /> : <X className="h-5 w-5 text-muted-foreground/40 mx-auto" />}</td>
+                    <td className="p-4 text-center bg-primary/5">{row.us ? <Check className="h-5 w-5 text-primary mx-auto" /> : <X className="h-5 w-5 text-muted-foreground/40 mx-auto" />}</td>
                   </tr>
                 ))}
               </tbody>
@@ -314,18 +385,18 @@ export default function HomePage() {
       <FAQSection deviceType="iPhone, iPad & MacBook" faqs={faqs} />
 
       {/* Testimonials */}
-      <section className="py-20 px-4">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">What Our Customers Say</h2>
-          <p className="text-center text-muted-foreground mb-12">Recent reviews from real Macon customers</p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">What Our Customers Say</h2>
+          <p className="text-center text-muted-foreground mb-10">Recent reviews from real Macon customers</p>
+          <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
-              <Card key={i} className="p-6 border-border hover:shadow-lg transition-shadow">
-                <div className="flex items-center gap-1 mb-4">{[...Array(t.rating)].map((_, j) => <Star key={j} className="h-5 w-5 fill-primary text-primary" />)}</div>
-                <p className="text-muted-foreground mb-4 italic">&ldquo;{t.text}&rdquo;</p>
-                <div className="border-t border-border pt-4">
-                  <p className="font-semibold text-foreground">{t.name}</p>
-                  <p className="text-sm text-muted-foreground">{t.service}</p>
+              <Card key={i} className="p-6 border-border hover:shadow-md transition-shadow bg-white">
+                <div className="flex items-center gap-1 mb-3">{[...Array(t.rating)].map((_, j) => <Star key={j} className="h-4 w-4 fill-primary text-primary" />)}</div>
+                <p className="text-muted-foreground text-sm mb-4 italic leading-relaxed">&ldquo;{t.text}&rdquo;</p>
+                <div className="border-t border-border pt-3">
+                  <p className="font-semibold text-foreground text-sm">{t.name}</p>
+                  <p className="text-xs text-muted-foreground">{t.service}</p>
                 </div>
               </Card>
             ))}
@@ -334,11 +405,11 @@ export default function HomePage() {
       </section>
 
       {/* Blog Links */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-secondary/10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">Repair Guides &amp; Resources</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Expert advice on device repair, maintenance tips, and cost guides for Macon GA residents</p>
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">Repair Guides &amp; Resources</h2>
+          <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">Expert advice on device repair, maintenance tips, and cost guides</p>
+          <div className="grid md:grid-cols-3 gap-5 mb-8">
             {[
               { href: "/blog/iphone-screen-repair-macon-ga", title: "iPhone Screen Repair Guide", desc: "Complete guide to screen repair costs, quality options, and what to expect." },
               { href: "/blog/ipad-screen-repair-macon", title: "iPad Screen Repair Tips", desc: "All iPad models supported - Pro, Air, Mini. Pricing and repair times." },
@@ -347,26 +418,26 @@ export default function HomePage() {
               { href: "/blog/macbook-repair-macon-ga", title: "MacBook Repair in Macon", desc: "Screen, keyboard, battery, and logic board repair services." },
               { href: "/blog/tech-medics-vs-apple-store-repair", title: "Tech Medics vs Apple Store", desc: "Compare costs, warranty, and turnaround times." },
             ].map((post) => (
-              <Link key={post.href} href={post.href} className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold mb-2 text-foreground">{post.title}</h3>
+              <Link key={post.href} href={post.href} className="bg-white rounded-xl border border-border p-5 hover:shadow-md hover:border-primary/30 transition-all group">
+                <h3 className="font-bold text-foreground mb-1.5 group-hover:text-primary transition-colors">{post.title}</h3>
                 <p className="text-muted-foreground text-sm">{post.desc}</p>
               </Link>
             ))}
           </div>
-          <div className="text-center"><Link href="/blog" className="text-primary hover:underline font-semibold">View All Repair Guides →</Link></div>
+          <div className="text-center"><Link href="/blog" className="text-primary hover:underline font-semibold inline-flex items-center gap-1">View All Repair Guides <ArrowRight className="h-4 w-4" /></Link></div>
         </div>
       </section>
 
       {/* Neighborhoods */}
-      <section className="py-16 px-4 bg-secondary/20">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">Serving Macon GA &amp; Surrounding Cities</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Conveniently located at 3742 Eisenhower Parkway - serving Macon, Warner Robins, Byron, Perry &amp; Forsyth</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">Serving Macon GA &amp; Surrounding Cities</h2>
+          <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">Conveniently located at 3742 Eisenhower Parkway - easy I-75 access from anywhere in Central GA</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {neighborhoods.map((n) => (
-              <Link key={n.href} href={n.href} className="glass-card rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
-                <h3 className="font-bold text-foreground">{n.name}</h3>
-                <p className="text-muted-foreground text-sm">{n.desc}</p>
+              <Link key={n.href} href={n.href} className="bg-white rounded-xl border border-border p-4 text-center hover:shadow-md hover:border-primary/30 transition-all">
+                <h3 className="font-bold text-foreground text-sm">{n.name}</h3>
+                <p className="text-muted-foreground text-xs">{n.desc}</p>
               </Link>
             ))}
           </div>

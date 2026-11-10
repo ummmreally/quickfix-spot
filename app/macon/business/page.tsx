@@ -6,13 +6,13 @@ import { Phone, CheckCircle2, Clock, Shield, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Business iPhone & MacBook Repair Macon GA | Tech Medics for Companies",
-  description: "Professional business device repair in Macon GA. Same-day iPhone, iPad & MacBook service. Volume discounts, on-site support. Call (478) 259-6371.",
-  keywords: ["business phone repair Macon", "corporate device repair", "bulk iPhone repair", "business MacBook repair", "enterprise IT support Macon"],
-  alternates: { canonical: "https://techmedicsmacon.com/macon/business" },
+  description: "Professional business device repair in Macon GA. Same-day iPhone, iPad & MacBook service. Volume discounts, on-site services. Call (478) 259-6371.",
+  keywords: ["business phone repair Macon", "corporate device repair", "bulk iPhone repair", "business MacBook repair", "enterprise IT services Macon"],
+  alternates: { canonical: "https://techmedicsmacon.com/macon/business/" },
   openGraph: {
     title: "Business Device Repair Solutions | Tech Medics Macon GA",
-    description: "Professional Apple device repair for Macon businesses. Same-day service, volume discounts, on-site support.",
-    url: "https://techmedicsmacon.com/macon/business",
+    description: "Professional Apple device repair for Macon businesses. Same-day service, volume discounts, on-site services.",
+    url: "https://techmedicsmacon.com/macon/business/",
   },
 };
 
@@ -20,7 +20,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Business Device Repair Services",
-  description: "Professional Apple device repair and support services for Macon businesses including same-day repairs, on-site support, and volume discounts",
+  description: "Professional Apple device repair and professional services for Macon businesses including same-day repairs, on-site services, and volume discounts",
   provider: { "@type": "LocalBusiness", "@id": "https://techmedicsmacon.com/#business", name: "Tech Medics Macon" },
   areaServed: { "@type": "City", name: "Macon", containedIn: { "@type": "State", name: "Georgia" } },
   serviceType: "Business Device Repair",
@@ -35,7 +35,7 @@ export default function BusinessPage() {
       <section className="bg-secondary/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Business Device Solutions</h1>
-          <p className="text-xl text-muted-foreground mb-8">Keep your business running smoothly with professional Apple device repair and support services in Macon, GA</p>
+          <p className="text-xl text-muted-foreground mb-8">Keep your business running smoothly with professional Apple device repair and professional services in Macon, GA</p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
             <a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Get a Business Quote</a>
           </Button>
@@ -56,7 +56,7 @@ export default function BusinessPage() {
             {[
               { icon: <Clock className="h-8 w-8 text-primary" />, title: "Same-Day Repairs", desc: "Minimize downtime with our rapid repair services. Most repairs completed within 30 minutes." },
               { icon: <Shield className="h-8 w-8 text-primary" />, title: "Quality Guaranteed", desc: "All business repairs come with our comprehensive warranty and highest quality parts." },
-              { icon: <Wrench className="h-8 w-8 text-primary" />, title: "On-Site Support", desc: "We offer on-site device assessment and pickup services for Macon-area businesses." },
+               { icon: <Wrench className="h-8 w-8 text-primary" />, title: "On-Site Services", desc: "We offer on-site device assessment and pickup services for Macon-area businesses." },
               { icon: <CheckCircle2 className="h-8 w-8 text-primary" />, title: "Volume Discounts", desc: "Special pricing packages available for multiple devices and ongoing maintenance needs." },
             ].map((b) => (
               <Card key={b.title} className="border-2">
@@ -95,7 +95,7 @@ export default function BusinessPage() {
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">Contact us today to discuss custom solutions for your business. We&apos;ll create a repair and maintenance plan tailored to your needs.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8"><a href="tel:(478)259-6371"><Phone className="mr-2 h-5 w-5" />Call (478) 259-6371</a></Button>
-              <Button size="lg" variant="outline" asChild className="border-2 text-lg px-8"><a href="mailto:Support@MyTechMedics.com">Email Us</a></Button>
+              <Button size="lg" variant="outline" asChild className="border-2 text-lg px-8"><a href="mailto:Contact@MyTechMedics.com">Email Us</a></Button>
             </div>
           </div>
         </div>

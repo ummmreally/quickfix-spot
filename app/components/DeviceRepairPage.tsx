@@ -1,0 +1,39 @@
+import Link from "next/link";
+import { ArrowRight, CheckCircle2, Clock3, MapPin, Phone, ShieldCheck } from "lucide-react";
+import FAQSection from "./FAQSection";
+import BookingForm from "./BookingForm";
+import { iphoneModels } from "../data/iphone-models";
+
+export type DevicePageData = {
+  device: string; slug: string; image: string; intro: string; models: string;
+  services: { title: string; desc: string }[];
+  faqs: { question: string; answer: string }[];
+};
+
+export default function DeviceRepairPage({ data }: { data: DevicePageData }) {
+  const { device, slug, image, intro, models, services, faqs } = data;
+  const schema = { "@context": "https://schema.org", "@type": "Service", name: `${device} Repair in Macon, GA`, description: intro, serviceType: `${device} repair`, provider: { "@id": "https://techmedicsmacon.com/#business" }, areaServed: { "@type": "City", name: "Macon" }, url: `https://techmedicsmacon.com/macon/${slug}/` };
+  return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-5 py-4 text-sm text-muted-foreground"><Link href="/" className="hover:text-primary">Home</Link><span className="mx-2">/</span><Link href="/macon" className="hover:text-primary">Macon</Link><span className="mx-2">/</span><span className="text-foreground">{device} repair</span></nav>
+    <section className="bg-secondary/30 px-5 py-12 md:py-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-primary">Local repair · Macon, Georgia</p>
+          <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">{device} repair that gets you back to your day.</h1>
+          <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">{intro}</p>
+          <div className="mt-8 flex flex-wrap gap-3"><a href="tel:+14782596371" className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3.5 font-semibold text-primary-foreground hover:opacity-90"><Phone className="h-4 w-4" /> Call for a quote</a><a href="#services" className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-6 py-3.5 font-semibold text-foreground hover:bg-secondary">Explore repairs <ArrowRight className="h-4 w-4" /></a></div>
+          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground"><span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Walk-ins welcome</span><span className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" /> 30-day repair warranty</span></div>
+        </div>
+        <div className="overflow-hidden rounded-2xl shadow-xl"><img src={image} alt={`${device} on a desk`} width="1536" height="1024" className="aspect-[3/2] w-full object-cover" fetchPriority="high" /></div>
+      </div>
+    </section>
+    <section id="services" className="scroll-mt-24 px-5 py-20"><div className="mx-auto max-w-7xl"><div className="mb-10 max-w-2xl"><p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-primary">How we can help</p><h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{device} repair services in Macon</h2><p className="mt-4 text-lg text-muted-foreground">From everyday damage to difficult-to-diagnose issues, tell us what is happening and we’ll help you explore your options.</p></div><div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">{services.map((s, i) => <article key={s.title} className="rounded-2xl border border-border bg-card p-7"><span className="text-sm font-semibold text-primary">{String(i + 1).padStart(2, "0")}</span><h3 className="mb-3 mt-5 text-xl font-bold">{s.title}</h3><p className="leading-relaxed text-muted-foreground">{s.desc}</p></article>)}</div></div></section>
+    <section className="bg-secondary/30 px-5 py-20"><div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:gap-16"><div><p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-primary">Made for your device</p><h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Bring in the {device} you rely on.</h2><p className="mt-5 text-lg leading-relaxed text-muted-foreground">{models} Repair options, parts availability, and turnaround depend on your model and the issue. Call us with your model for a quote.</p>{device === "iPhone" && <p className="mt-4 leading-relaxed text-muted-foreground">Genuine Apple Parts are available upon request for eligible iPhone display repairs, subject to availability. <Link href="/macon/apple-genuine-parts" className="font-semibold text-primary underline underline-offset-4">Learn about your parts options</Link>.</p>}</div><div className="rounded-2xl bg-card p-8 shadow-sm"><h3 className="text-xl font-bold">What to expect</h3><div className="mt-6 space-y-6">{[{ icon: Phone, title: "Tell us what’s wrong", text: "Call or stop by with your device and describe the issue." }, { icon: Clock3, title: "Get a repair estimate", text: "We’ll discuss the repair, pricing, and expected timing for your device." }, { icon: ShieldCheck, title: "Get back to your day", text: "Your repair includes our 30-day parts and labor warranty." }].map(({icon: Icon, title, text}) => <div key={title} className="flex gap-4"><Icon className="mt-1 h-5 w-5 shrink-0 text-primary" /><div><h4 className="font-bold">{title}</h4><p className="mt-1 text-muted-foreground">{text}</p></div></div>)}</div></div></div></section>
+    {device === "iPhone" && <section className="px-5 py-16"><div className="mx-auto max-w-7xl"><h2 className="text-2xl font-bold">Find your iPhone model</h2><p className="mt-2 text-muted-foreground">See repair details for your specific model.</p><div className="mt-6 flex flex-wrap gap-2">{iphoneModels.map(m => <Link key={m.slug} href={`/macon/iphone/${m.slug}`} className="rounded-full border border-border px-4 py-2 text-sm font-medium hover:border-primary hover:text-primary">{m.model}</Link>)}</div></div></section>}
+    <FAQSection deviceType={device} faqs={faqs} />
+    {device === "iPhone" && <BookingForm />}
+    <section className="bg-primary/5 px-5 py-20"><div className="mx-auto max-w-4xl text-center"><MapPin className="mx-auto mb-5 h-8 w-8 text-primary" /><h2 className="text-3xl font-bold sm:text-4xl">Visit Tech Medics in Macon</h2><p className="mt-4 text-lg text-muted-foreground">Bring your {device} to 3742 Eisenhower Parkway, Macon, GA 31206. Walk-ins are welcome, or call to discuss your repair.</p><div className="mt-8 flex flex-wrap justify-center gap-3"><a className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground" href="tel:+14782596371">(478) 259-6371</a><a className="rounded-lg border border-border bg-background px-6 py-3 font-semibold" href="https://www.google.com/maps/dir//3742+Eisenhower+Parkway,+Macon,+GA+31206" target="_blank" rel="noopener noreferrer">Get directions</a></div></div></section>
+    <section className="px-5 py-16"><div className="mx-auto max-w-7xl"><h2 className="text-2xl font-bold">More repair services</h2><div className="mt-6 grid gap-3 sm:grid-cols-3">{(slug === "ps5-repair" || slug === "xbox-repair" ? [{name:"Game console",slug:"game-console-repair"},{name:"PS5",slug:"ps5-repair"},{name:"Xbox",slug:"xbox-repair"},{name:"HDMI & controller",slug:"console-hdmi-stick-drift"}] : [{name:"iPhone",slug:"iphone"},{name:"iPad",slug:"ipad"},{name:"MacBook",slug:"macbook"},{name:"iMac",slug:"imac"}]).filter(d => d.slug !== slug).map(d => <Link key={d.slug} href={`/macon/${d.slug}`} className="flex items-center justify-between rounded-xl border border-border p-5 font-semibold hover:border-primary hover:text-primary">{d.name} repair <ArrowRight className="h-4 w-4" /></Link>)}</div></div></section>
+  </>;
+}

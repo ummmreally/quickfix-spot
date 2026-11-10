@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Tech Medics Macon GA | Device Accessories | (478) 259-6371",
   description: "Tech Medics is an independently owned device accessories shop in Macon, GA. iPhone cases, screen protectors, chargers, cables, and more at 3742 Eisenhower Pkwy. Walk-ins welcome.",
   keywords: ["phone accessories Macon GA", "iPhone cases Macon", "screen protectors Macon GA", "phone chargers Macon", "Tech Medics Macon", "device accessories Macon GA", "phone store Macon"],
-  alternates: { canonical: "https://techmedicsmacon.com/macon" },
+  alternates: { canonical: "https://techmedicsmacon.com/macon/" },
   openGraph: {
     title: "Device Accessories in Macon GA | Tech Medics",
     description: "Independently owned device accessories shop in Macon. Cases, screen protectors, chargers, cables, and more. Walk-ins welcome.",
-    url: "https://techmedicsmacon.com/macon",
+    url: "https://techmedicsmacon.com/macon/",
   },
 };
 
@@ -60,7 +60,7 @@ export default function MaconLandingPage() {
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-slate-300 text-sm">
             <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Walk-Ins Welcome</span>
             <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Major-Brand Accessories</span>
-            <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Accessory Fitting</span>
+            <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Premium Cases</span>
             <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-400" /> Independently Owned</span>
           </div>
         </div>
@@ -133,8 +133,8 @@ export default function MaconLandingPage() {
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">Accessory Fitting</h3>
-              <p className="text-muted-foreground">Not sure what you need? Walk in and our team will help you find the right accessory for your device.</p>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Premium Accessories</h3>
+              <p className="text-muted-foreground">We carry a diverse range of high-quality accessories. Walk in to explore our selection of cases, chargers, and protectors.</p>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -165,7 +165,7 @@ export default function MaconLandingPage() {
               <h3 className="text-xl font-bold mb-3 text-foreground">Store Policies</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p>Walk-ins welcome during business hours.</p>
-                <p>Free accessory fitting and product advice.</p>
+                <p>Browse our extensive collection of device accessories.</p>
                 <p>Privacy and policy details are available below.</p>
               </div>
               <div className="flex flex-wrap gap-3 mt-5">
