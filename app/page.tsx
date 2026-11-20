@@ -202,29 +202,22 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { href: "/macon/iphone", icon: Smartphone, img: "/images/iphone-screen-repair-macon.webp", alt: "iPhone screen repair Macon GA - cracked screen fix", title: "iPhone Repair", price: "from $79", items: ["iPhone 16e / 16 Pro Max screen fix", "Battery replacement from $59", "Charging port & speaker repair", "Water damage recovery", "Every iPhone model since iPhone 7"], cta: "View iPhone Pricing" },
-              { href: "/macon/ipad", icon: Tablet, img: "/images/ipad-screen-repair-macon.webp", alt: "iPad repair Macon GA - screen and glass repair", title: "iPad Repair", price: "from $99", items: ["iPad Pro M4 & iPad Air M3 repair", "Screen & digitizer replacement", "Battery service from $89", "Charging port fix", "All iPad generations supported"], cta: "View iPad Pricing" },
-              { href: "/macon/macbook", icon: Laptop, img: "/images/macbook-repair-macon.webp", alt: "MacBook repair Macon GA - screen and logic board repair", title: "MacBook Repair", price: "from $299", items: ["MacBook Air M4 & Pro M4 service", "Retina display replacement", "Keyboard & trackpad repair", "Battery & logic board fix", "Intel + Apple Silicon models"], cta: "View MacBook Pricing" },
+              { href: "/macon/iphone", icon: Smartphone, img: "/images/iphone-device-desk.webp", alt: "iPhone on a desk", title: "iPhone Repair", price: "from $79", items: ["iPhone screen repair options", "Battery replacement from $59", "Charging port & speaker repair", "Water damage recovery", "Every iPhone model since iPhone 7"], cta: "View iPhone Pricing" },
+              { href: "/macon/ipad", icon: Tablet, img: "/images/ipad-device-desk.webp", alt: "iPad on a desk", title: "iPad Repair", price: "from $99", items: ["iPad Pro M4 & iPad Air M3 repair", "Screen & digitizer replacement", "Battery service from $89", "Charging port fix", "All iPad generations supported"], cta: "View iPad Pricing" },
+              { href: "/macon/macbook", icon: Laptop, img: "/images/macbook-device-desk.webp", alt: "MacBook on a desk", title: "MacBook Repair", price: "from $299", items: ["MacBook Air M4 & Pro M4 service", "Retina display replacement", "Keyboard & trackpad repair", "Battery & logic board fix", "Intel + Apple Silicon models"], cta: "View MacBook Pricing" },
             ].map((svc) => (
               <Link key={svc.href} href={svc.href} className="group">
                 <div className="bg-white rounded-xl border border-border overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all duration-300 h-full">
                   <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-secondary to-white">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcSet={`${svc.img.replace(".webp", "")}-480.webp 480w, ${svc.img.replace(".webp", "")}-662.webp 662w, ${svc.img} 760w`}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
-                      />
-                      <img
-                        src={svc.img}
-                        alt={svc.alt}
-                        width="662"
-                        height="496"
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </picture>
+                    <img
+                      src={svc.img}
+                      alt={svc.alt}
+                      width="1536"
+                      height="1024"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-3">

@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { MapPin, Phone, Star, CheckCircle, Clock, Shield, Wrench, Cpu } from "lucide-react";
 import FAQSection from "../../../components/FAQSection";
 import { iphoneModels, getIPhoneModel } from "../../../data/iphone-models";
+import DeviceRepairPage from "../../../components/DeviceRepairPage";
 
 export function generateStaticParams() {
   return iphoneModels.map((m) => ({ model: m.slug }));
@@ -24,13 +25,13 @@ export async function generateMetadata({ params }: { params: Promise<{ model: st
       title: data.title,
       description: data.metaDescription,
       url: `https://techmedicsmacon.com/macon/iphone/${data.slug}/`,
-      images: [{ url: "/images/iphone-screen-repair-macon.webp", width: 800, height: 600, alt: `${data.model} repair service in Macon GA` }],
+      images: [{ url: "/images/iphone-device-desk.webp", width: 1536, height: 1024, alt: `${data.model} repair service in Macon GA` }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${data.model} Repair Macon GA | Tech Medics`,
       description: data.metaDescription,
-      images: ["/images/iphone-screen-repair-macon.webp"],
+      images: ["/images/iphone-device-desk.webp"],
     },
   };
 }
@@ -39,6 +40,27 @@ export default async function IPhoneModelPage({ params }: { params: Promise<{ mo
   const { model } = await params;
   const data = getIPhoneModel(model);
   if (!data) notFound();
+
+  if (["17", "18", "Air", "Duo"].includes(data.series)) {
+    return <DeviceRepairPage data={{
+      device: data.model, slug: `iphone/${data.slug}`, image: "/images/iphone-device-desk.webp",
+      intro: `${data.heroText} Repair services and parts availability vary by model and issue; call us to check what is currently available.`,
+      models: `Tell us what is happening with your ${data.model}. We can discuss the next step and whether the repair you need is available.`,
+      services: [
+        { title: "Display issues", desc: "Ask about options for cracked glass, display damage, or touch problems." },
+        { title: "Battery and power", desc: "Contact us about fast battery drain, unexpected shutdowns, or power issues." },
+        { title: "Charging problems", desc: "A cable, port, battery, or other issue may affect charging. Ask about an assessment." },
+        { title: "Camera and audio", desc: "Discuss camera, speaker, or microphone issues with our team." },
+        { title: "Liquid exposure", desc: "Turn the device off if safe, disconnect power, and contact us promptly about an assessment." },
+        { title: "Other concerns", desc: "Not sure what is wrong? Describe your symptoms and ask about available service." },
+      ],
+      faqs: [
+        { question: `Can you repair my ${data.model}?`, answer: "Repair options and parts availability depend on the model and issue. Call us to check current availability before visiting." },
+        { question: "How long will a repair take?", answer: "Timing depends on the issue and parts availability. We can discuss an estimate after learning more about your device." },
+        { question: "Do I need an appointment?", answer: "Walk-ins are welcome at 3742 Eisenhower Parkway in Macon. We recommend calling ahead to check availability for newer models." },
+      ],
+    }} />;
+  }
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

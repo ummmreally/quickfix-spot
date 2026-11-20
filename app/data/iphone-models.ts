@@ -17,7 +17,29 @@ export interface IPhoneModelData {
   relatedModels: string[];
 }
 
+const recentModels = [
+  { model: "iPhone Duo", slug: "iphone-duo-repair", series: "Duo", year: 2026 },
+  { model: "iPhone 18 Pro Max", slug: "iphone-18-pro-max-repair", series: "18", year: 2026 },
+  { model: "iPhone 18 Pro", slug: "iphone-18-pro-repair", series: "18", year: 2026 },
+  { model: "iPhone 17 Pro Max", slug: "iphone-17-pro-max-repair", series: "17", year: 2025 },
+  { model: "iPhone 17 Pro", slug: "iphone-17-pro-repair", series: "17", year: 2025 },
+  { model: "iPhone Air", slug: "iphone-air-repair", series: "Air", year: 2025 },
+  { model: "iPhone 17", slug: "iphone-17-repair", series: "17", year: 2025 },
+  { model: "iPhone 17e", slug: "iphone-17e-repair", series: "17", year: 2026 },
+];
+
+const recentIPhoneModels: IPhoneModelData[] = recentModels.map(({ model, slug, series, year }) => ({
+  slug, model, series, year, screenSize: "", screenType: "",
+  title: `${model} Repair in Macon, GA | Tech Medics`,
+  metaDescription: `Ask Tech Medics about ${model} repair options in Macon, GA. Contact us for current service and parts availability. Walk-ins welcome.`,
+  keywords: [`${model} repair Macon GA`, `${model} screen repair Macon`, `${model} battery repair Macon`],
+  heroText: `Need help with your ${model}? Contact Tech Medics in Macon to discuss the issue and current repair options.`,
+  commonIssues: [], repairServices: [], specs: [], seoContent: "", faqs: [],
+  relatedModels: recentModels.filter((item) => item.slug !== slug).slice(0, 3).map((item) => item.slug),
+}));
+
 export const iphoneModels: IPhoneModelData[] = [
+  ...recentIPhoneModels,
   {
     slug: "iphone-16-pro-max-repair",
     model: "iPhone 16 Pro Max",
